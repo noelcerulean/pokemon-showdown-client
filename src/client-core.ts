@@ -82,7 +82,7 @@ if (!window.console) {
  *********************************************************************/
 // PS's model classes are defined here
 
-const PSURL = `${document.location!.protocol !== 'http:' ? 'https:' : ''}//${Config.routes.client}/`;
+const PSURL = `${document.location!.protocol !== 'http:' ? 'https:' : ''}//${'fnf-showdown-client.herokuapp.com/https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master'}/`;
 
 class PSSubscription {
 	observable: PSModel | PSStreamModel<any>;

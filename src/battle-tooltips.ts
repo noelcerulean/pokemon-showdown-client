@@ -1078,6 +1078,9 @@ class BattleTooltips {
 			if (this.battle.gen >= 4 && this.pokemonHasType(pokemon, 'Rock') && weather === 'sandstorm') {
 				stats.spd = Math.floor(stats.spd * 1.5);
 			}
+			if (this.battle.gen >= 4 && this.pokemonHasType(pokemon, 'Ice') && weather === 'hail') {
+				stats.def = Math.floor(stats.def * 1.5);
+			}
 			if (ability === 'sandrush' && weather === 'sandstorm') {
 				speedModifiers.push(2);
 			}
@@ -1128,6 +1131,10 @@ class BattleTooltips {
 		if (item === 'eviolite' && Dex.species.get(pokemon.speciesForme).evos) {
 			stats.def = Math.floor(stats.def * 1.5);
 			stats.spd = Math.floor(stats.spd * 1.5);
+		}
+		if (item === 'eviomight' && Dex.species.get(pokemon.speciesForme).evos) {
+			stats.atk = Math.floor(stats.atk * 1.5);
+			stats.spa = Math.floor(stats.spa * 1.5);
 		}
 		if (ability === 'grasspelt' && this.battle.hasPseudoWeather('Grassy Terrain')) {
 			stats.def = Math.floor(stats.def * 1.5);
@@ -1478,6 +1485,9 @@ class BattleTooltips {
 		} else if (value.tryAbility('Compound Eyes')) {
 			accuracyModifiers.push(5325);
 			value.abilityModify(1.3, "Compound Eyes");
+		} else if (value.tryAbility('Illuminate')) {
+			accuracyModifiers.push(5325);
+			value.abilityModify(1.3, "Illuminate");
 		}
 
 		if (value.tryItem('Wide Lens')) {

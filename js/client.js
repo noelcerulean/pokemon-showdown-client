@@ -215,11 +215,8 @@ function toId() {
 		 * to this file will always be made on the `play.pokemonshowdown.com`
 		 * domain in order to have access to the correct cookies.
 		 */
-		getActionPHP: function () {
-			var ret = '/~~' + Config.server.id + '/action.php';
-			if (Config.testclient) {
-				ret = 'https://' + Config.routes.client + ret;
-			}
+		 getActionPHP: function () {
+			var ret = 'https://play.pokemonshowdown.com/action.php';
 			return (this.getActionPHP = function () {
 				return ret;
 			})();
