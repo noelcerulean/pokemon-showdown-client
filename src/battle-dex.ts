@@ -181,7 +181,7 @@ const Dex = new class implements ModdedDex {
 
 	resourcePrefix = "https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/";
 
-	fxPrefix = "https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/fx";
+	fxPrefix = "https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/fx/";
 
 	loadedSpriteData = {xy: 1, bw: 0};
 	moddedDexes: {[mod: string]: ModdedDex} = {};
