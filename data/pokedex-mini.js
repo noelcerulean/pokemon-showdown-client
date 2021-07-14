@@ -1344,6 +1344,5 @@ exports.BattlePokemonSprites = {
 	pokestarwhitedoorprop:{num:-5013},
 	pokestarblackbelt:{num:-5014},
 	pokestarblackbeltprop:{num:-5014},
-	pokestarufopropu2:{num:-5001},
-	dunseraph:{num:899}
+	pokestarufopropu2:{num:-5001}
 };
