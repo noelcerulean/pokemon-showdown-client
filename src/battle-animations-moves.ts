@@ -1386,6 +1386,9 @@ const BattleMoveAnims: AnimTable = {
 	acrobatics: {
 		anim: BattleOtherAnims.flight.anim,
 	},
+	flutterstrike: {
+		anim: BattleOtherAnims.flight.anim,
+	},
 	flyingpress: {
 		anim: BattleOtherAnims.flight.anim,
 	},
@@ -32189,6 +32192,7 @@ BattleMoveAnims['wrap'] = {anim: BattleMoveAnims['bind'].anim};
 
 BattleMoveAnims['lowsweep'] = {anim: BattleMoveAnims['lowkick'].anim};
 BattleMoveAnims['megakick'] = {anim: BattleMoveAnims['jumpkick'].anim};
+BattleMoveAnims['lightningkick'] = {anim: BattleMoveAnims['thunderouskick'].anim};
 BattleMoveAnims['frustration'] = {anim: BattleMoveAnims['thrash'].anim};
 BattleMoveAnims['rage'] = {anim: BattleMoveAnims['thrash'].anim};
 BattleMoveAnims['headsmash'] = {anim: BattleMoveAnims['gigaimpact'].anim};
