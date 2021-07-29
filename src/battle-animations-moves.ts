@@ -32209,6 +32209,7 @@ BattleMoveAnims['rocktomb'] = {anim: BattleMoveAnims['rockslide'].anim};
 
 BattleMoveAnims['frenzyplant'] = {anim: BattleMoveAnims['leafstorm'].anim};
 BattleMoveAnims['hydrocannon'] = {anim: BattleMoveAnims['hydropump'].anim};
+BattleMoveAnims['geyserblast'] = {anim: BattleMoveAnims['hydropump'].anim};
 
 BattleMoveAnims['guardsplit'] = {anim: BattleMoveAnims['skillswap'].anim};
 BattleMoveAnims['powersplit'] = {anim: BattleMoveAnims['skillswap'].anim};
@@ -32245,6 +32246,7 @@ BattleMoveAnims['highhorsepower'] = {anim: BattleMoveAnims['stomp'].anim};
 BattleMoveAnims['retaliate'] = {anim: BattleMoveAnims['closecombat'].anim};
 BattleMoveAnims['superpower'] = {anim: BattleMoveAnims['closecombat'].anim};
 BattleMoveAnims['submission'] = {anim: BattleMoveAnims['closecombat'].anim};
+BattleMoveAnims['delinquency'] = {anim: BattleMoveAnims['closecombat'].anim};
 BattleMoveAnims['bonerush'] = {anim: BattleMoveAnims['boneclub'].anim};
 
 BattleMoveAnims['dragonrage'] = {anim: BattleMoveAnims['dragonbreath'].anim};
