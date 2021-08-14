@@ -2628,6 +2628,9 @@ this.scene.runOtherAnim('doomdesirehit',[_poke32]);
 if(_effect15.name==='Future Sight'){
 this.scene.runOtherAnim('futuresighthit',[_poke32]);
 }
+if(_effect15.name==='Prophetic Asteroid'){
+this.scene.runOtherAnim('propheticasteroidhit',[_poke32]);
+}
 }}
 
 }

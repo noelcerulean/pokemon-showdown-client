@@ -2628,6 +2628,9 @@ class Battle {
 						if (effect.name === 'Future Sight') {
 							this.scene.runOtherAnim('futuresighthit' as ID, [poke]);
 						}
+						if (effect.name === 'Prophetic Asteroid') {
+							this.scene.runOtherAnim('propheticasteroidhit' as ID, [poke]);
+						}
 					}
 				}
 			}

@@ -603,7 +603,7 @@ case'-end':{var _kwArgs$from2;
 var _pokemon11=args[1],_effect4=args[2];
 var _line5=this.maybeAbility(_effect4,_pokemon11)||this.maybeAbility(kwArgs.from,kwArgs.of||_pokemon11);
 var _id9=BattleTextParser.effectId(_effect4);
-if(_id9==='doomdesire'||_id9==='futuresight'){
+if(_id9==='doomdesire'||_id9==='futuresight'||_id9==='propheticasteroid'){
 var _template16=this.template('activate',_effect4);
 return _line5+_template16.replace('[TARGET]',this.pokemon(_pokemon11));
 }
