@@ -457,6 +457,7 @@ exports.BattlePokemonSprites = {
 	grumpig:{num:326},
 	spinda:{num:327},
 	trapinch:{num:328},
+	trapinchhat:{num:328},
 	vibrava:{num:329},
 	flygon:{num:330},
 	cacnea:{num:331},

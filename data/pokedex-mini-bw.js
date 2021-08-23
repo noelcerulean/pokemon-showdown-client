@@ -456,6 +456,7 @@ exports.BattlePokemonSpritesBW = {
 	grumpig:{num:326,front:{w:59,h:68},back:{w:61,h:65}},
 	spinda:{num:327,front:{w:39,h:52},back:{w:41,h:58}},
 	trapinch:{num:328,front:{w:39,h:42},back:{w:41,h:45}},
+	trapinchhat:{num:328},
 	vibrava:{num:329,front:{w:62,h:61},back:{w:63,h:62}},
 	flygon:{num:330,front:{w:71,h:82},back:{w:89,h:80}},
 	cacnea:{num:331,front:{w:58,h:41},back:{w:59,h:41}},
