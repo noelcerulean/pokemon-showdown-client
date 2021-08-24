@@ -8032,6 +8032,9 @@ const BattleMoveAnims: AnimTable = {
 	rocksmash: {
 		anim: BattleOtherAnims.punchattack.anim,
 	},
+	onetwopunch: {
+		anim: BattleOtherAnims.punchattack.anim,
+	},
 	hornleech: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('wisp', {

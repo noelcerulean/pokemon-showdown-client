@@ -8032,6 +8032,9 @@ anim:BattleOtherAnims.punchattack.anim},
 rocksmash:{
 anim:BattleOtherAnims.punchattack.anim},
 
+onetwopunch:{
+anim:BattleOtherAnims.punchattack.anim},
+
 hornleech:{
 anim:function(scene,_ref139){var attacker=_ref139[0],defender=_ref139[1];
 scene.showEffect('wisp',{
