@@ -1295,8 +1295,6 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 			return abilityid === 'technician';
 		case 'selfdestruct':
 			return dex.gen < 5 && !moves.includes('explosion');
-		case 'shadowpunch':
-			return abilityid === 'ironfist';
 		case 'smackdown':
 			return species.types.includes('Ground');
 		case 'smartstrike':
