@@ -997,6 +997,10 @@ stats.atk=Math.floor(stats.atk*0.5);
 if(this.battle.gen>2&&ability==='quickfeet'){
 stats.spe=Math.floor(stats.spe*1.5);
 }
+
+if(this.battle.gen>2&&pokemon.status==='frz'){
+stats.spa=Math.floor(stats.spa*0.5);
+}
 }
 
 
