@@ -158,6 +158,8 @@ exports.BattlePokemonSprites = {
 	onix:{num:95},
 	drowzee:{num:96},
 	hypno:{num:97},
+	hypnohappy:{num:97},
+	hypnohappyf:{num:97},
 	krabby:{num:98},
 	kingler:{num:99},
 	kinglergmax:{num:99},

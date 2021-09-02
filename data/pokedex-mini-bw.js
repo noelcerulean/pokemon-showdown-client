@@ -157,6 +157,8 @@ exports.BattlePokemonSpritesBW = {
 	onix:{num:95,front:{w:74,h:74},back:{w:100,h:73}},
 	drowzee:{num:96,front:{w:52,h:58},back:{w:57,h:57}},
 	hypno:{num:97,front:{w:67,h:62},frontf:{w:67,h:62},back:{w:65,h:60},backf:{w:65,h:60}},
+	hypnohappy:{num:97},
+	hypnohappyf:{num:97},
 	krabby:{num:98,front:{w:55,h:40},back:{w:57,h:44}},
 	kingler:{num:99,front:{w:82,h:59},back:{w:85,h:65}},
 	kinglergmax:{num:99},
