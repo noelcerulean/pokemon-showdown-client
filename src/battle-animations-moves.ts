@@ -32518,11 +32518,12 @@ BattleMoveAnims['beatup'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['counter'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['payback'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['revenge'] = {anim: BattleMoveAnims['slam'].anim};
-BattleMoveAnims['rockclimb'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['tackle'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['dragonhammer'] = {anim: BattleMoveAnims['heavyslam'].anim};
 
 BattleMoveAnims['highhorsepower'] = {anim: BattleMoveAnims['stomp'].anim};
+
+BattleMoveAnims['rockclimb'] = {anim: BattleMoveAnims['accelerock'].anim};
 
 BattleMoveAnims['retaliate'] = {anim: BattleMoveAnims['closecombat'].anim};
 BattleMoveAnims['superpower'] = {anim: BattleMoveAnims['closecombat'].anim};
