@@ -1119,6 +1119,7 @@ exports.BattlePokemonSpritesBW = {
 	naganadel:{num:804},
 	stakataka:{num:805},
 	blacephalon:{num:806},
+	blacephalondisco:{num:806},
 	zeraora:{num:807},
 	meltan:{num:808,front:{w:32,h:38}},
 	melmetal:{num:809,front:{w:101,h:75}},
