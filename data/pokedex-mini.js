@@ -563,6 +563,7 @@ exports.BattlePokemonSprites = {
 	rampardos:{num:409},
 	shieldon:{num:410},
 	bastiodon:{num:411},
+	bastiodontux:{num:411},
 	burmy:{num:412},
 	burmysandy:{num:412},
 	burmytrash:{num:412},
