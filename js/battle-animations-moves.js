@@ -32460,11 +32460,13 @@ BattleMoveAnims['attackorder']={anim:BattleMoveAnims['bulletseed'].anim};
 BattleMoveAnims['fellstinger']={anim:BattleMoveAnims['bulletseed'].anim};
 BattleMoveAnims['strugglebug']={anim:BattleMoveAnims['bulletseed'].anim};
 BattleMoveAnims['infestation']={anim:BattleMoveAnims['bulletseed'].anim};
+BattleMoveAnims['fungification']={anim:BattleMoveAnims['bulletseed'].anim};
 
 BattleMoveAnims['nightdaze']={anim:BattleMoveAnims['darkpulse'].anim};
 
 BattleMoveAnims['strengthsap']={anim:BattleMoveAnims['leechlife'].anim};
 BattleMoveAnims['cursedroots']={anim:BattleMoveAnims['leechlife'].anim};
+BattleMoveAnims['parasite']={anim:BattleMoveAnims['leechlife'].anim};
 BattleMoveAnims['hornattack']={anim:BattleMoveAnims['megahorn'].anim};
 BattleMoveAnims['lunge']={anim:BattleMoveAnims['megahorn'].anim};
 
