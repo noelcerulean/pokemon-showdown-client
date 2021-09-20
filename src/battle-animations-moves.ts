@@ -6697,6 +6697,107 @@ const BattleMoveAnims: AnimTable = {
 			}, 'accel', 'fade');
 		},
 	},
+	swordstream: {
+		anim(scene, [attacker, defender]) {
+			BattleOtherAnims.xattack.anim(scene, [attacker, defender]);
+			scene.showEffect('iceball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.5,
+				time: 450,
+			}, {
+				scale: 2,
+				opacity: 0.2,
+				time: 750,
+			}, 'linear', 'fade');
+			scene.showEffect('iceball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.5,
+				time: 750,
+			}, {
+				scale: 2,
+				opacity: 0.2,
+				time: 1050,
+			}, 'linear', 'fade');
+			scene.showEffect('waterwisp', {
+				x: defender.x - 35,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.7,
+				time: 450,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 750,
+			}, 'linear');
+			scene.showEffect('waterwisp', {
+				x: defender.x + 35,
+				y: defender.y - 15,
+				z: defender.z,
+				scale: 0.8,
+				opacity: 0.7,
+				time: 550,
+			}, {
+				scale: 3.5,
+				opacity: 0,
+				time: 850,
+			}, 'linear');
+			scene.showEffect('leftslash', {
+				x: defender.x - 10,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 1.5,
+				opacity: 0.6,
+				time: 450,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 800,
+			}, 'accel', 'fade');
+			scene.showEffect('waterwisp', {
+				x: defender.x - 35,
+				y: defender.y - 15,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.7,
+				time: 750,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 1050,
+			}, 'linear');
+			scene.showEffect('waterwisp', {
+				x: defender.x + 35,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 0.8,
+				opacity: 0.7,
+				time: 800,
+			}, {
+				scale: 3.5,
+				opacity: 0,
+				time: 1190,
+			}, 'linear');
+			scene.showEffect('rightslash', {
+				x: defender.x - 10,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 1.5,
+				opacity: 0.6,
+				time: 750,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 1100,
+			}, 'accel', 'fade');
+		},
+	},
 	thrash: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('angry', {

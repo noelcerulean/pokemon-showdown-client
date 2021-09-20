@@ -1307,6 +1307,8 @@ case'stompingtantrum':
 return!moves.includes('earthquake')&&!moves.includes('drillrun')||this.formatType==='doubles';
 case'stunspore':
 return!moves.includes('thunderwave');
+case'swordstream':
+return['skilllink','technician'].includes(abilityid);
 case'technoblast':
 return dex.gen>5&&itemid.endsWith('drive')||itemid==='dousedrive';
 case'teleport':
