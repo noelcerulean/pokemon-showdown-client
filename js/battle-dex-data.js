@@ -349,6 +349,8 @@ moltresgalar:900+202,
 slowkinggalar:900+203,
 calyrexice:900+204,
 calyrexshadow:900+205,
+parasfnf:900+206,
+parasectfnf:900+207,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
@@ -1413,7 +1415,7 @@ this.changesFrom=data.changesFrom||undefined;
 if(!this.gen){
 if(this.num>=810||this.formeid.startsWith('-galar')){
 this.gen=8;
-}else if(this.num>=722||this.formeid==='-alola'||this.formeid==='-starter'){
+}else if(this.num>=722||this.formeid==='-alola'||this.formeid==='-fnf'||this.formeid==='-starter'){
 this.gen=7;
 }else if(this.isMega||this.isPrimal){
 this.gen=6;
