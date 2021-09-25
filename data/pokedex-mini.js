@@ -281,6 +281,7 @@ exports.BattlePokemonSprites = {
 	aipom:{num:190},
 	sunkern:{num:191},
 	sunflora:{num:192},
+	sunfloramega:{num:192},
 	yanma:{num:193},
 	wooper:{num:194},
 	quagsire:{num:195},
