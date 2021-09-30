@@ -1341,6 +1341,7 @@ calyrexice:900+204,
 calyrexshadow:900+205,
 parasfnf:900+206,
 parasectfnf:900+207,
+parasectfnfsunset:900+207,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
