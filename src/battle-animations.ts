@@ -3083,6 +3083,7 @@ const BattleBackdropsFour = [
 ];
 const BattleBackdropsFive = [
 	'bg-beach.png',
+	'bg-beachtest.png',
 	'bg-beachshore.png',
 	'bg-desert.png',
 	'bg-meadow.png',
