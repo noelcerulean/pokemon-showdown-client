@@ -1534,7 +1534,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 15);
+		this.setBgm(1 + this.numericId % 16);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1596,6 +1596,9 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/spl-elite4.mp3', 3962, 152509, this.bgm);
 			break;
 		case 15:
+			this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
+			break;
+		case 16:
 		default:
 			this.bgm = BattleSound.loadBgm('audio/sm-rival.mp3', 11389, 62158, this.bgm);
 			break;
@@ -2983,6 +2986,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'stare.png',
 		w: 100, h: 35,
 	},
+	shadowstare: {
+		url: 'shadowstare.png',
+		w: 100, h: 35,
+	},
 	shine: {
 		url: 'shine.png', // by Smogon user Jajoken
 		w: 127, h: 119,
@@ -3092,25 +3099,13 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-aquacordetown.jpg',
-	'bg-beach.jpg',
-	'bg-city.jpg',
-	'bg-dampcave.jpg',
-	'bg-darkbeach.jpg',
-	'bg-darkcity.jpg',
-	'bg-darkmeadow.jpg',
-	'bg-deepsea.jpg',
-	'bg-desert.jpg',
-	'bg-earthycave.jpg',
-	'bg-elite4drake.jpg',
-	'bg-forest.jpg',
-	'bg-icecave.jpg',
-	'bg-leaderwallace.jpg',
-	'bg-library.jpg',
-	'bg-meadow.jpg',
-	'bg-orasdesert.jpg',
-	'bg-orassea.jpg',
-	'bg-skypillar.jpg',
+	'bg-beach-shadow.png',
+	'bg-desert-shadow.png',
+	'bg-thunderplains-shadow.png',
+	'bg-city-shadow.png',
+	'bg-mountain-shadow.png',
+	'bg-volcanocave-shadow.png',
+	'bg-dampcave-shadow.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
