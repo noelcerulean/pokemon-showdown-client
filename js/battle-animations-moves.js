@@ -13108,7 +13108,7 @@ meanlook:{
 anim:function(scene,_ref208){var attacker=_ref208[0],defender=_ref208[1];
 scene.backgroundEffect('#AA0000',250,0.3);
 scene.backgroundEffect('#000000',250,0.2,400);
-scene.showEffect('stare',{
+scene.showEffect('shadowstare',{
 x:defender.x,
 y:defender.y,
 z:defender.z,
