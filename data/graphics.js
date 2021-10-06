@@ -1534,7 +1534,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%20);
+this.setBgm(1+this.numericId%15);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1596,21 +1596,6 @@ case-101:
 this.bgm=BattleSound.loadBgm('audio/spl-elite4.mp3',3962,152509,this.bgm);
 break;
 case 15:
-this.bgm=BattleSound.loadBgm('audio/cipher-peon.mp3',7800,80000,this.bgm);
-break;
-case 16:
-this.bgm=BattleSound.loadBgm('audio/cipher-admin.mp3',48150,120700,this.bgm);
-break;
-case 17:
-this.bgm=BattleSound.loadBgm('audio/final-battle-cipher.mp3',8311,72255,this.bgm);
-break;
-case 18:
-this.bgm=BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3',20286,98954,this.bgm);
-break;
-case 19:
-this.bgm=BattleSound.loadBgm('audio/shadow-lugia.mp3',10200,76630,this.bgm);
-break;
-case 20:
 default:
 this.bgm=BattleSound.loadBgm('audio/sm-rival.mp3',11389,62158,this.bgm);
 break;}
