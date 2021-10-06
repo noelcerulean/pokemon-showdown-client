@@ -850,7 +850,7 @@ const BattleAvatarNumbers: {[k: string]: string} = {
 	218: 'acetrainer',
 	219: 'blackbelt',
 	220: 'scientist',
-	221: 'striker',
+	221: 'striker2',
 	222: 'brycen',
 	223: 'iris',
 	224: 'drayden',
