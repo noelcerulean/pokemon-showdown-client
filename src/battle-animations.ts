@@ -3083,7 +3083,6 @@ const BattleBackdropsFour = [
 ];
 const BattleBackdropsFive = [
 	'bg-beach.png',
-	'bg-beachtest.png',
 	'bg-beachshore.png',
 	'bg-desert.png',
 	'bg-meadow.png',
@@ -3101,6 +3100,7 @@ const BattleBackdropsFive = [
 ];
 const BattleBackdrops = [
 	'bg-beach-shadow.png',
+	'bg-beachtest.png',
 	'bg-desert-shadow.png',
 	'bg-thunderplains-shadow.png',
 	'bg-city-shadow.png',
