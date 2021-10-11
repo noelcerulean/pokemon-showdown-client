@@ -28064,7 +28064,7 @@ shadowdance:{
 anim:function(scene,_ref381){var attacker=_ref381[0];
 BattleOtherAnims.shake.anim(scene,[attacker]);
 scene.backgroundEffect('#110131',700,0.7);
-scene.showEffect('shadowwisp3',{
+scene.showEffect('shadowwisp',{
 x:attacker.x,
 y:attacker.y,
 z:attacker.z,
@@ -28078,7 +28078,7 @@ scale:2,
 opacity:0,
 time:300},
 'ballistic');
-scene.showEffect('shadowwisp3',{
+scene.showEffect('shadowwisp',{
 x:attacker.x,
 y:attacker.y,
 z:attacker.z,
@@ -28092,7 +28092,7 @@ scale:2,
 opacity:0,
 time:450},
 'ballistic');
-scene.showEffect('shadowwisp3',{
+scene.showEffect('shadowwisp',{
 x:attacker.x,
 y:attacker.y,
 z:attacker.z,
@@ -28232,28 +28232,6 @@ time:600},
 scale:6,
 opacity:0},
 'linear');
-
-defender.delay(100);
-defender.anim({
-x:defender.x-30,
-time:375});
-
-defender.anim({
-x:defender.x+30,
-time:400});
-
-defender.anim({
-x:defender.x-30,
-time:400});
-
-defender.anim({
-x:defender.x+30,
-time:400});
-
-defender.anim({
-x:defender.x,
-time:400});
-
 }},
 
 shadowfission:{
@@ -29002,7 +28980,7 @@ time:1000},
 
 shadowmoon:{
 anim:function(scene,_ref396){var attacker=_ref396[0];
-scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-moon.jpg')",800,0.6);
+scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-moon.png')",800,0.6);
 scene.showEffect('shadowshine',{
 x:attacker.x+40,
 y:attacker.y-40,
@@ -30499,7 +30477,7 @@ time:200*i+200},
 
 shadowsun:{
 anim:function(scene,_ref417){var attacker=_ref417[0],defender=_ref417[1];
-scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-sun.jpg')",700,0.5);
+scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-sun.png')",700,0.5);
 scene.showEffect('shadowwisp2',{
 x:attacker.x+40,
 y:attacker.y-40,
