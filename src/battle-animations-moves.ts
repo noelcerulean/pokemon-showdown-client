@@ -27841,7 +27841,7 @@ const BattleMoveAnims: AnimTable = {
 				y: defender.y,
 				z: defender.z,
 				scale: 0,
-				opacity: 0.4,
+				opacity: 0.7,
 				time: 300,
 			}, {
 				scale: 4,
@@ -27853,7 +27853,7 @@ const BattleMoveAnims: AnimTable = {
 				y: defender.y,
 				z: defender.z,
 				scale: 0,
-				opacity: 0.4,
+				opacity: 0.7,
 				time: 500,
 			}, {
 				scale: 4,
@@ -27864,7 +27864,7 @@ const BattleMoveAnims: AnimTable = {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
-				opacity: 0.3,
+				opacity: 0.5,
 				time: 50,
 			}, {
 				x: defender.x,
@@ -27876,7 +27876,7 @@ const BattleMoveAnims: AnimTable = {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
-				opacity: 0.3,
+				opacity: 0.5,
 				time: 100,
 			}, {
 				x: defender.x,
@@ -28064,7 +28064,7 @@ const BattleMoveAnims: AnimTable = {
 		anim(scene, [attacker]) {
 			BattleOtherAnims.shake.anim(scene, [attacker]);
 			scene.backgroundEffect('#110131', 700, 0.7);
-			scene.showEffect('shadowwisp2', {
+			scene.showEffect('shadowwisp3', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -28078,7 +28078,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 300,
 			}, 'ballistic');
-			scene.showEffect('shadowwisp2', {
+			scene.showEffect('shadowwisp3', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -28092,7 +28092,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 450,
 			}, 'ballistic');
-			scene.showEffect('shadowwisp2', {
+			scene.showEffect('shadowwisp3', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -28196,45 +28196,64 @@ const BattleMoveAnims: AnimTable = {
 		anim: BattleOtherAnims.shadowsound.anim,
 	},
 	shadowend: {
-		anim(scene, [attacker]) {
+		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#110131', 700, 0.7);
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 			scene.showEffect('shadowshadowball', {
-				x: attacker.x + 40,
-				y: attacker.y,
-				z: attacker.z,
+				x: defender.x + 40,
+				y: defender.y,
+				z: defender.z,
 				scale: 0,
 				opacity: 0.6,
+				time: 300
 			}, {
 				scale: 6,
-				opacity: 0,
-			}, 'decel');
-			scene.showEffect('shadowshadowball', {
-				x: attacker.x - 40,
-				y: attacker.y - 20,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.6,
-				time: 150,
-			}, {
-				scale: 6,
-				opacity: 0,
-			}, 'decel');
-			scene.showEffect('shadowshadowball2', {
-				x: attacker.x + 10,
-				y: attacker.y + 20,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.6,
-				time: 300,
-			}, {
-				scale: 6,
-				opacity: 0,
-			}, 'decel');
-			attacker.delay(450).anim({
-				scale: 4,
-				time: 400,
 				opacity: 0,
 			}, 'linear');
+			scene.showEffect('shadowshadowball', {
+				x: defender.x - 40,
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+				time: 450,
+			}, {
+				scale: 6,
+				opacity: 0,
+			}, 'linear');
+			scene.showEffect('shadowshadowball2', {
+				x: defender.x + 10,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+				time: 600,
+			}, {
+				scale: 6,
+				opacity: 0,
+			}, 'linear');
+
+			defender.delay(100);
+			defender.anim({
+				x: defender.x - 30,
+				time: 375,
+			});
+			defender.anim({
+				x: defender.x + 30,
+				time: 400,
+			});
+			defender.anim({
+				x: defender.x - 30,
+				time: 400,
+			});
+			defender.anim({
+				x: defender.x + 30,
+				time: 400,
+			});
+			defender.anim({
+				x: defender.x,
+				time: 400,
+			});
 		},
 	},
 	shadowfission: {
@@ -29740,7 +29759,7 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
-	shadowsap: {
+	shadowseed: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#110131', 700, 0.7);
 			scene.showEffect('shadowshadowball2', {

@@ -2829,6 +2829,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'shadowwisp2.png',
 		w: 100, h: 100,
 	},
+	shadowwisp3: {
+		url: 'shadowwisp3.png',
+		w: 100, h: 100,
+	},
 	fireball: {
 		url: 'fireball.png',
 		w: 64, h: 64,
