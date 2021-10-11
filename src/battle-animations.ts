@@ -1822,7 +1822,9 @@ class PokemonSprite extends Sprite {
 		infestation: ['Infestation', 'bad'],
 		magmastorm: ['Magma Storm', 'bad'],
 		sandtomb: ['Sand Tomb', 'bad'],
+		shadowhold: ['Shadow Hold', 'bad'],
 		snaptrap: ['Snap Trap', 'bad'],
+		sporeslash: ['Spore Slash', 'bad'],
 		thundercage: ['Thunder Cage', 'bad'],
 		whirlpool: ['Whirlpool', 'bad'],
 		wrap: ['Wrap', 'bad'],
@@ -2819,8 +2821,28 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'blackwisp.png',
 		w: 100, h: 100,
 	},
+	shadowwisp: {
+		url: 'shadowwisp.png',
+		w: 100, h: 100,
+	},
+	shadowwisp2: {
+		url: 'shadowwisp2.png',
+		w: 100, h: 100,
+	},
 	fireball: {
 		url: 'fireball.png',
+		w: 64, h: 64,
+	},
+	shadowfireball: {
+		url: 'shadowfireball.png',
+		w: 64, h: 64,
+	},
+	shadowfireball2: {
+		url: 'shadowfireball2.png',
+		w: 64, h: 64,
+	},
+	shadowfireball3: {
+		url: 'shadowfireball3.png',
 		w: 64, h: 64,
 	},
 	bluefireball: {
@@ -2831,12 +2853,20 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'icicle.png', // http://opengameart.org/content/icicle-spell
 		w: 80, h: 60,
 	},
+	shadowicicle: {
+		url: 'shadowicicle.png', 
+		w: 80, h: 60,
+	},
 	pinkicicle: {
 		url: 'icicle-pink.png', // http://opengameart.org/content/icicle-spell, recolored by Kalalokki
 		w: 80, h: 60,
 	},
 	lightning: {
 		url: 'lightning.png', // by Pokemon Showdown user SailorCosmos
+		w: 41, h: 229,
+	},
+	shadowlightning: {
+		url: 'shadowlightning.png', 
 		w: 41, h: 229,
 	},
 	rocks: {
@@ -2887,6 +2917,18 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'shadowball.png',
 		w: 100, h: 100,
 	},
+	shadowshadowball: {
+		url: 'shadowshadowball.png',
+		w: 100, h: 100,
+	},
+	shadowshadowball2: {
+		url: 'shadowshadowball2.png',
+		w: 100, h: 100,
+	},
+	shadowshadowball3: {
+		url: 'shadowshadowball3.png',
+		w: 100, h: 100,
+	},
 	energyball: {
 		url: 'energyball.png',
 		w: 100, h: 100,
@@ -2912,7 +2954,11 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		w: 24, h: 24,
 	},
 	fist: {
-		url: 'fist.png', // by Pokemon Showdown user SailorCosmos
+		url: 'fist.png', 
+		w: 55, h: 49,
+	},
+	shadowfist: {
+		url: 'shadowfist.png', // by Pokemon Showdown user SailorCosmos
 		w: 55, h: 49,
 	},
 	fist1: {
@@ -2921,6 +2967,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	foot: {
 		url: 'foot.png', // by Pokemon Showdown user SailorCosmos
+		w: 50, h: 75,
+	},
+	shadowfoot: {
+		url: 'shadowfoot.png', 
 		w: 50, h: 75,
 	},
 	topbite: {
@@ -2947,8 +2997,16 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'leftslash.png', // by Pokemon Showdown user Modeling Clay
 		w: 57, h: 56,
 	},
+	shadowleftslash: {
+		url: 'shadowleftslash.png', 
+		w: 57, h: 56,
+	},
 	rightslash: {
 		url: 'rightslash.png', // by Pokemon Showdown user Modeling Clay
+		w: 57, h: 56,
+	},
+	shadowrightslash: {
+		url: 'rightslash.png', 
 		w: 57, h: 56,
 	},
 	leftchop: {
@@ -2957,6 +3015,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	rightchop: {
 		url: 'rightchop.png', // by Pokemon Showdown user SailorCosmos
+		w: 100, h: 130,
+	},
+	shadowrightchop: {
+		url: 'shadowrightchop.png',
 		w: 100, h: 130,
 	},
 	angry: {
@@ -2971,12 +3033,24 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'pointer.png', // by Pokemon Showdown user SailorCosmos
 		w: 100, h: 100,
 	},
+	shadowpointer: {
+		url: 'shadowpointer.png',
+		w: 100, h: 100,
+	},
 	sword: {
 		url: 'sword.png', // by Pokemon Showdown user SailorCosmos
 		w: 48, h: 100,
 	},
 	impact: {
 		url: 'impact.png', // by Pokemon Showdown user SailorCosmos
+		w: 127, h: 119,
+	},
+	shadowimpact: {
+		url: 'shadowimpact.png', // by Pokemon Showdown user SailorCosmos
+		w: 127, h: 119,
+	},
+	shadowimpact2: {
+		url: 'shadowimpact2.png', // by Pokemon Showdown user SailorCosmos
 		w: 127, h: 119,
 	},
 	stare: {
@@ -2989,6 +3063,14 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	shine: {
 		url: 'shine.png', // by Smogon user Jajoken
+		w: 127, h: 119,
+	},
+	shadowshine: {
+		url: 'shadowshine.png', 
+		w: 127, h: 119,
+	},
+	shadowshine2: {
+		url: 'shadowshine2.png', 
 		w: 127, h: 119,
 	},
 	feather: {
@@ -3850,9 +3932,55 @@ const BattleOtherAnims: AnimTable = {
 			}, 'linear');
 		},
 	},
+	shadowselfstatus: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
+			scene.showEffect('shadowwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 2,
+				opacity: 0.2,
+				time: 0,
+			}, {
+				scale: 0,
+				opacity: 1,
+				time: 300,
+			}, 'linear');
+			scene.showEffect('shadowwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 2,
+				opacity: 0.2,
+				time: 200,
+			}, {
+				scale: 0,
+				opacity: 1,
+				time: 500,
+			}, 'linear');
+		},
+	},
 	lightstatus: {
 		anim(scene, [attacker]) {
 			scene.showEffect('electroball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 2,
+				opacity: 0.1,
+				time: 0,
+			}, {
+				scale: 0,
+				opacity: 0.5,
+				time: 600,
+			}, 'linear');
+		},
+	},
+	shadowlightstatus: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
+			scene.showEffect('shadowshadowball', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -4356,6 +4484,50 @@ const BattleOtherAnims: AnimTable = {
 				time: 600,
 			}, 'linear');
 			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.7,
+				time: 300,
+			}, {
+				z: attacker.behind(-50),
+				scale: 5,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+		},
+	},
+	shadowsound: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
+			scene.showEffect('shadowwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.7,
+				time: 0,
+			}, {
+				z: attacker.behind(-50),
+				scale: 5,
+				opacity: 0,
+				time: 400,
+			}, 'linear');
+			scene.showEffect('shadowwisp2', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.7,
+				time: 150,
+			}, {
+				z: attacker.behind(-50),
+				scale: 5,
+				opacity: 0,
+				time: 600,
+			}, 'linear');
+			scene.showEffect('shadowwisp', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,

@@ -1579,6 +1579,9 @@ kwArgs.then='.';
 if(args[0]==='-damage'&&kwArgs.from==='Leech Seed'&&nextArgs[0]==='-heal'&&nextKwargs.silent){
 kwArgs.then='.';
 }
+if(args[0]==='-damage'&&kwArgs.from==='Shadow Sap'&&nextArgs[0]==='-heal'&&nextKwargs.silent){
+kwArgs.then='.';
+}
 if(args[0]==='detailschange'&&nextArgs[0]==='-mega'){
 if(this.scene.closeMessagebar()){
 this.currentStep--;
@@ -1625,6 +1628,7 @@ case'confusion':
 this.scene.runStatusAnim('confusedselfhit',[poke]);
 break;
 case'leechseed':
+case'shadowsap':
 this.scene.runOtherAnim('leech',[ofpoke,poke]);
 break;
 case'bind':
@@ -2144,6 +2148,7 @@ case'pickpocket':
 this.activateAbility(_poke23,_effect10.name);
 
 case'thief':
+case'shadowbandit':
 case'covet':
 
 _ofpoke8.item='';
@@ -2738,6 +2743,7 @@ case'healbell':
 this.scene.resultAnim(_poke35,'Team Cured','good');
 break;
 case'brickbreak':
+case'shadowshatter':
 _target3.side.removeSideCondition('Reflect');
 _target3.side.removeSideCondition('LightScreen');
 break;
@@ -2758,6 +2764,7 @@ this.scene.updateStatbar(curTarget);
 break;
 case'eeriespell':
 case'gmaxdepletion':
+case'shadowhatred':
 case'spite':
 var move=Dex.moves.get(kwArgs.move).name;
 var pp=Number(kwArgs.number);
@@ -2921,6 +2928,7 @@ break;
 case'-fieldactivate':{
 var _effect24=Dex.getEffect(args[1]);
 switch(_effect24.id){
+case'shadowsiren':
 case'perishsong':
 this.scene.updateStatbars();
 break;}

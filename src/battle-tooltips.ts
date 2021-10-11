@@ -492,6 +492,7 @@ class BattleTooltips {
 		Flying: "Supersonic Skystrike",
 		Ground: "Tectonic Rage",
 		Fairy: "Twinkle Tackle",
+		Shadow: "Shadow Devastation",
 		"???": "",
 	};
 
@@ -514,6 +515,7 @@ class BattleTooltips {
 		Flying: "Max Airstream",
 		Ground: "Max Quake",
 		Fairy: "Max Starfall",
+		Shadow: "Max Shadowstrike",
 		"???": "",
 	};
 
@@ -1571,7 +1573,10 @@ class BattleTooltips {
 		if (move.id === 'facade' && !['', 'slp', 'frz'].includes(pokemon.status)) {
 			value.modify(2, 'Facade + status');
 		}
-		if (move.id === 'flail' || move.id === 'reversal') {
+		if (move.id === 'shadowrage' && !['', 'slp', 'frz'].includes(pokemon.status)) {
+			value.modify(2, 'Shadow Rage + status');
+		}
+		if (move.id === 'flail' || move.id === 'shadowvengeance' || move.id === 'reversal') {
 			let multiplier;
 			let ratios;
 			if (this.battle.gen > 4) {
@@ -1594,12 +1599,22 @@ class BattleTooltips {
 		if (move.id === 'hex' && target?.status) {
 			value.modify(2, 'Hex + status');
 		}
+		if (move.id === 'shadowsorcery' && target?.status) {
+			value.modify(2, 'Shadow Sorcery + status');
+		}
 		if (move.id === 'punishment' && target) {
 			let boostCount = 0;
 			for (const boost of Object.values(target.boosts)) {
 				if (boost > 0) boostCount += boost;
 			}
 			value.set(Math.min(60 + 20 * boostCount, 200));
+		}
+		if (move.id === 'shadowpunish' && target) {
+			let boostCount = 0;
+			for (const boost of Object.values(target.boosts)) {
+				if (boost > 0) boostCount += boost;
+			}
+			value.set(Math.min(55 + 30 * boostCount, 200));
 		}
 		if (move.id === 'smellingsalts' && target) {
 			if (target.status === 'par') {
@@ -1746,7 +1761,7 @@ class BattleTooltips {
 		if (['psn', 'tox'].includes(pokemon.status) && move.category === 'Physical') {
 			value.abilityModify(1.5, "Toxic Boost");
 		}
-		if (this.battle.gen > 2 && serverPokemon.status === 'brn' && move.id !== 'facade' && move.category === 'Physical') {
+		if (this.battle.gen > 2 && serverPokemon.status === 'brn' && move.id !== 'facade' && move.id !== 'shadowrage' && move.category === 'Physical') {
 			if (!value.tryAbility("Guts")) value.modify(0.5, 'Burn');
 		}
 		if (['Rock', 'Ground', 'Steel'].includes(moveType) && this.battle.weather === 'sandstorm') {
@@ -1869,6 +1884,15 @@ class BattleTooltips {
 		}
 		if (
 			move.id === 'steelroller' &&
+			!this.battle.hasPseudoWeather('Electric Terrain') &&
+			!this.battle.hasPseudoWeather('Grassy Terrain') &&
+			!this.battle.hasPseudoWeather('Misty Terrain') &&
+			!this.battle.hasPseudoWeather('Psychic Terrain')
+		) {
+			value.set(0, 'no Terrain');
+		}
+		if (
+			move.id === 'shadowwreckage' &&
 			!this.battle.hasPseudoWeather('Electric Terrain') &&
 			!this.battle.hasPseudoWeather('Grassy Terrain') &&
 			!this.battle.hasPseudoWeather('Misty Terrain') &&

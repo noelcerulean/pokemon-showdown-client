@@ -1579,6 +1579,9 @@ class Battle {
 			if (args[0] === '-damage' && kwArgs.from === 'Leech Seed' && nextArgs[0] === '-heal' && nextKwargs.silent) {
 				kwArgs.then = '.';
 			}
+			if (args[0] === '-damage' && kwArgs.from === 'Shadow Sap' && nextArgs[0] === '-heal' && nextKwargs.silent) {
+				kwArgs.then = '.';
+			}
 			if (args[0] === 'detailschange' && nextArgs[0] === '-mega') {
 				if (this.scene.closeMessagebar()) {
 					this.currentStep--;
@@ -1625,6 +1628,7 @@ class Battle {
 					this.scene.runStatusAnim('confusedselfhit' as ID, [poke]);
 					break;
 				case 'leechseed':
+				case 'shadowsap':
 					this.scene.runOtherAnim('leech' as ID, [ofpoke!, poke]);
 					break;
 				case 'bind':
@@ -2144,6 +2148,7 @@ class Battle {
 					this.activateAbility(poke, effect.name);
 					// falls through
 				case 'thief':
+				case 'shadowbandit':
 				case 'covet':
 					// simulate the removal of the item from the ofpoke
 					ofpoke!.item = '';
@@ -2738,6 +2743,7 @@ class Battle {
 				this.scene.resultAnim(poke, 'Team Cured', 'good');
 				break;
 			case 'brickbreak':
+			case 'shadowshatter':
 				target!.side.removeSideCondition('Reflect');
 				target!.side.removeSideCondition('LightScreen');
 				break;
@@ -2758,6 +2764,7 @@ class Battle {
 				break;
 			case 'eeriespell':
 			case 'gmaxdepletion':
+			case 'shadowhatred':
 			case 'spite':
 				let move = Dex.moves.get(kwArgs.move).name;
 				let pp = Number(kwArgs.number);
@@ -2921,6 +2928,7 @@ class Battle {
 		case '-fieldactivate': {
 			let effect = Dex.getEffect(args[1]);
 			switch (effect.id) {
+			case 'shadowsiren':
 			case 'perishsong':
 				this.scene.updateStatbars();
 				break;
