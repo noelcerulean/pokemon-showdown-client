@@ -2614,6 +2614,7 @@ class Battle {
 				case 'slowstart':
 					this.scene.resultAnim(poke, 'Slow Start ended', 'good');
 					break;
+				case 'shadowsiren':
 				case 'perishsong': // for backwards compatibility
 					poke.removeVolatile('perish3' as ID);
 					break;
@@ -2635,6 +2636,9 @@ class Battle {
 						}
 						if (effect.name === 'Prophetic Asteroid') {
 							this.scene.runOtherAnim('propheticasteroidhit' as ID, [poke]);
+						}
+						if (effect.name === 'Shadow Doomsday') {
+							this.scene.runOtherAnim('shadowdoomsdayhit' as ID, [poke]);
 						}
 					}
 				}

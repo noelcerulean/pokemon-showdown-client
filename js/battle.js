@@ -2614,6 +2614,7 @@ break;
 case'slowstart':
 this.scene.resultAnim(_poke32,'Slow Start ended','good');
 break;
+case'shadowsiren':
 case'perishsong':
 _poke32.removeVolatile('perish3');
 break;
@@ -2635,6 +2636,9 @@ this.scene.runOtherAnim('futuresighthit',[_poke32]);
 }
 if(_effect15.name==='Prophetic Asteroid'){
 this.scene.runOtherAnim('propheticasteroidhit',[_poke32]);
+}
+if(_effect15.name==='Shadow Doomsday'){
+this.scene.runOtherAnim('shadowdoomsdayhit',[_poke32]);
 }
 }}
 

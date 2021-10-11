@@ -1783,6 +1783,7 @@ class PokemonSprite extends Sprite {
 		doomdesire: null,
 		futuresight: null,
 		propheticasteroid: null,
+		shadowdoomsday: null,
 		mimic: ['Mimic', 'good'],
 		watersport: ['Water Sport', 'good'],
 		mudsport: ['Mud Sport', 'good'],
@@ -2833,6 +2834,34 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'shadowwisp3.png',
 		w: 100, h: 100,
 	},
+	colorball1: {
+		url: 'colorball1.png',
+		w: 100, h: 100,
+	},
+	colorball2: {
+		url: 'colorball2.png',
+		w: 100, h: 100,
+	},
+	colorball3: {
+		url: 'colorball3.png',
+		w: 100, h: 100,
+	},
+	colorball4: {
+		url: 'colorball4.png',
+		w: 100, h: 100,
+	},
+	colorball5: {
+		url: 'colorball5.png',
+		w: 100, h: 100,
+	},
+	colorball6: {
+		url: 'colorball6.png',
+		w: 100, h: 100,
+	},
+	colorball7: {
+		url: 'colorball7.png',
+		w: 100, h: 100,
+	},
 	fireball: {
 		url: 'fireball.png',
 		w: 64, h: 64,
@@ -2859,6 +2888,14 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	shadowicicle: {
 		url: 'shadowicicle.png', 
+		w: 80, h: 60,
+	},
+	shadowicicle2: {
+		url: 'shadowicicle2.png', 
+		w: 80, h: 60,
+	},
+	shadowicicle3: {
+		url: 'shadowicicle3.png', 
 		w: 80, h: 60,
 	},
 	pinkicicle: {
@@ -3103,6 +3140,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	rainbow: {
 		url: 'rainbow.png',
+		w: 128, h: 128,
+	},
+	shadowrainbow: {
+		url: 'shadowrainbow.png',
 		w: 128, h: 128,
 	},
 	zsymbol: {
@@ -4666,6 +4707,65 @@ const BattleOtherAnims: AnimTable = {
 				opacity: 0,
 			}, 'linear');
 			scene.showEffect('fireball', {
+				x: defender.x + 10,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+				time: 300,
+			}, {
+				scale: 6,
+				opacity: 0,
+			}, 'linear');
+
+			defender.delay(100);
+			defender.anim({
+				x: defender.x - 30,
+				time: 75,
+			});
+			defender.anim({
+				x: defender.x + 30,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x - 30,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x + 30,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x,
+				time: 100,
+			});
+		},
+	},
+	shadowdoomsday: {
+		anim(scene, [defender]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
+			scene.showEffect('shadowfireball2', {
+				x: defender.x + 40,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+			}, {
+				scale: 6,
+				opacity: 0,
+			}, 'linear');
+			scene.showEffect('shadowfireball2', {
+				x: defender.x - 40,
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.6,
+				time: 150,
+			}, {
+				scale: 6,
+				opacity: 0,
+			}, 'linear');
+			scene.showEffect('shadowshadowball', {
 				x: defender.x + 10,
 				y: defender.y + 20,
 				z: defender.z,
