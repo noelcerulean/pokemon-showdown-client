@@ -148,7 +148,7 @@ class BattleTextParser {
 				kwArgs.ability = arg3;
 				kwArgs.ability2 = arg4;
 			} else if ([
-				'eeriespell', 'gmaxdepletion', 'spite', 'grudge', 'forewarn', 'sketch', 'leppaberry', 'mysteryberry',
+				'shadowhatred', 'eeriespell', 'gmaxdepletion', 'spite', 'grudge', 'forewarn', 'sketch', 'leppaberry', 'mysteryberry',
 			].includes(id)) {
 				kwArgs.move = arg3;
 				kwArgs.number = arg4;
@@ -603,7 +603,7 @@ class BattleTextParser {
 			let [, pokemon, effect] = args;
 			const line1 = this.maybeAbility(effect, pokemon) || this.maybeAbility(kwArgs.from, kwArgs.of || pokemon);
 			let id = BattleTextParser.effectId(effect);
-			if (id === 'doomdesire' || id === 'futuresight' || id === 'propheticasteroid') {
+			if (id === 'doomdesire' || id === 'futuresight' || id === 'propheticasteroid' || id === 'shadowdoomsday') {
 				const template = this.template('activate', effect);
 				return line1 + template.replace('[TARGET]', this.pokemon(pokemon));
 			}
