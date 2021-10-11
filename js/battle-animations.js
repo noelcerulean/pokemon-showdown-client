@@ -4741,7 +4741,7 @@ time:100});
 
 }},
 
-shadowdoomsday:{
+shadowdoomsdayhit:{
 anim:function(scene,_ref38){var defender=_ref38[0];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowfireball2',{

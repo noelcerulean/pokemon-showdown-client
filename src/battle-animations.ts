@@ -4741,7 +4741,7 @@ const BattleOtherAnims: AnimTable = {
 			});
 		},
 	},
-	shadowdoomsday: {
+	shadowdoomsdayhit: {
 		anim(scene, [defender]) {
 			scene.backgroundEffect('#110131', 700, 0.7);
 			scene.showEffect('shadowfireball2', {
