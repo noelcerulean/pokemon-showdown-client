@@ -1891,15 +1891,6 @@ class BattleTooltips {
 		) {
 			value.set(0, 'no Terrain');
 		}
-		if (
-			move.id === 'shadowwreckage' &&
-			!this.battle.hasPseudoWeather('Electric Terrain') &&
-			!this.battle.hasPseudoWeather('Grassy Terrain') &&
-			!this.battle.hasPseudoWeather('Misty Terrain') &&
-			!this.battle.hasPseudoWeather('Psychic Terrain')
-		) {
-			value.set(0, 'no Terrain');
-		}
 
 		// Item
 		value = this.getItemBoost(move, value, moveType);

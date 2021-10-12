@@ -867,7 +867,7 @@ class Side {
 			pokemon.removeVolatile('transform' as ID);
 			pokemon.removeVolatile('formechange' as ID);
 		}
-		if (pokemon.lastMove === 'uturn' || pokemon.lastMove === 'voltswitch') {
+		if (pokemon.lastMove === 'uturn' || pokemon.lastMove === 'voltswitch' || pokemon.lastMove === 'shadowpivot') {
 			this.battle.log(['switchout', pokemon.ident], {from: pokemon.lastMove});
 		} else if (pokemon.lastMove !== 'batonpass' && pokemon.lastMove !== 'zbatonpass') {
 			this.battle.log(['switchout', pokemon.ident]);

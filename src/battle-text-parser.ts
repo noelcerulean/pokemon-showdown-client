@@ -131,7 +131,7 @@ class BattleTextParser {
 				return {args: ['-singlemove', pokemon, effect], kwArgs: {of: target}};
 			}
 			if ([
-				'bind', 'wrap', 'clamp', 'whirlpool', 'firespin', 'magmastorm', 'sandtomb', 'infestation', 'snaptrap', 'thundercage', 'trapped',
+				'shadowhold', 'sporeslash', 'bind', 'wrap', 'clamp', 'whirlpool', 'firespin', 'magmastorm', 'sandtomb', 'infestation', 'snaptrap', 'thundercage', 'trapped',
 			].includes(id)) {
 				return {args: ['-start', pokemon, effect], kwArgs: {of: target}};
 			}
@@ -661,7 +661,7 @@ class BattleTextParser {
 				[target, kwArgs.of] = [kwArgs.of, ''];
 			}
 			const line1 = this.maybeAbility(kwArgs.from, kwArgs.of || pokemon);
-			if (['thief', 'covet', 'bestow', 'magician', 'pickpocket'].includes(id)) {
+			if (['shadowbandit', 'thief', 'covet', 'bestow', 'magician', 'pickpocket'].includes(id)) {
 				const template = this.template('takeItem', kwArgs.from);
 				return line1 + template.replace('[POKEMON]', this.pokemon(pokemon)).replace('[ITEM]', this.effect(item)).replace('[SOURCE]', this.pokemon(target || kwArgs.of));
 			}
@@ -856,6 +856,9 @@ class BattleTextParser {
 			}
 
 			if (id === 'brickbreak') {
+				template = template.replace('[TEAM]', this.team(target.slice(0, 2)));
+			}
+			if (id === 'shadowshatter') {
 				template = template.replace('[TEAM]', this.team(target.slice(0, 2)));
 			}
 			if (kwArgs.ability) {
