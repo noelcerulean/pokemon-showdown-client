@@ -2468,6 +2468,8 @@ class PokemonSprite extends Sprite {
 				doCry = true;
 			} else if (speciesid === 'zygardecomplete') {
 				BattleOtherAnims.powerconstruct.anim(scene, [this]);
+			} else if (speciesid === 'smeargle') {
+				BattleOtherAnims.shadowpokemon.anim(scene, [this]);
 			} else if (speciesid === 'wishiwashischool' || speciesid === 'greninjaash') {
 				BattleOtherAnims.schoolingin.anim(scene, [this]);
 			} else if (speciesid === 'wishiwashi') {
@@ -5435,6 +5437,101 @@ const BattleOtherAnims: AnimTable = {
 				y: attacker.y - 80,
 				z: attacker.z,
 				opacity: 0.5,
+				time: 600,
+			}, 'ballistic2Under');
+		},
+	},
+	shadowpokemon: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
+			scene.showEffect('shadowwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 2.5,
+				opacity: 1,
+			}, {
+				scale: 3,
+				time: 600,
+			}, 'linear', 'explode');
+			scene.showEffect('shadowwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 3,
+				opacity: 0.3,
+			}, {
+				scale: 3.25,
+				time: 600,
+			}, 'linear', 'explode');
+
+			scene.showEffect('shadowshadowball', {
+				x: attacker.leftof(200),
+				y: attacker.y + 40,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 200,
+			}, 'ballistic', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.leftof(-140),
+				y: attacker.y - 60,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+				time: 100,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 300,
+			}, 'ballistic2Under', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.leftof(-140),
+				y: attacker.y + 50,
+				z: attacker.behind(170),
+				scale: 0.5,
+				opacity: 0.5,
+				time: 200,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 400,
+			}, 'ballistic2', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.x,
+				y: attacker.y + 30,
+				z: attacker.behind(-250),
+				scale: 0.5,
+				opacity: 0.5,
+				time: 200,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 500,
+			}, 'ballistic', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.leftof(240),
+				y: attacker.y - 80,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+				time: 300,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
 				time: 600,
 			}, 'ballistic2Under');
 		},

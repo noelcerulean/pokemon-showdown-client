@@ -2468,6 +2468,8 @@ BattleOtherAnims.ultraburst.anim(scene,[this]);
 doCry=true;
 }else if(speciesid==='zygardecomplete'){
 BattleOtherAnims.powerconstruct.anim(scene,[this]);
+}else if(speciesid==='smeargle'){
+BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }else if(speciesid==='wishiwashischool'||speciesid==='greninjaash'){
 BattleOtherAnims.schoolingin.anim(scene,[this]);
 }else if(speciesid==='wishiwashi'){
@@ -5439,8 +5441,103 @@ time:600},
 'ballistic2Under');
 }},
 
-primalalpha:{
+shadowpokemon:{
 anim:function(scene,_ref46){var attacker=_ref46[0];
+scene.backgroundEffect('#110131',700,0.7);
+scene.showEffect('shadowwisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+scale:2.5,
+opacity:1},
+{
+scale:3,
+time:600},
+'linear','explode');
+scene.showEffect('shadowwisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+scale:3,
+opacity:0.3},
+{
+scale:3.25,
+time:600},
+'linear','explode');
+
+scene.showEffect('shadowshadowball',{
+x:attacker.leftof(200),
+y:attacker.y+40,
+z:attacker.z,
+scale:0.5,
+opacity:0.5},
+{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+opacity:0,
+time:200},
+'ballistic','fade');
+scene.showEffect('shadowshadowball',{
+x:attacker.leftof(-140),
+y:attacker.y-60,
+z:attacker.z,
+scale:0.5,
+opacity:0.5,
+time:100},
+{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+opacity:0,
+time:300},
+'ballistic2Under','fade');
+scene.showEffect('shadowshadowball',{
+x:attacker.leftof(-140),
+y:attacker.y+50,
+z:attacker.behind(170),
+scale:0.5,
+opacity:0.5,
+time:200},
+{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+opacity:0,
+time:400},
+'ballistic2','fade');
+scene.showEffect('shadowshadowball',{
+x:attacker.x,
+y:attacker.y+30,
+z:attacker.behind(-250),
+scale:0.5,
+opacity:0.5,
+time:200},
+{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+opacity:0,
+time:500},
+'ballistic','fade');
+scene.showEffect('shadowshadowball',{
+x:attacker.leftof(240),
+y:attacker.y-80,
+z:attacker.z,
+scale:0.5,
+opacity:0.5,
+time:300},
+{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+opacity:0,
+time:600},
+'ballistic2Under');
+}},
+
+primalalpha:{
+anim:function(scene,_ref47){var attacker=_ref47[0];
 scene.backgroundEffect('#0000DD',500,0.4);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -5493,7 +5590,7 @@ time:600},
 }},
 
 primalomega:{
-anim:function(scene,_ref47){var attacker=_ref47[0];
+anim:function(scene,_ref48){var attacker=_ref48[0];
 scene.backgroundEffect('linear-gradient(#390000 30%, #B84038)',500,0.4);
 scene.showEffect('flareball',{
 x:attacker.x,
@@ -5546,7 +5643,7 @@ time:600},
 }},
 
 megaevo:{
-anim:function(scene,_ref48){var attacker=_ref48[0];
+anim:function(scene,_ref49){var attacker=_ref49[0];
 scene.backgroundEffect('#835BA5',500,0.6);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -5599,7 +5696,7 @@ time:600},
 }},
 
 zpower:{
-anim:function(scene,_ref49){var attacker=_ref49[0];
+anim:function(scene,_ref50){var attacker=_ref50[0];
 scene.backgroundEffect('linear-gradient(#000000 20%, #0000DD)',1800,0.4);
 scene.showEffect('electroball',{
 x:attacker.x-60,
@@ -5722,7 +5819,7 @@ time:1600},
 }},
 
 powerconstruct:{
-anim:function(scene,_ref50){var attacker=_ref50[0];
+anim:function(scene,_ref51){var attacker=_ref51[0];
 var xf=[1,-1,1,-1];
 var yf=[1,-1,-1,1];
 var xf2=[1,0,-1,0];
@@ -5849,7 +5946,7 @@ time:500},
 }},
 
 ultraburst:{
-anim:function(scene,_ref51){var attacker=_ref51[0];
+anim:function(scene,_ref52){var attacker=_ref52[0];
 scene.backgroundEffect('#000000',600,0.5);
 scene.backgroundEffect('#ffffff',500,1,550);
 scene.showEffect('wisp',{
@@ -6040,7 +6137,7 @@ time:1000},
 
 var BattleStatusAnims={
 brn:{
-anim:function(scene,_ref52){var attacker=_ref52[0];
+anim:function(scene,_ref53){var attacker=_ref53[0];
 scene.showEffect('fireball',{
 x:attacker.x-20,
 y:attacker.y-15,
@@ -6058,7 +6155,7 @@ time:300},
 }},
 
 psn:{
-anim:function(scene,_ref53){var attacker=_ref53[0];
+anim:function(scene,_ref54){var attacker=_ref54[0];
 scene.showEffect('poisonwisp',{
 x:attacker.x+30,
 y:attacker.y-40,
@@ -6101,7 +6198,7 @@ time:500},
 }},
 
 slp:{
-anim:function(scene,_ref54){var attacker=_ref54[0];
+anim:function(scene,_ref55){var attacker=_ref55[0];
 scene.showEffect('wisp',{
 x:attacker.x,
 y:attacker.y+20,
@@ -6134,7 +6231,7 @@ time:600},
 }},
 
 par:{
-anim:function(scene,_ref55){var attacker=_ref55[0];
+anim:function(scene,_ref56){var attacker=_ref56[0];
 scene.showEffect('electroball',{
 x:attacker.x,
 y:attacker.y,
@@ -6174,7 +6271,7 @@ time:100},
 }},
 
 frz:{
-anim:function(scene,_ref56){var attacker=_ref56[0];
+anim:function(scene,_ref57){var attacker=_ref57[0];
 scene.showEffect('icicle',{
 x:attacker.x-30,
 y:attacker.y,
@@ -6225,7 +6322,7 @@ time:600},
 }},
 
 flinch:{
-anim:function(scene,_ref57){var attacker=_ref57[0];
+anim:function(scene,_ref58){var attacker=_ref58[0];
 scene.showEffect('shadowball',{
 x:attacker.x,
 y:attacker.y,
@@ -6240,7 +6337,7 @@ time:300},
 }},
 
 attracted:{
-anim:function(scene,_ref58){var attacker=_ref58[0];
+anim:function(scene,_ref59){var attacker=_ref59[0];
 scene.showEffect('heart',{
 x:attacker.x+20,
 y:attacker.y+20,
@@ -6280,7 +6377,7 @@ time:500},
 }},
 
 cursed:{
-anim:function(scene,_ref59){var attacker=_ref59[0];
+anim:function(scene,_ref60){var attacker=_ref60[0];
 scene.backgroundEffect('#000000',700,0.2);
 attacker.delay(300);
 attacker.anim({x:attacker.x-5,time:50});
@@ -6303,7 +6400,7 @@ time:600},
 }},
 
 confused:{
-anim:function(scene,_ref60){var attacker=_ref60[0];
+anim:function(scene,_ref61){var attacker=_ref61[0];
 scene.showEffect('electroball',{
 x:attacker.x+50,
 y:attacker.y+30,
@@ -6359,7 +6456,7 @@ time:800},
 }},
 
 confusedselfhit:{
-anim:function(scene,_ref61){var attacker=_ref61[0];
+anim:function(scene,_ref62){var attacker=_ref62[0];
 scene.showEffect('wisp',{
 x:attacker.x,
 y:attacker.y,
