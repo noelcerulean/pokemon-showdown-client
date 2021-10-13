@@ -2263,7 +2263,7 @@ class PokemonSprite extends Sprite {
 		let speciesid = toID(pokemon.getSpeciesForme());
 		let doCry = false;
 		const scene = this.scene;
-			if (speciesid === 'bulbasaur') {
+			if (speciesid === 'caterpie') {
 				BattleOtherAnims.shadowpokemon.anim(scene, [this]);
 		}
 

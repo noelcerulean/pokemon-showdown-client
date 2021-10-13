@@ -2263,7 +2263,7 @@ if(!this.scene.animating)return;
 var speciesid=toID(pokemon.getSpeciesForme());
 var doCry=false;
 var scene=this.scene;
-if(speciesid==='bulbasaur'){
+if(speciesid==='caterpie'){
 BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }
 
