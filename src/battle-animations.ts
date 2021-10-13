@@ -2257,6 +2257,16 @@ class PokemonSprite extends Sprite {
 			}, this.sp), 300);
 		}
 
+		//Shadow Aura animation attempt
+
+		if (!this.scene.animating) return;
+		let speciesid = toID(pokemon.getSpeciesForme());
+		let doCry = false;
+		const scene = this.scene;
+			if (speciesid === 'bulbasaur') {
+				BattleOtherAnims.shadowpokemon.anim(scene, [this]);
+		}
+
 		this.resetStatbar(pokemon, true);
 		this.scene.updateSidebar(pokemon.side);
 		this.$statbar!.css({
@@ -2468,8 +2478,6 @@ class PokemonSprite extends Sprite {
 				doCry = true;
 			} else if (speciesid === 'zygardecomplete') {
 				BattleOtherAnims.powerconstruct.anim(scene, [this]);
-			} else if (speciesid === 'smeargle') {
-				BattleOtherAnims.shadowpokemon.anim(scene, [this]);
 			} else if (speciesid === 'wishiwashischool' || speciesid === 'greninjaash') {
 				BattleOtherAnims.schoolingin.anim(scene, [this]);
 			} else if (speciesid === 'wishiwashi') {

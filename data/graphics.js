@@ -2257,6 +2257,16 @@ opacity:0.3},
 this.sp),300);
 }
 
+
+
+if(!this.scene.animating)return;
+var speciesid=toID(pokemon.getSpeciesForme());
+var doCry=false;
+var scene=this.scene;
+if(speciesid==='bulbasaur'){
+BattleOtherAnims.shadowpokemon.anim(scene,[this]);
+}
+
 this.resetStatbar(pokemon,true);
 this.scene.updateSidebar(pokemon.side);
 this.$statbar.css({
@@ -2468,8 +2478,6 @@ BattleOtherAnims.ultraburst.anim(scene,[this]);
 doCry=true;
 }else if(speciesid==='zygardecomplete'){
 BattleOtherAnims.powerconstruct.anim(scene,[this]);
-}else if(speciesid==='smeargle'){
-BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }else if(speciesid==='wishiwashischool'||speciesid==='greninjaash'){
 BattleOtherAnims.schoolingin.anim(scene,[this]);
 }else if(speciesid==='wishiwashi'){
