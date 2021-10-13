@@ -2263,7 +2263,7 @@ if(!this.scene.animating)return;
 var speciesid=toID(pokemon.getSpeciesForme());
 var doCry=false;
 var scene=this.scene;
-if(speciesid==='caterpie'){
+if(speciesid==='espeonshadow'||speciesid==='umbreonshadow'){
 BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }
 
@@ -3233,25 +3233,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-aquacordetown.jpg',
-'bg-beach.jpg',
-'bg-city.jpg',
-'bg-dampcave.jpg',
-'bg-darkbeach.jpg',
-'bg-darkcity.jpg',
-'bg-darkmeadow.jpg',
-'bg-deepsea.jpg',
-'bg-desert.jpg',
-'bg-earthycave.jpg',
-'bg-elite4drake.jpg',
-'bg-forest.jpg',
-'bg-icecave.jpg',
-'bg-leaderwallace.jpg',
-'bg-library.jpg',
-'bg-meadow.jpg',
-'bg-orasdesert.jpg',
-'bg-orassea.jpg',
-'bg-skypillar.jpg'];
+'bg-city-shadow.png'];
 
 
 var BattleOtherAnims={
