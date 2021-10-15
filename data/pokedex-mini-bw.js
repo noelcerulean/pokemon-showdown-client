@@ -980,6 +980,7 @@ exports.BattlePokemonSpritesBW = {
 	tyrantrum:{num:697},
 	amaura:{num:698},
 	aurorus:{num:699},
+	aurorusfall:{num:699},
 	sylveon:{num:700},
 	hawlucha:{num:701},
 	dedenne:{num:702},
