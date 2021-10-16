@@ -730,6 +730,9 @@ class BattleTooltips {
 			if (move.flags.punch && ability === 'ironfist') {
 				text += `<p class="movetag">&#x2713; Fist <small>(boosted by Iron Fist)</small></p>`;
 			}
+			if (move.flags.kick && ability === 'striker') {
+				text += `<p class="movetag">&#x2713; Fist <small>(boosted by Iron Fist)</small></p>`;
+			}
 			if (move.flags.pulse && ability === 'megalauncher') {
 				text += `<p class="movetag">&#x2713; Pulse <small>(boosted by Mega Launcher)</small></p>`;
 			}
@@ -1805,6 +1808,9 @@ class BattleTooltips {
 		}
 		if (move.flags['punch']) {
 			value.abilityModify(1.2, 'Iron Fist');
+		}
+		if (move.flags['kick']) {
+			value.abilityModify(1.2, 'Striker');
 		}
 		if (move.recoil || move.hasCrashDamage) {
 			value.abilityModify(1.2, 'Reckless');

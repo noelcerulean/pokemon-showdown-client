@@ -1070,6 +1070,8 @@ interface MoveFlags {
 	gravity?: 1 | 0;
 	/** Prevented from being executed or selected during Heal Block's effect. */
 	heal?: 1 | 0;
+	/** Power is multiplied by 1.2 when used by a Pokemon with the Iron Fist Ability. */
+	kick?: 1 | 0;
 	/** Can be copied by Mirror Move. */
 	mirror?: 1 | 0;
 	/** Unknown effect. */
