@@ -731,7 +731,7 @@ class BattleTooltips {
 				text += `<p class="movetag">&#x2713; Fist <small>(boosted by Iron Fist)</small></p>`;
 			}
 			if (move.flags.kick && ability === 'striker') {
-				text += `<p class="movetag">&#x2713; Fist <small>(boosted by Iron Fist)</small></p>`;
+				text += `<p class="movetag">&#x2713; Kick <small>(boosted by Striker)</small></p>`;
 			}
 			if (move.flags.pulse && ability === 'megalauncher') {
 				text += `<p class="movetag">&#x2713; Pulse <small>(boosted by Mega Launcher)</small></p>`;
