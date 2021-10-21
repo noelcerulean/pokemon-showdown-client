@@ -2263,7 +2263,7 @@ if(!this.scene.animating)return;
 var speciesid=toID(pokemon.getSpeciesForme());
 var doCry=false;
 var scene=this.scene;
-if(speciesid==='espeonshadow'||speciesid==='umbreonshadow'){
+if(speciesid==='espeonshadow'||speciesid==='umbreonshadow'||speciesid==='bulbasaurshadow'||speciesid==='hakamooshadow'||speciesid==='raichushadow'||speciesid==='kecleonshadow'||speciesid==='soarsparceshadow'||speciesid==='braixenshadow'||speciesid==='woopershadow'||speciesid==='yanmegashadow'||speciesid==='simisearshadow'||speciesid==='typhlosionshadow'||speciesid==='eelektrossshadow'||speciesid==='miloticshadow'||speciesid==='kingdrashadow'||speciesid==='emboarshadow'||speciesid==='vaporeonshadow'||speciesid==='porygon2shadow'||speciesid==='carbinkshadow'||speciesid==='enteishadow'||speciesid==='suicuneshadow'||speciesid==='raikoushadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
 BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }
 
