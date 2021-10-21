@@ -823,7 +823,7 @@ exacthp=' <small>('+pokemon.hp+'/'+pokemon.maxhp+' pixels)</small>';
 text+='<p><small>HP:</small> '+Pokemon.getHPText(pokemon)+exacthp+(pokemon.status?' <span class="status '+pokemon.status+'">'+pokemon.status.toUpperCase()+'</span>':'');
 if(clientPokemon){
 if(pokemon.status==='tox'){
-if(pokemon.ability==='Poison Heal'||pokemon.ability==='Magic Guard'){
+if(pokemon.ability==='Poison Heal'||pokemon.ability==='Magic Guard'||pokemon.ability==='Toxic Boost'){
 text+=' <small>Would take if ability removed: '+Math.floor(100/16*Math.min(clientPokemon.statusData.toxicTurns+1,15))+'%</small>';
 }else{
 text+=' Next damage: '+Math.floor(100/(clientPokemon.volatiles['dynamax']?32:16)*Math.min(clientPokemon.statusData.toxicTurns+1,15))+'%';
