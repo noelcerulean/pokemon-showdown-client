@@ -352,6 +352,7 @@ calyrexshadow:900+205,
 parasfnf:900+206,
 parasectfnf:900+207,
 parasectfnfsunset:900+207,
+soarsparce:900+211,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
