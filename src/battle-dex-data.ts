@@ -353,6 +353,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	parasectfnf: 900 + 207,
 	parasectfnfsunset: 900 + 207,
 	soarsparce: 900 + 211,
+	soarsparceshadow: 900 + 211,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
