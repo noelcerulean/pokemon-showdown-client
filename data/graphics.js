@@ -1534,7 +1534,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%15);
+this.setBgm(1+this.numericId%1);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1550,54 +1550,54 @@ break;
 case-3:
 this.bgm=BattleSound.loadBgm('audio/colosseum-miror-b.mp3',896,47462,this.bgm);
 break;
-case 1:
+case-21:
 this.bgm=BattleSound.loadBgm('audio/dpp-trainer.mp3',13440,96959,this.bgm);
 break;
-case 2:
+case-22:
 this.bgm=BattleSound.loadBgm('audio/dpp-rival.mp3',13888,66352,this.bgm);
 break;
-case 3:
+case-23:
 this.bgm=BattleSound.loadBgm('audio/hgss-johto-trainer.mp3',23731,125086,this.bgm);
 break;
-case 4:
+case-4:
 this.bgm=BattleSound.loadBgm('audio/hgss-kanto-trainer.mp3',13003,94656,this.bgm);
 break;
-case 5:
+case-5:
 this.bgm=BattleSound.loadBgm('audio/bw-trainer.mp3',14629,110109,this.bgm);
 break;
-case 6:
+case-6:
 this.bgm=BattleSound.loadBgm('audio/bw-rival.mp3',19180,57373,this.bgm);
 break;
-case 7:
+case-7:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
-case 8:
+case-8:
 this.bgm=BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3',14626,58986,this.bgm);
 break;
-case 9:
+case-9:
 this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
 break;
-case 10:
+case-10:
 this.bgm=BattleSound.loadBgm('audio/xy-trainer.mp3',7802,82469,this.bgm);
 break;
-case 11:
+case-11:
 this.bgm=BattleSound.loadBgm('audio/xy-rival.mp3',7802,58634,this.bgm);
 break;
-case 12:
+case-12:
 this.bgm=BattleSound.loadBgm('audio/oras-trainer.mp3',13579,91548,this.bgm);
 break;
-case 13:
+case-13:
 this.bgm=BattleSound.loadBgm('audio/oras-rival.mp3',14303,69149,this.bgm);
 break;
-case 14:
+case-14:
 this.bgm=BattleSound.loadBgm('audio/sm-trainer.mp3',8323,89230,this.bgm);
 break;
 case-101:
 this.bgm=BattleSound.loadBgm('audio/spl-elite4.mp3',3962,152509,this.bgm);
 break;
-case 15:
+case 1:
 default:
-this.bgm=BattleSound.loadBgm('audio/sm-rival.mp3',11389,62158,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/cipher-peon.mp3',7800,80000,this.bgm);
 break;}
 
 
@@ -3233,7 +3233,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-city-shadow.png'];
+'bg-route-shadow.png'];
 
 
 var BattleOtherAnims={
