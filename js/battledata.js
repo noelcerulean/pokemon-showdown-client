@@ -1342,6 +1342,7 @@ calyrexshadow:900+205,
 parasfnf:900+206,
 parasectfnf:900+207,
 parasectfnfsunset:900+207,
+sledgesparce:900+209,
 soarsparce:900+211,
 soarsparceshadow:900+211,
 
