@@ -1548,7 +1548,7 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
 			break;
 		case -3:
-			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
 			break;
 		case -21:
 			this.bgm = BattleSound.loadBgm('audio/dpp-trainer.mp3', 13440, 96959, this.bgm);
@@ -1597,7 +1597,7 @@ class BattleScene {
 			break;
 		case 1:
 		default:
-			this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
 			break;
 		}
 
@@ -3233,7 +3233,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-route-shadow.png',
+	'bg-dampcave-shadow.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
