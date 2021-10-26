@@ -1966,25 +1966,45 @@
 			} else if (species.forme) {
 				switch (species.baseSpecies) {
 				case 'Alcremie':
+				case 'Aurorus':
 				case 'Basculin':
+				case 'Bastiodon':
+				case 'Blacephalon':
+				case 'Breloom':
+				case 'Bulbasaur':
 				case 'Burmy':
 				case 'Castform':
 				case 'Cherrim':
 				case 'Deerling':
+				case 'Delcatty':
 				case 'Flabebe':
 				case 'Floette':
 				case 'Florges':
 				case 'Furfrou':
+				case 'Garchomp':
 				case 'Gastrodon':
 				case 'Genesect':
+				case 'Gengar':
+				case 'Heatmor':
+				case 'Hypno':
 				case 'Keldeo':
+				case 'Mamoswine':
 				case 'Mimikyu':
 				case 'Minior':
+				case 'Parasect-FnF':
 				case 'Pikachu':
 				case 'Polteageist':
+				case 'Raichu':
+				case 'Sableye':
+				case 'Samurott':
 				case 'Sawsbuck':
 				case 'Shellos':
+				case 'Simisage':
 				case 'Sinistea':
+				case 'Solrock':
+				case 'Trapinch':
+				case 'Typhlosion':
+				case 'Vespiquen':
 				case 'Vivillon':
 					break;
 				default:
