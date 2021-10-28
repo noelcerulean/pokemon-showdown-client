@@ -1825,6 +1825,7 @@ class PokemonSprite extends Sprite {
 		sandtomb: ['Sand Tomb', 'bad'],
 		shadowhold: ['Shadow Hold', 'bad'],
 		snaptrap: ['Snap Trap', 'bad'],
+		spiderweb: ['Spider Web', 'bad'],
 		sporeslash: ['Spore Slash', 'bad'],
 		thundercage: ['Thunder Cage', 'bad'],
 		whirlpool: ['Whirlpool', 'bad'],
