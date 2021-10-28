@@ -386,6 +386,7 @@ exports.BattlePokemonSpritesBW = {
 	entei:{num:244},
 	enteishadow:{num:244},
 	suicune:{num:245},
+	suicuneshadow:{num:245},
 	larvitar:{num:246},
 	pupitar:{num:247},
 	tyranitar:{num:248},

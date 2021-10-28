@@ -3234,7 +3234,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-desert-shadow.png',
+	'bg-beach-shadow.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
