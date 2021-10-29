@@ -384,6 +384,7 @@ exports.BattlePokemonSprites = {
 	miltank:{num:241},
 	blissey:{num:242},
 	raikou:{num:243},
+	raikoushadow:{num:243},
 	entei:{num:244},
 	enteishadow:{num:244},
 	suicune:{num:245},
