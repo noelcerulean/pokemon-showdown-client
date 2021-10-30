@@ -394,6 +394,7 @@ exports.BattlePokemonSpritesBW = {
 	tyranitarmega:{num:248},
 	lugia:{num:249},
 	hooh:{num:250},
+	hoohshadow:{num:250},
 	celebi:{num:251},
 	treecko:{num:252},
 	grovyle:{num:253},
