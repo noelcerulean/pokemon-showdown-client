@@ -564,6 +564,7 @@ exports.BattlePokemonSpritesBW = {
 	rayquaza:{num:384},
 	rayquazamega:{num:384},
 	jirachi:{num:385},
+	jirachishadow:{num:385},
 	deoxys:{num:386},
 	deoxysattack:{num:386},
 	deoxysdefense:{num:386},

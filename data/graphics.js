@@ -1597,7 +1597,7 @@ this.bgm=BattleSound.loadBgm('audio/spl-elite4.mp3',3962,152509,this.bgm);
 break;
 case 1:
 default:
-this.bgm=BattleSound.loadBgm('audio/final-battle-cipher.mp3',8311,72255,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/shadow-lugia.mp3',10200,76630,this.bgm);
 break;}
 
 
@@ -3234,7 +3234,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-volcanocave-shadow.png'];
+'bg-mountain-shadow.png'];
 
 
 var BattleOtherAnims={
