@@ -1534,7 +1534,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 1);
+		this.setBgm(1 + this.numericId % 17);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1550,54 +1550,60 @@ class BattleScene {
 		case -3:
 			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
 			break;
-		case -21:
-			this.bgm = BattleSound.loadBgm('audio/dpp-trainer.mp3', 13440, 96959, this.bgm);
-			break;
-		case -22:
-			this.bgm = BattleSound.loadBgm('audio/dpp-rival.mp3', 13888, 66352, this.bgm);
-			break;
-		case -23:
-			this.bgm = BattleSound.loadBgm('audio/hgss-johto-trainer.mp3', 23731, 125086, this.bgm);
-			break;
-		case -4:
-			this.bgm = BattleSound.loadBgm('audio/hgss-kanto-trainer.mp3', 13003, 94656, this.bgm);
-			break;
-		case -5:
-			this.bgm = BattleSound.loadBgm('audio/bw-trainer.mp3', 14629, 110109, this.bgm);
-			break;
-		case -6:
-			this.bgm = BattleSound.loadBgm('audio/bw-rival.mp3', 19180, 57373, this.bgm);
-			break;
-		case -7:
-			this.bgm = BattleSound.loadBgm('audio/bw-subway-trainer.mp3', 15503, 110984, this.bgm);
-			break;
-		case -8:
-			this.bgm = BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3', 14626, 58986, this.bgm);
-			break;
-		case -9:
-			this.bgm = BattleSound.loadBgm('audio/bw2-rival.mp3', 7152, 68708, this.bgm);
-			break;
-		case -10:
-			this.bgm = BattleSound.loadBgm('audio/xy-trainer.mp3', 7802, 82469, this.bgm);
-			break;
-		case -11:
-			this.bgm = BattleSound.loadBgm('audio/xy-rival.mp3', 7802, 58634, this.bgm);
-			break;
-		case -12:
-			this.bgm = BattleSound.loadBgm('audio/oras-trainer.mp3', 13579, 91548, this.bgm);
-			break;
-		case -13:
-			this.bgm = BattleSound.loadBgm('audio/oras-rival.mp3', 14303, 69149, this.bgm);
-			break;
-		case -14:
-			this.bgm = BattleSound.loadBgm('audio/sm-trainer.mp3', 8323, 89230, this.bgm);
-			break;
 		case -101:
 			this.bgm = BattleSound.loadBgm('audio/spl-elite4.mp3', 3962, 152509, this.bgm);
 			break;
 		case 1:
+			this.bgm = BattleSound.loadBgm('audio/hgss-johto-trainer.mp3', 23731, 125086, this.bgm);
+			break;
+		case 2:
+			this.bgm = BattleSound.loadBgm('audio/xy-trainer.mp3', 7802, 82469, this.bgm);
+			break;
+		case 3:
+			this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
+			break;
+		case 4:
+			this.bgm = BattleSound.loadBgm('audio/sm-trainer.mp3', 8323, 89230, this.bgm);
+			break;
+		case 5:
+			this.bgm = BattleSound.loadBgm('audio/bw-subway-trainer.mp3', 15503, 110984, this.bgm);
+			break;
+		case 6:
+			this.bgm = BattleSound.loadBgm('audio/bw-rival.mp3', 19180, 57373, this.bgm);
+			break;
+		case 7:
+			this.bgm = BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3', 20286, 98954, this.bgm);
+			break;
+		case 8:
+			this.bgm = BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3', 14626, 58986, this.bgm);
+			break;
+		case 9:
+			this.bgm = BattleSound.loadBgm('audio/xy-rival.mp3', 7802, 58634, this.bgm);
+			break;
+		case 10:
+			this.bgm = BattleSound.loadBgm('audio/dpp-rival.mp3', 13888, 66352, this.bgm);
+			break;
+		case 11:
+			this.bgm = BattleSound.loadBgm('audio/hgss-kanto-trainer.mp3', 13003, 94656, this.bgm);
+			break;
+		case 12:
+			this.bgm = BattleSound.loadBgm('audio/oras-trainer.mp3', 13579, 91548, this.bgm);
+			break;
+		case 13:
+			this.bgm = BattleSound.loadBgm('audio/oras-rival.mp3', 14303, 69149, this.bgm);
+			break;
+		case 14:
+			this.bgm = BattleSound.loadBgm('audio/dpp-trainer.mp3', 13440, 96959, this.bgm);
+			break;
+		case 15:
+			this.bgm = BattleSound.loadBgm('audio/bw-trainer.mp3', 14629, 110109, this.bgm);
+			break;
+		case 16:
+			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
+			break;
+		case 17:
 		default:
-			this.bgm = BattleSound.loadBgm('audio/shadow-lugia.mp3', 10200, 76630, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/bw2-rival.mp3', 7152, 68708, this.bgm);
 			break;
 		}
 
@@ -3234,7 +3240,25 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-mountain-shadow.png',
+	'bg-aquacordetown.jpg',
+	'bg-beach.jpg',
+	'bg-city.jpg',
+	'bg-dampcave.jpg',
+	'bg-darkbeach.jpg',
+	'bg-darkcity.jpg',
+	'bg-darkmeadow.jpg',
+	'bg-deepsea.jpg',
+	'bg-desert.jpg',
+	'bg-earthycave.jpg',
+	'bg-elite4drake.jpg',
+	'bg-forest.jpg',
+	'bg-icecave.jpg',
+	'bg-leaderwallace.jpg',
+	'bg-library.jpg',
+	'bg-meadow.jpg',
+	'bg-orasdesert.jpg',
+	'bg-orassea.jpg',
+	'bg-skypillar.jpg',
 ];
 
 const BattleOtherAnims: AnimTable = {

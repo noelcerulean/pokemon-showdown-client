@@ -354,7 +354,7 @@ parasectfnf:900+207,
 parasectfnfsunset:900+207,
 sledgesparce:900+209,
 soarsparce:900+211,
-soarsparceshadow:900+211,
+soarsparcealfred:900+211,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
