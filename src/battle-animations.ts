@@ -1534,7 +1534,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 17);
+		this.setBgm(1 + this.numericId % 20);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1554,7 +1554,7 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/spl-elite4.mp3', 3962, 152509, this.bgm);
 			break;
 		case 1:
-			this.bgm = BattleSound.loadBgm('audio/hgss-johto-trainer.mp3', 23731, 125086, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/swsh-hop.mp3', 12450, 100850, this.bgm);
 			break;
 		case 2:
 			this.bgm = BattleSound.loadBgm('audio/xy-trainer.mp3', 7802, 82469, this.bgm);
@@ -1575,7 +1575,7 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3', 20286, 98954, this.bgm);
 			break;
 		case 8:
-			this.bgm = BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3', 14626, 58986, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/swsh-oleana.mp3', 14950, 82700, this.bgm);
 			break;
 		case 9:
 			this.bgm = BattleSound.loadBgm('audio/xy-rival.mp3', 7802, 58634, this.bgm);
@@ -1605,6 +1605,12 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/sm-rival.mp3', 11389, 62158, this.bgm);
 			break;
 		case 18:
+			this.bgm = BattleSound.loadBgm('audio/hgss-johto-trainer.mp3', 23731, 125086, this.bgm);
+			break;
+		case 19:
+			this.bgm = BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3', 14626, 58986, this.bgm);
+			break;
+		case 20:
 		default:
 			this.bgm = BattleSound.loadBgm('audio/bw2-rival.mp3', 7152, 68708, this.bgm);
 			break;
