@@ -362,6 +362,7 @@ exports.BattlePokemonSprites = {
 	corsolagalar:{num:222},
 	remoraid:{num:223},
 	octillery:{num:224},
+	octillerytank:{num:224},
 	delibird:{num:225},
 	mantine:{num:226},
 	skarmory:{num:227},

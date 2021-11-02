@@ -1991,6 +1991,7 @@
 				case 'Mamoswine':
 				case 'Mimikyu':
 				case 'Minior':
+				case 'Octillery':
 				case 'Parasect-FnF':
 				case 'Pikachu':
 				case 'Polteageist':
