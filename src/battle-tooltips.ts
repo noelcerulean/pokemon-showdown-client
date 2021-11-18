@@ -1753,7 +1753,7 @@ class BattleTooltips {
 			value.abilityModify(1.5, "Mega Launcher");
 		}
 		if (move.flags['bullet']) {
-			value.abilityModify(1.5, "High Caliber");
+			value.abilityModify(1.3, "High Caliber");
 		}
 		if (move.flags['bite']) {
 			value.abilityModify(1.5, "Strong Jaw");
