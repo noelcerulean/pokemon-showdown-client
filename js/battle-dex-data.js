@@ -138,7 +138,7 @@ spe:'Spe'};
 
 
 var BattleBaseSpeciesChart=[
-"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","garchomp","parasectfnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery"];
+"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","garchomp","parasectfnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery"];
 
 
 var BattlePokemonIconIndexes={
@@ -355,6 +355,7 @@ parasectfnfsunset:900+207,
 sledgesparce:900+209,
 soarsparce:900+211,
 soarsparcealfred:900+211,
+aromatissefnf:900+212,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
