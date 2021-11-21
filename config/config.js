@@ -33,7 +33,7 @@ Config.customcolors = {
 	'zarel': 'aeo'
 };
 /*** Begin automatically generated configuration ***/
-Config.version = "0.11.2 (b66852f5)";
+Config.version = "0.11.2 (89e1b6b3)";
 
 Config.routes = {
 	root: 'fnf-showdown.herokuapp.com',
