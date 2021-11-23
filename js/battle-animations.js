@@ -1554,7 +1554,7 @@ case-101:
 this.bgm=BattleSound.loadBgm('audio/spl-elite4.mp3',3962,152509,this.bgm);
 break;
 case 1:
-this.bgm=BattleSound.loadBgm('audio/swsh-hop.mp3',12450,100850,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
 case 2:
 this.bgm=BattleSound.loadBgm('audio/xy-trainer.mp3',7802,82469,this.bgm);
@@ -1566,7 +1566,7 @@ case 4:
 this.bgm=BattleSound.loadBgm('audio/sm-trainer.mp3',8323,89230,this.bgm);
 break;
 case 5:
-this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/swsh-hop.mp3',12450,100850,this.bgm);
 break;
 case 6:
 this.bgm=BattleSound.loadBgm('audio/bw-rival.mp3',19180,57373,this.bgm);
