@@ -670,6 +670,7 @@ exports.BattlePokemonSprites = {
 	yanmega:{num:469},
 	yanmegazumbra:{num:469},
 	leafeon:{num:470},
+	leafeonipe:{num:470},
 	glaceon:{num:471},
 	gliscor:{num:472},
 	mamoswine:{num:473},
