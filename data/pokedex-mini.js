@@ -607,6 +607,7 @@ exports.BattlePokemonSprites = {
 	combee:{num:415},
 	vespiquen:{num:416},
 	vespiquenyasqueen:{num:416},
+	vespiquenarmored:{num:416},
 	pachirisu:{num:417},
 	buizel:{num:418},
 	floatzel:{num:419},

@@ -359,6 +359,7 @@ soarsparce:900+211,
 soarsparcealfred:900+211,
 aromatissefnf:900+212,
 sunfloramega:900+213,
+vespiquenarmored:900+214,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
