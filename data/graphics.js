@@ -43083,6 +43083,8 @@ BattleMoveAnims['reflecttype']={anim:BattleMoveAnims['painsplit'].anim};
 
 BattleMoveAnims['selfdestruct']={anim:BattleMoveAnims['explosion'].anim};
 
+BattleMoveAnims['naughtyornice']={anim:BattleMoveAnims['present'].anim};
+
 BattleMoveAnims['acid']={anim:BattleMoveAnims['sludge'].anim};
 BattleMoveAnims['acidspray']={anim:BattleMoveAnims['sludge'].anim};
 BattleMoveAnims['belch']={anim:BattleMoveAnims['gunkshot'].anim};
