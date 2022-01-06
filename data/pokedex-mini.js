@@ -594,6 +594,7 @@ exports.BattlePokemonSprites = {
 	roserade:{num:407},
 	cranidos:{num:408},
 	rampardos:{num:409},
+	rampardosegg:{num:409},
 	shieldon:{num:410},
 	bastiodon:{num:411},
 	bastiodontux:{num:411},
