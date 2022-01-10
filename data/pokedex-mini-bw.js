@@ -604,6 +604,7 @@ exports.BattlePokemonSpritesBW = {
 	wormadamsandy:{num:413},
 	wormadamtrash:{num:413},
 	mothim:{num:414},
+	mothimbigshot:{num:414},
 	combee:{num:415},
 	vespiquen:{num:416},
 	vespiquenyasqueen:{num:416},
