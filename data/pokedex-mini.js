@@ -796,6 +796,7 @@ exports.BattlePokemonSprites = {
 	darmanitangalar:{num:555},
 	darmanitangalarzen:{num:555},
 	maractus:{num:556},
+	maractusbald:{num:556},
 	dwebble:{num:557},
 	crustle:{num:558},
 	scraggy:{num:559},
