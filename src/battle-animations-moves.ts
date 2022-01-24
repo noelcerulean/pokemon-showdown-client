@@ -12340,6 +12340,109 @@ const BattleMoveAnims: AnimTable = {
 			}
 		},
 	},
+	bubbleprison: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#008080', 900, 0.3);
+			defender.anim({
+				x: defender.x - 5,
+				time: 75,
+			});
+			defender.anim({
+				x: defender.x + 5,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x - 5,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x + 5,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x - 5,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x + 5,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x - 5,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x + 5,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x,
+				time: 100,
+			});
+			for (let i = 0; i < 4; i++) {
+				scene.showEffect('iceball', {
+					x: defender.x + 50,
+					y: defender.y - 35,
+					z: defender.z,
+					scale: 0.5,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x - 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 1,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+				scene.showEffect('iceball', {
+					x: defender.x - 50,
+					y: defender.y + 35,
+					z: defender.z,
+					scale: 0.5,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x + 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 1,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+				scene.showEffect('iceball', {
+					x: defender.x + 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 0.5,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x - 50,
+					y: defender.y - 35,
+					z: defender.z,
+					scale: 1,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+				scene.showEffect('iceball', {
+					x: defender.x - 50,
+					y: defender.y,
+					z: defender.z,
+					scale: 0.5,
+					opacity: 1,
+					time: 200 * i,
+				}, {
+					x: defender.x + 50,
+					y: defender.y - 35,
+					z: defender.z,
+					scale: 1,
+					opacity: 0.4,
+					time: 200 * i + 200,
+				}, 'linear', 'fade');
+			}
+		},
+	},
 	magmastorm: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#CC3300', 900, 0.3);

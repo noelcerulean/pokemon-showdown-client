@@ -700,6 +700,7 @@ exports.BattlePokemonSpritesBW = {
 	giratinaorigin:{num:487},
 	cresselia:{num:488},
 	phione:{num:489},
+	phioneprimal:{num:489},
 	manaphy:{num:490},
 	darkrai:{num:491},
 	shaymin:{num:492},
