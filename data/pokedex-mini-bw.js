@@ -675,6 +675,7 @@ exports.BattlePokemonSpritesBW = {
 	leafeonipe:{num:470},
 	glaceon:{num:471},
 	gliscor:{num:472},
+	gliscorgrimm:{num:472},
 	mamoswine:{num:473},
 	mamoswinemelon:{num:473},
 	porygonz:{num:474},
