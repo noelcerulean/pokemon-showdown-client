@@ -157,6 +157,7 @@ exports.BattlePokemonSpritesBW = {
 	mukalola:{num:89},
 	shellder:{num:90},
 	cloyster:{num:91},
+	turbann:{num:-504},
 	gastly:{num:92},
 	haunter:{num:93},
 	gengar:{num:94},
