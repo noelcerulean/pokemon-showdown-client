@@ -361,7 +361,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	sunfloramega: 900 + 213,
 	vespiquenarmored: 900 + 214,
 	turbann: 1344 + 36,
-	phioneprimal: 1344 + 36,
+	phioneprimal: 1344 + 37,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
