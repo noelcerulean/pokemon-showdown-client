@@ -1083,6 +1083,9 @@ class BattleTooltips {
 		if (ability === 'purepower' || ability === 'hugepower') {
 			stats.atk *= 2;
 		}
+		if (ability === 'mysticpower') {
+			stats.spa *= 2;
+		}
 		if (ability === 'hustle' || (ability === 'gorillatactics' && !clientPokemon?.volatiles['dynamax'])) {
 			stats.atk = Math.floor(stats.atk * 1.5);
 		}
@@ -1943,6 +1946,14 @@ class BattleTooltips {
 		'Lustrous Orb': 'Water',
 		'Griseous Orb': 'Ghost',
 	};
+	static evolitemUsers: {[speciesForme: string]: string} = {
+		'Electivire': 'Electirizer',
+		'Magmortar': 'Magmarizer',
+	};
+	static evolitemTypes: {[itemName: string]: TypeName} = {
+		'Electirizer': 'Electric',
+		'Magmarizer': 'Fire',
+	};
 	static noGemMoves = [
 		'Fire Pledge',
 		'Fling',
@@ -1978,6 +1989,13 @@ class BattleTooltips {
 		if (BattleTooltips.orbUsers[Dex.species.get(value.serverPokemon.speciesForme).baseSpecies] === item.name &&
 			[BattleTooltips.orbTypes[item.name], 'Dragon'].includes(moveType)) {
 			value.itemModify(1.2);
+			return value;
+		}
+
+		// evo items for specific pokemon
+		if (BattleTooltips.evolitemUsers[Dex.species.get(value.serverPokemon.speciesForme).baseSpecies] === item.name &&
+			BattleTooltips.evolitemTypes[item.name].includes(moveType)) {
+			value.itemModify(1.5);
 			return value;
 		}
 
