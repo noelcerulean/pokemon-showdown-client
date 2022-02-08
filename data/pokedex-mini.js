@@ -641,6 +641,7 @@ exports.BattlePokemonSprites = {
 	happiny:{num:440},
 	chatot:{num:441},
 	spiritomb:{num:442},
+	spiritombpepper:{num:442},
 	gible:{num:443},
 	gabite:{num:444},
 	garchomp:{num:445},
