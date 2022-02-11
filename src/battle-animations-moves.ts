@@ -15199,6 +15199,56 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing', 'explode');
 		},
 	},
+	chillingrime: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
+			scene.showEffect('shine', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.25,
+				opacity: 0,
+			}, {
+				x: defender.leftof(40),
+				y: defender.y + 15,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.7,
+				time: 500,
+			}, 'decel', 'fade');
+			if (defender.isMissedPokemon) return;
+			scene.showEffect('shine', {
+				x: defender.leftof(40),
+				y: defender.y + 15,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0.7,
+				time: 500,
+			}, {
+				x: defender.leftof(-40),
+				y: defender.y,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 700,
+			}, 'swing', 'fade');
+			scene.showEffect('shine', {
+				x: defender.leftof(-40),
+				y: defender.y,
+				z: defender.z,
+				scale: 0.05,
+				opacity: 0,
+				time: 700,
+			}, {
+				x: defender.leftof(10),
+				y: defender.y - 15,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 900,
+			}, 'swing', 'explode');
+		},
+	},
 	confuseray: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('electroball', {
