@@ -1785,13 +1785,6 @@ value.abilityModify(1.5,"Steely Spirit");
 if(move.flags['sound']){
 value.abilityModify(1.3,"Punk Rock");
 }
-if(target){
-if(["MF","FM"].includes(pokemon.gender+target.gender)){
-value.abilityModify(0.75,"Rivalry");
-}else if(["MM","FF"].includes(pokemon.gender+target.gender)){
-value.abilityModify(1.25,"Rivalry");
-}
-}
 var noTypeOverride=[
 'judgment','multiattack','naturalgift','revelationdance','struggle','technoblast','terrainpulse','weatherball'];
 
