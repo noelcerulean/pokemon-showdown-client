@@ -19332,6 +19332,99 @@ const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
+	vaporize: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('flareball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+			}, {
+				x: defender.x + 10,
+				y: defender.y + 5,
+				z: defender.behind(30),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+			scene.showEffect('flareball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+				time: 75,
+			}, {
+				x: defender.x - 10,
+				y: defender.y - 5,
+				z: defender.behind(30),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+			scene.showEffect('flareball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+				time: 150,
+			}, {
+				x: defender.x,
+				y: defender.y + 5,
+				z: defender.behind(30),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+			scene.showEffect('wisp', {
+				x: defender.x + 30,
+				y: defender.y,
+				z: defender.behind(5),
+				scale: 1,
+				opacity: 1,
+				time: 300,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 700,
+			}, 'linear', 'fade');
+			scene.showEffect('wisp', {
+				x: defender.x - 30,
+				y: defender.y,
+				z: defender.behind(10),
+				scale: 1,
+				opacity: 1,
+				time: 400,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 800,
+			}, 'linear', 'fade');
+			scene.showEffect('wisp', {
+				x: defender.x + 15,
+				y: defender.y,
+				z: defender.behind(15),
+				scale: 1,
+				opacity: 1,
+				time: 500,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 900,
+			}, 'linear', 'fade');
+			scene.showEffect('wisp', {
+				x: defender.x - 15,
+				y: defender.y,
+				z: defender.behind(20),
+				scale: 1,
+				opacity: 1,
+				time: 600,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 1000,
+			}, 'linear', 'fade');
+		},
+	},
 	waterpulse: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('iceball', {
