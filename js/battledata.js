@@ -1352,6 +1352,8 @@ sunfloramega:900+213,
 vespiquenarmored:900+214,
 turbann:1344+36,
 phioneprimal:1344+37,
+kurstraw:1344+38,
+pangshi:1344+39,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,

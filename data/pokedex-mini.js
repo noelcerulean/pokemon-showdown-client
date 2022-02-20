@@ -304,6 +304,8 @@ exports.BattlePokemonSprites = {
 	slowking:{num:199},
 	slowkinggalar:{num:199},
 	misdreavus:{num:200},
+	kurstraw:{num:-505},
+	pangshi:{num:-506},
 	unown:{num:201},
 	unownb:{num:201},
 	unownc:{num:201},
