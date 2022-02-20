@@ -702,6 +702,7 @@ exports.BattlePokemonSprites = {
 	mesprit:{num:481},
 	azelf:{num:482},
 	dialga:{num:483},
+	dialgapmd:{num:483},
 	palkia:{num:484},
 	heatran:{num:485},
 	regigigas:{num:486},
