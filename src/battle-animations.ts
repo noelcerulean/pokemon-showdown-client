@@ -2507,7 +2507,7 @@ class PokemonSprite extends Sprite {
 				BattleOtherAnims.schoolingin.anim(scene, [this]);
 			} else if (speciesid === 'wishiwashi') {
 				BattleOtherAnims.schoolingout.anim(scene, [this]);
-			} else if (speciesid === 'mimikyubusted' || speciesid === 'mimikyubustedtotem') {
+			} else if (speciesid === 'mimikyubusted' || speciesid === 'mimikyubustedtotem' || speciesid === 'sudowoodobusted') {
 				// standard animation
 			} else {
 				BattleOtherAnims.megaevo.anim(scene, [this]);

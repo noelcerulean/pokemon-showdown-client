@@ -2507,7 +2507,7 @@ BattleOtherAnims.powerconstruct.anim(scene,[this]);
 BattleOtherAnims.schoolingin.anim(scene,[this]);
 }else if(speciesid==='wishiwashi'){
 BattleOtherAnims.schoolingout.anim(scene,[this]);
-}else if(speciesid==='mimikyubusted'||speciesid==='mimikyubustedtotem'){
+}else if(speciesid==='mimikyubusted'||speciesid==='mimikyubustedtotem'||speciesid==='sudowoodobusted'){
 
 }else{
 BattleOtherAnims.megaevo.anim(scene,[this]);

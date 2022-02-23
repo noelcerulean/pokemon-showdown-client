@@ -284,6 +284,7 @@ exports.BattlePokemonSprites = {
 	marill:{num:183},
 	azumarill:{num:184},
 	sudowoodo:{num:185},
+	sudowoodobusted:{num:185},
 	politoed:{num:186},
 	hoppip:{num:187},
 	skiploom:{num:188},
