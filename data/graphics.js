@@ -43244,6 +43244,8 @@ BattleMoveAnims['torment']={anim:BattleMoveAnims['swagger'].anim};
 
 BattleMoveAnims['mefirst']={anim:BattleMoveAnims['mimic'].anim};
 
+BattleMoveAnims['drypass']={anim:BattleMoveAnims['batonpass'].anim};
+
 BattleMoveAnims['conversion2']={anim:BattleMoveAnims['conversion'].anim};
 
 BattleMoveAnims['gearup']={anim:BattleMoveAnims['shiftgear'].anim};
