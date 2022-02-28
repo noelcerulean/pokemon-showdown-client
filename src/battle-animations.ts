@@ -1534,30 +1534,24 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 21);
+		this.setBgm(1 + this.numericId % 22);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
 		this.bgmNum = bgmNum;
 
 		switch (bgmNum) {
-		case -1:
-			this.bgm = BattleSound.loadBgm('audio/bw2-homika-dogars.mp3', 1661, 68131, this.bgm);
-			break;
 		case -2:
 			this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
 			break;
 		case -3:
 			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
 			break;
-		case -101:
-			this.bgm = BattleSound.loadBgm('audio/spl-elite4.mp3', 3962, 152509, this.bgm);
-			break;
 		case 1:
 			this.bgm = BattleSound.loadBgm('audio/bw-subway-trainer.mp3', 15503, 110984, this.bgm);
 			break;
 		case 2:
-			this.bgm = BattleSound.loadBgm('audio/xy-trainer.mp3', 7802, 82469, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/sm-rival.mp3', 11389, 62158, this.bgm);
 			break;
 		case 3:
 			this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
@@ -1581,7 +1575,7 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/xy-rival.mp3', 7802, 58634, this.bgm);
 			break;
 		case 10:
-			this.bgm = BattleSound.loadBgm('audio/dpp-rival.mp3', 13888, 66352, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/plat-frontier-brain.mp3', 15155, 103562, this.bgm);
 			break;
 		case 11:
 			this.bgm = BattleSound.loadBgm('audio/hgss-kanto-trainer.mp3', 13003, 94656, this.bgm);
@@ -1602,7 +1596,7 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
 			break;
 		case 17:
-			this.bgm = BattleSound.loadBgm('audio/sm-rival.mp3', 11389, 62158, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/xy-trainer.mp3', 7802, 82469, this.bgm);
 			break;
 		case 18:
 			this.bgm = BattleSound.loadBgm('audio/hgss-johto-trainer.mp3', 23731, 125086, this.bgm);
@@ -1614,6 +1608,9 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/oras-trainer.mp3', 13579, 91548, this.bgm);
 			break;
 		case 21:
+			this.bgm = BattleSound.loadBgm('audio/dpp-rival.mp3', 13888, 66352, this.bgm);
+			break;
+		case 22:
 		default:
 			this.bgm = BattleSound.loadBgm('audio/bw2-rival.mp3', 7152, 68708, this.bgm);
 			break;
