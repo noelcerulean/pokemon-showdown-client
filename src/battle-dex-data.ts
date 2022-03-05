@@ -352,6 +352,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	parasfnf: 900 + 206,
 	parasectfnf: 900 + 207,
 	parasectfnfsunset: 900 + 207,
+	parasectfnfsakura: 900 + 207,
+	parasectfnfcream: 900 + 207,
 	stucksparce: 900 + 208,
 	sledgesparce: 900 + 209,
 	snugsparce: 900 + 210,
@@ -363,7 +365,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	turbann: 1344 + 36,
 	phioneprimal: 1344 + 37,
 	kurstraw: 1344 + 38,
+	kurstrawmelon: 1344 + 38,
 	pangshi: 1344 + 39,
+	pangshimelon: 1344 + 39,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
