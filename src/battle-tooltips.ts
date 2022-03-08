@@ -1404,6 +1404,17 @@ class BattleTooltips {
 			moveType = 'Dark';
 		}
 
+		// Sawsbuck Seasonal Spirit type changes based on forme
+		if (move.id === 'seasonalspirit' && pokemon.getSpeciesForme() === 'Sawsbuck-Summer') {
+			moveType = 'Fire';
+		} else if (move.id === 'seasonalspirit' && pokemon.getSpeciesForme() === 'Sawsbuck-Autumn') {
+			moveType = 'Ground';
+		} else if (move.id === 'seasonalspirit' && pokemon.getSpeciesForme() === 'Sawsbuck-Winter') {
+			moveType = 'Ice';
+		} else if (move.id === 'seasonalspirit' && pokemon.getSpeciesForme() === 'Sawsbuck') {
+			moveType = 'Fairy';
+		}
+
 		// Other abilities that change the move type.
 		const noTypeOverride = [
 			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',

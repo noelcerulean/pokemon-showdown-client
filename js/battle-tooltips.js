@@ -1405,6 +1405,17 @@ moveType='Dark';
 }
 
 
+if(move.id==='seasonalspirit'&&pokemon.getSpeciesForme()==='Sawsbuck-Summer'){
+moveType='Fire';
+}else if(move.id==='seasonalspirit'&&pokemon.getSpeciesForme()==='Sawsbuck-Autumn'){
+moveType='Ground';
+}else if(move.id==='seasonalspirit'&&pokemon.getSpeciesForme()==='Sawsbuck-Winter'){
+moveType='Ice';
+}else if(move.id==='seasonalspirit'&&pokemon.getSpeciesForme()==='Sawsbuck'){
+moveType='Fairy';
+}
+
+
 var noTypeOverride=[
 'judgment','multiattack','naturalgift','revelationdance','struggle','technoblast','terrainpulse','weatherball'];
 
