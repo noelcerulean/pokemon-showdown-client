@@ -358,6 +358,7 @@ exports.BattlePokemonSpritesBW = {
 	scizor:{num:212},
 	scizormega:{num:212},
 	shuckle:{num:213},
+	shuckleswag:{num:213},
 	heracross:{num:214},
 	heracrossmega:{num:214},
 	sneasel:{num:215},
