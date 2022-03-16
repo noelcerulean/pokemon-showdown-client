@@ -1196,6 +1196,10 @@ class BattleTooltips {
 		if (ability === 'furcoat') {
 			stats.def *= 2;
 		}
+		if (ability === 'stall') {
+			stats.def *= 1.5;
+			stats.spd *= 1.5;
+		}
 		const sideConditions = this.battle.mySide.sideConditions;
 		if (sideConditions['tailwind']) {
 			speedModifiers.push(2);
@@ -1511,6 +1515,9 @@ class BattleTooltips {
 		} else if (value.tryAbility('Compound Eyes')) {
 			accuracyModifiers.push(5325);
 			value.abilityModify(1.3, "Compound Eyes");
+		} else if (value.tryAbility('Stall')) {
+			accuracyModifiers.push(5325);
+			value.abilityModify(1.3, "Stall");
 		} else if (value.tryAbility('Illuminate')) {
 			accuracyModifiers.push(5325);
 			value.abilityModify(1.3, "Illuminate");
