@@ -1232,6 +1232,8 @@ case'darkvoid':
 return dex.gen<7;
 case'drainingkiss':
 return abilityid==='triage';
+case'dragonbreath':
+return abilityid==='technician';
 case'dualwingbeat':
 return abilityid==='technician'||!moves.includes('drillpeck');
 case'feint':
