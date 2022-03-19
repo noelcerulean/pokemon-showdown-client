@@ -1359,6 +1359,7 @@ kurstrawmelon:1344+38,
 pangshi:1344+39,
 pangshimelon:1344+39,
 venustoise:1344+40,
+granbullarmored:1344+41,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
