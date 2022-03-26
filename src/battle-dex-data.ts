@@ -372,6 +372,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	granbullarmored: 1344 + 41,
 	dwebbledeltacake: 1344 + 42,
 	crustledeltacake: 1344 + 43,
+	rioludelta: 1344 + 44,
+	lucariodelta: 1344 + 45,
+	lucariodeltamega: 1344 + 46,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
