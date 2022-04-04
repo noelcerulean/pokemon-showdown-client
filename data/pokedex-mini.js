@@ -781,6 +781,7 @@ exports.BattlePokemonSprites = {
 	pidove:{num:519},
 	tranquill:{num:520},
 	unfezant:{num:521},
+	unfezantf:{num:521},
 	blitzle:{num:522},
 	zebstrika:{num:523},
 	roggenrola:{num:524},
