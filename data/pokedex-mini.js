@@ -80,6 +80,7 @@ exports.BattlePokemonSprites = {
 	nidoking:{num:34},
 	clefairy:{num:35},
 	clefable:{num:36},
+	clefgar:{num:-508},
 	vulpix:{num:37},
 	vulpixalola:{num:37},
 	ninetales:{num:38},

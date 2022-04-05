@@ -1369,6 +1369,7 @@ cranidosdelta:1344+47,
 rampardosdelta:1344+48,
 shieldondelta:1344+49,
 bastiodondelta:1344+50,
+clefgar:1344+51,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
