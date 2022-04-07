@@ -138,7 +138,7 @@ const BattleStatNames = {
 } as const;
 
 const BattleBaseSpeciesChart = [
-	"unown", "burmy", "shellos", "gastrodon", "deerling", "sawsbuck", "vivillon", "flabebe", "floette", "florges", "furfrou", "minior", "alcremie", "pokestarufo", "pokestarbrycenman", "pokestarmt", "pokestarmt2", "pokestartransport", "pokestargiant", "pokestarhumanoid", "pokestarmonster", "pokestarf00", "pokestarf002", "pokestarspirit", "pokestarblackdoor", "pokestarwhitedoor", "pokestarblackbelt", "trapinch", "hypno", "typhlosion", "raichu", "blacephalon", "bastiodon", "samurott", "mamoswine", "breloom", "sableye", "solrock", "simisage", "bulbasaur", "garchomp", "mightyena", "parasectfnf", "aromatissefnf", "heatmor", "gengar", "vespiquen", "delcatty", "aurorus", "octillery", "rampardos", "mothim", "maractus", "gliscor", "spiritomb", "emolga", "vibrava", "flygon", "dialga", "kurstraw", "pangshi", "shuckle", "leafeon",
+	"unown", "burmy", "shellos", "gastrodon", "deerling", "sawsbuck", "vivillon", "flabebe", "floette", "florges", "furfrou", "minior", "alcremie", "pokestarufo", "pokestarbrycenman", "pokestarmt", "pokestarmt2", "pokestartransport", "pokestargiant", "pokestarhumanoid", "pokestarmonster", "pokestarf00", "pokestarf002", "pokestarspirit", "pokestarblackdoor", "pokestarwhitedoor", "pokestarblackbelt", "trapinch", "hypno", "typhlosion", "raichu", "blacephalon", "bastiodon", "samurott", "mamoswine", "breloom", "sableye", "solrock", "simisage", "bulbasaur", "garchomp", "mightyena", "parasectfnf", "aromatissefnf", "heatmor", "gengar", "vespiquen", "delcatty", "aurorus", "octillery", "rampardos", "mothim", "maractus", "gliscor", "spiritomb", "emolga", "vibrava", "flygon", "dialga", "kurstraw", "pangshi", "shuckle", "clefgar", "leafeon",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -380,6 +380,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	shieldondelta: 1344 + 49,
 	bastiodondelta: 1344 + 50,
 	clefgar: 1344 + 51,
+	clefgartongue: 1344 + 51,
+	clefgarmint: 1344 + 51,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,

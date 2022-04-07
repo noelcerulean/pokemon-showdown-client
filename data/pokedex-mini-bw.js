@@ -80,6 +80,8 @@ exports.BattlePokemonSpritesBW = {
 	clefairy:{num:35},
 	clefable:{num:36},
 	clefgar:{num:-508},
+	clefgartongue:{num:-508},
+	clefgarmint:{num:-508},
 	vulpix:{num:37},
 	vulpixalola:{num:37},
 	ninetales:{num:38},
