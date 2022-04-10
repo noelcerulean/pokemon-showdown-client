@@ -1372,6 +1372,7 @@ bastiodondelta:1344+50,
 clefgar:1344+51,
 clefgartongue:1344+51,
 clefgarmint:1344+51,
+clefgarmelon:1344+51,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
