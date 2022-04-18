@@ -839,6 +839,7 @@ exports.BattlePokemonSpritesBW = {
 	yamask:{num:562},
 	yamaskgalar:{num:562},
 	cofagrigus:{num:563},
+	cofagrigusmega:{num:563},
 	tirtouga:{num:564},
 	carracosta:{num:565},
 	archen:{num:566},

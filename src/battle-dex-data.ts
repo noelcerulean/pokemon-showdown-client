@@ -383,6 +383,11 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	clefgartongue: 1344 + 51,
 	clefgarmint: 1344 + 51,
 	clefgarmelon: 1344 + 51,
+	cofagrigusmega: 1344 + 52,
+	rooskhan: 1344 + 53,
+	baki: 1344 + 54,
+	furretmega: 1344 + 55,
+	starmiemega: 1344 + 56,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
