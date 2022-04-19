@@ -209,6 +209,7 @@ exports.BattlePokemonSpritesBW = {
 	seaking:{num:119},
 	staryu:{num:120},
 	starmie:{num:121},
+	starmiemega:{num:121},
 	mrmime:{num:122},
 	mrmimegalar:{num:122},
 	scyther:{num:123},
