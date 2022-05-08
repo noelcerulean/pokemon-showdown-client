@@ -1229,7 +1229,7 @@ return['skilllink','technician'].includes(abilityid);
 case'counter':
 return species.baseStats.hp>=65;
 case'darkvoid':
-return dex.gen<7;
+return dex.gen<8;
 case'drainingkiss':
 return abilityid==='triage';
 case'dragonbreath':
