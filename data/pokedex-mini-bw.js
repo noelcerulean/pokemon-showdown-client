@@ -277,7 +277,7 @@ exports.BattlePokemonSpritesBW = {
 	crobat:{num:169},
 	chinchou:{num:170},
 	lanturn:{num:171},
-	lanturnnanglara:{num:171},
+	lanturnanglara:{num:171},
 	pichu:{num:172},
 	pichuspikyeared:{num:172},
 	cleffa:{num:173},
