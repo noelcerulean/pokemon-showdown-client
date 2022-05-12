@@ -483,6 +483,7 @@ exports.BattlePokemonSprites = {
 	sableye:{num:302},
 	sableyefreeza:{num:302},
 	sableyemega:{num:302},
+	sablechamp:{num:-513},
 	mawile:{num:303},
 	mawilemega:{num:303},
 	aron:{num:304},

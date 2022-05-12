@@ -390,6 +390,7 @@ furretmega:1344+55,
 starmiemega:1344+56,
 wolfman:1344+57,
 warwolf:1344+58,
+sablechamp:1344+59,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
