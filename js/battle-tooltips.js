@@ -2226,7 +2226,7 @@ moveCount['Physical']+=0.5;
 moveCount['Special']+=0.5;
 }else if(move.id==='naturepower'){
 moveCount['Special']++;
-}else if(['protect','detect','spikyshield','kingsshield'].includes(move.id)){
+}else if(['protect','detect','regroup','spikyshield','kingsshield'].includes(move.id)){
 moveCount['Stall']++;
 }else if(move.id==='wish'){
 moveCount['Restoration']++;

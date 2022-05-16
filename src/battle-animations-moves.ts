@@ -4171,6 +4171,100 @@ const BattleMoveAnims: AnimTable = {
 	recover: {
 		anim: BattleOtherAnims.chargestatus.anim,
 	},
+	regroup: {
+		anim(scene, [attacker]) {
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 2.5,
+				opacity: 1,
+			}, {
+				scale: 3,
+				time: 600,
+			}, 'linear', 'explode');
+			scene.showEffect('waterwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 3,
+				opacity: 0.3,
+			}, {
+				scale: 3.25,
+				time: 600,
+			}, 'linear', 'explode');
+
+			scene.showEffect('iceball', {
+				x: attacker.leftof(200),
+				y: attacker.y + 40,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 200,
+			}, 'ballistic', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.leftof(-140),
+				y: attacker.y - 60,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+				time: 100,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 300,
+			}, 'ballistic2Under', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.leftof(-140),
+				y: attacker.y + 50,
+				z: attacker.behind(170),
+				scale: 0.5,
+				opacity: 0.5,
+				time: 200,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 400,
+			}, 'ballistic2', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y + 30,
+				z: attacker.behind(-250),
+				scale: 0.5,
+				opacity: 0.5,
+				time: 200,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 500,
+			}, 'ballistic', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.leftof(240),
+				y: attacker.y - 80,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+				time: 300,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				opacity: 0,
+				time: 600,
+			}, 'ballistic2Under');
+		},
+	},
 	shadowforce: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#000000', 1000, 0.3);
@@ -36899,6 +36993,7 @@ BattleMoveAnims['phantomforce'] = {
 BattleMoveAnims['shadowstrike'] = {anim: BattleMoveAnims['shadowforce'].anim};
 
 BattleMoveAnims['smackdown'] = {anim: BattleMoveAnims['rockblast'].anim};
+BattleMoveAnims['regroup2'] = {anim: BattleMoveAnims['regroup'].anim};
 
 BattleMoveAnims['fairywind'] = {anim: BattleMoveAnims['dazzlinggleam'].anim};
 BattleMoveAnims['dreameater'] = {anim: BattleMoveAnims['drainingkiss'].anim};
