@@ -36870,6 +36870,7 @@ BattleMoveAnims['megakick'] = {anim: BattleMoveAnims['jumpkick'].anim};
 BattleMoveAnims['lightningkick'] = {anim: BattleMoveAnims['thunderouskick'].anim};
 BattleMoveAnims['frustration'] = {anim: BattleMoveAnims['thrash'].anim};
 BattleMoveAnims['rage'] = {anim: BattleMoveAnims['thrash'].anim};
+BattleMoveAnims['demolition'] = {anim: BattleMoveAnims['thrash'].anim};
 BattleMoveAnims['headsmash'] = {anim: BattleMoveAnims['gigaimpact'].anim};
 BattleMoveAnims['headcharge'] = {anim: BattleMoveAnims['gigaimpact'].anim};
 BattleMoveAnims['takedown'] = {anim: BattleMoveAnims['gigaimpact'].anim};

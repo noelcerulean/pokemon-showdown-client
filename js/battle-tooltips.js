@@ -1152,7 +1152,13 @@ stats.atk=Math.floor(stats.atk*1.5);
 stats.spa=Math.floor(stats.spa*1.5);
 }
 if(ability==='grasspelt'&&this.battle.hasPseudoWeather('Grassy Terrain')){
-stats.def=Math.floor(stats.def*1.5);
+stats.def=Math.floor(stats.def*2);
+}
+if(ability==='mistycover'&&this.battle.hasPseudoWeather('Misty Terrain')){
+stats.def=Math.floor(stats.spd*2);
+}
+if(ability==='surgingmindforce'&&this.battle.hasPseudoWeather('Psychic Terrain')){
+stats.def=Math.floor(stats.spa*2);
 }
 if(ability==='surgesurfer'&&this.battle.hasPseudoWeather('Electric Terrain')){
 speedModifiers.push(2);

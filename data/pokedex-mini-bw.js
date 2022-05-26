@@ -691,6 +691,7 @@ exports.BattlePokemonSpritesBW = {
 	drapion:{num:452},
 	croagunk:{num:453},
 	toxicroak:{num:454},
+	toxicroakarmored:{num:454},
 	carnivine:{num:455},
 	finneon:{num:456},
 	lumineon:{num:457},
