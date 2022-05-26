@@ -36870,7 +36870,6 @@ BattleMoveAnims['megakick'] = {anim: BattleMoveAnims['jumpkick'].anim};
 BattleMoveAnims['lightningkick'] = {anim: BattleMoveAnims['thunderouskick'].anim};
 BattleMoveAnims['frustration'] = {anim: BattleMoveAnims['thrash'].anim};
 BattleMoveAnims['rage'] = {anim: BattleMoveAnims['thrash'].anim};
-BattleMoveAnims['demolition'] = {anim: BattleMoveAnims['thrash'].anim};
 BattleMoveAnims['headsmash'] = {anim: BattleMoveAnims['gigaimpact'].anim};
 BattleMoveAnims['headcharge'] = {anim: BattleMoveAnims['gigaimpact'].anim};
 BattleMoveAnims['takedown'] = {anim: BattleMoveAnims['gigaimpact'].anim};
@@ -36959,8 +36958,10 @@ BattleMoveAnims['magnitude'] = {anim: BattleMoveAnims['earthquake'].anim};
 BattleMoveAnims['fissure'] = {anim: BattleMoveAnims['earthquake'].anim};
 BattleMoveAnims['landswrath'] = {anim: BattleMoveAnims['earthquake'].anim};
 BattleMoveAnims['stompingtantrum'] = {anim: BattleMoveAnims['bulldoze'].anim};
+BattleMoveAnims['demolition'] = {anim: BattleMoveAnims['bulldoze'].anim};
 
 BattleMoveAnims['mindblown'] = {anim: BattleMoveAnims['iceball'].anim};
+BattleMoveAnims['cumulussomersault'] = {anim: BattleMoveAnims['iceball'].anim};
 
 BattleMoveAnims['camouflage'] = {anim: BattleMoveAnims['tailglow'].anim};
 BattleMoveAnims['telekinesis'] = {anim: BattleMoveAnims['kinesis'].anim};

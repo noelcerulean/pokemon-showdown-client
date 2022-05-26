@@ -1155,10 +1155,10 @@ class BattleTooltips {
 			stats.def = Math.floor(stats.def * 2);
 		}
 		if (ability === 'mistycover' && this.battle.hasPseudoWeather('Misty Terrain')) {
-			stats.def = Math.floor(stats.spd * 2);
+			stats.spd = Math.floor(stats.spd * 2);
 		}
 		if (ability === 'surgingmindforce' && this.battle.hasPseudoWeather('Psychic Terrain')) {
-			stats.def = Math.floor(stats.spa * 2);
+			stats.spa = Math.floor(stats.spa * 2);
 		}
 		if (ability === 'surgesurfer' && this.battle.hasPseudoWeather('Electric Terrain')) {
 			speedModifiers.push(2);
