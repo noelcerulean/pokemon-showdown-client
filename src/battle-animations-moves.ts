@@ -36961,7 +36961,7 @@ BattleMoveAnims['stompingtantrum'] = {anim: BattleMoveAnims['bulldoze'].anim};
 BattleMoveAnims['demolition'] = {anim: BattleMoveAnims['bulldoze'].anim};
 
 BattleMoveAnims['mindblown'] = {anim: BattleMoveAnims['iceball'].anim};
-BattleMoveAnims['cumulussomersault'] = {anim: BattleMoveAnims['iceball'].anim};
+BattleMoveAnims['cumuloroll'] = {anim: BattleMoveAnims['iceball'].anim};
 
 BattleMoveAnims['camouflage'] = {anim: BattleMoveAnims['tailglow'].anim};
 BattleMoveAnims['telekinesis'] = {anim: BattleMoveAnims['kinesis'].anim};
