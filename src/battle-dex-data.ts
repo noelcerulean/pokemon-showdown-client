@@ -392,6 +392,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	warwolf: 1344 + 58,
 	sablechamp: 1344 + 59,
 	toxicroakarmored: 1344 + 60,
+	voltorbfnf: 1344 + 61,
+	electrodefnf: 1344 + 62,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
