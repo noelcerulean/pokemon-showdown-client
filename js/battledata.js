@@ -1384,7 +1384,7 @@ sablechamp:1344+59,
 toxicroakarmored:1344+60,
 voltorbfnf:1344+61,
 electrodefnf:1344+62,
-granbullarmoredjooj:1344+65,
+granbullnobunaga:1344+65,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
