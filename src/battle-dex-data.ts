@@ -394,6 +394,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	toxicroakarmored: 1344 + 60,
 	voltorbfnf: 1344 + 61,
 	electrodefnf: 1344 + 62,
+	granbullarmoredjooj: 1344 + 65,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
@@ -1096,6 +1097,8 @@ interface MoveFlags {
 	authentic?: 1 | 0;
 	/** Power is multiplied by 1.5 when used by a Pokemon with the Strong Jaw Ability. */
 	bite?: 1 | 0;
+	/** Power is multiplied by 1.2 when used by a Pokemon with the Unsheathed Ability. */
+	blade?: 1 | 0;
 	/** Has no effect on Pokemon with the Bulletproof Ability. */
 	bullet?: 1 | 0;
 	/** The user is unable to make a move between turns. */
@@ -1112,7 +1115,7 @@ interface MoveFlags {
 	gravity?: 1 | 0;
 	/** Prevented from being executed or selected during Heal Block's effect. */
 	heal?: 1 | 0;
-	/** Power is multiplied by 1.2 when used by a Pokemon with the Iron Fist Ability. */
+	/** Power is multiplied by 1.2 when used by a Pokemon with the Striker Ability. */
 	kick?: 1 | 0;
 	/** Can be copied by Mirror Move. */
 	mirror?: 1 | 0;

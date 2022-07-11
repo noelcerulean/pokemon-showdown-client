@@ -733,6 +733,9 @@ text+="<p class=\"movetag\">&#x2713; Fist <small>(boosted by Iron Fist)</small><
 if(move.flags.kick&&ability==='striker'){
 text+="<p class=\"movetag\">&#x2713; Kick <small>(boosted by Striker)</small></p>";
 }
+if(move.flags.blade&&ability==='unsheathed'){
+text+="<p class=\"movetag\">&#x2713; Blade <small>(boosted by Striker)</small></p>";
+}
 if(move.flags.pulse&&ability==='megalauncher'){
 text+="<p class=\"movetag\">&#x2713; Pulse <small>(boosted by Mega Launcher)</small></p>";
 }
