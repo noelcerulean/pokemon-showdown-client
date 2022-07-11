@@ -394,6 +394,8 @@ sablechamp:1344+59,
 toxicroakarmored:1344+60,
 voltorbfnf:1344+61,
 electrodefnf:1344+62,
+venonatfnf:1344+63,
+manomoth:1344+64,
 granbullnobunaga:1344+65,
 
 gumshoostotem:735,

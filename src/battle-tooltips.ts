@@ -734,7 +734,7 @@ class BattleTooltips {
 				text += `<p class="movetag">&#x2713; Kick <small>(boosted by Striker)</small></p>`;
 			}
 			if (move.flags.blade && ability === 'unsheathed') {
-				text += `<p class="movetag">&#x2713; Blade <small>(boosted by Striker)</small></p>`;
+				text += `<p class="movetag">&#x2713; Blade <small>(boosted by Unsheathed)</small></p>`;
 			}
 			if (move.flags.pulse && ability === 'megalauncher') {
 				text += `<p class="movetag">&#x2713; Pulse <small>(boosted by Mega Launcher)</small></p>`;
@@ -1837,6 +1837,9 @@ class BattleTooltips {
 		}
 		if (move.flags['kick']) {
 			value.abilityModify(1.2, 'Striker');
+		}
+		if (move.flags['blade']) {
+			value.abilityModify(1.2, 'Unsheathed');
 		}
 		if (move.recoil || move.hasCrashDamage) {
 			value.abilityModify(1.2, 'Reckless');
