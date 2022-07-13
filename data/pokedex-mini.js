@@ -259,6 +259,7 @@ exports.BattlePokemonSprites = {
 	mewtwomegax:{num:150},
 	mewtwomegay:{num:150},
 	mew:{num:151},
+	robodachi:{num:-516},
 	chikorita:{num:152},
 	bayleef:{num:153},
 	meganium:{num:154},

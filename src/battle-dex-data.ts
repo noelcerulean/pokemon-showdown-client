@@ -398,6 +398,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	manomoth: 1344 + 64,
 	granbullnobunaga: 1344 + 65,
 	samsarula: 1344 + 66,
+	robodachi: 1344 + 67,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
