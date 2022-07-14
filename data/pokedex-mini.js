@@ -780,6 +780,7 @@ exports.BattlePokemonSprites = {
 	emboardynamite:{num:500},
 	oshawott:{num:501},
 	dewott:{num:502},
+	dewottscalchops:{num:502},
 	samurott:{num:503},
 	samurottknight:{num:503},
 	patrat:{num:504},
