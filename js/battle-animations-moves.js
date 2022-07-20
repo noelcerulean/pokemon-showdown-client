@@ -37153,6 +37153,7 @@ BattleMoveAnims['imprison']={anim:BattleMoveAnims['embargo'].anim};
 
 BattleMoveAnims['healorder']={anim:BattleMoveAnims['recover'].anim};
 BattleMoveAnims['synthesis']={anim:BattleMoveAnims['recover'].anim};
+BattleMoveAnims['aggregate']={anim:BattleMoveAnims['recover'].anim};
 
 BattleMoveAnims['floralhealing']={anim:BattleMoveAnims['healpulse'].anim};
 BattleMoveAnims['purify']={anim:BattleMoveAnims['weatherball'].anim};
