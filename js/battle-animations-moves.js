@@ -37027,6 +37027,8 @@ BattleMoveAnims['vitalthrow']={anim:BattleMoveAnims['circlethrow'].anim};
 BattleMoveAnims['doubleslap']={anim:BattleMoveAnims['wakeupslap'].anim};
 BattleMoveAnims['crushgrip']={anim:BattleMoveAnims['quash'].anim};
 
+BattleMoveAnims['sweepup']={anim:BattleMoveAnims['tailslap'].anim};
+
 BattleMoveAnims['beatup']={anim:BattleMoveAnims['slam'].anim};
 BattleMoveAnims['counter']={anim:BattleMoveAnims['slam'].anim};
 BattleMoveAnims['payback']={anim:BattleMoveAnims['slam'].anim};
