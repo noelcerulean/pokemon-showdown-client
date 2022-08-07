@@ -1541,6 +1541,9 @@ class BattleScene {
 		this.bgmNum = bgmNum;
 
 		switch (bgmNum) {
+		case -20:
+			this.bgm = BattleSound.loadBgm('audio/cipher-peon-xd.mp3', 39539, 79026, this.bgm);
+			break;
 		case -2:
 			this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
 			break;
@@ -2282,7 +2285,7 @@ class PokemonSprite extends Sprite {
 		let speciesid = toID(pokemon.getSpeciesForme());
 		let doCry = false;
 		const scene = this.scene;
-			if (speciesid === 'espeonshadow' || speciesid === 'umbreonshadow' || speciesid === 'bulbasaurshadow' || speciesid === 'hakamooshadow' || speciesid === 'raichushadow' || speciesid === 'kecleonshadow' || speciesid === 'soarsparceshadow' || speciesid === 'braixenshadow' || speciesid === 'woopershadow' || speciesid === 'yanmegashadow' || speciesid === 'simisearshadow' || speciesid === 'typhlosionshadow' || speciesid === 'eelektrossshadow' || speciesid === 'miloticshadow' || speciesid === 'kingdrashadow' || speciesid === 'emboarshadow' || speciesid === 'vaporeonshadow' || speciesid === 'porygon2shadow' || speciesid === 'carbinkshadow' || speciesid === 'enteishadow' || speciesid === 'suicuneshadow' || speciesid === 'raikoushadow' || speciesid === 'hoohshadow' || speciesid === 'jirachishadow') {
+			if (speciesid === 'cameruptshadow' || speciesid === 'meganiumshadow' || speciesid === 'chikoritashadow' || speciesid === 'golurkshadow' || speciesid === 'dewottshadow' || speciesid === 'aegislashshadow' || speciesid === 'kurstrawshadow' || speciesid === 'fraxureshadow' || speciesid === 'golisopodshadow' || speciesid === 'zweilousshadow' || speciesid === 'decidueyeshadow' || speciesid === 'sceptileshadow' || speciesid === 'honchkrowshadow' || speciesid === 'gyaradosshadow' || speciesid === 'gyaradosmegashadow' || speciesid === 'eeveeshadow' || speciesid === 'flareonshadow' || speciesid === 'jolteonshadow' || speciesid === 'leafeonshadow' || speciesid === 'glaceonshadow' || speciesid === 'sylveonshadow' || speciesid === 'raikoushadow' || speciesid === 'hoohshadow' || speciesid === 'jirachishadow') {
 				BattleOtherAnims.shadowpokemon.anim(scene, [this]);
 		}
 

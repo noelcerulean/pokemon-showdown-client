@@ -736,6 +736,9 @@ class BattleTooltips {
 			if (move.flags.blade && ability === 'unsheathed') {
 				text += `<p class="movetag">&#x2713; Blade <small>(boosted by Unsheathed)</small></p>`;
 			}
+			if (move.flags.blade && ability === 'cunningblade') {
+				text += `<p class="movetag">&#x2713; Blade <small>(boosted by Cunning Blade)</small></p>`;
+			}
 			if (move.flags.pulse && ability === 'megalauncher') {
 				text += `<p class="movetag">&#x2713; Pulse <small>(boosted by Mega Launcher)</small></p>`;
 			}
@@ -1105,6 +1108,9 @@ class BattleTooltips {
 			if (ability === 'slushrush' && weather === 'hail') {
 				speedModifiers.push(2);
 			}
+			if (ability === 'shadowslush' && weather === 'hail') {
+				speedModifiers.push(2);
+			}
 			if (item !== 'utilityumbrella') {
 				if (weather === 'sunnyday' || weather === 'desolateland') {
 					if (ability === 'solarpower') {
@@ -1126,6 +1132,9 @@ class BattleTooltips {
 					}
 				}
 				if (ability === 'chlorophyll' && (weather === 'sunnyday' || weather === 'desolateland')) {
+					speedModifiers.push(2);
+				}
+				if (ability === 'shadowembers' && (weather === 'sunnyday' || weather === 'desolateland')) {
 					speedModifiers.push(2);
 				}
 				if (ability === 'swiftswim' && (weather === 'raindance' || weather === 'primordialsea')) {
@@ -1160,14 +1169,26 @@ class BattleTooltips {
 		if (ability === 'grasspelt' && this.battle.hasPseudoWeather('Grassy Terrain')) {
 			stats.def = Math.floor(stats.def * 2);
 		}
+		if (ability === 'shadowbirch' && this.battle.hasPseudoWeather('Grassy Terrain')) {
+			stats.spe = Math.floor(stats.spe * 2);
+			stats.atk = Math.floor(stats.atk * 1.5);
+		}
 		if (ability === 'mistycover' && this.battle.hasPseudoWeather('Misty Terrain')) {
 			stats.spd = Math.floor(stats.spd * 2);
+		}
+		if (ability === 'shadowribbons' && this.battle.hasPseudoWeather('Misty Terrain')) {
+			stats.spe = Math.floor(stats.spe * 2);
+			stats.spa = Math.floor(stats.spa * 1.5);
 		}
 		if (ability === 'surgingmindforce' && this.battle.hasPseudoWeather('Psychic Terrain')) {
 			stats.spa = Math.floor(stats.spa * 2);
 		}
 		if (ability === 'surgesurfer' && this.battle.hasPseudoWeather('Electric Terrain')) {
 			speedModifiers.push(2);
+		}
+		if (ability === 'shadowsparks' && this.battle.hasPseudoWeather('Electric Terrain')) {
+			stats.spe = Math.floor(stats.spe * 2);
+			stats.spa = Math.floor(stats.spa * 1.5);
 		}
 		if (item === 'choicespecs' && !clientPokemon?.volatiles['dynamax']) {
 			stats.spa = Math.floor(stats.spa * 1.5);
@@ -1454,6 +1475,9 @@ class BattleTooltips {
 
 		if (allowTypeOverride && isSound && value.abilityModify(0, 'Liquid Voice')) {
 			moveType = 'Water';
+		}
+		if (move.flags['blade'] && category !== 'Status' && value.abilityModify(0, 'Cunning Blade')) {
+			category = 'Special';
 		}
 		if (this.battle.gen <= 3 && category !== 'Status') {
 			category = Dex.getGen3Category(moveType);
@@ -1840,6 +1864,7 @@ class BattleTooltips {
 		}
 		if (move.flags['blade']) {
 			value.abilityModify(1.2, 'Unsheathed');
+			value.abilityModify(1.2, 'Cunning Blade');
 		}
 		if (move.recoil || move.hasCrashDamage) {
 			value.abilityModify(1.2, 'Reckless');
