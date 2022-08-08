@@ -236,6 +236,7 @@ exports.BattlePokemonSprites = {
 	vaporeon:{num:134},
 	vaporeonlinguine:{num:134},
 	jolteon:{num:135},
+	jolteonshadow:{num:135},
 	flareon:{num:136},
 	porygon:{num:137},
 	omanyte:{num:138},

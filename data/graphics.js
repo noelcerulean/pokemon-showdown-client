@@ -1542,7 +1542,7 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case-20:
-this.bgm=BattleSound.loadBgm('audio/cipher-peon-xd.mp3',39539,79026,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/team-aqua.mp3',17293,106451,this.bgm);
 break;
 case-2:
 this.bgm=BattleSound.loadBgm('audio/xd-miror-b.mp3',9000,57815,this.bgm);
@@ -1618,7 +1618,7 @@ this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
 break;
 case 1:
 default:
-this.bgm=BattleSound.loadBgm('audio/team-aqua.mp3',17293,106451,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/cipher-peon-xd.mp3',39539,79026,this.bgm);
 break;}
 
 
@@ -3266,7 +3266,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-city-virtua.png'];
+'bg-mountain-shadow.png'];
 
 
 var BattleOtherAnims={
