@@ -3266,7 +3266,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-mountain-shadow.png'];
+'bg-beach-shadow.png'];
 
 
 var BattleOtherAnims={

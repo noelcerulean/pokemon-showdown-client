@@ -726,6 +726,7 @@ exports.BattlePokemonSprites = {
 	leafeon:{num:470},
 	leafeonipe:{num:470},
 	glaceon:{num:471},
+	glaceonshadow:{num:471},
 	gliscor:{num:472},
 	gliscorgrimm:{num:472},
 	mamoswine:{num:473},
