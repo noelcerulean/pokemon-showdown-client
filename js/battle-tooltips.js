@@ -1630,10 +1630,10 @@ value.modify(2,'Brine + target below half HP');
 if(move.id==='eruption'||move.id==='waterspout'||move.id==='dragonenergy'){
 value.set(Math.floor(150*pokemon.hp/pokemon.maxhp)||1);
 }
-if(move.id==='facade'&&!['','slp','frz'].includes(pokemon.status)){
+if(move.id==='facade'&&!['','slp'].includes(pokemon.status)){
 value.modify(2,'Facade + status');
 }
-if(move.id==='shadowrage'&&!['','slp','frz'].includes(pokemon.status)){
+if(move.id==='shadowrage'&&!['','slp'].includes(pokemon.status)){
 value.modify(2,'Shadow Rage + status');
 }
 if(move.id==='flail'||move.id==='shadowvengeance'||move.id==='reversal'){
