@@ -1079,6 +1079,7 @@ exports.BattlePokemonSpritesBW = {
 	aurorus:{num:699},
 	aurorusfall:{num:699},
 	sylveon:{num:700},
+	sylveonshadow:{num:700},
 	hawlucha:{num:701},
 	dedenne:{num:702},
 	carbink:{num:703},

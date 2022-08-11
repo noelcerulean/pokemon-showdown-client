@@ -1569,7 +1569,7 @@ case-6:
 this.bgm=BattleSound.loadBgm('audio/bw-rival.mp3',19180,57373,this.bgm);
 break;
 case-7:
-this.bgm=BattleSound.loadBgm('audio/cipher-peon-xd.mp3',39539,79026,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3',20286,98954,this.bgm);
 break;
 case-8:
 this.bgm=BattleSound.loadBgm('audio/swsh-oleana.mp3',14950,82700,this.bgm);
@@ -1618,7 +1618,7 @@ this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
 break;
 case 1:
 default:
-this.bgm=BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3',20286,98954,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/cipher-peon-xd.mp3',39539,79026,this.bgm);
 break;}
 
 
@@ -3266,7 +3266,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-route-shadow.png'];
+'bg-desert-shadow.png'];
 
 
 var BattleOtherAnims={

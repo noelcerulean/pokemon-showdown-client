@@ -1197,8 +1197,8 @@ if(item==='deepseatooth'&&species==='Clamperl'){
 stats.spa*=2;
 }
 if(item==='preciousscale'&&species==='Feebas-Vanessa'){
+stats.atk*=2;
 stats.spa*=2;
-stats.spd*=2;
 }
 if(item==='souldew'&&this.battle.gen<=6&&(species==='Latios'||species==='Latias')){
 stats.spa=Math.floor(stats.spa*1.5);
