@@ -402,7 +402,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	robodachi: 1344 + 67,
 	roseradearmored: 1344 + 68,
 	miloticmega: 1344 + 69,
-	miloticmegashadow: 1344 + 69,
+	miloticmegalothraxia: 1344 + 69,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
