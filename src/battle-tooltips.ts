@@ -1117,7 +1117,7 @@ class BattleTooltips {
 						stats.spa = Math.floor(stats.spa * 1.5);
 					}
 					if (ability === 'solarboost') {
-						stats.spa = Math.floor(stats.atk * 1.5);
+						stats.atk = Math.floor(stats.atk * 1.5);
 					}
 					let allyActive = clientPokemon?.side.active;
 					if (allyActive) {

@@ -1117,7 +1117,7 @@ if(ability==='solarpower'){
 stats.spa=Math.floor(stats.spa*1.5);
 }
 if(ability==='solarboost'){
-stats.spa=Math.floor(stats.atk*1.5);
+stats.atk=Math.floor(stats.atk*1.5);
 }
 var allyActive=clientPokemon==null?void 0:clientPokemon.side.active;
 if(allyActive){for(var _i14=0;_i14<
