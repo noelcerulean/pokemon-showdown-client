@@ -492,7 +492,7 @@ class BattleTooltips {
 		Flying: "Supersonic Skystrike",
 		Ground: "Tectonic Rage",
 		Fairy: "Twinkle Tackle",
-		Shadow: "Shadow Devastation",
+		Shadow: "Shadow Z",
 		"???": "",
 	};
 
