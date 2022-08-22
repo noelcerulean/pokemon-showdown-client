@@ -44084,6 +44084,7 @@ BattleMoveAnims['rocktomb']={anim:BattleMoveAnims['rockslide'].anim};
 BattleMoveAnims['frenzyplant']={anim:BattleMoveAnims['leafstorm'].anim};
 BattleMoveAnims['hydrocannon']={anim:BattleMoveAnims['hydropump'].anim};
 BattleMoveAnims['geyserblast']={anim:BattleMoveAnims['hydropump'].anim};
+BattleMoveAnims['propulsionshot']={anim:BattleMoveAnims['hydropump'].anim};
 
 BattleMoveAnims['guardsplit']={anim:BattleMoveAnims['skillswap'].anim};
 BattleMoveAnims['powersplit']={anim:BattleMoveAnims['skillswap'].anim};
