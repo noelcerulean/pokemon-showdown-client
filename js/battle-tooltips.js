@@ -1831,6 +1831,9 @@ if(!value.tryAbility("Guts"))value.modify(0.5,'Burn');
 if(['Rock','Ground','Steel'].includes(moveType)&&this.battle.weather==='sandstorm'){
 if(value.tryAbility("Sand Force"))value.weatherModify(1.3,"Sandstorm","Sand Force");
 }
+if(['Water','Flying','Electric'].includes(moveType)&&this.battle.weather==='raindance'){
+if(value.tryAbility("Squall"))value.weatherModify(1.3,"Rain Dance","Squall");
+}
 if(move.secondaries){
 value.abilityModify(1.3,"Sheer Force");
 }
