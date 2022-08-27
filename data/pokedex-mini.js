@@ -1026,6 +1026,7 @@ exports.BattlePokemonSprites = {
 	vivillonpokeball:{num:666},
 	litleo:{num:667},
 	pyroar:{num:668},
+	pyroarf:{num:668},
 	flabebe:{num:669},
 	flabebeblue:{num:669},
 	flabebeorange:{num:669},
