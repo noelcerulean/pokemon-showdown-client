@@ -1050,6 +1050,13 @@ class BattleTooltips {
 			}
 		}
 
+		if (item === 'amuletcoin') {
+			if (species === 'Meowth') {
+				stats.atk *= 2;
+				stats.spa *= 2;
+			}
+		}
+
 		if (species === 'Ditto' && !(clientPokemon && 'transform' in clientPokemon.volatiles)) {
 			if (item === 'quickpowder') {
 				speedModifiers.push(2);
