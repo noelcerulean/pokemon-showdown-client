@@ -37624,6 +37624,7 @@ BattleMoveAnims['foulplay'] = {anim: BattleMoveAnims['psyshock'].anim};
 BattleMoveAnims['psywave'] = {anim: BattleMoveAnims['psybeam'].anim};
 BattleMoveAnims['extrasensory'] = {anim: BattleMoveAnims['psychic'].anim};
 BattleMoveAnims['confusion'] = {anim: BattleMoveAnims['psychic'].anim};
+BattleMoveAnims['psycleaner'] = {anim: BattleMoveAnims['psychic'].anim};
 BattleMoveAnims['miracleeye'] = {anim: BattleMoveAnims['mindreader'].anim};
 BattleMoveAnims['futuresight'] = {anim: BattleMoveAnims['doomdesire'].anim};
 BattleMoveAnims['propheticasteroid'] = {anim: BattleMoveAnims['doomdesire'].anim};
