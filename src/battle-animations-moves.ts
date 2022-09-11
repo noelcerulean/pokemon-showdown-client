@@ -6339,8 +6339,9 @@ const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
-	xscissor: {
+	ultraslicer: {
 		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#213E10 30%, #326513)', 600, 0.8);
 			attacker.anim({
 				x: defender.leftof(-30),
 				y: defender.y + 80,
@@ -6392,7 +6393,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 1,
 				time: 425,
 			}, {
-				scale: 2,
+				scale: 3,
 				opacity: 0.5,
 				time: 725,
 			}, 'linear', 'fade');
@@ -6404,7 +6405,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 1,
 				time: 625,
 			}, {
-				scale: 3,
+				scale: 4,
 				opacity: 0,
 				time: 1000,
 			}, 'linear', 'fade');
@@ -6416,7 +6417,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 1,
 				time: 625,
 			}, {
-				scale: 3,
+				scale: 4,
 				opacity: 0,
 				time: 1000,
 			}, 'linear', 'fade');

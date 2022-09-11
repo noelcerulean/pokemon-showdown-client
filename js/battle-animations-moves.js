@@ -6339,8 +6339,9 @@ time:400},
 'linear','explode');
 }},
 
-xscissor:{
+ultraslicer:{
 anim:function(scene,_ref122){var attacker=_ref122[0],defender=_ref122[1];
+scene.backgroundEffect('linear-gradient(#213E10 30%, #326513)',600,0.8);
 attacker.anim({
 x:defender.leftof(-30),
 y:defender.y+80,
@@ -6392,7 +6393,7 @@ scale:1,
 opacity:1,
 time:425},
 {
-scale:2,
+scale:3,
 opacity:0.5,
 time:725},
 'linear','fade');
@@ -6404,7 +6405,7 @@ scale:0,
 opacity:1,
 time:625},
 {
-scale:3,
+scale:4,
 opacity:0,
 time:1000},
 'linear','fade');
@@ -6416,7 +6417,7 @@ scale:0,
 opacity:1,
 time:625},
 {
-scale:3,
+scale:4,
 opacity:0,
 time:1000},
 'linear','fade');

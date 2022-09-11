@@ -508,6 +508,7 @@ exports.BattlePokemonSpritesBW = {
 	aggronmega:{num:306},
 	meditite:{num:307},
 	medicham:{num:308},
+	medichamparappa:{num:308},
 	medichammega:{num:308},
 	electrike:{num:309},
 	manectric:{num:310},
