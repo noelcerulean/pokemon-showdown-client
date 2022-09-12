@@ -405,6 +405,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	miloticmegalothraxia: 1344 + 69,
 	growlithefnf: 1344 + 70,
 	arcaninefnf: 1344 + 71,
+	medipom: 1344 + 72,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,

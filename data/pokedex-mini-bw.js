@@ -314,6 +314,7 @@ exports.BattlePokemonSpritesBW = {
 	skiploom:{num:188},
 	jumpluff:{num:189},
 	aipom:{num:190},
+	medipom:{num:-517},
 	sunkern:{num:191},
 	sunflora:{num:192},
 	sunfloramega:{num:192},
