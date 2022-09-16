@@ -1534,7 +1534,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 23);
+		this.setBgm(1 + this.numericId % 24);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1566,7 +1566,7 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/swsh-hop.mp3', 12450, 100850, this.bgm);
 			break;
 		case 6:
-			this.bgm = BattleSound.loadBgm('audio/bw-rival.mp3', 19180, 57373, this.bgm);
+			this.bgm = BattleSound.loadBgm('audio/conquest-dragon-battle.mp3', 26817, 109162, this.bgm);
 			break;
 		case 7:
 			this.bgm = BattleSound.loadBgm('audio/cipher-peon-xd.mp3', 39539, 79026, this.bgm);
@@ -1617,6 +1617,9 @@ class BattleScene {
 			this.bgm = BattleSound.loadBgm('audio/eos-dialga.mp3', 20000, 120600, this.bgm);
 			break;
 		case 23:
+			this.bgm = BattleSound.loadBgm('audio/bw-rival.mp3', 19180, 57373, this.bgm);
+			break;
+		case 24:
 		default:
 			this.bgm = BattleSound.loadBgm('audio/bw2-rival.mp3', 7152, 68708, this.bgm);
 			break;
