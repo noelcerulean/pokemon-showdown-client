@@ -1128,7 +1128,7 @@ spe:'Spe'};
 
 
 var BattleBaseSpeciesChart=[
-"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","garchomp","mightyena","parasectfnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","medicham","leafeon"];
+"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","garchomp","mightyena","parasectfnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","medicham","turbann","leafeon"];
 
 
 var BattlePokemonIconIndexes={
@@ -1353,6 +1353,7 @@ aromatissefnf:900+212,
 sunfloramega:900+213,
 vespiquenarmored:900+214,
 turbann:1344+36,
+turbannswag:1344+36,
 phioneprimal:1344+37,
 kurstraw:1344+38,
 kurstrawmelon:1344+38,
