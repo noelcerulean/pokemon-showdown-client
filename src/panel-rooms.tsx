@@ -137,7 +137,7 @@ class RoomsPanel extends PSRoomPanel {
 				<button class="button" data-href="/users" title="Find an online user">
 					<span
 						class="pixelated usercount"
-						title="Parasect-FnF is our mascot! It was the first ever story pokemon!."
+						title="Parasect-FnF is our mascot! It was the first ever story pokemon!"
 					></span>
 					<strong>{rooms.userCount || '-'}</strong> users online
 				</button> {}

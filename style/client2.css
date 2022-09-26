@@ -957,10 +957,10 @@ p.or:after {
 	position: absolute;
 	left: -30px;
 	bottom: -5px;
-	background: url(https://github.com/noelcerulean/pokemonshowdownimages/blob/master/sprites/gen5/parasectfnf.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/sprites/gen5/parasectfnf.png) center no-repeat;
 }
 .roomcounters button:hover .usercount {
-	background: url(https://github.com/noelcerulean/pokemonshowdownimages/blob/master/sprites/gen5/parasectfnf-sunset.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/sprites/gen5/parasectfnf-sunset.png) center no-repeat;
 }
 .roomcounters .battlecount {
 	display: block;
@@ -969,10 +969,10 @@ p.or:after {
 	position: absolute;
 	right: -30px;
 	bottom: -10px;
-	background: url(https://github.com/noelcerulean/pokemonshowdownimages/blob/master/sprites/gen5/turbann.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/sprites/gen5/turbann.png) center no-repeat;
 }
 .roomcounters button:hover .battlecount {
-	background: url(https://github.com/noelcerulean/pokemonshowdownimages/blob/master/sprites/gen5/turbann-swag.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/sprites/gen5/turbann-swag.png) center no-repeat;
 }
 
 .roomlist {
