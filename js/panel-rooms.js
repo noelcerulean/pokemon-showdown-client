@@ -137,7 +137,7 @@ preact.h("div",{"class":"roomcounters"},
 preact.h("button",{"class":"button","data-href":"/users",title:"Find an online user"},
 preact.h("span",{
 "class":"pixelated usercount",
-title:"Parasect-FnF is our mascot! It was the first ever story pokemon!"}),
+title:"Fun fact: Kurstraw and Pangshi are evolutionary relatives, despite sharing the same BST."}),
 
 preact.h("strong",null,rooms.userCount||'-')," users online")," ",
 

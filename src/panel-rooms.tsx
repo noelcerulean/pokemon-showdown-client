@@ -137,7 +137,7 @@ class RoomsPanel extends PSRoomPanel {
 				<button class="button" data-href="/users" title="Find an online user">
 					<span
 						class="pixelated usercount"
-						title="Parasect-FnF is our mascot! It was the first ever story pokemon!"
+						title="Fun fact: Kurstraw and Pangshi are evolutionary relatives, despite sharing the same BST."
 					></span>
 					<strong>{rooms.userCount || '-'}</strong> users online
 				</button> {}

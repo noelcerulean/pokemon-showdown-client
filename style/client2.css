@@ -957,10 +957,10 @@ p.or:after {
 	position: absolute;
 	left: -30px;
 	bottom: -5px;
-	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/sprites/gen5/parasectfnf.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/sprites/gen5/kurstraw.png) center no-repeat;
 }
 .roomcounters button:hover .usercount {
-	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/sprites/gen5/parasectfnf-sunset.png) center no-repeat;
+	background: url(https://raw.githubusercontent.com/noelcerulean/pokemonshowdownimages/master/pangshi.png) center no-repeat;
 }
 .roomcounters .battlecount {
 	display: block;

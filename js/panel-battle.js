@@ -58,7 +58,7 @@ return preact.h(PSPanelWrapper,{room:room,scrollable:true},preact.h("div",{"clas
 preact.h("button",{"class":"button",style:"float:right;font-size:10pt;margin-top:3px",name:"close"},preact.h("i",{"class":"fa fa-times"})," Close"),
 preact.h("div",{"class":"roomlist"},
 preact.h("p",null,
-preact.h("button",{"class":"button",name:"refresh",onClick:this.refresh},preact.h("i",{"class":"fa fa-refresh"})," Refresh")," ",preact.h("span",{style:Dex.getPokemonIcon('meloetta-pirouette')+';display:inline-block;vertical-align:middle',"class":"picon",title:"Meloetta is PS's mascot! The Pirouette forme is Fighting-type, and represents our battles."})),
+preact.h("button",{"class":"button",name:"refresh",onClick:this.refresh},preact.h("i",{"class":"fa fa-refresh"})," Refresh")," ",preact.h("span",{style:Dex.getPokemonIcon('robodachi')+';display:inline-block;vertical-align:middle',"class":"picon",title:"Robodachi says friendliness is key! Battle and have fun with friends on FnF Showdown!"})),
 
 
 preact.h("p",null,
