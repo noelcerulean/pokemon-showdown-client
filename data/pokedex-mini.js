@@ -1074,6 +1074,7 @@ exports.BattlePokemonSprites = {
 	aromatisse:{num:683},
 	aromatissefnf:{num:683},
 	swirlix:{num:684},
+	swirlixvanilla:{num:684},
 	slurpuff:{num:685},
 	inkay:{num:686},
 	malamar:{num:687},
