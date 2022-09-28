@@ -1057,6 +1057,19 @@ class BattleTooltips {
 			}
 		}
 
+		if (item === 'luckypunch') {
+			if (species === 'Chansey') {
+				stats.atk *= 2;
+			}
+		}
+
+		if (item === 'ovalstone') {
+			if (species === 'Happiny') {
+				stats.atk *= 2;
+				stats.spa *= 2;
+			}
+		}
+
 		if (species === 'Ditto' && !(clientPokemon && 'transform' in clientPokemon.volatiles)) {
 			if (item === 'quickpowder') {
 				speedModifiers.push(2);
@@ -1463,6 +1476,11 @@ class BattleTooltips {
 			moveType = 'Fairy';
 		}
 
+		// Happiny Oval Stone
+		if (move.id === 'eggbomb' && pokemon.getSpeciesForme() === 'Happiny' && item.id === 'ovalstone') {
+			moveType = 'Rock';
+		}
+
 		// Other abilities that change the move type.
 		const noTypeOverride = [
 			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',
@@ -1627,6 +1645,11 @@ class BattleTooltips {
 		if (move.id === 'acrobatics') {
 			if (!serverPokemon.item) {
 				value.modify(2, "Acrobatics + no item");
+			}
+		}
+		if (move.id === 'eggbomb' && pokemon.getSpeciesForme() === 'Happiny') {
+			if (serverPokemon.item === 'ovalstone') {
+				value.modify(1.5, 'Oval Stone boost');
 			}
 		}
 		if (['crushgrip', 'wringout'].includes(move.id) && target) {
