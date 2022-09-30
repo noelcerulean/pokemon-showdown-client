@@ -937,6 +937,7 @@ exports.BattlePokemonSpritesBW = {
 	axew:{num:610},
 	fraxure:{num:611},
 	fraxurefrenzy:{num:611},
+	fraxurefrenzydeity:{num:611},
 	haxorus:{num:612},
 	cubchoo:{num:613},
 	beartic:{num:614},
