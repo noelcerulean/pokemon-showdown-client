@@ -2266,7 +2266,6 @@ this.activateAbility(_poke25,ability.name,true);
 _ofpoke9.rememberAbility(ability.name);
 break;
 case'powerofalchemy':
-case'receiver':
 this.activateAbility(_poke25,_effect12.name);
 this.scene.wait(500);
 this.activateAbility(_poke25,ability.name,true);

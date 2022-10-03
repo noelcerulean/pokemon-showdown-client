@@ -2266,7 +2266,6 @@ class Battle {
 					ofpoke!.rememberAbility(ability.name);
 					break;
 				case 'powerofalchemy':
-				case 'receiver':
 					this.activateAbility(poke, effect.name);
 					this.scene.wait(500);
 					this.activateAbility(poke, ability.name, true);
