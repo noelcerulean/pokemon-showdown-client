@@ -1160,6 +1160,9 @@ speedModifiers.push(2);
 if(ability==='swiftswim'&&(weather==='raindance'||weather==='primordialsea')){
 speedModifiers.push(2);
 }
+if(ability==='icebreaker'&&weather==='hail'){
+stats.atk=Math.floor(stats.atk*1.5);
+}
 }
 }
 if(ability==='defeatist'&&serverPokemon.hp<=serverPokemon.maxhp/2){
@@ -2056,6 +2059,12 @@ var moveName=move.name;
 
 
 if(item.onPlate===moveType&&!item.zMove){
+value.itemModify(1.2);
+return value;
+}
+
+
+if(item.onMemory===moveType&&!item.zMove){
 value.itemModify(1.2);
 return value;
 }
