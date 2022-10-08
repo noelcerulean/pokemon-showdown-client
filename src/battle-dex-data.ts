@@ -199,6 +199,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	unfezantf: 900 + 55,
 	basculinbluestriped: 900 + 56,
 	darmanitanzen: 900 + 57,
+	darmanizen: 900 + 57,
 	deerlingautumn: 900 + 58,
 	deerlingsummer: 900 + 59,
 	deerlingwinter: 900 + 60,

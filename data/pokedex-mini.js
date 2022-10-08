@@ -866,6 +866,7 @@ exports.BattlePokemonSprites = {
 	darumaka:{num:554},
 	darumakagalar:{num:554},
 	darmanitan:{num:555},
+	darmanizen:{num:555},
 	darmanitanzen:{num:555},
 	darmanitangalar:{num:555},
 	darmanitangalarzen:{num:555},
