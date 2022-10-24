@@ -975,6 +975,7 @@ exports.BattlePokemonSprites = {
 	hydreigon:{num:635},
 	larvesta:{num:636},
 	volcarona:{num:637},
+	quiksilk:{num:-519},
 	samsarula:{num:-515},
 	cobalion:{num:638},
 	terrakion:{num:639},

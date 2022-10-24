@@ -1398,6 +1398,7 @@ miloticmegalothraxia:1344+69,
 growlithefnf:1344+70,
 arcaninefnf:1344+71,
 medipom:1344+72,
+quiksilk:1344+73,
 magcargoarmored:0,
 royalynx:0,
 

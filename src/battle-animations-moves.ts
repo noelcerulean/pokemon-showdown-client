@@ -23589,6 +23589,65 @@ const BattleMoveAnims: AnimTable = {
 			}, 'decel', 'explode');
 		},
 	},
+	sandinversion: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#C2B280', 700, 0.5);
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 1,
+				opacity: 1,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 6,
+				opacity: 0,
+			}, 'linear', 'fade');
+			scene.showEffect('mudwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+			}, {
+				x: defender.x + 10,
+				y: defender.y + 5,
+				z: defender.behind(30),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+			scene.showEffect('mudwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+				time: 75,
+			}, {
+				x: defender.x - 10,
+				y: defender.y - 5,
+				z: defender.behind(30),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+			scene.showEffect('mudwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+				time: 150,
+			}, {
+				x: defender.x,
+				y: defender.y + 5,
+				z: defender.behind(30),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+		},
+	},
 	dragonascent: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 1000, 0.7);
