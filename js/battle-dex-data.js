@@ -410,6 +410,8 @@ arcaninefnf:1344+71,
 medipom:1344+72,
 quiksilk:1344+73,
 cubonealola:1344+74,
+lickitungfnf:1344+75,
+lickilickyfnf:1344+76,
 magcargoarmored:0,
 royalynx:0,
 
