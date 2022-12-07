@@ -573,6 +573,9 @@ break;
 case'sandstorm':
 zMove=this.battle.dex.moves.get(BattleTooltips.zMoveTable['Rock']);
 break;
+case'miasma':
+zMove=this.battle.dex.moves.get(BattleTooltips.zMoveTable['Poison']);
+break;
 case'hail':
 zMove=this.battle.dex.moves.get(BattleTooltips.zMoveTable['Ice']);
 break;}
@@ -1128,6 +1131,9 @@ speedModifiers.push(2);
 if(ability==='slushrush'&&weather==='hail'){
 speedModifiers.push(2);
 }
+if(ability==='toxcceleration'&&weather==='miasma'){
+speedModifiers.push(2);
+}
 if(ability==='shadowslush'&&weather==='hail'){
 speedModifiers.push(2);
 }
@@ -1446,6 +1452,9 @@ break;
 case'sandstorm':
 moveType='Rock';
 break;
+case'miasma':
+moveType='Poison';
+break;
 case'hail':
 moveType='Ice';
 break;}
@@ -1496,6 +1505,7 @@ if(value.abilityModify(0,'Aerilate'))moveType='Flying';
 if(value.abilityModify(0,'Galvanize'))moveType='Electric';
 if(value.abilityModify(0,'Pixilate'))moveType='Fairy';
 if(value.abilityModify(0,'Refrigerate'))moveType='Ice';
+if(value.abilityModify(0,'Toxicate'))moveType='Poison';
 }
 if(value.abilityModify(0,'Normalize'))moveType='Normal';
 }
@@ -1529,6 +1539,9 @@ return value;
 }
 if(move.id==='blizzard'){
 value.weatherModify(0,'Hail');
+}
+if(move.id==='fallout'){
+value.weatherModify(0,'Miasma');
 }
 if(move.id==='hurricane'||move.id==='thunder'){
 value.weatherModify(0,'Rain Dance');
@@ -1891,6 +1904,7 @@ value.abilityModify(this.battle.gen>6?1.2:1.3,"Aerilate");
 value.abilityModify(this.battle.gen>6?1.2:1.3,"Galvanize");
 value.abilityModify(this.battle.gen>6?1.2:1.3,"Pixilate");
 value.abilityModify(this.battle.gen>6?1.2:1.3,"Refrigerate");
+value.abilityModify(this.battle.gen>6?1.2:1.3,"Toxicate");
 }
 if(this.battle.gen>6){
 value.abilityModify(1.5,"Normalize");
