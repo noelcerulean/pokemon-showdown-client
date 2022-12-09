@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/pbr-joe.mp3',9765,93800,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/battle-royale.mp3',14950,74000,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/pbr-joe.mp3',9765,93800,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/battle-royale.mp3',14950,74000,this.bgm);
 break;}
 
 
