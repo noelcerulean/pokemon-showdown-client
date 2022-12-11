@@ -412,6 +412,8 @@ quiksilk:1344+73,
 cubonealola:1344+74,
 lickitungfnf:1344+75,
 lickilickyfnf:1344+76,
+vanilluxefnf:1344+77,
+goodramega:1344+78,
 magcargoarmored:0,
 royalynx:0,
 
