@@ -1128,7 +1128,7 @@ spe:'Spe'};
 
 
 var BattleBaseSpeciesChart=[
-"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","ivysaur","garchomp","mightyena","parasectfnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","marshadow","dewottpika","raichumalachite","decidueyeapollo","altaria","fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable","hydreigon","infernape","leafeon"];
+"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","ivysaur","garchomp","mightyena","parasectfnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","royalynx","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","marshadow","dewottpika","raichumalachite","decidueyeapollo","altaria","fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable","hydreigon","infernape","leafeon"];
 
 
 var BattlePokemonIconIndexes={
@@ -1406,6 +1406,8 @@ vanilluxefnf:1344+77,
 goodramega:1344+78,
 magcargoarmored:1344+79,
 royalynx:1344+80,
+royalynxholly:1344+80,
+royalynxjolly:1344+80,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
