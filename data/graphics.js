@@ -1535,7 +1535,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%1);
+this.setBgm(1+this.numericId%24);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
