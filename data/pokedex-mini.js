@@ -729,6 +729,7 @@ exports.BattlePokemonSprites = {
 	hippowdon:{num:450},
 	skorupi:{num:451},
 	drapion:{num:452},
+	drapioncandycane:{num:452},
 	croagunk:{num:453},
 	toxicroak:{num:454},
 	toxicroakarmored:{num:454},
