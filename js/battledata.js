@@ -1408,6 +1408,7 @@ magcargoarmored:1344+79,
 royalynx:1344+80,
 royalynxholly:1344+80,
 royalynxjolly:1344+80,
+emolgadelta:1344+81,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
