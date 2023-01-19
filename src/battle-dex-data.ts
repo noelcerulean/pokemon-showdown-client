@@ -373,6 +373,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	pangshimelon: 1344 + 39,
 	venustoise: 1344 + 40,
 	granbullarmored: 1344 + 41,
+	numeldelta: 1344 + 42,
+	cameruptdelta: 1344 + 43,
 	cranidosdelta: 1344 + 47,
 	rampardosdelta: 1344 + 48,
 	shieldondelta: 1344 + 49,

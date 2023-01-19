@@ -1566,6 +1566,12 @@ break;
 case-8:
 this.bgm=BattleSound.loadBgm('audio/battle-royale.mp3',14950,74000,this.bgm);
 break;
+case-88:
+this.bgm=BattleSound.loadBgm('audio/steel-battle.mp3',29258,121915,this.bgm);
+break;
+case-89:
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
+break;
 case 1:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
