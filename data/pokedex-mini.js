@@ -735,6 +735,7 @@ exports.BattlePokemonSprites = {
 	carnivine:{num:455},
 	finneon:{num:456},
 	lumineon:{num:457},
+	lumineonhealer:{num:457},
 	mantyke:{num:458},
 	snover:{num:459},
 	abomasnow:{num:460},
