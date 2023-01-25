@@ -1535,7 +1535,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%24);
+this.setBgm(1+this.numericId%1);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1573,9 +1573,12 @@ case-89:
 this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;
 case 1:
+this.bgm=BattleSound.loadBgm('audio/pokecenter.mp3',21127,97330,this.bgm);
+break;
+case-100:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
-case 2:
+case-200:
 this.bgm=BattleSound.loadBgm('audio/sm-rival.mp3',11389,62158,this.bgm);
 break;
 case 3:
@@ -1641,9 +1644,9 @@ break;
 case 23:
 this.bgm=BattleSound.loadBgm('audio/bw-rival.mp3',19180,57373,this.bgm);
 break;
-case 24:
+case 2:
 default:
-this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pokecenter.mp3',21127,97330,this.bgm);
 break;}
 
 
@@ -3291,33 +3294,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-ancient.png',
-'bg-aquacordetown.jpg',
-'bg-autumn.png',
-'bg-beach.jpg',
-'bg-cave.png',
-'bg-city.jpg',
-'bg-dampcave.jpg',
-'bg-darkbeach.jpg',
-'bg-darkcity.jpg',
-'bg-darkmeadow.jpg',
-'bg-deepsea.jpg',
-'bg-desert.jpg',
-'bg-earthycave.jpg',
-'bg-elite4drake.jpg',
-'bg-flowers.png',
-'bg-forest.jpg',
-'bg-greens.png',
-'bg-greenssunset.png',
-'bg-icecave.jpg',
-'bg-leaderwallace.jpg',
-'bg-library.jpg',
-'bg-meadow.jpg',
-'bg-orasdesert.jpg',
-'bg-orassea.jpg',
-'bg-skypillar.jpg',
-'bg-snowscape.png',
-'bg-workout.png'];
+'bg-darkcity.jpg'];
 
 
 var BattleOtherAnims={
