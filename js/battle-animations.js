@@ -1535,7 +1535,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%1);
+this.setBgm(1+this.numericId%24);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1572,13 +1572,13 @@ break;
 case-89:
 this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;
-case 1:
+case-90:
 this.bgm=BattleSound.loadBgm('audio/pokecenter.mp3',21127,97330,this.bgm);
 break;
-case-100:
+case 1:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
-case-200:
+case 2:
 this.bgm=BattleSound.loadBgm('audio/sm-rival.mp3',11389,62158,this.bgm);
 break;
 case 3:
@@ -1644,9 +1644,9 @@ break;
 case 23:
 this.bgm=BattleSound.loadBgm('audio/bw-rival.mp3',19180,57373,this.bgm);
 break;
-case 2:
+case 24:
 default:
-this.bgm=BattleSound.loadBgm('audio/pokecenter.mp3',21127,97330,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
 break;}
 
 
@@ -3294,7 +3294,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-darkcity.jpg'];
+'bg-aquacordetown.jpg'];
 
 
 var BattleOtherAnims={

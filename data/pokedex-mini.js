@@ -380,6 +380,7 @@ exports.BattlePokemonSprites = {
 	girafarig:{num:203},
 	pineco:{num:204},
 	forretress:{num:205},
+	forretressdelta:{num:205},
 	dunsparce:{num:206},
 	snugsparce:{num:-500},
 	soarsparce:{num:-501},
