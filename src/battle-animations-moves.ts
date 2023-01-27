@@ -38666,7 +38666,6 @@ BattleMoveAnims['nightdaze'] = {anim: BattleMoveAnims['darkpulse'].anim};
 
 BattleMoveAnims['strengthsap'] = {anim: BattleMoveAnims['leechlife'].anim};
 BattleMoveAnims['cursedroots'] = {anim: BattleMoveAnims['leechlife'].anim};
-BattleMoveAnims['soulsiphon'] = {anim: BattleMoveAnims['leechlife'].anim};
 BattleMoveAnims['parasiticdrain'] = {anim: BattleMoveAnims['leechlife'].anim};
 BattleMoveAnims['hornattack'] = {anim: BattleMoveAnims['megahorn'].anim};
 BattleMoveAnims['lunge'] = {anim: BattleMoveAnims['megahorn'].anim};
