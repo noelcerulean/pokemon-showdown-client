@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;}
 
 
@@ -44301,7 +44301,7 @@ scale:10,
 opacity:0,
 time:2100},
 'linear');
-scene.showEffect('electroball',{
+scene.showEffect('flareball',{
 x:attacker.x,
 y:attacker.y+200,
 z:attacker.z,
@@ -44329,7 +44329,7 @@ scale:10,
 opacity:0,
 time:2300},
 'linear');
-scene.showEffect('electroball',{
+scene.showEffect('flareball',{
 x:attacker.x,
 y:attacker.y+200,
 z:attacker.z,
@@ -44357,7 +44357,7 @@ scale:10,
 opacity:0,
 time:2500},
 'linear');
-scene.showEffect('electroball',{
+scene.showEffect('flareball',{
 x:attacker.x,
 y:attacker.y+200,
 z:attacker.z,
@@ -44385,7 +44385,7 @@ scale:10,
 opacity:0,
 time:2700},
 'linear');
-scene.showEffect('electroball',{
+scene.showEffect('flareball',{
 x:attacker.x,
 y:attacker.y+200,
 z:attacker.z,

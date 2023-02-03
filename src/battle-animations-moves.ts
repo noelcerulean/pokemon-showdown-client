@@ -37844,7 +37844,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 2100,
 			}, 'linear');
-			scene.showEffect('electroball', {
+			scene.showEffect('flareball', {
 				x: attacker.x,
 				y: attacker.y + 200,
 				z: attacker.z,
@@ -37872,7 +37872,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 2300,
 			}, 'linear');
-			scene.showEffect('electroball', {
+			scene.showEffect('flareball', {
 				x: attacker.x,
 				y: attacker.y + 200,
 				z: attacker.z,
@@ -37900,7 +37900,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 2500,
 			}, 'linear');
-			scene.showEffect('electroball', {
+			scene.showEffect('flareball', {
 				x: attacker.x,
 				y: attacker.y + 200,
 				z: attacker.z,
@@ -37928,7 +37928,7 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 0,
 				time: 2700,
 			}, 'linear');
-			scene.showEffect('electroball', {
+			scene.showEffect('flareball', {
 				x: attacker.x,
 				y: attacker.y + 200,
 				z: attacker.z,

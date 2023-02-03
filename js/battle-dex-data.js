@@ -138,7 +138,7 @@ spe:'Spe'};
 
 
 var BattleBaseSpeciesChart=[
-"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","ivysaur","garchomp","mightyena","parasectfnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","royalynx","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","marshadow","dewottpika","raichumalachite","decidueyeapollo","altaria","fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable","hydreigon","infernape","drapion","lumineon","leafeon"];
+"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","ivysaur","garchomp","mightyena","parasectfnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","royalynx","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","marshadow","dewottpika","raichumalachite","decidueyeapollo","altaria","fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable","poliwrath","hydreigon","infernape","drapion","lumineon","leafeon"];
 
 
 var BattlePokemonIconIndexes={
@@ -376,6 +376,8 @@ granbullarmored:1344+41,
 numeldelta:1344+42,
 cameruptdelta:1344+43,
 forretressdelta:1344+44,
+magnezonemega:1344+45,
+warcass:1344+46,
 cranidosdelta:1344+47,
 rampardosdelta:1344+48,
 shieldondelta:1344+49,
