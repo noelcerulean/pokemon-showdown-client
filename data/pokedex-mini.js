@@ -1121,6 +1121,7 @@ exports.BattlePokemonSprites = {
 	aurorusfall:{num:699},
 	sylveon:{num:700},
 	sylveonfarfalle:{num:700},
+	longeon:{num:-521},
 	hawlucha:{num:701},
 	dedenne:{num:702},
 	carbink:{num:703},
