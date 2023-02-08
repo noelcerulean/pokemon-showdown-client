@@ -120,7 +120,7 @@
 		// format
 		// Special values:
 		// '' -     show all
-		// 'gen8' - show teams with no format
+		// 'gen7' - show teams with no format
 		// '/' -    show teams with no folder
 		curFolder: '',
 		curFolderKeep: '',
@@ -231,7 +231,7 @@
 					format = this.curFolder;
 				} else {
 					format = Storage.teams[i].format;
-					if (!format) format = 'gen8';
+					if (!format) format = 'gen7';
 				}
 				if (!format) continue;
 				if (format in folderTable) continue;
@@ -244,8 +244,8 @@
 					}
 					continue;
 				}
-				if (format === 'gen8') {
-					folders.push('B~');
+				if (format === 'gen7') {
+					folders.push('C~');
 					continue;
 				}
 				switch (format.slice(0, 4)) {
@@ -358,7 +358,7 @@
 
 			var newTeamButtonText = "New Team";
 			if (filterFolder) newTeamButtonText = "New Team in folder";
-			if (filterFormat && filterFormat !== 'gen8') {
+			if (filterFormat && filterFormat !== 'gen7') {
 				newTeamButtonText = "New " + BattleLog.escapeFormat(filterFormat) + " Team";
 			}
 			buf += '<p><button name="newTop" value="team" class="button big"><i class="fa fa-plus-circle"></i> ' + newTeamButtonText + '</button> ' +
@@ -401,7 +401,7 @@
 						continue;
 					}
 
-					if (filterFormat && filterFormat !== (team.format || 'gen8')) continue;
+					if (filterFormat && filterFormat !== (team.format || 'gen7')) continue;
 					if (filterFolder !== undefined && filterFolder !== team.folder) continue;
 
 					if (this.curSearchVal) {
@@ -775,11 +775,11 @@
 					iconCache: ''
 				};
 			} else {
-				var format = this.curFolder || 'gen8';
+				var format = this.curFolder || 'gen7';
 				var folder = '';
 				if (format && format.charAt(format.length - 1) === '/') {
 					folder = format.slice(0, -1);
-					format = 'gen8';
+					format = 'gen7';
 				}
 				newTeam = {
 					name: (isBox ? 'Box ' : 'Untitled ') + (teams.length + 1),
@@ -1902,7 +1902,7 @@
 					this.$chart.scrollTop(0);
 				}
 				this.search.$inputEl = $inputEl;
-				this.search.setType(type, this.curTeam.format || 'gen8', this.curSet, cur);
+				this.search.setType(type, this.curTeam.format || 'gen7', this.curSet, cur);
 				this.qInitial = q;
 				this.search.qName = this.curChartName;
 				if (wasIncomplete) {

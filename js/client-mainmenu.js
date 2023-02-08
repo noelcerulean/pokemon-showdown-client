@@ -982,8 +982,8 @@
 			if (!noChoice) {
 				this.curFormat = formatid;
 				if (!this.curFormat) {
-					if (BattleFormats['gen8randombattle']) {
-						this.curFormat = 'gen8randombattle';
+					if (BattleFormats['gen7randombattle']) {
+						this.curFormat = 'gen7randombattle';
 					} else for (var i in BattleFormats) {
 						if (!BattleFormats[i].searchShow || !BattleFormats[i].challengeShow) continue;
 						this.curFormat = i;
