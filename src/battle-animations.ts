@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/team-aqua.mp3', 17293, 106451, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/aqua-leader.mp3', 56039, 112139, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/team-aqua.mp3', 17293, 106451, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/aqua-leader.mp3', 56039, 112139, this.bgm);
 				break;
 			}
 	
