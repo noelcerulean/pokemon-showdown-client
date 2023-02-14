@@ -1263,8 +1263,8 @@ if(ability==='furcoat'){
 stats.def*=2;
 }
 if(ability==='stall'){
-stats.def*=1.5;
-stats.spd*=1.5;
+stats.def*=1.3;
+stats.spd*=1.3;
 }
 var sideConditions=this.battle.mySide.sideConditions;
 if(sideConditions['tailwind']){
@@ -1907,7 +1907,7 @@ value.abilityModify(this.battle.gen>6?1.2:1.3,"Refrigerate");
 value.abilityModify(this.battle.gen>6?1.2:1.3,"Toxicate");
 }
 if(this.battle.gen>6){
-value.abilityModify(1.5,"Normalize");
+value.abilityModify(1.3,"Normalize");
 }
 }
 if(move.flags['punch']){
