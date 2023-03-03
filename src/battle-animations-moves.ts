@@ -6080,6 +6080,78 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
+	yorikiri: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#390000 30%, #B84038)', 800, 0.6);
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 400,
+			}, {
+				x: defender.leftof(-20),
+				z: defender.behind(20),
+				scale: 3,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 500,
+			}, {
+				x: defender.leftof(-20),
+				z: defender.behind(20),
+				scale: 0.6,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+			scene.showEffect('rightchop', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 1,
+				opacity: 1,
+				time: 400,
+			}, {
+				x: defender.leftof(-20),
+				z: defender.behind(20),
+				scale: 1,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+			attacker.anim({
+				x: defender.leftof(20),
+				y: defender.y,
+				z: defender.behind(-20),
+				time: 400,
+			}, 'ballistic2Under');
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				time: 50,
+			});
+			attacker.anim({
+				time: 500,
+			}, 'ballistic2');
+			defender.delay(425);
+			defender.anim({
+				x: defender.leftof(-15),
+				y: defender.y,
+				z: defender.behind(15),
+				time: 50,
+			}, 'swing');
+			defender.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
 	knockoff: {
 		anim: BattleOtherAnims.contactattack.anim,
 	},
