@@ -371,7 +371,7 @@ function pokeConvertInner($text)
 				$pokemon = (isFoe($matches[1])?'foe-':'ally-').$matches[2].$matches[3];
 				namePokemon($pokemon);
 				$pokemon = str_replace(' ','',$pokemon);
-				if ($lastmove === 'Roar' || $lastmove === 'Whirlwind' || $lastmove === 'DragonTail' || $lastmove === 'CircleThrow')
+				if ($lastmove === 'Roar' || $lastmove === 'Whirlwind' || $lastmove === 'DragonTail' || $lastmove === 'CircleThrow' || $lastmove === 'Yorikiri')
 				{
 					$out[] = 'drag-out-anim switched-'.$pokemon;
 				}
