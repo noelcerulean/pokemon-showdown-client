@@ -29729,6 +29729,93 @@ const BattleMoveAnims: AnimTable = {
 			}, 'ballistic2Under');
 		},
 	},
+	shadowvampirism: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#110131', 900, 0.7);
+			scene.showEffect('shadowwisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 400,
+			}, {
+				x: defender.leftof(-20),
+				y: defender.y,
+				z: defender.behind(50),
+				scale: 3,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+			scene.showEffect('shadowshadowball2', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 1,
+				time: 600,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				time: 900,
+				opacity: 0,
+			}, 'ballistic2');
+			scene.showEffect('shadowshadowball2', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 1,
+				time: 650,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				time: 950,
+				opacity: 0,
+			}, 'linear');
+			scene.showEffect('shadowshadowball2', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 1,
+				time: 700,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				time: 1000,
+				opacity: 0,
+			}, 'ballistic2Under');
+			attacker.anim({
+				x: defender.leftof(20),
+				y: defender.y,
+				z: defender.behind(-20),
+				time: 400,
+			}, 'ballistic2Under');
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				time: 50,
+			});
+			attacker.anim({
+				time: 500,
+			}, 'ballistic2');
+			defender.delay(425);
+			defender.anim({
+				x: defender.leftof(-20),
+				y: defender.y,
+				z: defender.behind(20),
+				time: 50,
+			}, 'swing');
+			defender.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
 	shadowdissolve: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#110131', 700, 0.7);

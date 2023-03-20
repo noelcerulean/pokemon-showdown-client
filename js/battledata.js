@@ -1408,6 +1408,8 @@ royalynx:1344+80,
 royalynxholly:1344+80,
 royalynxjolly:1344+80,
 emolgadelta:1344+81,
+pinecodelta:1344+82,
+sableyefnf:1344+83,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
