@@ -18402,6 +18402,24 @@ const BattleMoveAnims: AnimTable = {
 			}, 'ballistic', 'explode');
 		},
 	},
+	bombsaway: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('flareball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.7,
+				opacity: 0.3,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 1.2,
+				opacity: 0.6,
+				time: 500,
+			}, 'ballistic', 'explode');
+		},
+	},
 	weatherball: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('iceball', {
