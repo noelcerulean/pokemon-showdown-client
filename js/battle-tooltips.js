@@ -1668,6 +1668,9 @@ if(serverPokemon.item==='ovalstone'){
 value.modify(1.5,'Oval Stone boost');
 }
 }
+if(move.id.startsWith('hiddenpower')&&pokemon.getSpeciesForme()==='Allnown'){
+value.modify(1.5,'Allnown boost');
+}
 if(['crushgrip','wringout'].includes(move.id)&&target){
 value.set(
 Math.floor(Math.floor((120*(100*Math.floor(target.hp*4096/target.maxhp))+2048-1)/4096)/100)||1,

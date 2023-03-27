@@ -2401,7 +2401,7 @@ class Battle {
 			this.activateAbility(ofpoke || poke, fromeffect);
 			switch (effect.id) {
 			case 'typechange':
-				if (ofpoke && fromeffect.id === 'reflecttype') {
+				if (ofpoke && fromeffect.id === ('reflecttype' || 'concealment')) {
 					poke.copyTypesFrom(ofpoke);
 				} else {
 					const types = Dex.sanitizeName(args[3] || '???');

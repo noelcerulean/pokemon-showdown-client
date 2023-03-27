@@ -2401,7 +2401,7 @@ this.activateAbility(_poke31,_effect14);
 this.activateAbility(_ofpoke10||_poke31,_fromeffect3);
 switch(_effect14.id){
 case'typechange':
-if(_ofpoke10&&_fromeffect3.id==='reflecttype'){
+if(_ofpoke10&&_fromeffect3.id===('reflecttype'||'concealment')){
 _poke31.copyTypesFrom(_ofpoke10);
 }else{
 var types=Dex.sanitizeName(args[3]||'???');

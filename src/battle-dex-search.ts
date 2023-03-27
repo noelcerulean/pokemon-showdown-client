@@ -1208,7 +1208,7 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 			return abilityid !== 'sheerforce';
 		case 'solarbeam': case 'solarblade':
 			return ['desolateland', 'drought', 'chlorophyll'].includes(abilityid) || itemid === 'powerherb';
-		case 'dynamicpunch': case 'grasswhistle': case 'inferno': case 'sing': case 'zapcannon':
+		case 'dynamicpunch': case 'grasswhistle': case 'inferno': case 'sing':
 			return abilityid === 'noguard';
 		case 'heatcrash': case 'heavyslam':
 			return species.weightkg >= (species.evos ? 75 : 130);
@@ -1224,6 +1224,8 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 				['iceface', 'unburden'].includes(abilityid);
 		case 'beakcannon':
 			return ['skilllink', 'technician'].includes(abilityid);
+		case 'block':
+			return species.baseSpecies === 'Allnown';
 		case 'bulletseed':
 			return ['skilllink', 'technician'].includes(abilityid);
 		case 'counter':
@@ -1240,14 +1242,18 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 			return abilityid === 'refrigerate';
 		case 'grassyglide':
 			return abilityid === 'grassysurge';
+		case 'gravity':
+			return species.baseSpecies === 'Allnown';
 		case 'gyroball':
 			return species.baseStats.spe <= 60;
 		case 'headbutt':
 			return abilityid === 'serenegrace';
+		case 'hiddenpowerdark':
+			return species.baseSpecies === 'Allnown';
 		case 'hiddenpowerelectric':
 			return (dex.gen < 4 && !moves.includes('thunderpunch')) && !moves.includes('thunderbolt');
 		case 'hiddenpowerfighting':
-			return (dex.gen < 4 && !moves.includes('brickbreak')) && !moves.includes('aurasphere') && !moves.includes('focusblast');
+			return (dex.gen < 4 && !moves.includes('brickbreak')) && !moves.includes('aurasphere') && !moves.includes('focusblast') || species.baseSpecies === 'Allnown';
 		case 'hiddenpowerfire':
 			return (dex.gen < 4 && !moves.includes('firepunch')) && !moves.includes('flamethrower');
 		case 'hiddenpowergrass':
@@ -1267,26 +1273,36 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 		case 'icywind':
 			// Keldeo needs Hidden Power for Electric/Ghost
 			return species.baseSpecies === 'Keldeo' || this.formatType === 'doubles';
+		case 'imprison':
+			return species.baseSpecies === 'Allnown';
 		case 'infestation':
 			return moves.includes('stickyweb');
 		case 'irontail':
 			return dex.gen > 5 && !moves.includes('ironhead') && !moves.includes('gunkshot') && !moves.includes('poisonjab');
 		case 'jumpkick':
 			return !moves.includes('highjumpkick');
+		case 'kinesis':
+			return species.baseSpecies === 'Allnown';
 		case 'leechlife':
 			return dex.gen > 6;
+		case 'mysteryroom':
+			return species.baseSpecies === 'Allnown';
 		case 'mysticalfire':
 			return dex.gen > 6 && !moves.includes('flamethrower');
 		case 'naturepower':
-			return dex.gen === 5;
+			return dex.gen === 5 || species.baseSpecies === 'Allnown';
 		case 'nightslash':
 			return !moves.includes('crunch') && !(moves.includes('knockoff') && dex.gen >= 6);
+		case 'ominouswind':
+			return species.baseSpecies === 'Allnown';
 		case 'petaldance':
 			return abilityid === 'owntempo';
 		case 'phantomforce':
 			return (!moves.includes('poltergeist') && !moves.includes('shadowclaw')) || this.formatType === 'doubles';
 		case 'poisonfang':
 			return species.types.includes('Poison') && !moves.includes('gunkshot') && !moves.includes('poisonjab');
+		case 'quickguard':
+			return species.baseSpecies === 'Allnown';
 		case 'relicsong':
 			return species.id === 'meloetta';
 		case 'refresh':
@@ -1295,6 +1311,8 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 			return abilityid === 'electricsurge';
 		case 'rocktomb':
 			return abilityid === 'technician';
+		case 'secretpower':
+			return species.baseSpecies === 'Allnown';
 		case 'selfdestruct':
 			return dex.gen < 5 && !moves.includes('explosion');
 		case 'smackdown':
@@ -1321,6 +1339,10 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 			return ['megalauncher', 'technician'].includes(abilityid) && !moves.includes('originpulse');
 		case 'trickroom':
 			return species.baseStats.spe <= 100;
+		case 'uproar':
+			return species.baseSpecies === 'Allnown';
+		case 'zapcannon':
+			return species.baseSpecies === 'Allnown' || abilityid === 'noguard';
 		case 'shadowbandit': case 'shadowbath': case 'shadowbolt': case 'shadowbreak': case 'shadowcascade': case 'shadowchant': case 'shadowcharge': case 'shadowchill': case 'shadowcinder': case 'shadowcombust': case 'shadowdance': case 'shadowdestruction': case 'shadowdevastation': case 'shadowdevour': case 'shadowdissolve': case 'shadowdoomsday': case 'shadowdown': case 'shadowend': case 'shadowevoboost': case 'shadowfire': case 'shadowfission': case 'shadowflame': case 'shadowfog': case 'shadowfrost': case 'shadowfumes': case 'shadowfusion': case 'shadowglaze': case 'shadowglow': case 'shadowhatred': case 'shadowhaunting': case 'shadowhold': case 'shadowhubris': case 'shadowhurl': case 'shadowintensify': case 'shadowjolt': case 'shadowmeld': case 'shadowmist': case 'shadowmoon': case 'shadowmoss': case 'shadowpanic': case 'shadowphoenix': case 'shadowpivot': case 'shadowpunish': case 'shadowrage': case 'shadowrainbow': case 'shadowrave': case 'shadowreset': case 'shadowroulette': case 'shadowrush': case 'shadowscheme': case 'shadowseed': case 'shadowshackle': case 'shadowshatter': case 'shadowshed': case 'shadowshuffle': case 'shadowsiren': case 'shadowslasher': case 'shadowsnipe': case 'shadowsorcery': case 'shadowspell': case 'shadowsprint': case 'shadowsprites': case 'shadowstare': case 'shadowstorm': case 'shadowsun': case 'shadowthreat': case 'shadowtitan': case 'shadowtrance': case 'shadowvampirism': case 'shadowvelocity': case 'shadowvengeance': case 'shadowwall': case 'shadowwave': case 'shadowwheel': case 'shadowwhip': case 'shadowwreckage':
 			// All Shadow Moves are listed here so they don't appear as useless.
 			return dex.gen > 2;
