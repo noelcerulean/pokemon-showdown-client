@@ -426,6 +426,7 @@ haxorusshredder:1344+84,
 bombseal:1344+85,
 allnown:1344+86,
 roboheeyem:1344+87,
+arthrogon:1344+88,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,

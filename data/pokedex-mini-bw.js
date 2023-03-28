@@ -568,6 +568,7 @@ exports.BattlePokemonSpritesBW = {
 	flygon:{num:330},
 	flygonwinter:{num:330},
 	flygonjacket:{num:330},
+	arthrogon:{num:-525},
 	cacnea:{num:331},
 	cacturne:{num:332},
 	swablu:{num:333},
