@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/battle-royale.mp3', 14950, 74000, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/kahuna-battle.mp3', 37195, 135644, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/battle-royale.mp3', 14950, 74000, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/kahuna-battle.mp3', 37195, 135644, this.bgm);
 				break;
 			}
 	
