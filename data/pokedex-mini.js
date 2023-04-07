@@ -352,6 +352,7 @@ exports.BattlePokemonSprites = {
 	wolfman:{num:-511},
 	warwolf:{num:-512},
 	bombseal:{num:-522},
+	bombsealfiesta:{num:-522},
 	unown:{num:201},
 	unownb:{num:201},
 	unownc:{num:201},
