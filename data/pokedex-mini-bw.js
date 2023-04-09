@@ -599,6 +599,8 @@ exports.BattlePokemonSpritesBW = {
 	castformsunny:{num:351},
 	castformrainy:{num:351},
 	castformsnowy:{num:351},
+	castformsandy:{num:351},
+	castformsmoggy:{num:351},
 	kecleon:{num:352},
 	kecleongenocalypse:{num:352},
 	shuppet:{num:353},

@@ -428,6 +428,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	allnown: 1344 + 86,
 	roboheeyem: 1344 + 87,
 	arthrogon: 1344 + 88,
+	castformsandy: 1344 + 89,
+	castformsmoggy: 1344 + 90,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
