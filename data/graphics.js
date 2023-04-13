@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;}
 
 
@@ -3194,33 +3194,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-ancient.png',
-'bg-aquacordetown.jpg',
-'bg-autumn.png',
-'bg-beach.jpg',
-'bg-cave.png',
-'bg-city.jpg',
-'bg-dampcave.jpg',
-'bg-darkbeach.jpg',
-'bg-darkcity.jpg',
-'bg-darkmeadow.jpg',
-'bg-deepsea.jpg',
-'bg-desert.jpg',
-'bg-earthycave.jpg',
-'bg-elite4drake.jpg',
-'bg-flowers.png',
-'bg-forest.jpg',
-'bg-greens.png',
-'bg-greenssunset.png',
-'bg-icecave.jpg',
-'bg-leaderwallace.jpg',
-'bg-library.jpg',
-'bg-meadow.jpg',
-'bg-orasdesert.jpg',
-'bg-orassea.jpg',
-'bg-skypillar.jpg',
-'bg-snowscape.png',
-'bg-workout.png'];
+'bg-steel.png'];
 
 
 var BattleOtherAnims={
