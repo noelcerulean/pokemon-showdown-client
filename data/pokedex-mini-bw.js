@@ -11,6 +11,7 @@ exports.BattlePokemonSpritesBW = {
 	ivysaur:{num:2},
 	ivysaursylvanos:{num:2},
 	venusaur:{num:3},
+	venusaursylvanos:{num:3},
 	venusaurmega:{num:3},
 	venusaurgmax:{num:3},
 	charmander:{num:4},
