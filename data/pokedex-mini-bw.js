@@ -1045,6 +1045,7 @@ exports.BattlePokemonSpritesBW = {
 	greninjaash:{num:658},
 	bunnelby:{num:659},
 	diggersby:{num:660},
+	diggersbypride:{num:660},
 	fletchling:{num:661},
 	fletchinder:{num:662},
 	talonflame:{num:663},
