@@ -1226,6 +1226,7 @@ exports.BattlePokemonSpritesBW = {
 	bounsweet:{num:761},
 	steenee:{num:762},
 	tsareena:{num:763},
+	tsareenadelta:{num:763},
 	comfey:{num:764},
 	oranguru:{num:765},
 	passimian:{num:766},
