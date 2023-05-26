@@ -1421,6 +1421,7 @@ arthrogon:1344+88,
 castformsandy:1344+89,
 castformsmoggy:1344+90,
 tsareenadelta:1344+91,
+boomba:1344+92,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,

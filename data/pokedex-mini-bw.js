@@ -351,6 +351,7 @@ exports.BattlePokemonSpritesBW = {
 	pangshimelon:{num:-506},
 	wolfman:{num:-511},
 	warwolf:{num:-512},
+	boomba:{num:-526},
 	bombseal:{num:-522},
 	bombsealfiesta:{num:-522},
 	unown:{num:201},
