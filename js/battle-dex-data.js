@@ -138,7 +138,7 @@ spe:'Spe'};
 
 
 var BattleBaseSpeciesChart=[
-"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","ivysaur","venusaur","garchomp","mightyena","parasectfnf","sableyefnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","royalynx","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","marshadow","dewottpika","raichumalachite","decidueyeapollo","altaria","fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable","poliwrath","hydreigon","infernape","drapion","parasect","xurkitree","lumineon","sablechamp","bombseal","diggersby","leafeon"];
+"unown","burmy","shellos","gastrodon","deerling","sawsbuck","vivillon","flabebe","floette","florges","furfrou","minior","alcremie","pokestarufo","pokestarbrycenman","pokestarmt","pokestarmt2","pokestartransport","pokestargiant","pokestarhumanoid","pokestarmonster","pokestarf00","pokestarf002","pokestarspirit","pokestarblackdoor","pokestarwhitedoor","pokestarblackbelt","trapinch","hypno","typhlosion","raichu","pikachu","pichu","blacephalon","bastiodon","samurott","mamoswine","breloom","sableye","solrock","simisage","bulbasaur","ivysaur","venusaur","garchomp","mightyena","parasectfnf","sableyefnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus","octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava","flygon","dialga","royalynx","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod","dewott","marshadow","dewottpika","raichumalachite","decidueyeapollo","altaria","fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable","poliwrath","hydreigon","infernape","drapion","parasect","xurkitree","lumineon","sablechamp","bombseal","diggersby","leafeon"];
 
 
 var BattlePokemonIconIndexes={
@@ -432,6 +432,7 @@ castformsandy:1344+89,
 castformsmoggy:1344+90,
 tsareenadelta:1344+91,
 boomba:1344+92,
+mindow:1344+93,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
