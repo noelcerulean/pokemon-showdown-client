@@ -1423,6 +1423,7 @@ castformsmoggy:1344+90,
 tsareenadelta:1344+91,
 boomba:1344+92,
 mindow:1344+93,
+anchorage:1344+94,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
