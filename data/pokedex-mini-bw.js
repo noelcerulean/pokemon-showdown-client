@@ -1243,6 +1243,7 @@ exports.BattlePokemonSpritesBW = {
 	golisopod:{num:768},
 	golisopoduncooked:{num:768},
 	golisopodmusashi:{num:768},
+	golisopodmusashistache:{num:768},
 	sandygast:{num:769},
 	palossand:{num:770},
 	pyukumuku:{num:771},
