@@ -138,7 +138,20 @@ const BattleStatNames = {
 } as const;
 
 const BattleBaseSpeciesChart = [
-	"unown", "burmy", "shellos", "gastrodon", "deerling", "sawsbuck", "vivillon", "flabebe", "floette", "florges", "furfrou", "minior", "alcremie", "pokestarufo", "pokestarbrycenman", "pokestarmt", "pokestarmt2", "pokestartransport", "pokestargiant", "pokestarhumanoid", "pokestarmonster", "pokestarf00", "pokestarf002", "pokestarspirit", "pokestarblackdoor", "pokestarwhitedoor", "pokestarblackbelt", "trapinch", "hypno", "typhlosion", "raichu", "pikachu", "pichu", "blacephalon", "bastiodon", "samurott", "mamoswine", "breloom", "sableye", "solrock", "simisage", "bulbasaur", "ivysaur", "venusaur", "garchomp", "mightyena", "parasectfnf", "sableyefnf", "aromatissefnf", "heatmor", "gengar", "vespiquen", "delcatty", "aurorus", "octillery", "rampardos", "mothim", "maractus", "gliscor", "spiritomb", "emolga", "vibrava", "flygon", "dialga", "royalynx", "kurstraw", "pangshi", "shuckle", "clefgar", "lanturn", "golisopod", "dewott", "marshadow", "dewottpika", "raichumalachite", "decidueyeapollo", "altaria", "fraxurefrenzy", "medicham", "turbann", "swirlix", "misdreavus", "ninetales", "clefable", "poliwrath", "hydreigon", "infernape", "drapion", "parasect", "xurkitree", "lumineon", "sablechamp", "bombseal", "diggersby", "leafeon",
+	"unown", "burmy", "shellos", "gastrodon", "deerling", "sawsbuck", "vivillon", "flabebe",
+	"floette", "florges", "furfrou", "minior", "alcremie", "pokestarufo", "pokestarbrycenman",
+	"pokestarmt", "pokestarmt2", "pokestartransport", "pokestargiant", "pokestarhumanoid",
+	"pokestarmonster", "pokestarf00", "pokestarf002", "pokestarspirit", "pokestarblackdoor",
+	"pokestarwhitedoor", "pokestarblackbelt", "trapinch", "hypno", "typhlosion", "raichu",
+	"pikachu", "pichu", "blacephalon", "bastiodon", "samurott", "mamoswine", "breloom", "sableye",
+	"solrock", "simisage", "bulbasaur", "ivysaur", "venusaur", "garchomp", "mightyena", "parasectfnf",
+	"sableyefnf", "aromatissefnf", "heatmor", "gengar", "vespiquen", "delcatty", "aurorus",
+	"octillery", "rampardos", "mothim", "maractus", "gliscor", "spiritomb", "emolga", "vibrava",
+	"flygon", "dialga", "royalynx", "kurstraw", "pangshi", "shuckle", "clefgar", "lanturn", "golisopod",
+	"dewott", "marshadow", "dewottpika", "raichumalachite", "decidueyeapollo", "altaria",
+	"fraxurefrenzy", "medicham", "turbann", "swirlix", "misdreavus", "ninetales", "clefable",
+	"poliwrath", "hydreigon", "infernape", "drapion", "parasect", "xurkitree", "lumineon", "roseradearmored",
+	"sablechamp", "bombseal", "diggersby", "leafeon",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -404,6 +417,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	samsarula: 1344 + 66,
 	robodachi: 1344 + 67,
 	roseradearmored: 1344 + 68,
+	roseradearmoredsummer: 1344 + 68,
 	longeon: 1344 + 69,
 	growlithefnf: 1344 + 70,
 	arcaninefnf: 1344 + 71,
@@ -434,6 +448,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	boomba: 1344 + 92,
 	mindow: 1344 + 93,
 	anchorage: 1344 + 94,
+	gorochu: 1344 + 95,
+	minamai: 1344 + 96,
+	marelstorm: 1344 + 97,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,

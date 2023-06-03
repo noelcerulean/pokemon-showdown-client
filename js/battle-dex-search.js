@@ -1208,7 +1208,7 @@ case'fakeout':case'flamecharge':case'nuzzle':case'poweruppunch':
 return abilityid!=='sheerforce';
 case'solarbeam':case'solarblade':
 return['desolateland','drought','chlorophyll'].includes(abilityid)||itemid==='powerherb';
-case'dynamicpunch':case'grasswhistle':case'inferno':case'sing':case'zapcannon':
+case'dynamicpunch':case'grasswhistle':case'inferno':case'sing':
 return abilityid==='noguard';
 case'heatcrash':case'heavyslam':
 return species.weightkg>=(species.evos?75:130);
@@ -1219,10 +1219,16 @@ case'ancientpower':
 return['serenegrace','technician'].includes(abilityid)||!moves.includes('powergem');
 case'aurawheel':
 return species.baseSpecies==='Morpeko';
+case'barrage':
+return['skilllink','technician'].includes(abilityid);
 case'bellydrum':
 return moves.includes('aquajet')||moves.includes('extremespeed')||
 ['iceface','unburden'].includes(abilityid);
 case'beakcannon':
+return['skilllink','technician'].includes(abilityid);
+case'block':
+return species.baseSpecies==='Allnown';
+case'bombsaway':
 return['skilllink','technician'].includes(abilityid);
 case'bulletseed':
 return['skilllink','technician'].includes(abilityid);
@@ -1240,14 +1246,18 @@ case'feint':
 return abilityid==='refrigerate';
 case'grassyglide':
 return abilityid==='grassysurge';
+case'gravity':
+return species.baseSpecies==='Allnown';
 case'gyroball':
 return species.baseStats.spe<=60;
 case'headbutt':
 return abilityid==='serenegrace';
+case'hiddenpowerdark':
+return species.baseSpecies==='Allnown';
 case'hiddenpowerelectric':
 return dex.gen<4&&!moves.includes('thunderpunch')&&!moves.includes('thunderbolt');
 case'hiddenpowerfighting':
-return dex.gen<4&&!moves.includes('brickbreak')&&!moves.includes('aurasphere')&&!moves.includes('focusblast');
+return dex.gen<4&&!moves.includes('brickbreak')&&!moves.includes('aurasphere')&&!moves.includes('focusblast')||species.baseSpecies==='Allnown';
 case'hiddenpowerfire':
 return dex.gen<4&&!moves.includes('firepunch')&&!moves.includes('flamethrower');
 case'hiddenpowergrass':
@@ -1267,26 +1277,36 @@ return dex.gen<4&&!moves.includes('sleeppowder')||dex.gen>6&&abilityid==='baddre
 case'icywind':
 
 return species.baseSpecies==='Keldeo'||this.formatType==='doubles';
+case'imprison':
+return species.baseSpecies==='Allnown';
 case'infestation':
 return moves.includes('stickyweb');
 case'irontail':
 return dex.gen>5&&!moves.includes('ironhead')&&!moves.includes('gunkshot')&&!moves.includes('poisonjab');
 case'jumpkick':
 return!moves.includes('highjumpkick');
+case'kinesis':
+return species.baseSpecies==='Allnown';
 case'leechlife':
 return dex.gen>6;
+case'mysteryroom':
+return species.baseSpecies==='Allnown';
 case'mysticalfire':
 return dex.gen>6&&!moves.includes('flamethrower');
 case'naturepower':
-return dex.gen===5;
+return dex.gen===5||species.baseSpecies==='Allnown';
 case'nightslash':
 return!moves.includes('crunch')&&!(moves.includes('knockoff')&&dex.gen>=6);
+case'ominouswind':
+return species.baseSpecies==='Allnown';
 case'petaldance':
 return abilityid==='owntempo';
 case'phantomforce':
 return!moves.includes('poltergeist')&&!moves.includes('shadowclaw')||this.formatType==='doubles';
 case'poisonfang':
 return species.types.includes('Poison')&&!moves.includes('gunkshot')&&!moves.includes('poisonjab');
+case'quickguard':
+return species.baseSpecies==='Allnown';
 case'relicsong':
 return species.id==='meloetta';
 case'refresh':
@@ -1295,6 +1315,8 @@ case'risingvoltage':
 return abilityid==='electricsurge';
 case'rocktomb':
 return abilityid==='technician';
+case'secretpower':
+return species.baseSpecies==='Allnown';
 case'selfdestruct':
 return dex.gen<5&&!moves.includes('explosion');
 case'smackdown':
@@ -1321,6 +1343,10 @@ case'terrainpulse':case'waterpulse':
 return['megalauncher','technician'].includes(abilityid)&&!moves.includes('originpulse');
 case'trickroom':
 return species.baseStats.spe<=100;
+case'uproar':
+return species.baseSpecies==='Allnown';
+case'zapcannon':
+return species.baseSpecies==='Allnown'||abilityid==='noguard';
 case'shadowbandit':case'shadowbath':case'shadowbolt':case'shadowbreak':case'shadowcascade':case'shadowchant':case'shadowcharge':case'shadowchill':case'shadowcinder':case'shadowcombust':case'shadowdance':case'shadowdestruction':case'shadowdevastation':case'shadowdevour':case'shadowdissolve':case'shadowdoomsday':case'shadowdown':case'shadowend':case'shadowevoboost':case'shadowfire':case'shadowfission':case'shadowflame':case'shadowfog':case'shadowfrost':case'shadowfumes':case'shadowfusion':case'shadowglaze':case'shadowglow':case'shadowhatred':case'shadowhaunting':case'shadowhold':case'shadowhubris':case'shadowhurl':case'shadowintensify':case'shadowjolt':case'shadowmeld':case'shadowmist':case'shadowmoon':case'shadowmoss':case'shadowpanic':case'shadowphoenix':case'shadowpivot':case'shadowpunish':case'shadowrage':case'shadowrainbow':case'shadowrave':case'shadowreset':case'shadowroulette':case'shadowrush':case'shadowscheme':case'shadowseed':case'shadowshackle':case'shadowshatter':case'shadowshed':case'shadowshuffle':case'shadowsiren':case'shadowslasher':case'shadowsnipe':case'shadowsorcery':case'shadowspell':case'shadowsprint':case'shadowsprites':case'shadowstare':case'shadowstorm':case'shadowsun':case'shadowthreat':case'shadowtitan':case'shadowtrance':case'shadowvampirism':case'shadowvelocity':case'shadowvengeance':case'shadowwall':case'shadowwave':case'shadowwheel':case'shadowwhip':case'shadowwreckage':
 
 return dex.gen>2;}
@@ -1548,7 +1574,7 @@ return pp2-pp1;
 });}
 
 throw new Error("invalid sortcol");
-};return BattleMoveSearch;}(BattleTypedSearch);BattleMoveSearch.GOOD_STATUS_MOVES=['aggregate','agility','aromatherapy','auroraveil','autotomize','banefulbunker','batonpass','bellydrum','bulkup','calmmind','chillingrime','clangoroussoul','coil','cottonguard','courtchange','curse','darkvoid','defog','destinybond','detect','disable','dragondance','drainingkiss','drypass','encore','extremeevoboost','geomancy','glare','haze','healbell','healingwish','healorder','heartswap','honeclaws','kappo','kingsshield','irondefense','leechseed','lightscreen','lovelykiss','lunardance','magiccoat','maxguard','memento','milkdrink','moonlight','morningsun','nastyplot','naturesmadness','noretreat','obstruct','painsplit','parasiticdrain','partingshot','perishsong','protect','quiverdance','recover','reflect','reflecttype','regroup','rest','roar','rockpolish','roost','shellsmash','shiftgear','shoreup','slackoff','sleeppowder','sleeptalk','softboiled','spikes','spikyshield','spore','stealthrock','stickyweb','strengthsap','substitute','switcheroo','swordsdance','synthesis','tailglow','tailwind','taunt','thunderwave','toxic','toxicspikes','transform','trick','whirlwind','willowisp','wish','yawn'];BattleMoveSearch.GOOD_WEAK_MOVES=['accelerock','acrobatics','aquajet','avalanche','bonemerang','bouncybubble','bulletpunch','buzzybuzz','circlethrow','clearsmog','cosmicspin','cumuloroll','doubleironbash','dragondarts','dragontail','endeavor','facade','firefang','flipturn','freezedry','frustration','geargrind','grassknot','gyroball','hex','icefang','iceshard','iciclespear','knockoff','lowkick','lunaticeyes','machpunch','naughtyornice','nightshade','nuzzle','onetwopunch','payday','pikapapow','propulsionshot','psychocut','pursuit','quickattack','rapidspin','return','rockblast','scorchingsands','seismictoss','shadowclaw','shadowsneak','sizzlyslide','spiderweb','sporeslash','storedpower','stormthrow','suckerpunch','superfang','surgingstrikes','sweep up','tailslap','toxicthread','tripleaxel','triplekick','twineedle','uturn','vaporize','veeveevolley','voltswitch','watershuriken','weatherball'];BattleMoveSearch.BAD_STRONG_MOVES=['belch','burnup','crushclaw','doomdesire','dragonrush','dreameater','firepledge','flyingpress','futuresight','grasspledge','hyperbeam','hyperfang','hyperspacehole','jawlock','landswrath','lastresort','mistyexplosion','muddywater','nightdaze','pollenpuff','selfdestruct','shelltrap','skyuppercut','slam','strength','synchronoise','takedown','thrash','uproar','waterpledge'];BattleMoveSearch.GOOD_DOUBLES_MOVES=['allyswitch','bulldoze','coaching','electroweb','faketears','fling','followme','healpulse','helpinghand','junglehealing','lifedew','muddywater','pollenpuff','psychup','ragepowder','safeguard','skillswap','snipeshot','wideguard'];var
+};return BattleMoveSearch;}(BattleTypedSearch);BattleMoveSearch.GOOD_STATUS_MOVES=['aggregate','agility','aromatherapy','auroraveil','autotomize','banefulbunker','batonpass','bellydrum','bulkup','calmmind','chillingrime','clangoroussoul','coil','cottonguard','courtchange','curse','darkvoid','defog','destinybond','detect','disable','dragondance','drainingkiss','drypass','encore','extremeevoboost','geomancy','glare','haze','healbell','healingwish','healorder','heartswap','honeclaws','kappo','kingsshield','irondefense','leechseed','lightscreen','lovelykiss','lunardance','magiccoat','maxguard','memento','milkdrink','moonlight','morningsun','nastyplot','naturesmadness','noretreat','obstruct','painsplit','parasiticdrain','partingshot','perishsong','protect','quiverdance','recover','reflect','reflecttype','regroup','rest','roar','rockpolish','roost','shellsmash','shiftgear','shoreup','slackoff','sleeppowder','sleeptalk','softboiled','spikes','spikyshield','spore','stealthrock','stickyweb','strengthsap','substitute','switcheroo','swordsdance','synthesis','tailglow','tailwind','taunt','thunderwave','toxic','toxicspikes','transform','trick','whirlwind','willowisp','wish','yawn'];BattleMoveSearch.GOOD_WEAK_MOVES=['accelerock','acrobatics','aquajet','avalanche','bombsaway','bonemerang','bouncybubble','bulletpunch','buzzybuzz','circlethrow','clearsmog','cosmicspin','cumuloroll','doubleironbash','dragondarts','dragontail','endeavor','facade','firefang','flipturn','freezedry','frustration','geargrind','grassknot','gyroball','hex','icefang','iceshard','iciclespear','knockoff','lowkick','lunaticeyes','machpunch','naughtyornice','nightshade','nuzzle','onetwopunch','payday','pikapapow','propulsionshot','psychocut','pursuit','quickattack','rapidspin','return','rockblast','scorchingsands','seismictoss','shadowclaw','shadowsneak','sizzlyslide','spiderweb','sporeslash','storedpower','stormthrow','suckerpunch','superfang','surgingstrikes','sweep up','tailslap','toxicthread','tripleaxel','triplekick','twineedle','uturn','vaporize','veeveevolley','voltswitch','watershuriken','weatherball'];BattleMoveSearch.BAD_STRONG_MOVES=['belch','burnup','crushclaw','doomdesire','dragonrush','dreameater','firepledge','flyingpress','futuresight','grasspledge','hyperbeam','hyperfang','hyperspacehole','jawlock','landswrath','lastresort','mistyexplosion','muddywater','nightdaze','pollenpuff','selfdestruct','shelltrap','skyuppercut','slam','strength','synchronoise','takedown','thrash','uproar','waterpledge'];BattleMoveSearch.GOOD_DOUBLES_MOVES=['allyswitch','bulldoze','coaching','electroweb','faketears','fling','followme','healpulse','helpinghand','junglehealing','lifedew','muddywater','pollenpuff','psychup','ragepowder','safeguard','skillswap','snipeshot','wideguard'];var
 
 
 BattleCategorySearch=function(_BattleTypedSearch5){_inheritsLoose(BattleCategorySearch,_BattleTypedSearch5);function BattleCategorySearch(){return _BattleTypedSearch5.apply(this,arguments)||this;}var _proto7=BattleCategorySearch.prototype;_proto7.

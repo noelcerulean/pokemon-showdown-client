@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/neos-city.mp3',14492,119725,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-penny.mp3',48902,197473,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/neos-city.mp3',14492,119725,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-penny.mp3',48902,197473,this.bgm);
 break;}
 
 
