@@ -451,6 +451,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	gorochu: 1344 + 95,
 	minamai: 1344 + 96,
 	marelstorm: 1344 + 97,
+	slugnami: 1344 + 98,
 
 	gumshoostotem: 735,
 	raticatealolatotem: 900 + 120,
