@@ -1442,6 +1442,8 @@ gorochu:1344+95,
 minamai:1344+96,
 marelstorm:1344+97,
 slugnami:1344+98,
+joltikdelta:1344+99,
+galvantuladelta:1344+100,
 
 gumshoostotem:735,
 raticatealolatotem:900+120,
