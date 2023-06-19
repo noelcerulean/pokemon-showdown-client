@@ -451,6 +451,7 @@ exports.BattlePokemonSpritesBW = {
 	magby:{num:240},
 	miltank:{num:241},
 	blissey:{num:242},
+	blisseybutcher:{num:242},
 	raikou:{num:243},
 	raikoujasper:{num:243},
 	entei:{num:244},
