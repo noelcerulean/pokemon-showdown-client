@@ -8924,6 +8924,9 @@ const BattleMoveAnims: AnimTable = {
 	naturepower: {
 		anim() {},
 	},
+	florapower: {
+		anim() {},
+	},
 	copycat: {
 		anim() {},
 	},
@@ -12122,6 +12125,122 @@ const BattleMoveAnims: AnimTable = {
 				time: 500,
 			}, 'accel');
 			scene.showEffect('flareball', {
+				x: defender.leftof(10),
+				y: defender.y - 10,
+				z: defender.behind(-40),
+				scale: 0.7,
+				yscale: 1,
+				opacity: 0.8,
+				time: 400,
+			}, {
+				z: defender.behind(5),
+				scale: 0,
+				xscale: 0,
+				yscale: 0,
+				time: 550,
+			}, 'accel');
+		},
+	},
+	icedrill: { // todo: rip horn sprite and redo animation
+		anim(scene, [attacker, defender]) {
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(-5),
+				time: 300,
+			}, 'accel');
+			attacker.anim({
+				time: 500,
+			}, 'ballistic2Back');
+			defender.delay(280);
+			defender.anim({
+				z: defender.behind(20),
+				time: 200,
+			});
+			defender.anim({
+				z: defender.behind(0),
+				time: 200,
+			});
+
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.5,
+				time: 300,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 600,
+			}, 'linear');
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.5,
+				time: 400,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+			scene.showEffect('impact', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.4,
+				time: 300,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 500,
+			}, 'linear');
+			scene.showEffect('impact', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 0.4,
+				time: 500,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+			scene.showEffect('iceball', {
+				x: defender.leftof(10),
+				y: defender.y - 10,
+				z: defender.behind(-40),
+				scale: 0.7,
+				yscale: 1,
+				opacity: 0.8,
+				time: 300,
+			}, {
+				z: defender.behind(5),
+				scale: 0,
+				xscale: 0,
+				yscale: 0,
+				time: 450,
+			}, 'accel');
+			scene.showEffect('iceball', {
+				x: defender.leftof(10),
+				y: defender.y - 10,
+				z: defender.behind(-40),
+				scale: 0.7,
+				yscale: 1,
+				opacity: 0.8,
+				time: 350,
+			}, {
+				z: defender.behind(5),
+				scale: 0,
+				xscale: 0,
+				yscale: 0,
+				time: 500,
+			}, 'accel');
+			scene.showEffect('iceball', {
 				x: defender.leftof(10),
 				y: defender.y - 10,
 				z: defender.behind(-40),
@@ -39201,6 +39320,7 @@ BattleMoveAnims['ember'] = {anim: BattleMoveAnims['flamethrower'].anim};
 BattleMoveAnims['incinerate'] = {anim: BattleMoveAnims['flamethrower'].anim};
 BattleMoveAnims['flamewheel'] = {anim: BattleMoveAnims['flamecharge'].anim};
 BattleMoveAnims['cosmicspin'] = {anim: BattleMoveAnims['flamecharge'].anim};
+BattleMoveAnims['fieryblossom'] = {anim: BattleMoveAnims['flamecharge'].anim};
 
 BattleMoveAnims['razorleaf'] = {anim: BattleMoveAnims['magicalleaf'].anim};
 BattleMoveAnims['grasspledge'] = {anim: BattleMoveAnims['magicalleaf'].anim};
@@ -39210,6 +39330,7 @@ BattleMoveAnims['stunspore'] = {anim: BattleMoveAnims['spore'].anim};
 BattleMoveAnims['powder'] = {anim: BattleMoveAnims['spore'].anim};
 BattleMoveAnims['cottonspore'] = {anim: BattleMoveAnims['spore'].anim};
 BattleMoveAnims['vinewhip'] = {anim: BattleMoveAnims['powerwhip'].anim};
+BattleMoveAnims['biddybud'] = {anim: BattleMoveAnims['leafage'].anim};
 
 BattleMoveAnims['bubble'] = {anim: BattleMoveAnims['bubblebeam'].anim};
 BattleMoveAnims['sparklingaria'] = {anim: BattleMoveAnims['bubblebeam'].anim};
