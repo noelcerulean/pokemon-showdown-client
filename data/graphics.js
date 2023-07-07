@@ -46021,6 +46021,7 @@ BattleMoveAnims['doubleslap']={anim:BattleMoveAnims['wakeupslap'].anim};
 BattleMoveAnims['crushgrip']={anim:BattleMoveAnims['quash'].anim};
 
 BattleMoveAnims['sweepup']={anim:BattleMoveAnims['tailslap'].anim};
+BattleMoveAnims['catburglary']={anim:BattleMoveAnims['spectralthief'].anim};
 
 BattleMoveAnims['beatup']={anim:BattleMoveAnims['slam'].anim};
 BattleMoveAnims['counter']={anim:BattleMoveAnims['slam'].anim};
@@ -46095,6 +46096,7 @@ BattleMoveAnims['disable']={anim:BattleMoveAnims['meanlook'].anim};
 BattleMoveAnims['laserfocus']={anim:BattleMoveAnims['meanlook'].anim};
 BattleMoveAnims['lunaticeyes']={anim:BattleMoveAnims['meanlook'].anim};
 BattleMoveAnims['nightmare']={anim:BattleMoveAnims['nightshade'].anim};
+BattleMoveAnims['creepingdespair']={anim:BattleMoveAnims['nightshade'].anim};
 
 
 BattleMoveAnims['captivate']={anim:BattleMoveAnims['attract'].anim};

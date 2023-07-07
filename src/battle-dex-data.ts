@@ -151,7 +151,7 @@ const BattleBaseSpeciesChart = [
 	"dewott", "marshadow", "dewottpika", "raichumalachite", "decidueyeapollo", "altaria",
 	"fraxurefrenzy", "medicham", "turbann", "swirlix", "misdreavus", "ninetales", "clefable",
 	"poliwrath", "hydreigon", "infernape", "drapion", "parasect", "xurkitree", "lumineon", "roseradearmored",
-	"sablechamp", "bombseal", "diggersby", "leafeon", "golisopodmusashi", "blissey",
+	"sablechamp", "bombseal", "diggersby", "leafeon", "golisopodmusashi", "blissey", "espeon", "umbreon",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -492,6 +492,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	molno: 146,
 	mudno: 258,
 	phanpno: 231,
+	pichno: 172,
 	pidgeono: 17,
 	pilosno: 221,
 	rapidno: 78,
