@@ -152,6 +152,8 @@ const BattleBaseSpeciesChart = [
 	"fraxurefrenzy", "medicham", "turbann", "swirlix", "misdreavus", "ninetales", "clefable",
 	"poliwrath", "hydreigon", "infernape", "drapion", "parasect", "xurkitree", "lumineon", "roseradearmored",
 	"sablechamp", "bombseal", "diggersby", "leafeon", "golisopodmusashi", "blissey", "espeon", "umbreon",
+	"glaceon",
+	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -459,6 +461,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 
 	//hypnomons
 	ano: 304,
+	anonose: 304,
 	bagno: 371,
 	baneno: 354,
 	bonsno: 438,
@@ -466,7 +469,12 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	bunno: 427,
 	butterno: 12,
 	charino: 6,
+	charinoystone: 6,
 	dewno: 87,
+	fearno: 22,
+	fearnobeak: 22,
+	fearnowings: 22,
+	fearnobeakwings: 22,
 	flyno: 330,
 	gliscno: 472,
 	gravno: 75,
@@ -481,6 +489,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	hyptuff: 40,
 	ivyno: 2,
 	krokono: 552,
+	krokonoswag: 552,
 	lantno: 171,
 	ledyno: 165,
 	luxino: 404,
@@ -507,9 +516,11 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	sunflono: 192,
 	tyno: 236,
 	venono: 49,
+	venonomothman: 49,
 	venuno: 3,
 	vileno: 45,
 	wiggno: 40,
+	wiggnohappy: 40,
 	woopno: 194,
 	zoruno: 570,
 
