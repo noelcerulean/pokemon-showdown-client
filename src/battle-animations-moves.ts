@@ -797,6 +797,9 @@ const BattleMoveAnims: AnimTable = {
 	miasma: {
 		anim: BattleOtherAnims.dance.anim,
 	},
+	hypnofamilyreunion: {
+		anim: BattleOtherAnims.dance.anim,
+	},
 	gravity: {
 		anim() {
 			// do not give Gravity an animation,

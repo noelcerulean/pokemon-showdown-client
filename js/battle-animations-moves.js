@@ -797,6 +797,9 @@ anim:BattleOtherAnims.dance.anim},
 miasma:{
 anim:BattleOtherAnims.dance.anim},
 
+hypnofamilyreunion:{
+anim:BattleOtherAnims.dance.anim},
+
 gravity:{
 anim:function(){
 
