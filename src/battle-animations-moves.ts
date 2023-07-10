@@ -9043,6 +9043,9 @@ const BattleMoveAnims: AnimTable = {
 	florapower: {
 		anim() {},
 	},
+	stripestyle: {
+		anim() {},
+	},
 	copycat: {
 		anim() {},
 	},
@@ -9603,6 +9606,43 @@ const BattleMoveAnims: AnimTable = {
 				time: 800,
 			}, 'linear');
 			scene.showEffect('lightning', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 550,
+			}, {
+				x: defender.x,
+				y: defender.y - 40,
+				z: defender.behind(15),
+				scale: 3,
+				opacity: 0,
+				time: 900,
+			}, 'linear');
+
+			BattleOtherAnims.bite.anim(scene, [attacker, defender]);
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+		},
+	},
+	bluebites: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('waterwisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 450,
+			}, {
+				x: defender.x,
+				y: defender.y - 40,
+				z: defender.behind(15),
+				scale: 3,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+			scene.showEffect('waterwisp', {
 				x: defender.x,
 				y: defender.y,
 				z: defender.z,
@@ -10411,6 +10451,52 @@ const BattleMoveAnims: AnimTable = {
 				time: 600,
 			}, 'linear');
 			scene.showEffect('fireball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 500,
+			}, {
+				scale: 8,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(-5),
+				time: 300,
+			}, 'accel');
+			attacker.anim({
+				time: 500,
+			}, 'ballistic2Back');
+			defender.delay(280);
+			defender.anim({
+				z: defender.behind(20),
+				time: 100,
+			}, 'swing');
+			defender.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
+	redrush: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#003B82 30%, #4D98E3)', 600, 0.6);
+			scene.showEffect('waterwisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 300,
+			}, {
+				scale: 8,
+				opacity: 0,
+				time: 600,
+			}, 'linear');
+			scene.showEffect('waterwisp', {
 				x: defender.x,
 				y: defender.y,
 				z: defender.z,

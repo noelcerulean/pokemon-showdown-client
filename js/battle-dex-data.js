@@ -152,7 +152,7 @@ var BattleBaseSpeciesChart=[
 "fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable",
 "poliwrath","hydreigon","infernape","drapion","parasect","xurkitree","lumineon","roseradearmored",
 "sablechamp","bombseal","diggersby","leafeon","golisopodmusashi","blissey","espeon","umbreon",
-"glaceon",
+"glaceon","vaporeon","jolteon","flareon","longeon","sylveon",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
@@ -423,6 +423,7 @@ robodachi:1344+67,
 roseradearmored:1344+68,
 roseradearmoredsummer:1344+68,
 longeon:1344+69,
+longeonpixie:1344+69,
 growlithefnf:1344+70,
 arcaninefnf:1344+71,
 medipom:1344+72,
