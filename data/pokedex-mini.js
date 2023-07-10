@@ -1589,6 +1589,7 @@ exports.BattlePokemonSprites = {
 	fearnowings:{num:-1054},
 	fearnobeak:{num:-1054},
 	fearnobeakwings:{num:-1054},
+	togetno:{num:-1055},
 	pokestarsmeargle:{num:-5000},
 	pokestarufo:{num:-5001},
 	pokestarufopropu1:{num:-5001},

@@ -514,6 +514,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	stantno: 234,
 	starno: 121,
 	sunflono: 192,
+	togetno: 176,
 	tyno: 236,
 	venono: 49,
 	venonomothman: 49,
