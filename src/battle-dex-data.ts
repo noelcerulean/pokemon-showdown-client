@@ -502,6 +502,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	misdreano: 200,
 	molno: 146,
 	mudno: 258,
+	onno: 95,
 	phanpno: 231,
 	pichno: 172,
 	pidgeono: 17,
