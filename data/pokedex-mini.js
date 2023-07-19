@@ -1607,6 +1607,8 @@ exports.BattlePokemonSprites = {
 	pinsno:{num:-1063},
 	pinsnohappy:{num:-1063},
 	herano:{num:-1064},
+	senno:{num:-1065},
+	smoono:{num:-1066},
 	pokestarsmeargle:{num:-5000},
 	pokestarufo:{num:-5001},
 	pokestarufopropu1:{num:-5001},

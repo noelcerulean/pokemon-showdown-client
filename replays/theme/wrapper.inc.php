@@ -24,12 +24,12 @@ function ThemeHeaderTemplate() {
 <?php } ?>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
-	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/font-awesome.css?0.6738111719561073" />
-	<link rel="stylesheet" href="//fnf-showdown.herokuapp.com/theme/panels.css?0.041186212387704924" />
-	<link rel="stylesheet" href="//fnf-showdown.herokuapp.com/theme/main.css?0.8823638293379588" />
-	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/battle.css?0.7114144998895586" />
-	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/replay.css?0.5882858938495472" />
-	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/utilichart.css?0.24924911525249183" />
+	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/font-awesome.css?0.7971293700855446" />
+	<link rel="stylesheet" href="//fnf-showdown.herokuapp.com/theme/panels.css?0.13028999894458582" />
+	<link rel="stylesheet" href="//fnf-showdown.herokuapp.com/theme/main.css?0.45821196959709765" />
+	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/battle.css?0.12512880010686955" />
+	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/replay.css?0.3169773837441132" />
+	<link rel="stylesheet" href="//fnf-showdown-client.herokuapp.com/style/utilichart.css?0.016766722037491855" />
 
 	<!-- Workarounds for IE bugs to display trees correctly. -->
 	<!--[if lte IE 6]><style> li.tree { height: 1px; } </style><![endif]-->
@@ -53,11 +53,11 @@ function ThemeHeaderTemplate() {
 	<div class="pfx-topbar">
 		<div class="header">
 			<ul class="nav">
-				<li><a class="button nav-first<?php if ($panels->tab === 'home') echo ' cur'; ?>" href="//fnf-showdown.herokuapp.com/?0.02671142644605773"><img src="//fnf-showdown.herokuapp.com/images/pokemonshowdownbeta.png?0.15642131170059614" alt="Pok&eacute;mon Showdown! (beta)" /> Home</a></li>
-				<li><a class="button<?php if ($panels->tab === 'pokedex') echo ' cur'; ?>" href="//dex.pokemonshowdown.com/?0.47762815123215807">Pok&eacute;dex</a></li>
-				<li><a class="button<?php if ($panels->tab === 'replay') echo ' cur'; ?>" href="/?0.009430207378962496">Replays</a></li>
-				<li><a class="button<?php if ($panels->tab === 'ladder') echo ' cur'; ?>" href="//fnf-showdown.herokuapp.com/ladder/?0.1817720339885418">Ladder</a></li>
-				<li><a class="button nav-last" href="//fnf-showdown.herokuapp.com/forums/?0.9431640941506727">Forum</a></li>
+				<li><a class="button nav-first<?php if ($panels->tab === 'home') echo ' cur'; ?>" href="//fnf-showdown.herokuapp.com/?0.19607119605312984"><img src="//fnf-showdown.herokuapp.com/images/pokemonshowdownbeta.png?0.568746168112116" alt="Pok&eacute;mon Showdown! (beta)" /> Home</a></li>
+				<li><a class="button<?php if ($panels->tab === 'pokedex') echo ' cur'; ?>" href="//dex.pokemonshowdown.com/?0.2785531156258807">Pok&eacute;dex</a></li>
+				<li><a class="button<?php if ($panels->tab === 'replay') echo ' cur'; ?>" href="/?0.3478506281295415">Replays</a></li>
+				<li><a class="button<?php if ($panels->tab === 'ladder') echo ' cur'; ?>" href="//fnf-showdown.herokuapp.com/ladder/?0.6665365346158334">Ladder</a></li>
+				<li><a class="button nav-last" href="//fnf-showdown.herokuapp.com/forums/?0.25344654326767757">Forum</a></li>
 			</ul>
 			<ul class="nav nav-play">
 				<li><a class="button greenbutton nav-first nav-last" href="http://play.pokemonshowdown.com/">Play</a></li>
@@ -74,10 +74,10 @@ function ThemeHeaderTemplate() {
 
 function ThemeScriptsTemplate() {
 ?>
-	<script src="//fnf-showdown-client.herokuapp.com/js/lib/jquery-1.11.0.min.js?0.7902200323007731"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/js/lib/lodash.core.js?0.6717514473986419"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/js/lib/backbone.js?0.8658371847623876"></script>
-	<script src="//dex.pokemonshowdown.com/js/panels.js?0.8277647074869352"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/lib/jquery-1.11.0.min.js?0.39754993446396814"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/lib/lodash.core.js?0.2112575858789314"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/lib/backbone.js?0.4080629626548007"></script>
+	<script src="//dex.pokemonshowdown.com/js/panels.js?0.6170533614152942"></script>
 <?php
 }
 
@@ -86,21 +86,21 @@ function ThemeFooterTemplate() {
 ?>
 <?php $panels->scripts(); ?>
 
-	<script src="//fnf-showdown-client.herokuapp.com/js/lib/jquery-cookie.js?0.9021695743930489"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/js/lib/html-sanitizer-minified.js?0.7228276189850305"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/js/battle-sound.js?0.6059078894964398"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/config/config.js?0.802757970796665"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/js/battledata.js?0.3777082218659533"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/pokedex-mini.js?0.0048293676461412804"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/pokedex-mini-bw.js?0.6623919942061773"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/graphics.js?0.0522229252107278"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/pokedex.js?0.35479259403475716"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/items.js?0.7150882336390696"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/moves.js?0.1194130123222199"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/abilities.js?0.5038063719275434"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/data/teambuilder-tables.js?0.35485252959096525"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/js/battle-tooltips.js?0.9262925642815865"></script>
-	<script src="//fnf-showdown-client.herokuapp.com/js/battle.js?0.6768114691180931"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/lib/jquery-cookie.js?0.9686027776765873"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/lib/html-sanitizer-minified.js?0.6901976888503969"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/battle-sound.js?0.1884146293109752"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/config/config.js?0.686787746545017"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/battledata.js?0.10424751288720113"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/pokedex-mini.js?0.10160120552693774"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/pokedex-mini-bw.js?0.458511526602684"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/graphics.js?0.3730707396210595"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/pokedex.js?0.1801584982283222"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/items.js?0.5374023877307461"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/moves.js?0.38212606607474386"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/abilities.js?0.040760860863951365"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/data/teambuilder-tables.js?0.9914972290548059"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/battle-tooltips.js?0.9854563530446618"></script>
+	<script src="//fnf-showdown-client.herokuapp.com/js/battle.js?0.07150495976790627"></script>
 	<script src="/js/replay.js?51e024e3"></script>
 
 </body></html>
