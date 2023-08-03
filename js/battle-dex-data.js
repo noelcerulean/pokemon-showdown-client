@@ -459,6 +459,7 @@ marelstorm:1344+97,
 slugnami:1344+98,
 joltikdelta:1344+99,
 galvantuladelta:1344+100,
+ivysaurarmored:1344+101,
 
 
 ano:304,
