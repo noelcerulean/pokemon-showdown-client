@@ -460,6 +460,7 @@ slugnami:1344+98,
 joltikdelta:1344+99,
 galvantuladelta:1344+100,
 ivysaurarmored:1344+101,
+viropath:1344+102,
 
 
 ano:304,

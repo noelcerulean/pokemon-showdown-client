@@ -950,6 +950,7 @@ exports.BattlePokemonSprites = {
 	solosis:{num:577},
 	duosion:{num:578},
 	reuniclus:{num:579},
+	viropath:{num:-533},
 	ducklett:{num:580},
 	swanna:{num:581},
 	vanillite:{num:582},

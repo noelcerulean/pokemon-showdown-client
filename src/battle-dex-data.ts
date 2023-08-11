@@ -460,6 +460,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	joltikdelta: 1344 + 99,
 	galvantuladelta: 1344 + 100,
 	ivysaurarmored: 1344 + 101,
+	viropath: 1344 + 102,
 
 	//hypnomons
 	ano: 304,
