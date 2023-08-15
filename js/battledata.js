@@ -1451,6 +1451,9 @@ joltikdelta:1344+99,
 galvantuladelta:1344+100,
 ivysaurarmored:1344+101,
 viropath:1344+102,
+trevenantmega:1344+103,
+dwebblefnf:1344+104,
+crustlefnf:1344+105,
 
 
 ano:304,

@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/tellur-autumn.mp3',13953,124465,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/tellur-autumn.mp3',13953,124465,this.bgm);
 break;}
 
 
