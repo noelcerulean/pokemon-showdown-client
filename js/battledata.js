@@ -1454,6 +1454,10 @@ viropath:1344+102,
 trevenantmega:1344+103,
 dwebblefnf:1344+104,
 crustlefnf:1344+105,
+kiwuit:1344+106,
+sableyefnfmega:1344+107,
+bounsweetdelta:1344+108,
+steeneedelta:1344+109,
 
 
 ano:304,

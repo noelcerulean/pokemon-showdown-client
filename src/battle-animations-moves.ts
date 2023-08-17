@@ -1881,6 +1881,117 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
+	petrifypulse: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#541263', 700, 0.6);
+			scene.backgroundEffect('#01FFC8', 300, 0.3, 600);
+			scene.showEffect('poisonwisp', {
+				x: attacker.x,
+				y: attacker.y + 100,
+				z: attacker.behind(-20),
+				scale: 0.5,
+				xscale: 3,
+				opacity: 0,
+				time: 0,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				scale: 0.8,
+				xscale: 0.8,
+				opacity: 0.8,
+				time: 400,
+			}, 'decel', 'fade');
+			scene.showEffect('poisonwisp', {
+				x: attacker.x - 60,
+				y: attacker.y - 80,
+				z: attacker.behind(-20),
+				scale: 0.5,
+				yscale: 3,
+				opacity: 0,
+				time: 50,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				scale: 1.5,
+				yscale: 1.5,
+				opacity: 0.8,
+				time: 450,
+			}, 'decel', 'fade');
+
+			scene.showEffect('shadowball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0,
+				opacity: 0,
+				time: 0,
+			}, {
+				scale: 0.8,
+				opacity: 0.5,
+				time: 650,
+			}, 'decel', 'fade');
+			scene.showEffect('poisonwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0,
+				opacity: 0,
+				time: 0,
+			}, {
+				scale: 1.5,
+				opacity: 0.8,
+				time: 650,
+			}, 'decel', 'fade');
+			scene.showEffect('shadowball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0.8,
+				opacity: 0.8,
+				time: 600,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				time: 800,
+			}, 'accel', 'explode');
+			scene.showEffect('poisonwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 1,
+				opacity: 0.8,
+				time: 600,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				time: 800,
+			}, 'accel', 'explode');
+			scene.showEffect('poisonwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 1,
+				opacity: 0.8,
+				time: 600,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				time: 825,
+			}, 'accel', 'explode');
+
+			defender.delay(800);
+			defender.anim({
+				z: defender.behind(10),
+				time: 175,
+			}, 'swing');
+			defender.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
 	technoblast: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('iceball', {
