@@ -1535,18 +1535,151 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 1);
+		this.setBgm(1 + this.numericId % 25);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
 		this.bgmNum = bgmNum;
 
 		switch (bgmNum) {
-			case 1:
+			case -9:
+				this.bgm = BattleSound.loadBgm('audio/team-aqua.mp3', 17293, 106451, this.bgm);
+				break;
+			case -2:
+				this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
+				break;
+			case -3:
+				this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
+				break;
+			case -4:
+				this.bgm = BattleSound.loadBgm('audio/colosseum-first-battle.mp3', 10538, 57255, this.bgm);
+				break;
+			case -5:
+				this.bgm = BattleSound.loadBgm('audio/kahuna-battle.mp3', 37195, 135644, this.bgm);
+				break;
+			case -6:
+				this.bgm = BattleSound.loadBgm('audio/contest-beauty.mp3', 3000, 90965, this.bgm);
+				break;
+			case -7:
+				this.bgm = BattleSound.loadBgm('audio/pbr-joe.mp3', 9765, 93800, this.bgm);
+				break;
+			case -8:
+				this.bgm = BattleSound.loadBgm('audio/battle-royale.mp3', 14950, 74000, this.bgm);
+				break;
+			case -89:
+				this.bgm = BattleSound.loadBgm('audio/hgss-gym-leader.mp3', 20319, 82910, this.bgm);
+				break;
+			case -90:
+				this.bgm = BattleSound.loadBgm('audio/pokecenter.mp3', 21127, 97330, this.bgm);
+				break;
+			case -91:
+				this.bgm = BattleSound.loadBgm('audio/ferrum-stadium.mp3', 12561, 112299, this.bgm);
+				break;
+			case -92:
+				this.bgm = BattleSound.loadBgm('audio/training-gym.mp3', 34957, 149397, this.bgm);
+				break;
+			case -93:
+				this.bgm = BattleSound.loadBgm('audio/aqua-leader.mp3', 56039, 112139, this.bgm);
+				break;
+			case -94:
+				this.bgm = BattleSound.loadBgm('audio/sv-penny.mp3', 48902, 197473, this.bgm);
+				break;
+			case -95:
+				this.bgm = BattleSound.loadBgm('audio/neos-city-night.mp3', 46920, 166926, this.bgm);
+				break;
+			case -96:
+				this.bgm = BattleSound.loadBgm('audio/neos-city.mp3', 14492, 119725, this.bgm);
+				break;
+			case -97:
+				this.bgm = BattleSound.loadBgm('audio/neon-colosseum.mp3', 16500, 70945, this.bgm);
+				break;
+			case -98:
+				this.bgm = BattleSound.loadBgm('audio/pbr-courtyard.mp3', 32617, 140847, this.bgm);
+				break;
+			case -99:
+				this.bgm = BattleSound.loadBgm('audio/tellur-autumn.mp3', 13953, 124465, this.bgm);
+				break;
+			case -100:
+				this.bgm = BattleSound.loadBgm('audio/legends-giratina.mp3', 63081, 258135, this.bgm);
+				break;
+			case -101:
 				this.bgm = BattleSound.loadBgm('audio/hgss-johto-gym-leader.mp3', 30449, 90174, this.bgm);
 				break;
+			case 1:
+				this.bgm = BattleSound.loadBgm('audio/bw-subway-trainer.mp3', 15503, 110984, this.bgm);
+				break;
+			case 2:
+				this.bgm = BattleSound.loadBgm('audio/sm-rival.mp3', 11389, 62158, this.bgm);
+				break;
+			case 3:
+				this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
+				break;
+			case 4:
+				this.bgm = BattleSound.loadBgm('audio/sm-trainer.mp3', 8323, 89230, this.bgm);
+				break;
+			case 5:
+				this.bgm = BattleSound.loadBgm('audio/swsh-hop.mp3', 12450, 100850, this.bgm);
+				break;
+			case 6:
+				this.bgm = BattleSound.loadBgm('audio/steel-battle.mp3', 29258, 121915, this.bgm);
+				break;
+			case 7:
+				this.bgm = BattleSound.loadBgm('audio/cipher-peon-xd.mp3', 39539, 79026, this.bgm);
+				break;
+			case 8:
+				this.bgm = BattleSound.loadBgm('audio/swsh-oleana.mp3', 14950, 82700, this.bgm);
+				break;
+			case 9:
+				this.bgm = BattleSound.loadBgm('audio/xy-rival.mp3', 7802, 58634, this.bgm);
+				break;
+			case 10:
+				this.bgm = BattleSound.loadBgm('audio/plat-frontier-brain.mp3', 15155, 103562, this.bgm);
+				break;
+			case 11:
+				this.bgm = BattleSound.loadBgm('audio/hgss-kanto-trainer.mp3', 13003, 94656, this.bgm);
+				break;
+			case 12:
+				this.bgm = BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3', 20286, 98954, this.bgm);
+				break;
+			case 13:
+				this.bgm = BattleSound.loadBgm('audio/oras-rival.mp3', 14303, 69149, this.bgm);
+				break;
+			case 14:
+				this.bgm = BattleSound.loadBgm('audio/conquest-dragon-battle.mp3', 26817, 109162, this.bgm);
+				break;
+			case 15:
+				this.bgm = BattleSound.loadBgm('audio/bw-trainer.mp3', 14629, 110109, this.bgm);
+				break;
+			case 16:
+				this.bgm = BattleSound.loadBgm('audio/colosseum-miror-b.mp3', 896, 47462, this.bgm);
+				break;
+			case 17:
+				this.bgm = BattleSound.loadBgm('audio/xy-trainer.mp3', 7802, 82469, this.bgm);
+				break;
+			case 18:
+				this.bgm = BattleSound.loadBgm('audio/hgss-johto-trainer.mp3', 23731, 125086, this.bgm);
+				break;
+			case 19:
+				this.bgm = BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3', 14626, 58986, this.bgm);
+				break;
+			case 20:
+				this.bgm = BattleSound.loadBgm('audio/oras-trainer.mp3', 13579, 91548, this.bgm);
+				break;
+			case 21:
+				this.bgm = BattleSound.loadBgm('audio/dpp-rival.mp3', 13888, 66352, this.bgm);
+				break;
+			case 22:
+				this.bgm = BattleSound.loadBgm('audio/eos-dialga.mp3', 20000, 120600, this.bgm);
+				break;
+			case 23:
+				this.bgm = BattleSound.loadBgm('audio/bw-rival.mp3', 19180, 57373, this.bgm);
+				break;
+			case 24:
+				this.bgm = BattleSound.loadBgm('audio/dpp-trainer.mp3', 13440, 96959, this.bgm);
+				break;
+			case 25:
 			default:
-				this.bgm = BattleSound.loadBgm('audio/hgss-johto-gym-leader.mp3', 30449, 90174, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/bw2-rival.mp3', 7152, 68708, this.bgm);
 				break;
 			}
 	
@@ -3194,7 +3327,33 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-bygone.png',
+	'bg-ancient.png',
+	'bg-aquacordetown.jpg',
+	'bg-autumn.png',
+	'bg-beach.jpg',
+	'bg-cave.png',
+	'bg-city.jpg',
+	'bg-dampcave.jpg',
+	'bg-darkbeach.jpg',
+	'bg-darkcity.jpg',
+	'bg-darkmeadow.jpg',
+	'bg-deepsea.jpg',
+	'bg-desert.jpg',
+	'bg-earthycave.jpg',
+	'bg-elite4drake.jpg',
+	'bg-flowers.png',
+	'bg-forest.jpg',
+	'bg-greens.png',
+	'bg-greenssunset.png',
+	'bg-icecave.jpg',
+	'bg-leaderwallace.jpg',
+	'bg-library.jpg',
+	'bg-meadow.jpg',
+	'bg-orasdesert.jpg',
+	'bg-orassea.jpg',
+	'bg-skypillar.jpg',
+	'bg-snowscape.png',
+	'bg-workout.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
