@@ -1142,7 +1142,7 @@ var BattleBaseSpeciesChart=[
 "fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable",
 "poliwrath","hydreigon","infernape","drapion","parasect","xurkitree","lumineon","roseradearmored",
 "sablechamp","bombseal","diggersby","golisopodmusashi","blissey","espeon","umbreon",
-"glaceon","leafeon","vaporeon","jolteon","flareon","longeon","sylveon","eevee",
+"glaceon","leafeon","vaporeon","jolteon","flareon","longeon","sylveon","eevee","ariados","hoopa",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
