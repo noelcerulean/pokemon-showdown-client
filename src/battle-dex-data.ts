@@ -468,6 +468,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	sableyefnfmega: 1344 + 107,
 	bounsweetdelta: 1344 + 108,
 	steeneedelta: 1344 + 109,
+	saurbot: 1344 + 110,
 
 	//hypnomons
 	ano: 304,

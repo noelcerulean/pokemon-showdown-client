@@ -1458,6 +1458,7 @@ kiwuit:1344+106,
 sableyefnfmega:1344+107,
 bounsweetdelta:1344+108,
 steeneedelta:1344+109,
+saurbot:1344+110,
 
 
 ano:304,

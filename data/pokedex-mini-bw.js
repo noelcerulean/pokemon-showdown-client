@@ -8,6 +8,7 @@ exports.BattlePokemonSpritesBW = {
 	bulbasaur:{num:1},
 	bulbasaursylvanos:{num:1},
 	bulbasaursaur:{num:1},
+	saurbot:{num:-535},
 	ivysaur:{num:2},
 	ivysaursylvanos:{num:2},
 	ivysaurarmored:{num:2},
