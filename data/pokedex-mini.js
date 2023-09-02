@@ -1174,6 +1174,7 @@ exports.BattlePokemonSprites = {
 	carbink:{num:703},
 	carbinkfloatamo:{num:703},
 	goomy:{num:704},
+	goomyarmored:{num:704},
 	sliggoo:{num:705},
 	goodra:{num:706},
 	goodramega:{num:706},

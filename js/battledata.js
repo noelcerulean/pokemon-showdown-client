@@ -1459,6 +1459,7 @@ sableyefnfmega:1344+107,
 bounsweetdelta:1344+108,
 steeneedelta:1344+109,
 saurbot:1344+110,
+goomyarmored:1344+111,
 
 
 ano:304,
