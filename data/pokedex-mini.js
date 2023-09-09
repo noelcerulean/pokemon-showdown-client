@@ -418,6 +418,7 @@ exports.BattlePokemonSprites = {
 	steelixmega:{num:208},
 	snubbull:{num:209},
 	granbull:{num:210},
+	granbullrevenant:{num:210},
 	granbullarmored:{num:210},
 	granbullnobunaga:{num:210},
 	qwilfish:{num:211},
