@@ -1460,6 +1460,7 @@ bounsweetdelta:1344+108,
 steeneedelta:1344+109,
 saurbot:1344+110,
 goomyarmored:1344+111,
+gravking:1344+112,
 
 
 ano:304,

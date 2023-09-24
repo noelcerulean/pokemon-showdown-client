@@ -524,6 +524,7 @@ exports.BattlePokemonSpritesBW = {
 	slakoth:{num:287},
 	vigoroth:{num:288},
 	slaking:{num:289},
+	gravking:{num:-535},
 	nincada:{num:290},
 	ninjask:{num:291},
 	shedinja:{num:292},
