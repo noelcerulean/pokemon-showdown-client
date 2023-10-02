@@ -471,6 +471,7 @@ steeneedelta:1344+109,
 saurbot:1344+110,
 goomyarmored:1344+111,
 gravking:1344+112,
+teddiursaarmored:1344+113,
 
 
 ano:304,

@@ -1605,6 +1605,15 @@ break;
 case-101:
 this.bgm=BattleSound.loadBgm('audio/hgss-johto-gym-leader.mp3',30449,90174,this.bgm);
 break;
+case-102:
+this.bgm=BattleSound.loadBgm('audio/dungeon1-conquest.mp3',3764,78786,this.bgm);
+break;
+case-103:
+this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
+break;
+case-104:
+this.bgm=BattleSound.loadBgm('audio/hgss-hooh.mp3',40622,108343,this.bgm);
+break;
 case 1:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
