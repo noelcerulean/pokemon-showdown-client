@@ -472,6 +472,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	goomyarmored: 1344 + 111,
 	gravking: 1344 + 112,
 	teddiursaarmored: 1344 + 113,
+	archebot: 1344 + 114,
 
 	//hypnomons
 	ano: 304,
