@@ -131,7 +131,7 @@ class BattleTextParser {
 				return {args: ['-singlemove', pokemon, effect], kwArgs: {of: target}};
 			}
 			if ([
-				'shadowhold', 'spiderweb', 'sporeslash', 'bind', 'wrap', 'clamp', 'whirlpool', 'firespin', 'bubbleprison', 'magmastorm', 'sandtomb', 'infestation', 'snaptrap', 'thundercage', 'trapped',
+				'shadowhold', 'silksnare', 'spiderweb', 'sporeslash', 'bind', 'wrap', 'clamp', 'whirlpool', 'firespin', 'bubbleprison', 'magmastorm', 'sandtomb', 'infestation', 'snaptrap', 'thundercage', 'trapped',
 			].includes(id)) {
 				return {args: ['-start', pokemon, effect], kwArgs: {of: target}};
 			}

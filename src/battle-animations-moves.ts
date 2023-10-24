@@ -2643,6 +2643,9 @@ const BattleMoveAnims: AnimTable = {
 	protect: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
+	silkshield: {
+		anim: BattleOtherAnims.selfstatus.anim,
+	},
 	detect: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
@@ -40131,6 +40134,7 @@ BattleMoveAnims['mudsport'] = {anim: BattleMoveAnims['mudbomb'].anim};
 BattleMoveAnims['spiderweb'] = {anim: BattleMoveAnims['electroweb'].anim};
 BattleMoveAnims['stringshot'] = {anim: BattleMoveAnims['electroweb'].anim};
 BattleMoveAnims['toxicthread'] = {anim: BattleMoveAnims['electroweb'].anim};
+BattleMoveAnims['silksnare'] = {anim: BattleMoveAnims['electroweb'].anim};
 
 BattleMoveAnims['hyperfang'] = {anim: BattleMoveAnims['superfang'].anim};
 

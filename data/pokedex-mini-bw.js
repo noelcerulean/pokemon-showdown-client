@@ -515,6 +515,8 @@ exports.BattlePokemonSpritesBW = {
 	pelipper:{num:279},
 	ralts:{num:280},
 	kirlia:{num:281},
+	kirliaarmored:{num:281},
+	kirliaarmoredweaver:{num:281},
 	gardevoir:{num:282},
 	gardevoirmega:{num:282},
 	surskit:{num:283},

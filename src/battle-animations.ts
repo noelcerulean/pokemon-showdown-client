@@ -1918,6 +1918,7 @@ class PokemonSprite extends Sprite {
 		bubbleprison: ['Bubble Prison', 'bad'],
 		sandtomb: ['Sand Tomb', 'bad'],
 		shadowhold: ['Shadow Hold', 'bad'],
+		silksnare: ['Silk Snare', 'bad'],
 		snaptrap: ['Snap Trap', 'bad'],
 		spiderweb: ['Spider Web', 'bad'],
 		sporeslash: ['Spore Slash', 'bad'],
