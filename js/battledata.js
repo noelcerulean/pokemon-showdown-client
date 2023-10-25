@@ -1138,7 +1138,7 @@ var BattleBaseSpeciesChart=[
 "sableyefnf","aromatissefnf","heatmor","gengar","vespiquen","delcatty","aurorus",
 "octillery","rampardos","mothim","maractus","gliscor","spiritomb","emolga","vibrava",
 "flygon","dialga","royalynx","kurstraw","pangshi","shuckle","clefgar","lanturn","golisopod",
-"dewott","marshadow","dewottpika","raichumalachite","decidueyeapollo","altaria",
+"dewott","marshadow","dewottlutryla","raichumalachite","decidueyeapollo","altaria",
 "fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable",
 "poliwrath","hydreigon","infernape","drapion","parasect","xurkitree","lumineon","roseradearmored",
 "sablechamp","bombseal","diggersby","golisopodmusashi","blissey","espeon","umbreon","granbull",
