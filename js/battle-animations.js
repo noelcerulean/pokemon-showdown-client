@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/dungeon1-conquest.mp3',3764,78786,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/dungeon1-conquest.mp3',3764,78786,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
 break;}
 
 

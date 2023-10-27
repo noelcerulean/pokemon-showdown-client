@@ -475,6 +475,8 @@ teddiursaarmored:1344+113,
 archebot:1344+114,
 kirliaarmored:1344+115,
 kirliaarmoredweaver:1344+116,
+phasmatch:1344+117,
+phasphorus:1344+118,
 
 
 ano:304,

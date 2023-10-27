@@ -1036,6 +1036,8 @@ exports.BattlePokemonSpritesBW = {
 	heatmor:{num:631},
 	heatmorprint:{num:631},
 	durant:{num:632},
+	phasmatch:{num:-537},
+	phasphorus:{num:-538},
 	deino:{num:633},
 	zweilous:{num:634},
 	zweilousterror:{num:634},
