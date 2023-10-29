@@ -1493,6 +1493,17 @@ class BattleTooltips {
 			moveType = 'Rock';
 		}
 
+		// Primal Burst
+		if (move.id === 'primalburst' && item.id === 'redorb') {
+			moveType = 'Fire';
+		} else if (move.id === 'primalburst' && item.id === 'ceriseorb') {
+			moveType = 'Fire';
+		} else if (move.id === 'primalburst' && item.id === 'blueorb') {
+			moveType = 'Water';
+		} else if (move.id === 'primalburst' && item.id === 'tealorb') {
+			moveType = 'Water';
+		}
+
 		// Other abilities that change the move type.
 		const noTypeOverride = [
 			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',

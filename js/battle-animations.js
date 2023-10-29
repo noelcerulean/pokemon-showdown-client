@@ -1527,7 +1527,7 @@ this.preloadCache[token].src=url;
 };_proto.
 preloadEffects=function preloadEffects(){
 for(var i in BattleEffects){
-if(i==='alpha'||i==='teal'||i==='omega')continue;
+if(i==='alpha'||i==='teal'||i==='cerise'||i==='omega')continue;
 var _url2=BattleEffects[i].url;
 if(_url2)this.preloadImage(_url2);
 }
@@ -1535,18 +1535,160 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%1);
+this.setBgm(1+this.numericId%25);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case 1:
+case-9:
+this.bgm=BattleSound.loadBgm('audio/team-aqua.mp3',17293,106451,this.bgm);
+break;
+case-2:
+this.bgm=BattleSound.loadBgm('audio/xd-miror-b.mp3',9000,57815,this.bgm);
+break;
+case-3:
+this.bgm=BattleSound.loadBgm('audio/colosseum-miror-b.mp3',896,47462,this.bgm);
+break;
+case-4:
+this.bgm=BattleSound.loadBgm('audio/colosseum-first-battle.mp3',10538,57255,this.bgm);
+break;
+case-5:
+this.bgm=BattleSound.loadBgm('audio/kahuna-battle.mp3',37195,135644,this.bgm);
+break;
+case-6:
+this.bgm=BattleSound.loadBgm('audio/contest-beauty.mp3',3000,90965,this.bgm);
+break;
+case-7:
+this.bgm=BattleSound.loadBgm('audio/pbr-joe.mp3',9765,93800,this.bgm);
+break;
+case-8:
+this.bgm=BattleSound.loadBgm('audio/battle-royale.mp3',14950,74000,this.bgm);
+break;
+case-89:
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
+break;
+case-90:
+this.bgm=BattleSound.loadBgm('audio/pokecenter.mp3',21127,97330,this.bgm);
+break;
+case-91:
+this.bgm=BattleSound.loadBgm('audio/ferrum-stadium.mp3',12561,112299,this.bgm);
+break;
+case-92:
+this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
+break;
+case-93:
+this.bgm=BattleSound.loadBgm('audio/aqua-leader.mp3',56039,112139,this.bgm);
+break;
+case-94:
+this.bgm=BattleSound.loadBgm('audio/sv-penny.mp3',48902,197473,this.bgm);
+break;
+case-95:
+this.bgm=BattleSound.loadBgm('audio/neos-city-night.mp3',46920,166926,this.bgm);
+break;
+case-96:
+this.bgm=BattleSound.loadBgm('audio/neos-city.mp3',14492,119725,this.bgm);
+break;
+case-97:
+this.bgm=BattleSound.loadBgm('audio/neon-colosseum.mp3',16500,70945,this.bgm);
+break;
+case-98:
+this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
+break;
+case-99:
+this.bgm=BattleSound.loadBgm('audio/tellur-autumn.mp3',13953,124465,this.bgm);
+break;
+case-100:
+this.bgm=BattleSound.loadBgm('audio/legends-giratina.mp3',63081,258135,this.bgm);
+break;
+case-101:
+this.bgm=BattleSound.loadBgm('audio/hgss-johto-gym-leader.mp3',30449,90174,this.bgm);
+break;
+case-102:
+this.bgm=BattleSound.loadBgm('audio/dungeon1-conquest.mp3',3764,78786,this.bgm);
+break;
+case-103:
 this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
 break;
+case-104:
+this.bgm=BattleSound.loadBgm('audio/hgss-hooh.mp3',40622,108343,this.bgm);
+break;
+case 1:
+this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
+break;
+case 2:
+this.bgm=BattleSound.loadBgm('audio/sm-rival.mp3',11389,62158,this.bgm);
+break;
+case 3:
+this.bgm=BattleSound.loadBgm('audio/cipher-peon.mp3',7800,80000,this.bgm);
+break;
+case 4:
+this.bgm=BattleSound.loadBgm('audio/sm-trainer.mp3',8323,89230,this.bgm);
+break;
+case 5:
+this.bgm=BattleSound.loadBgm('audio/swsh-hop.mp3',12450,100850,this.bgm);
+break;
+case 6:
+this.bgm=BattleSound.loadBgm('audio/steel-battle.mp3',29258,121915,this.bgm);
+break;
+case 7:
+this.bgm=BattleSound.loadBgm('audio/cipher-peon-xd.mp3',39539,79026,this.bgm);
+break;
+case 8:
+this.bgm=BattleSound.loadBgm('audio/swsh-oleana.mp3',14950,82700,this.bgm);
+break;
+case 9:
+this.bgm=BattleSound.loadBgm('audio/xy-rival.mp3',7802,58634,this.bgm);
+break;
+case 10:
+this.bgm=BattleSound.loadBgm('audio/plat-frontier-brain.mp3',15155,103562,this.bgm);
+break;
+case 11:
+this.bgm=BattleSound.loadBgm('audio/hgss-kanto-trainer.mp3',13003,94656,this.bgm);
+break;
+case 12:
+this.bgm=BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3',20286,98954,this.bgm);
+break;
+case 13:
+this.bgm=BattleSound.loadBgm('audio/oras-rival.mp3',14303,69149,this.bgm);
+break;
+case 14:
+this.bgm=BattleSound.loadBgm('audio/conquest-dragon-battle.mp3',26817,109162,this.bgm);
+break;
+case 15:
+this.bgm=BattleSound.loadBgm('audio/bw-trainer.mp3',14629,110109,this.bgm);
+break;
+case 16:
+this.bgm=BattleSound.loadBgm('audio/colosseum-miror-b.mp3',896,47462,this.bgm);
+break;
+case 17:
+this.bgm=BattleSound.loadBgm('audio/xy-trainer.mp3',7802,82469,this.bgm);
+break;
+case 18:
+this.bgm=BattleSound.loadBgm('audio/hgss-johto-trainer.mp3',23731,125086,this.bgm);
+break;
+case 19:
+this.bgm=BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3',14626,58986,this.bgm);
+break;
+case 20:
+this.bgm=BattleSound.loadBgm('audio/oras-trainer.mp3',13579,91548,this.bgm);
+break;
+case 21:
+this.bgm=BattleSound.loadBgm('audio/dpp-rival.mp3',13888,66352,this.bgm);
+break;
+case 22:
+this.bgm=BattleSound.loadBgm('audio/eos-dialga.mp3',20000,120600,this.bgm);
+break;
+case 23:
+this.bgm=BattleSound.loadBgm('audio/bw-rival.mp3',19180,57373,this.bgm);
+break;
+case 24:
+this.bgm=BattleSound.loadBgm('audio/dpp-trainer.mp3',13440,96959,this.bgm);
+break;
+case 25:
 default:
-this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
 break;}
 
 
@@ -2427,6 +2569,9 @@ doCry=true;
 }else if(speciesid==='phioneprimal'){
 BattleOtherAnims.primalteal.anim(scene,[this]);
 doCry=true;
+}else if(speciesid==='cherrimprimal'){
+BattleOtherAnims.primalcerise.anim(scene,[this]);
+doCry=true;
 }else if(speciesid==='groudonprimal'){
 BattleOtherAnims.primalomega.anim(scene,[this]);
 doCry=true;
@@ -2602,6 +2747,7 @@ var symbol='';
 if(pokemon.speciesForme.indexOf('-Mega')>=0)symbol='mega';else
 if(pokemon.speciesForme==='Kyogre-Primal')symbol='alpha';else
 if(pokemon.speciesForme==='Phione-Primal')symbol='teal';else
+if(pokemon.speciesForme==='Cherrim-Primal')symbol='cerise';else
 if(pokemon.speciesForme==='Groudon-Primal')symbol='omega';
 if(symbol){
 buf+=" <img src=\""+Dex.resourcePrefix+"sprites/misc/"+symbol+".png\" alt=\""+symbol+"\" style=\"vertical-align:text-bottom;\" />";
@@ -3106,6 +3252,10 @@ teal:{
 url:'teal.png',
 w:80,h:80},
 
+cerise:{
+url:'cerise.png',
+w:80,h:80},
+
 omega:{
 url:'omega.png',
 w:80,h:80},
@@ -3195,7 +3345,33 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-elite4sidney.png'];
+'bg-ancient.png',
+'bg-aquacordetown.jpg',
+'bg-autumn.png',
+'bg-beach.jpg',
+'bg-cave.png',
+'bg-city.jpg',
+'bg-dampcave.jpg',
+'bg-darkbeach.jpg',
+'bg-darkcity.jpg',
+'bg-darkmeadow.jpg',
+'bg-deepsea.jpg',
+'bg-desert.jpg',
+'bg-earthycave.jpg',
+'bg-elite4drake.jpg',
+'bg-flowers.png',
+'bg-forest.jpg',
+'bg-greens.png',
+'bg-greenssunset.png',
+'bg-icecave.jpg',
+'bg-leaderwallace.jpg',
+'bg-library.jpg',
+'bg-meadow.jpg',
+'bg-orasdesert.jpg',
+'bg-orassea.jpg',
+'bg-skypillar.jpg',
+'bg-snowscape.png',
+'bg-workout.png'];
 
 
 var BattleOtherAnims={
@@ -5511,8 +5687,61 @@ time:600},
 'decel');
 }},
 
-primalteal:{
+primalcerise:{
 anim:function(scene,_ref48){var attacker=_ref48[0];
+scene.backgroundEffect('#0000DD',500,0.4);
+scene.showEffect('iceball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+scale:2,
+opacity:0.2,
+time:0},
+{
+scale:0.5,
+opacity:1,
+time:300},
+'linear','fade');
+scene.showEffect('iceball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+scale:0.5,
+opacity:1,
+time:300},
+{
+scale:4,
+opacity:0,
+time:700},
+'linear','fade');
+scene.showEffect('shadowball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+scale:0.5,
+opacity:0.5,
+time:300},
+{
+scale:5,
+opacity:0,
+time:600},
+'linear','fade');
+scene.showEffect('cerise',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+scale:0.5,
+opacity:1,
+time:300},
+{
+scale:2.5,
+opacity:0,
+time:600},
+'decel');
+}},
+
+primalteal:{
+anim:function(scene,_ref49){var attacker=_ref49[0];
 scene.backgroundEffect('#008080',500,0.4);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -5565,7 +5794,7 @@ time:600},
 }},
 
 primalomega:{
-anim:function(scene,_ref49){var attacker=_ref49[0];
+anim:function(scene,_ref50){var attacker=_ref50[0];
 scene.backgroundEffect('linear-gradient(#390000 30%, #B84038)',500,0.4);
 scene.showEffect('flareball',{
 x:attacker.x,
@@ -5618,7 +5847,7 @@ time:600},
 }},
 
 megaevo:{
-anim:function(scene,_ref50){var attacker=_ref50[0];
+anim:function(scene,_ref51){var attacker=_ref51[0];
 scene.backgroundEffect('#835BA5',500,0.6);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -5671,7 +5900,7 @@ time:600},
 }},
 
 zpower:{
-anim:function(scene,_ref51){var attacker=_ref51[0];
+anim:function(scene,_ref52){var attacker=_ref52[0];
 scene.backgroundEffect('linear-gradient(#000000 20%, #0000DD)',1800,0.4);
 scene.showEffect('electroball',{
 x:attacker.x-60,
@@ -5794,7 +6023,7 @@ time:1600},
 }},
 
 powerconstruct:{
-anim:function(scene,_ref52){var attacker=_ref52[0];
+anim:function(scene,_ref53){var attacker=_ref53[0];
 var xf=[1,-1,1,-1];
 var yf=[1,-1,-1,1];
 var xf2=[1,0,-1,0];
@@ -5921,7 +6150,7 @@ time:500},
 }},
 
 ultraburst:{
-anim:function(scene,_ref53){var attacker=_ref53[0];
+anim:function(scene,_ref54){var attacker=_ref54[0];
 scene.backgroundEffect('#000000',600,0.5);
 scene.backgroundEffect('#ffffff',500,1,550);
 scene.showEffect('wisp',{
@@ -6112,7 +6341,7 @@ time:1000},
 
 var BattleStatusAnims={
 brn:{
-anim:function(scene,_ref54){var attacker=_ref54[0];
+anim:function(scene,_ref55){var attacker=_ref55[0];
 scene.showEffect('fireball',{
 x:attacker.x-20,
 y:attacker.y-15,
@@ -6130,7 +6359,7 @@ time:300},
 }},
 
 psn:{
-anim:function(scene,_ref55){var attacker=_ref55[0];
+anim:function(scene,_ref56){var attacker=_ref56[0];
 scene.showEffect('poisonwisp',{
 x:attacker.x+30,
 y:attacker.y-40,
@@ -6173,7 +6402,7 @@ time:500},
 }},
 
 slp:{
-anim:function(scene,_ref56){var attacker=_ref56[0];
+anim:function(scene,_ref57){var attacker=_ref57[0];
 scene.showEffect('wisp',{
 x:attacker.x,
 y:attacker.y+20,
@@ -6206,7 +6435,7 @@ time:600},
 }},
 
 par:{
-anim:function(scene,_ref57){var attacker=_ref57[0];
+anim:function(scene,_ref58){var attacker=_ref58[0];
 scene.showEffect('electroball',{
 x:attacker.x,
 y:attacker.y,
@@ -6246,7 +6475,7 @@ time:100},
 }},
 
 frz:{
-anim:function(scene,_ref58){var attacker=_ref58[0];
+anim:function(scene,_ref59){var attacker=_ref59[0];
 scene.showEffect('icicle',{
 x:attacker.x-30,
 y:attacker.y,
@@ -6297,7 +6526,7 @@ time:600},
 }},
 
 flinch:{
-anim:function(scene,_ref59){var attacker=_ref59[0];
+anim:function(scene,_ref60){var attacker=_ref60[0];
 scene.showEffect('shadowball',{
 x:attacker.x,
 y:attacker.y,
@@ -6312,7 +6541,7 @@ time:300},
 }},
 
 attracted:{
-anim:function(scene,_ref60){var attacker=_ref60[0];
+anim:function(scene,_ref61){var attacker=_ref61[0];
 scene.showEffect('heart',{
 x:attacker.x+20,
 y:attacker.y+20,
@@ -6352,7 +6581,7 @@ time:500},
 }},
 
 cursed:{
-anim:function(scene,_ref61){var attacker=_ref61[0];
+anim:function(scene,_ref62){var attacker=_ref62[0];
 scene.backgroundEffect('#000000',700,0.2);
 attacker.delay(300);
 attacker.anim({x:attacker.x-5,time:50});
@@ -6375,7 +6604,7 @@ time:600},
 }},
 
 confused:{
-anim:function(scene,_ref62){var attacker=_ref62[0];
+anim:function(scene,_ref63){var attacker=_ref63[0];
 scene.showEffect('electroball',{
 x:attacker.x+50,
 y:attacker.y+30,
@@ -6431,7 +6660,7 @@ time:800},
 }},
 
 confusedselfhit:{
-anim:function(scene,_ref63){var attacker=_ref63[0];
+anim:function(scene,_ref64){var attacker=_ref64[0];
 scene.showEffect('wisp',{
 x:attacker.x,
 y:attacker.y,

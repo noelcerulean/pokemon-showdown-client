@@ -1527,7 +1527,7 @@ class BattleScene {
 	}
 	preloadEffects() {
 		for (let i in BattleEffects) {
-			if (i === 'alpha' || i === 'teal' || i === 'omega') continue;
+			if (i === 'alpha' || i === 'teal' || i === 'cerise' || i === 'omega') continue;
 			const url = BattleEffects[i].url;
 			if (url) this.preloadImage(url);
 		}
@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/newyear-masters.mp3', 34321, 87458, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/hgss-hooh.mp3', 40622, 108343, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/newyear-masters.mp3', 34321, 87458, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/hgss-hooh.mp3', 40622, 108343, this.bgm);
 				break;
 			}
 	
@@ -2427,6 +2427,9 @@ class PokemonSprite extends Sprite {
 			} else if (speciesid === 'phioneprimal') {
 				BattleOtherAnims.primalteal.anim(scene, [this]);
 				doCry = true;
+			} else if (speciesid === 'cherrimprimal') {
+				BattleOtherAnims.primalcerise.anim(scene, [this]);
+				doCry = true;
 			} else if (speciesid === 'groudonprimal') {
 				BattleOtherAnims.primalomega.anim(scene, [this]);
 				doCry = true;
@@ -2602,6 +2605,7 @@ class PokemonSprite extends Sprite {
 		if (pokemon.speciesForme.indexOf('-Mega') >= 0) symbol = 'mega';
 		else if (pokemon.speciesForme === 'Kyogre-Primal') symbol = 'alpha';
 		else if (pokemon.speciesForme === 'Phione-Primal') symbol = 'teal';
+		else if (pokemon.speciesForme === 'Cherrim-Primal') symbol = 'cerise';
 		else if (pokemon.speciesForme === 'Groudon-Primal') symbol = 'omega';
 		if (symbol) {
 			buf += ` <img src="${Dex.resourcePrefix}sprites/misc/${symbol}.png" alt="${symbol}" style="vertical-align:text-bottom;" />`;
@@ -3104,6 +3108,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	teal: {
 		url: 'teal.png',
+		w: 80, h: 80,
+	},
+	cerise: {
+		url: 'cerise.png',
 		w: 80, h: 80,
 	},
 	omega: {
@@ -5498,6 +5506,59 @@ const BattleOtherAnims: AnimTable = {
 				time: 600,
 			}, 'linear', 'fade');
 			scene.showEffect('alpha', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 1,
+				time: 300,
+			}, {
+				scale: 2.5,
+				opacity: 0,
+				time: 600,
+			}, 'decel');
+		},
+	},
+	primalcerise: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#0000DD', 500, 0.4);
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 2,
+				opacity: 0.2,
+				time: 0,
+			}, {
+				scale: 0.5,
+				opacity: 1,
+				time: 300,
+			}, 'linear', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 1,
+				time: 300,
+			}, {
+				scale: 4,
+				opacity: 0,
+				time: 700,
+			}, 'linear', 'fade');
+			scene.showEffect('shadowball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.5,
+				time: 300,
+			}, {
+				scale: 5,
+				opacity: 0,
+				time: 600,
+			}, 'linear', 'fade');
+			scene.showEffect('cerise', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,

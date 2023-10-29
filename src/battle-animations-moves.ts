@@ -9938,6 +9938,43 @@ const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
+	rockjaw: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('rock1', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 450,
+			}, {
+				x: defender.x,
+				y: defender.y - 40,
+				z: defender.behind(15),
+				scale: 3,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+			scene.showEffect('rock1', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 550,
+			}, {
+				x: defender.x,
+				y: defender.y - 40,
+				z: defender.behind(15),
+				scale: 3,
+				opacity: 0,
+				time: 900,
+			}, 'linear');
+
+			BattleOtherAnims.bite.anim(scene, [attacker, defender]);
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+		},
+	},
 	bluebites: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('waterwisp', {
@@ -40171,6 +40208,7 @@ BattleMoveAnims['slackoff'] = {anim: BattleMoveAnims['rest'].anim};
 BattleMoveAnims['secretpower'] = {anim: BattleMoveAnims['technoblast'].anim};
 BattleMoveAnims['naturalgift'] = {anim: BattleMoveAnims['technoblast'].anim};
 BattleMoveAnims['seasonalspirit'] = {anim: BattleMoveAnims['technoblast'].anim};
+BattleMoveAnims['primalburst'] = {anim: BattleMoveAnims['technoblast'].anim};
 
 BattleMoveAnims['firelash'] = {anim: BattleMoveAnims['multiattack'].anim};
 

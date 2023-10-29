@@ -477,6 +477,10 @@ kirliaarmored:1344+115,
 kirliaarmoredweaver:1344+116,
 phasmatch:1344+117,
 phasphorus:1344+118,
+rapidashmega:1344+119,
+cherrimprimal:1344+120,
+blockodile:1344+121,
+crocodobe:1344+122,
 
 
 ano:304,
