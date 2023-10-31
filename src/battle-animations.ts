@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/hgss-hooh.mp3', 40622, 108343, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/bw2-plasma.mp3', 14294, 101587, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/hgss-hooh.mp3', 40622, 108343, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/bw2-plasma.mp3', 14294, 101587, this.bgm);
 				break;
 			}
 	
@@ -3203,7 +3203,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-elite4sidney.png',
+	'bg-earthycave.jpg',
 ];
 
 const BattleOtherAnims: AnimTable = {
