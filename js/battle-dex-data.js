@@ -153,6 +153,7 @@ var BattleBaseSpeciesChart=[
 "poliwrath","hydreigon","infernape","drapion","parasect","xurkitree","lumineon","roseradearmored",
 "sablechamp","bombseal","diggersby","golisopodmusashi","blissey","espeon","umbreon","granbull",
 "glaceon","leafeon","vaporeon","jolteon","flareon","longeon","sylveon","eevee","ariados","hoopa",
+"haunter","ursaring",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
@@ -481,6 +482,7 @@ rapidashmega:1344+119,
 cherrimprimal:1344+120,
 blockodile:1344+121,
 crocodobe:1344+122,
+crocky:1344+123,
 
 
 ano:304,
