@@ -424,6 +424,7 @@ exports.BattlePokemonSpritesBW = {
 	granbullarmored:{num:210},
 	granbullnobunaga:{num:210},
 	qwilfish:{num:211},
+	numpuff:{num:-542},
 	scizor:{num:212},
 	scizormega:{num:212},
 	shuckle:{num:213},

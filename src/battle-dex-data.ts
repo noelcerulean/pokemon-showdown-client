@@ -483,6 +483,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	blockodile: 1344 + 121,
 	crocodobe: 1344 + 122,
 	crocky: 1344 + 123,
+	numpuff: 1344 + 124,
 
 	//hypnomons
 	ano: 304,
