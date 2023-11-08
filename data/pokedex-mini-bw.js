@@ -815,6 +815,7 @@ exports.BattlePokemonSpritesBW = {
 	gallade:{num:475},
 	gallademega:{num:475},
 	probopass:{num:476},
+	probopassmoyai:{num:476},
 	dusknoir:{num:477},
 	froslass:{num:478},
 	rotom:{num:479},
