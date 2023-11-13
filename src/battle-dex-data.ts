@@ -153,7 +153,7 @@ const BattleBaseSpeciesChart = [
 	"poliwrath", "hydreigon", "infernape", "drapion", "parasect", "xurkitree", "lumineon", "roseradearmored",
 	"sablechamp", "bombseal", "diggersby", "golisopodmusashi", "blissey", "espeon", "umbreon", "granbull",
 	"glaceon", "leafeon", "vaporeon", "jolteon", "flareon", "longeon", "sylveon", "eevee", "ariados", "hoopa",
-	"haunter", "ursaring", "probopass",
+	"haunter", "ursaring", "probopass", "charjabug",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
@@ -484,6 +484,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	crocodobe: 1344 + 122,
 	crocky: 1344 + 123,
 	numpuff: 1344 + 124,
+	tympoledelta: 1344 + 125,
+	palpitoaddelta: 1344 + 126,
+	seismitoaddelta: 1344 + 127,
 
 	//hypnomons
 	ano: 304,
