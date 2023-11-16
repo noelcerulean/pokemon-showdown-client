@@ -435,7 +435,7 @@ exports.BattlePokemonSprites = {
 	sneasel:{num:215},
 	teddiursa:{num:216},
 	teddiursaarmored:{num:216},
-	teddiursaarmoredsniper:{num:216},
+	teddiursaarmoredhoneyed:{num:216},
 	ursaring:{num:217},
 	ursaringfreddy:{num:217},
 	slugma:{num:218},
