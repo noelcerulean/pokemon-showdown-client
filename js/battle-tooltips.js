@@ -1115,6 +1115,9 @@ stats.atk*=2;
 if(ability==='mysticpower'){
 stats.spa*=2;
 }
+if(ability==='galaxian'&&this.battle.hasPseudoWeather('Gravity')){
+stats.spa=Math.floor(stats.spa*1.5);
+}
 if(ability==='hustle'||ability==='gorillatactics'&&!(clientPokemon!=null&&clientPokemon.volatiles['dynamax'])){
 stats.atk=Math.floor(stats.atk*1.5);
 }
@@ -1745,7 +1748,7 @@ if(target.status==='par'){
 value.modify(2,'Smelling Salts + Paralysis');
 }
 }
-if(['storedpower','powertrip'].includes(move.id)&&target){
+if(['storedpower','powertrip','snugglebug'].includes(move.id)&&target){
 var _boostCount2=0;for(var _i24=0,_Object$values3=
 Object.values(pokemon.boosts);_i24<_Object$values3.length;_i24++){var _boost2=_Object$values3[_i24];
 if(_boost2>0)_boostCount2+=_boost2;
