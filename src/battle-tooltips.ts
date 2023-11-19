@@ -1115,6 +1115,9 @@ class BattleTooltips {
 		if (ability === 'mysticpower') {
 			stats.spa *= 2;
 		}
+		if (ability === 'galaxian' && this.battle.hasPseudoWeather('Gravity')) {
+			stats.spa = Math.floor(stats.spa * 1.5);
+		}
 		if (ability === 'hustle' || (ability === 'gorillatactics' && !clientPokemon?.volatiles['dynamax'])) {
 			stats.atk = Math.floor(stats.atk * 1.5);
 		}
@@ -1745,7 +1748,7 @@ class BattleTooltips {
 				value.modify(2, 'Smelling Salts + Paralysis');
 			}
 		}
-		if (['storedpower', 'powertrip'].includes(move.id) && target) {
+		if (['storedpower', 'powertrip', 'snugglebug'].includes(move.id) && target) {
 			let boostCount = 0;
 			for (const boost of Object.values(pokemon.boosts)) {
 				if (boost > 0) boostCount += boost;

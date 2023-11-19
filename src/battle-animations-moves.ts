@@ -8010,6 +8010,175 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
+	snugglebug: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('wisp', {
+				x: defender.x - 5,
+				y: defender.y - 5,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 450,
+			}, {
+				x: defender.x - 10,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.8,
+				time: 550,
+			}, 'linear', 'explode');
+			scene.showEffect('wisp', {
+				x: defender.x + 10,
+				y: defender.y + 10,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 575,
+			}, {
+				x: defender.x + 20,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.8,
+				time: 675,
+			}, 'linear', 'explode');
+			scene.showEffect('wisp', {
+				x: defender.x + 20,
+				y: defender.y - 30,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 600,
+			}, {
+				x: defender.x + 30,
+				y: defender.y - 25,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.8,
+				time: 700,
+			}, 'linear', 'explode');
+
+			scene.showEffect('heart', {
+				x: defender.x - 10,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 450,
+			}, {
+				x: defender.x - 20,
+				y: defender.y + 30,
+				z: defender.z,
+				scale: 1,
+				opacity: 1,
+				time: 550,
+			}, 'linear', 'explode');
+			scene.showEffect('heart', {
+				x: defender.x - 30,
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 675,
+			}, {
+				x: defender.x - 35,
+				y: defender.y - 30,
+				z: defender.z,
+				scale: 1,
+				opacity: 1,
+				time: 775,
+			}, 'linear', 'explode');
+			scene.showEffect('heart', {
+				x: defender.x,
+				y: defender.y + 10,
+				z: defender.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 750,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 15,
+				z: defender.z,
+				scale: 1,
+				opacity: 1,
+				time: 900,
+			}, 'linear', 'explode');
+
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 1,
+				time: 450,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 2,
+				opacity: 0.2,
+				time: 750,
+			}, 'linear', 'fade');
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 1,
+				time: 750,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 2,
+				opacity: 0.2,
+				time: 1050,
+			}, 'linear', 'fade');
+
+			attacker.anim({
+				x: defender.leftof(-30),
+				y: defender.y + 80,
+				z: defender.behind(-30),
+				time: 350,
+			}, 'ballistic');
+			attacker.anim({
+				x: defender.leftof(30),
+				y: defender.y + 5,
+				z: defender.z,
+				time: 100,
+			});
+			attacker.anim({
+				x: defender.leftof(30),
+				y: defender.y + 80,
+				z: defender.behind(-30),
+				time: 150,
+			}, 'ballisticUp');
+			attacker.anim({
+				x: defender.leftof(-30),
+				y: defender.y + 5,
+				z: defender.z,
+				time: 100,
+			});
+			attacker.anim({
+				time: 500,
+			}, 'ballistic2Back');
+			defender.delay(450);
+			defender.anim({
+				z: defender.behind(20),
+				time: 100,
+			}, 'swing');
+			defender.anim({
+				time: 200,
+			}, 'swing');
+			defender.anim({
+				z: defender.behind(20),
+				time: 100,
+			}, 'swing');
+			defender.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
 	strength: {
 		anim: BattleOtherAnims.contactattack.anim,
 	},
@@ -40289,6 +40458,7 @@ BattleMoveAnims['teatime'] = {anim: BattleMoveAnims['healbell'].anim};
 BattleMoveAnims['octolock'] = {anim: BattleMoveAnims['bind'].anim};
 BattleMoveAnims['boltbeak'] = {anim: BattleMoveAnims['spark'].anim};
 BattleMoveAnims['courtchange'] = {anim: BattleMoveAnims['skillswap'].anim};
+BattleMoveAnims['orbitalshift'] = {anim: BattleMoveAnims['skillswap'].anim};
 BattleMoveAnims['clangoroussoul'] = {anim: BattleMoveAnims['extremeevoboost'].anim};
 BattleMoveAnims['bodypress'] = {anim: BattleMoveAnims['heavyslam'].anim};
 BattleMoveAnims['decorate'] = {anim: BattleMoveAnims['spore'].anim};

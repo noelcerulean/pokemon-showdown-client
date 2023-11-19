@@ -1617,6 +1617,15 @@ class BattleScene {
 			case -105:
 				this.bgm = BattleSound.loadBgm('audio/bw2-plasma.mp3', 14294, 101587, this.bgm);
 				break;
+			case -106:
+				this.bgm = BattleSound.loadBgm('audio/pbr-sunnypark.mp3', 3787, 93456, this.bgm);
+				break;
+			case -107:
+				this.bgm = BattleSound.loadBgm('audio/sv-aceacademy.mp3', 1258, 160450, this.bgm);
+				break;
+			case -108:
+				this.bgm = BattleSound.loadBgm('audio/masters-hoenngymleader.mp3', 12467, 87536, this.bgm);
+				break;
 			case 1:
 				this.bgm = BattleSound.loadBgm('audio/bw-subway-trainer.mp3', 15503, 110984, this.bgm);
 				break;
