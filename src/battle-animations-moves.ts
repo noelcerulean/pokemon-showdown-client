@@ -40250,6 +40250,7 @@ BattleMoveAnims['superpower'] = {anim: BattleMoveAnims['closecombat'].anim};
 BattleMoveAnims['submission'] = {anim: BattleMoveAnims['closecombat'].anim};
 BattleMoveAnims['delinquency'] = {anim: BattleMoveAnims['closecombat'].anim};
 BattleMoveAnims['bonerush'] = {anim: BattleMoveAnims['boneclub'].anim};
+BattleMoveAnims['bonetwirl'] = {anim: BattleMoveAnims['bonemerang'].anim};
 
 BattleMoveAnims['dragonrage'] = {anim: BattleMoveAnims['dragonbreath'].anim};
 

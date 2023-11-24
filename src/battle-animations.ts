@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/sv-aceacademy.mp3', 1258, 160450, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-hoenngymleader.mp3', 12467, 87536, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/sv-aceacademy.mp3', 1258, 160450, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-hoenngymleader.mp3', 12467, 87536, this.bgm);
 				break;
 			}
 	
@@ -3203,7 +3203,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-fairygym.png',
+	'bg-space.png',
 ];
 
 const BattleOtherAnims: AnimTable = {

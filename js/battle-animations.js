@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/sv-aceacademy.mp3',1258,160450,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-hoenngymleader.mp3',12467,87536,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/sv-aceacademy.mp3',1258,160450,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-hoenngymleader.mp3',12467,87536,this.bgm);
 break;}
 
 
@@ -3203,7 +3203,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-fairygym.png'];
+'bg-space.png'];
 
 
 var BattleOtherAnims={

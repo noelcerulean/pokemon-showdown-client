@@ -487,6 +487,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	tympoledelta: 1344 + 125,
 	palpitoaddelta: 1344 + 126,
 	seismitoaddelta: 1344 + 127,
+	hypnomega: 1344 + 128,
+	eclipsol: 1344 + 129,
 
 	//hypnomons
 	ano: 304,

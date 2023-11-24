@@ -487,6 +487,8 @@ numpuff:1344+124,
 tympoledelta:1344+125,
 palpitoaddelta:1344+126,
 seismitoaddelta:1344+127,
+hypnomega:1344+128,
+eclipsol:1344+129,
 
 
 ano:304,
