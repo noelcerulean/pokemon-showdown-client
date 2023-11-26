@@ -1535,7 +1535,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%12);
+this.setBgm(1+this.numericId%1);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1543,43 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
-break;
-case 2:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case 3:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
-break;
-case 4:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case 5:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
-break;
-case 6:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case 7:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
-break;
-case 8:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case 9:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
-break;
-case 10:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case 11:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
-break;
-case 12:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-team-break.mp3',41520,108427,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-team-break.mp3',41520,108427,this.bgm);
 break;}
 
 

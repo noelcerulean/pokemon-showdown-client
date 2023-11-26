@@ -896,6 +896,7 @@ exports.BattlePokemonSprites = {
 	simipour:{num:516},
 	munna:{num:517},
 	musharna:{num:518},
+	musharnanightmare:{num:518},
 	pidove:{num:519},
 	tranquill:{num:520},
 	unfezant:{num:521},

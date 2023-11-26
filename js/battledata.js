@@ -1479,6 +1479,7 @@ palpitoaddelta:1344+126,
 seismitoaddelta:1344+127,
 hypnomega:1344+128,
 eclipsol:1344+129,
+musharnanightmare:1344+130,
 
 
 ano:304,
