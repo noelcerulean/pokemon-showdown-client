@@ -1623,6 +1623,11 @@ class BattleTooltips {
 			value.itemModify(1.1, "Wide Lens");
 		}
 
+		if (value.tryItem('Bone Baton') && move.flags['bone'] && pokemon.getSpeciesForme() === 'Osteoskhan') {
+			accuracyModifiers.push(4915);
+			value.itemModify(1.2, "Bone Baton");
+		}
+
 		// Chaining modifiers
 		let chain = 4096;
 		for (const mod of accuracyModifiers) {
@@ -1680,6 +1685,11 @@ class BattleTooltips {
 		if (move.id === 'eggbomb' && pokemon.getSpeciesForme() === 'Happiny') {
 			if (serverPokemon.item === 'ovalstone') {
 				value.modify(1.5, 'Oval Stone boost');
+			}
+		}
+		if (move.flags['bone'] && pokemon.getSpeciesForme() === 'Osteoskhan') {
+			if (serverPokemon.item === 'bonebaton') {
+				value.modify(1.5, 'Bone Baton boost');
 			}
 		}
 		if (move.id.startsWith('hiddenpower') && pokemon.getSpeciesForme() === 'Allnown') {

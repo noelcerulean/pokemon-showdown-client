@@ -217,6 +217,7 @@ exports.BattlePokemonSprites = {
 	marowak:{num:105},
 	marowakalola:{num:105},
 	marowakalolatotem:{num:105},
+	osteoskhan:{num:-544},
 	hitmonlee:{num:106},
 	hitmonchan:{num:107},
 	lickitung:{num:108},

@@ -1623,6 +1623,11 @@ accuracyModifiers.push(4505);
 value.itemModify(1.1,"Wide Lens");
 }
 
+if(value.tryItem('Bone Baton')&&move.flags['bone']&&pokemon.getSpeciesForme()==='Osteoskhan'){
+accuracyModifiers.push(4915);
+value.itemModify(1.2,"Bone Baton");
+}
+
 
 var chain=4096;for(var _i21=0;_i21<
 accuracyModifiers.length;_i21++){var mod=accuracyModifiers[_i21];
@@ -1680,6 +1685,11 @@ value.modify(2,"Acrobatics + no item");
 if(move.id==='eggbomb'&&pokemon.getSpeciesForme()==='Happiny'){
 if(serverPokemon.item==='ovalstone'){
 value.modify(1.5,'Oval Stone boost');
+}
+}
+if(move.flags['bone']&&pokemon.getSpeciesForme()==='Osteoskhan'){
+if(serverPokemon.item==='bonebaton'){
+value.modify(1.5,'Bone Baton boost');
 }
 }
 if(move.id.startsWith('hiddenpower')&&pokemon.getSpeciesForme()==='Allnown'){

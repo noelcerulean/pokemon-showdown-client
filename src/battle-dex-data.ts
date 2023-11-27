@@ -490,6 +490,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	hypnomega: 1344 + 128,
 	eclipsol: 1344 + 129,
 	musharnanightmare: 1344 + 130,
+	osteoskhan: 1344 + 131,
 
 	//hypnomons
 	ano: 304,
@@ -1283,6 +1284,8 @@ interface MoveFlags {
 	/** Power is multiplied by 1.2 when used by a Pokemon with the Unsheathed Ability. */
 	blade?: 1 | 0;
 	/** Has no effect on Pokemon with the Bulletproof Ability. */
+	bone?: 1 | 0;
+	/** Immunity is ignored when used by a Pokemon with the Bone Master Ability. */
 	bullet?: 1 | 0;
 	/** The user is unable to make a move between turns. */
 	charge?: 1 | 0;
