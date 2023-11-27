@@ -153,7 +153,7 @@ const BattleBaseSpeciesChart = [
 	"poliwrath", "hydreigon", "infernape", "drapion", "parasect", "xurkitree", "lumineon", "roseradearmored",
 	"sablechamp", "bombseal", "diggersby", "golisopodmusashi", "blissey", "espeon", "umbreon", "granbull",
 	"glaceon", "leafeon", "vaporeon", "jolteon", "flareon", "longeon", "sylveon", "eevee", "ariados", "hoopa",
-	"haunter", "ursaring", "probopass", "charjabug", "teddiursaarmored",
+	"haunter", "ursaring", "probopass", "charjabug", "teddiursaarmored", "cubone", "kecleon",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
