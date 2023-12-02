@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/pbr-gateway.mp3',14115,81375,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-stargazer.mp3',27357,83427,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/pbr-gateway.mp3',14115,81375,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-stargazer.mp3',27357,83427,this.bgm);
 break;}
 
 
@@ -3203,7 +3203,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-icecave.jpg'];
+'bg-space.png'];
 
 
 var BattleOtherAnims={

@@ -492,6 +492,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	musharnanightmare: 1344 + 130,
 	osteoskhan: 1344 + 131,
 	bunmochi: 1344 + 132,
+	utsuki: 1344 + 133,
 
 	//hypnomons
 	ano: 304,

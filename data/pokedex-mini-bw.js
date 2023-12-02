@@ -337,6 +337,7 @@ exports.BattlePokemonSpritesBW = {
 	marill:{num:183},
 	azumarill:{num:184},
 	bunmochi:{num:-545},
+	utsuki:{num:-546},
 	sudowoodo:{num:185},
 	sudowoodobusted:{num:185},
 	politoed:{num:186},
