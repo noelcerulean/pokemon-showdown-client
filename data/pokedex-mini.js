@@ -276,6 +276,7 @@ exports.BattlePokemonSprites = {
 	omastar:{num:139},
 	kabuto:{num:140},
 	kabutops:{num:141},
+	kabutopsfossil:{num:141},
 	aerodactyl:{num:142},
 	aerodactylmega:{num:142},
 	snorlax:{num:143},
