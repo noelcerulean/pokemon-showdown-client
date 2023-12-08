@@ -96,6 +96,7 @@ exports.BattlePokemonSpritesBW = {
 	vulpixalola:{num:37},
 	ninetales:{num:38},
 	ninetalesjibanyan:{num:38},
+	ninetalesyukata:{num:38},
 	ninetalesalola:{num:38},
 	jigglypuff:{num:39},
 	wigglytuff:{num:40},
