@@ -443,6 +443,7 @@ exports.BattlePokemonSprites = {
 	teddiursa:{num:216},
 	teddiursaarmored:{num:216},
 	teddiursaarmoredhoneyed:{num:216},
+	teddiursaarmoredsailor:{num:216},
 	ursaring:{num:217},
 	ursaringfreddy:{num:217},
 	slugma:{num:218},
