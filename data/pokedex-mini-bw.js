@@ -629,6 +629,7 @@ exports.BattlePokemonSpritesBW = {
 	crawdaunt:{num:342},
 	baltoy:{num:343},
 	claydol:{num:344},
+	claydolodyssey:{num:344},
 	lileep:{num:345},
 	cradily:{num:346},
 	anorith:{num:347},
