@@ -931,6 +931,7 @@ exports.BattlePokemonSprites = {
 	palpitoad:{num:536},
 	palpitoaddelta:{num:536},
 	seismitoad:{num:537},
+	seismitoadrapper:{num:537},
 	seismitoaddelta:{num:537},
 	throh:{num:538},
 	sawk:{num:539},
