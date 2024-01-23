@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/kahuna-battle.mp3', 37195, 135644, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/colosseum-first-battle.mp3', 10538, 57255, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/kahuna-battle.mp3', 37195, 135644, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/bw2-rival.mp3', 7152, 68708, this.bgm);
 				break;
 			}
 	
@@ -3203,7 +3203,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-icegym.png',
+	'bg-snowscape.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
