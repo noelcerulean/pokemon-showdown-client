@@ -154,7 +154,7 @@ var BattleBaseSpeciesChart=[
 "sablechamp","bombseal","diggersby","golisopodmusashi","blissey","espeon","umbreon","granbull",
 "glaceon","leafeon","vaporeon","jolteon","flareon","longeon","sylveon","eevee","ariados","hoopa",
 "haunter","ursaring","probopass","charjabug","teddiursaarmored","cubone","kecleon","kabutops",
-"claydol","azumarill","seismitoad",
+"claydol","azumarill","seismitoad","chesnaughtdelta",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
@@ -497,6 +497,10 @@ osteoskhan:1344+131,
 bunmochi:1344+132,
 utsuki:1344+133,
 typhlosionarmored:1344+134,
+chespindelta:1344+135,
+quilladindelta:1344+136,
+chesnaughtdelta:1344+137,
+chesnaughtdeltauranium:1344+137,
 
 
 ano:304,
