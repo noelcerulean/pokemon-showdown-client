@@ -1542,11 +1542,11 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case 6:
-this.bgm=BattleSound.loadBgm('audio/steel-battle.mp3',29258,121915,this.bgm);
+case 1:
+this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/steel-battle.mp3',29258,121915,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
 break;}
 
 
