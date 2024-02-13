@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/training-gym.mp3', 34957, 149397, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/hgss-gym-leader.mp3', 20319, 82910, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/training-gym.mp3', 34957, 149397, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/hgss-gym-leader.mp3', 20319, 82910, this.bgm);
 				break;
 			}
 	
