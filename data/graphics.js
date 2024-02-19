@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/ferrum-stadium.mp3',12561,112299,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/xd-miror-b.mp3',9000,57815,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/ferrum-stadium.mp3',12561,112299,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/xd-miror-b.mp3',9000,57815,this.bgm);
 break;}
 
 
@@ -3203,7 +3203,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-fairygym.png'];
+'bg-party.png'];
 
 
 var BattleOtherAnims={
