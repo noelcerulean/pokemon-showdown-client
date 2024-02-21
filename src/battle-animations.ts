@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/neos-city.mp3', 14492, 119725, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/xd-miror-b.mp3', 9000, 57815, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/neos-city.mp3', 14492, 119725, this.bgm);
 				break;
 			}
 	
