@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/thalia-beach.mp3', 16209, 109854, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-team-break.mp3', 41520, 108427, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/thalia-beach.mp3', 16209, 109854, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-team-break.mp3', 41520, 108427, this.bgm);
 				break;
 			}
 	
@@ -3203,7 +3203,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-beach.jpg',
+	'bg-deepsea.jpg',
 ];
 
 const BattleOtherAnims: AnimTable = {

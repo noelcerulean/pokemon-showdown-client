@@ -501,6 +501,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	quilladindelta: 1344 + 136,
 	chesnaughtdelta: 1344 + 137,
 	chesnaughtdeltauranium: 1344 + 137,
+	dicee: 1344 + 138,
+	rollette: 1344 + 139,
+	cashino: 1344 + 140,
 
 	//hypnomons
 	ano: 304,

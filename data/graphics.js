@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/thalia-beach.mp3',16209,109854,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-team-break.mp3',41520,108427,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/thalia-beach.mp3',16209,109854,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-team-break.mp3',41520,108427,this.bgm);
 break;}
 
 
@@ -3203,7 +3203,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-beach.jpg'];
+'bg-deepsea.jpg'];
 
 
 var BattleOtherAnims={
