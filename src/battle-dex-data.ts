@@ -504,6 +504,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	dicee: 1344 + 138,
 	rollette: 1344 + 139,
 	cashino: 1344 + 140,
+	nuzleafarmored: 1344 + 141,
 
 	//hypnomons
 	ano: 304,
@@ -1338,6 +1339,8 @@ interface MoveFlags {
 	snatch?: 1 | 0;
 	/** Has no effect on Pokemon with the Soundproof Ability. */
 	sound?: 1 | 0;
+	/** Has no effect on Pokemon with the Jetstream Ability. */
+	wind?: 1 | 0;
 }
 
 type MoveTarget = 'normal' | 'any' | 'adjacentAlly' | 'adjacentFoe' | 'adjacentAllyOrSelf' | // single-target

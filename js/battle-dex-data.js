@@ -504,6 +504,7 @@ chesnaughtdeltauranium:1344+137,
 dicee:1344+138,
 rollette:1344+139,
 cashino:1344+140,
+nuzleafarmored:1344+141,
 
 
 ano:304,
@@ -1287,6 +1288,8 @@ this.gen=3;
 }
 }
 };var
+
+
 
 
 

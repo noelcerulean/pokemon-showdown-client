@@ -524,6 +524,7 @@ exports.BattlePokemonSpritesBW = {
 	ludicolo:{num:272},
 	seedot:{num:273},
 	nuzleaf:{num:274},
+	nuzleafarmored:{num:274},
 	shiftry:{num:275},
 	taillow:{num:276},
 	swellow:{num:277},
