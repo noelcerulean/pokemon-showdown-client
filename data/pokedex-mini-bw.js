@@ -1271,6 +1271,7 @@ exports.BattlePokemonSpritesBW = {
 	charjabugmastermind:{num:737},
 	vikavolt:{num:738},
 	vikavolttotem:{num:738},
+	vikavoltfnf:{num:738},
 	crabrawler:{num:739},
 	crabominable:{num:740},
 	oricorio:{num:741},

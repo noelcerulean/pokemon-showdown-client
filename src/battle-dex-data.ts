@@ -505,6 +505,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	rollette: 1344 + 139,
 	cashino: 1344 + 140,
 	nuzleafarmored: 1344 + 141,
+	vikavoltfnf: 1344 + 142,
 
 	//hypnomons
 	ano: 304,
