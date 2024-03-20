@@ -1542,17 +1542,17 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case-110:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case-115:
+case 1:
 this.bgm=BattleSound.loadBgm('audio/conquest-psychic-battle.mp3',24009,114013,this.bgm);
 break;
-case-116:
+case 2:
+this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
+break;
+case 3:
 this.bgm=BattleSound.loadBgm('audio/conquest-bug-battle.mp3',73481,174468,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/conquest-bug-battle.mp3',73481,174468,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/conquest-psychic-battle.mp3',24009,114013,this.bgm);
 break;}
 
 
