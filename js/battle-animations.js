@@ -1535,7 +1535,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%3);
+this.setBgm(1+this.numericId%1);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1543,16 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/conquest-psychic-battle.mp3',24009,114013,this.bgm);
-break;
-case 2:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case 3:
-this.bgm=BattleSound.loadBgm('audio/conquest-bug-battle.mp3',73481,174468,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-kruger.mp3',29330,58135,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/conquest-psychic-battle.mp3',24009,114013,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-kruger.mp3',29330,58135,this.bgm);
 break;}
 
 
@@ -3209,7 +3203,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-earthycave.jpg'];
+'bg-orasdesert.jpg'];
 
 
 var BattleOtherAnims={
