@@ -1496,6 +1496,10 @@ rollette:1344+139,
 cashino:1344+140,
 nuzleafarmored:1344+141,
 vikavoltfnf:1344+142,
+rudoodle:1344+143,
+rutherium:1344+144,
+huojara:1344+145,
+ignajara:1344+146,
 
 
 ano:304,

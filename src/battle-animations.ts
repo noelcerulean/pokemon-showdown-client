@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/pbr-kruger.mp3', 29330, 58135, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/regi-ruins.mp3', 12903, 130675, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/pbr-kruger.mp3', 29330, 58135, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/regi-ruins.mp3', 12903, 130675, this.bgm);
 				break;
 			}
 	
