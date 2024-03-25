@@ -728,6 +728,7 @@ exports.BattlePokemonSpritesBW = {
 	roseradearmoredsummer:{num:407},
 	cranidos:{num:408},
 	cranidosdelta:{num:408},
+	cranidosdeltavoid:{num:408},
 	rampardos:{num:409},
 	rampardosegg:{num:409},
 	rampardosdelta:{num:409},

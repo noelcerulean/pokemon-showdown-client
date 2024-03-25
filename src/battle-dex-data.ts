@@ -154,7 +154,7 @@ const BattleBaseSpeciesChart = [
 	"sablechamp", "bombseal", "diggersby", "golisopodmusashi", "blissey", "espeon", "umbreon", "granbull",
 	"glaceon", "leafeon", "vaporeon", "jolteon", "flareon", "longeon", "sylveon", "eevee", "ariados", "hoopa",
 	"haunter", "ursaring", "probopass", "charjabug", "teddiursaarmored", "cubone", "kecleon", "kabutops",
-	"claydol", "azumarill", "seismitoad", "chesnaughtdelta",
+	"claydol", "azumarill", "seismitoad", "chesnaughtdelta", "cranidosdelta",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
@@ -398,6 +398,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	magnezonemega: 1344 + 45,
 	warcass: 1344 + 46,
 	cranidosdelta: 1344 + 47,
+	cranidosdeltavoid: 1344 + 47,
 	rampardosdelta: 1344 + 48,
 	shieldondelta: 1344 + 49,
 	bastiodondelta: 1344 + 50,
