@@ -511,6 +511,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	rutherium: 1344 + 144,
 	huojara: 1344 + 145,
 	ignajara: 1344 + 146,
+	torkoalfnf: 1344 + 147,
+	steeneedeltaarmored: 1344 + 148,
 
 	//hypnomons
 	ano: 304,
