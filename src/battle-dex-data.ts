@@ -468,7 +468,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	dwebblefnf: 1344 + 104,
 	crustlefnf: 1344 + 105,
 	kiwuit: 1344 + 106,
-	sableyefnfmega: 1344 + 107,
+	sableyefnfmegay: 1344 + 107,
 	bounsweetdelta: 1344 + 108,
 	steeneedelta: 1344 + 109,
 	saurbot: 1344 + 110,
@@ -513,6 +513,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	ignajara: 1344 + 146,
 	torkoalfnf: 1344 + 147,
 	steeneedeltaarmored: 1344 + 148,
+	sableyefnfmegax: 1344 + 149,
 
 	//hypnomons
 	ano: 304,
