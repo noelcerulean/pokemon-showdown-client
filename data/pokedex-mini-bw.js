@@ -477,6 +477,7 @@ exports.BattlePokemonSpritesBW = {
 	smeargle:{num:235},
 	tyrogue:{num:236},
 	hitmontop:{num:237},
+	hitmonwu:{num:-550},
 	smoochum:{num:238},
 	elekid:{num:239},
 	magby:{num:240},

@@ -514,6 +514,7 @@ ignajara:1344+146,
 torkoalfnf:1344+147,
 steeneedeltaarmored:1344+148,
 sableyefnfmegax:1344+149,
+hitmonwu:1344+150,
 
 
 ano:304,

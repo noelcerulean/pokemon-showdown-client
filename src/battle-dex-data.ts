@@ -514,6 +514,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	torkoalfnf: 1344 + 147,
 	steeneedeltaarmored: 1344 + 148,
 	sableyefnfmegax: 1344 + 149,
+	hitmonwu: 1344 + 150,
 
 	//hypnomons
 	ano: 304,
