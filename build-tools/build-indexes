@@ -633,6 +633,7 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 			case 'rockyhelmet':
 			case 'heavydutyboots':
 			case 'expertbelt':
+			case 'strangesouvenir':
 			case 'salacberry':
 				greatItems.push(id);
 				break;

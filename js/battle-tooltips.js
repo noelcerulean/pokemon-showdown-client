@@ -1896,7 +1896,7 @@ if(value.value<=60){
 value.abilityModify(1.5,"Technician");
 }
 if(['psn','tox'].includes(pokemon.status)&&move.category==='Physical'){
-value.abilityModify(1.5,"Toxic Boost");
+value.abilityModify(1.3,"Toxic Boost");
 }
 if(this.battle.gen>2&&serverPokemon.status==='brn'&&move.id!=='facade'&&move.id!=='shadowrage'&&move.category==='Physical'){
 if(!value.tryAbility("Guts"))value.modify(0.5,'Burn');
