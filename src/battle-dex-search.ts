@@ -1289,6 +1289,8 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 			return species.baseSpecies === 'Allnown';
 		case 'leechlife':
 			return dex.gen > 6;
+		case 'lusterpurge':
+			return abilityid === 'luminesce';
 		case 'mysteryroom':
 			return species.baseSpecies === 'Allnown';
 		case 'mysticalfire':

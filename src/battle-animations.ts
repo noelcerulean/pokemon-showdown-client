@@ -1877,6 +1877,7 @@ class PokemonSprite extends Sprite {
 		healblock: ['Heal Block', 'bad'],
 		yawn: ['Drowsy', 'bad'],
 		flashfire: ['Flash Fire', 'good'],
+		luminesce: ['Luminesce', 'good'],
 		inflate: ['Inflate', 'good'],
 		imprison: ['Imprisoning foe', 'good'],
 		autotomize: ['Lightened', 'neutral'],

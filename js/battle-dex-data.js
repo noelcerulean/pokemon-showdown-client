@@ -515,6 +515,9 @@ torkoalfnf:1344+147,
 steeneedeltaarmored:1344+148,
 sableyefnfmegax:1344+149,
 hitmonwu:1344+150,
+roggenrolafnf:1344+151,
+boldorefnf:1344+152,
+gigalithfnf:1344+153,
 
 
 ano:304,
@@ -1298,6 +1301,8 @@ this.gen=3;
 }
 }
 };var
+
+
 
 
 

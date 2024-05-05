@@ -515,6 +515,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	steeneedeltaarmored: 1344 + 148,
 	sableyefnfmegax: 1344 + 149,
 	hitmonwu: 1344 + 150,
+	roggenrolafnf: 1344 + 151,
+	boldorefnf: 1344 + 152,
+	gigalithfnf: 1344 + 153,
 
 	//hypnomons
 	ano: 304,
@@ -1327,6 +1330,8 @@ interface MoveFlags {
 	heal?: 1 | 0;
 	/** Power is multiplied by 1.2 when used by a Pokemon with the Striker Ability. */
 	kick?: 1 | 0;
+	/** Activates the Luminesce Ability. */
+	light?: 1 | 0;
 	/** Can be copied by Mirror Move. */
 	mirror?: 1 | 0;
 	/** Unknown effect. */
