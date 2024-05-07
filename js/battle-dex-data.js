@@ -518,6 +518,9 @@ hitmonwu:1344+150,
 roggenrolafnf:1344+151,
 boldorefnf:1344+152,
 gigalithfnf:1344+153,
+aromacosta:1344+154,
+chinglingarmored:1344+155,
+
 
 
 ano:304,
