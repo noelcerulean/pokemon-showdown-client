@@ -282,6 +282,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	rattataalola: 900 + 119,
 	raticatealola: 900 + 120,
 	raichualola: 900 + 121,
+	raichualolasuntan: 900 + 121,
 	sandshrewalola: 900 + 122,
 	sandslashalola: 900 + 123,
 	vulpixalola: 900 + 124,
