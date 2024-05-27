@@ -1144,7 +1144,8 @@ var BattleBaseSpeciesChart=[
 "sablechamp","bombseal","diggersby","golisopodmusashi","blissey","espeon","umbreon","granbull",
 "glaceon","leafeon","vaporeon","jolteon","flareon","longeon","sylveon","eevee","ariados","hoopa",
 "haunter","ursaring","probopass","charjabug","teddiursaarmored","cubone","kecleon","kabutops",
-"claydol","azumarill","seismitoad","chesnaughtdelta","cranidosdelta",
+"claydol","azumarill","seismitoad","chesnaughtdelta","cranidosdelta","raichualola","amoonguss",
+"arthrogon",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
