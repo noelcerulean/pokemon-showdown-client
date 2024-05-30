@@ -682,6 +682,7 @@ exports.BattlePokemonSpritesBW = {
 	luvdisc:{num:370},
 	bagon:{num:371},
 	shelgon:{num:372},
+	shelgonball:{num:372},
 	salamence:{num:373},
 	salamencemega:{num:373},
 	beldum:{num:374},

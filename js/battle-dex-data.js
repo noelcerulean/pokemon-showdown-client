@@ -155,7 +155,7 @@ var BattleBaseSpeciesChart=[
 "glaceon","leafeon","vaporeon","jolteon","flareon","longeon","sylveon","eevee","ariados","hoopa",
 "haunter","ursaring","probopass","charjabug","teddiursaarmored","cubone","kecleon","kabutops",
 "claydol","azumarill","seismitoad","chesnaughtdelta","cranidosdelta","raichualola","amoonguss",
-"arthrogon",
+"arthrogon","shelgon",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
