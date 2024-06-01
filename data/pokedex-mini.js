@@ -201,6 +201,7 @@ exports.BattlePokemonSprites = {
 	drowzee:{num:96},
 	hypno:{num:97},
 	hypnohappyjamas:{num:97},
+	hypnobeach:{num:97},
 	hypnohappy:{num:97},
 	hypnohappyf:{num:97},
 	hypnomega:{num:97},
