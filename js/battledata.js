@@ -1146,6 +1146,7 @@ var BattleBaseSpeciesChart=[
 "haunter","ursaring","probopass","charjabug","teddiursaarmored","cubone","kecleon","kabutops",
 "claydol","azumarill","seismitoad","chesnaughtdelta","cranidosdelta","raichualola","amoonguss",
 "arthrogon","shelgon","ampharos","salazzle","electrodefnf","baki","boldorefnf","gigalithfnf",
+"drowzee",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
