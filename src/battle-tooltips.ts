@@ -2388,6 +2388,9 @@ class BattleStatGuesser {
 			} else if (move.id === 'fellstinger') {
 				moveCount['PhysicalSetup']++;
 				moveCount['Setup']++;
+			} else if ((abilityid === 'cunningblade') && move.flags.blade) {
+				moveCount['Special']++;
+				moveCount['Offense']++;
 			} else {
 				moveCount[move.category]++;
 				moveCount['Offense']++;
