@@ -1234,6 +1234,8 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 			return ['skilllink', 'technician'].includes(abilityid);
 		case 'counter':
 			return species.baseStats.hp >= 65;
+		case 'crosspoison':
+			return abilityid === 'cunningblade';
 		case 'darkvoid':
 			return dex.gen < 8;
 		case 'drainingkiss':
@@ -1300,7 +1302,7 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 		case 'naturepower':
 			return dex.gen === 5 || species.baseSpecies === 'Allnown';
 		case 'nightslash':
-			return !moves.includes('crunch') && !(moves.includes('knockoff') && dex.gen >= 6);
+			return abilityid === 'cunningblade' || !moves.includes('crunch') && !(moves.includes('knockoff') && dex.gen >= 6);
 		case 'ominouswind':
 			return species.baseSpecies === 'Allnown';
 		case 'petaldance':
