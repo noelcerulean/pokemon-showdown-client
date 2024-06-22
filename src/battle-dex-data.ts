@@ -156,7 +156,7 @@ const BattleBaseSpeciesChart = [
 	"haunter", "ursaring", "probopass", "charjabug", "teddiursaarmored", "cubone", "kecleon", "kabutops",
 	"claydol", "azumarill", "seismitoad", "chesnaughtdelta", "cranidosdelta", "raichualola", "amoonguss",
 	"arthrogon", "shelgon", "ampharos", "salazzle", "electrodefnf", "baki", "boldorefnf", "gigalithfnf",
-	"drowzee", "marill", "electrode", "saurbot", "kiwuit", "gravking", "spinda", "reuniclus",
+	"drowzee", "marill", "electrode", "saurbot", "kiwuit", "gravking", "spinda", "reuniclus", "dwebblefnf",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
@@ -475,6 +475,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	viropath: 1344 + 102,
 	trevenantmega: 1344 + 103,
 	dwebblefnf: 1344 + 104,
+	dwebblefnficecream: 1344 + 104,
 	crustlefnf: 1344 + 105,
 	kiwuit: 1344 + 106,
 	kiwuitbeach: 1344 + 106,

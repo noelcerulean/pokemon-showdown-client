@@ -998,6 +998,7 @@ exports.BattlePokemonSprites = {
 	maractussombrero:{num:556},
 	dwebble:{num:557},
 	dwebblefnf:{num:557},
+	dwebblefnficecream:{num:557},
 	crustle:{num:558},
 	crustlefnf:{num:558},
 	scraggy:{num:559},

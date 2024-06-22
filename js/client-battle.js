@@ -1414,7 +1414,7 @@
 			this.gameType = data.gameType;
 			var buf = '<form><p>';
 			if (this.gameType === 'battle') {
-				buf += 'Forfeiting makes you lose the battle.';
+				buf += 'Forfeiting makes you lose the battle, and will not earn you or your opponent points from using Saurbot Analyze.';
 			} else if (this.gameType === 'help') {
 				buf += 'Leaving the room will close the ticket.';
 			} else {
