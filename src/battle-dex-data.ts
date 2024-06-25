@@ -157,6 +157,7 @@ const BattleBaseSpeciesChart = [
 	"claydol", "azumarill", "seismitoad", "chesnaughtdelta", "cranidosdelta", "raichualola", "amoonguss",
 	"arthrogon", "shelgon", "ampharos", "salazzle", "electrodefnf", "baki", "boldorefnf", "gigalithfnf",
 	"drowzee", "marill", "electrode", "saurbot", "kiwuit", "gravking", "spinda", "reuniclus", "dwebblefnf",
+	"salamence", "trevenant",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
