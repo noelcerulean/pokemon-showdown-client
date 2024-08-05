@@ -742,6 +742,7 @@ exports.BattlePokemonSpritesBW = {
 	starly:{num:396},
 	staravia:{num:397},
 	staraptor:{num:398},
+	billbie:{num:-559},
 	bidoof:{num:399},
 	bibarel:{num:400},
 	kricketot:{num:401},
