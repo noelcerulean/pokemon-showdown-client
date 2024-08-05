@@ -2040,6 +2040,7 @@ class BattleTooltips {
 	}
 
 	static incenseTypes: {[itemName: string]: TypeName} = {
+		'Myth Incense': 'Dragon',
 		'Odd Incense': 'Psychic',
 		'Rock Incense': 'Rock',
 		'Rose Incense': 'Grass',
