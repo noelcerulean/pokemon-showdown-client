@@ -1147,7 +1147,7 @@ var BattleBaseSpeciesChart=[
 "claydol","azumarill","seismitoad","chesnaughtdelta","cranidosdelta","raichualola","amoonguss",
 "arthrogon","shelgon","ampharos","salazzle","electrodefnf","baki","boldorefnf","gigalithfnf",
 "drowzee","marill","electrode","saurbot","kiwuit","gravking","spinda","reuniclus","dwebblefnf",
-"salamence","trevenant","dustox","primarina","darmanitan",
+"salamence","trevenant","dustox","primarina","darmanitan","typhlosionvesuvius","chatot","cashino",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
@@ -1510,6 +1510,7 @@ chesnaughtdeltauranium:1344+137,
 dicee:1344+138,
 rollette:1344+139,
 cashino:1344+140,
+cashinovintage:1344+140,
 nuzleafarmored:1344+141,
 vikavoltfnf:1344+142,
 rudoodle:1344+143,
