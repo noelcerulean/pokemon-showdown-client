@@ -433,6 +433,7 @@ exports.BattlePokemonSprites = {
 	unownquestion:{num:201},
 	allnown:{num:-523},
 	wobbuffet:{num:202},
+	wobbuffetchamp:{num:202},
 	girafarig:{num:203},
 	pineco:{num:204},
 	pinecodelta:{num:204},

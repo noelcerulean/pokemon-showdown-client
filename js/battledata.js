@@ -1148,6 +1148,7 @@ var BattleBaseSpeciesChart=[
 "arthrogon","shelgon","ampharos","salazzle","electrodefnf","baki","boldorefnf","gigalithfnf",
 "drowzee","marill","electrode","saurbot","kiwuit","gravking","spinda","reuniclus","dwebblefnf",
 "salamence","trevenant","dustox","primarina","darmanitan","typhlosionvesuvius","chatot","cashino",
+"wobbuffet",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
