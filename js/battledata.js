@@ -1148,7 +1148,7 @@ var BattleBaseSpeciesChart=[
 "arthrogon","shelgon","ampharos","salazzle","electrodefnf","baki","boldorefnf","gigalithfnf",
 "drowzee","marill","electrode","saurbot","kiwuit","gravking","spinda","reuniclus","dwebblefnf",
 "salamence","trevenant","dustox","primarina","darmanitan","typhlosionvesuvius","chatot","cashino",
-"wobbuffet",
+"wobbuffet","gorochu",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
@@ -1458,6 +1458,7 @@ boomba:1344+92,
 mindow:1344+93,
 anchorage:1344+94,
 gorochu:1344+95,
+gorochujooj:1344+95,
 minamai:1344+96,
 marelstorm:1344+97,
 slugnami:1344+98,

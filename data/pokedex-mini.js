@@ -78,6 +78,7 @@ exports.BattlePokemonSprites = {
 	raichualola:{num:26},
 	raichualolasuntan:{num:26},
 	gorochu:{num:-529},
+	gorochujooj:{num:-529},
 	sandshrew:{num:27},
 	sandshrewalola:{num:27},
 	sandslash:{num:28},
