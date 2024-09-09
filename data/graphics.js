@@ -1656,6 +1656,12 @@ break;
 case-118:
 this.bgm=BattleSound.loadBgm('audio/regi-ruins.mp3',12903,130675,this.bgm);
 break;
+case-119:
+this.bgm=BattleSound.loadBgm('audio/phos-volcano.mp3',51777,142119,this.bgm);
+break;
+case-120:
+this.bgm=BattleSound.loadBgm('audio/masters-lear.mp3',50211,122210,this.bgm);
+break;
 case 1:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
