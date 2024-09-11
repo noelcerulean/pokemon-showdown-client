@@ -37327,8 +37327,139 @@ time:400},
 'swing');
 }},
 
-stokedsparksurfer:{
+moltenmagmawhip:{
 anim:function(scene,_ref481){var attacker=_ref481[0],defender=_ref481[1];
+scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)',600,0.7,1200);
+scene.showEffect('fireball',{
+x:defender.x,
+y:defender.y-60,
+z:defender.z,
+scale:1,
+xscale:3,
+opacity:1,
+time:1450},
+{
+scale:2,
+xscale:12,
+opacity:0,
+time:1850},
+'linear','fade');
+scene.showEffect('fireball',{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+opacity:0.7,
+scale:1,
+time:1450},
+{
+scale:6,
+opacity:0,
+time:2000},
+'linear');
+scene.showEffect('wisp',{
+x:defender.x,
+y:defender.y+350,
+z:defender.z,
+opacity:1,
+scale:3,
+yscale:10,
+time:1450},
+{
+xscale:0,
+opacity:0.5,
+time:1800},
+'accel','fade');
+scene.showEffect('wisp',{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+opacity:1,
+scale:3,
+time:1450},
+{
+scale:9,
+opacity:0.7,
+time:2000},
+'linear','explode');
+scene.showEffect('rightslash',{
+x:defender.x+5,
+y:defender.y+20,
+z:defender.z,
+scale:1,
+opacity:1,
+time:1450},
+{
+scale:3,
+opacity:0,
+time:1800},
+'linear','fade');
+scene.showEffect('rightslash',{
+x:defender.x-5,
+y:defender.y-20,
+z:defender.z,
+scale:1,
+opacity:1,
+time:1450},
+{
+scale:3,
+opacity:0,
+time:1800},
+'linear','fade');
+
+attacker.anim({
+x:defender.x,
+y:defender.y+50,
+z:defender.behind(-150),
+time:400},
+'ballistic');
+attacker.anim({
+x:defender.x,
+y:defender.y,
+z:defender.behind(-125),
+time:200},
+'ballistic2Back');
+attacker.anim({
+x:defender.x,
+y:defender.y-7,
+z:defender.behind(-125),
+yscale:0.7,
+time:50},
+'ballistic2Back');
+attacker.anim({
+x:defender.x,
+y:defender.y+200,
+z:defender.behind(-30),
+time:600},
+'ballistic');
+attacker.anim({
+x:defender.leftof(-10),
+y:defender.y+5,
+z:defender.behind(10),
+time:200});
+
+attacker.anim({
+time:500},
+'ballistic2Back');
+defender.delay(1450);
+defender.anim({
+y:defender.y-10,
+z:defender.behind(5),
+yscale:0.3,
+time:50},
+'swing');
+defender.anim({
+y:defender.y-20,
+z:defender.behind(20),
+yscale:0.3,
+time:300},
+'swing');
+defender.anim({
+time:400},
+'swing');
+}},
+
+stokedsparksurfer:{
+anim:function(scene,_ref482){var attacker=_ref482[0],defender=_ref482[1];
 scene.backgroundEffect('#0000DD',1100,0.2,500);
 scene.showEffect('electroball',{
 x:attacker.x,
@@ -37511,7 +37642,7 @@ time:300},
 }},
 
 catastropika:{
-anim:function(scene,_ref482){var attacker=_ref482[0],defender=_ref482[1];
+anim:function(scene,_ref483){var attacker=_ref483[0],defender=_ref483[1];
 scene.backgroundEffect('#0000DD',800,0.2,500);
 scene.showEffect(attacker.sp,{
 x:attacker.x,
@@ -37683,7 +37814,7 @@ time:400},
 }},
 
 sinisterarrowraid:{
-anim:function(scene,_ref483){var attacker=_ref483[0],defender=_ref483[1];
+anim:function(scene,_ref484){var attacker=_ref484[0],defender=_ref484[1];
 defender.delay(1050);
 defender.anim({
 z:defender.behind(20),
@@ -37951,7 +38082,7 @@ time:2125},
 }},
 
 oceanicoperetta:{
-anim:function(scene,_ref484){var attacker=_ref484[0],defender=_ref484[1];
+anim:function(scene,_ref485){var attacker=_ref485[0],defender=_ref485[1];
 scene.backgroundEffect('linear-gradient(#000000 20%, #0000DD)',2700,0.4);
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/weather-raindance.jpg')",700,0.2,2000);
 scene.showEffect('iceball',{
@@ -38005,7 +38136,7 @@ time:2000},
 }},
 
 extremeevoboost:{
-anim:function(scene,_ref485){var attacker=_ref485[0],defender=_ref485[1];
+anim:function(scene,_ref486){var attacker=_ref486[0],defender=_ref486[1];
 scene.backgroundEffect('#000000',1000,0.3);
 var xstep=(attacker.x+200-attacker.x)/5;
 var ystep=(attacker.x-200-attacker.x)/5;
@@ -38148,7 +38279,7 @@ time:1000},
 }},
 
 guardianofalola:{
-anim:function(scene,_ref486){var attacker=_ref486[0],defender=_ref486[1];
+anim:function(scene,_ref487){var attacker=_ref487[0],defender=_ref487[1];
 scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)',1700,0.6,300);
 scene.showEffect('fist1',{
 x:attacker.leftof(200),
@@ -38275,7 +38406,7 @@ time:300},
 }},
 
 splinteredstormshards:{
-anim:function(scene,_ref487){var attacker=_ref487[0],defender=_ref487[1];
+anim:function(scene,_ref488){var attacker=_ref488[0],defender=_ref488[1];
 scene.backgroundEffect("url('https://"+Config.routes.client+"/sprites/gen6bgs/bg-earthycave.jpg')",2700,0.8,300);
 scene.backgroundEffect('linear-gradient(#FFC720 15%, #421800)',2700,0.7);
 scene.backgroundEffect('#ffffff',400,0.6,2500);
@@ -38648,7 +38779,7 @@ time:200},
 }},
 
 letssnuggleforever:{
-anim:function(scene,_ref488){var attacker=_ref488[0],defender=_ref488[1];
+anim:function(scene,_ref489){var attacker=_ref489[0],defender=_ref489[1];
 attacker.anim({
 x:attacker.x,
 y:attacker.y+250,
@@ -38933,7 +39064,7 @@ time:2575},
 }},
 
 clangoroussoulblaze:{
-anim:function(scene,_ref489){var attacker=_ref489[0],defenders=_ref489.slice(1);
+anim:function(scene,_ref490){var attacker=_ref490[0],defenders=_ref490.slice(1);
 attacker.anim({x:attacker.x-10,time:300});
 attacker.anim({x:attacker.x+10,time:400});
 attacker.anim({x:attacker.x,time:300});
@@ -39246,7 +39377,7 @@ opacity:0},
 }},
 
 unifiedupsurge:{
-anim:function(scene,_ref490){var attacker=_ref490[0],defenders=_ref490.slice(1);
+anim:function(scene,_ref491){var attacker=_ref491[0],defenders=_ref491.slice(1);
 attacker.anim({x:attacker.x-10,time:300});
 attacker.anim({x:attacker.x+10,time:400});
 attacker.anim({x:attacker.x,time:300});
@@ -39559,7 +39690,7 @@ opacity:0},
 }},
 
 soulstealing7starstrike:{
-anim:function(scene,_ref491){var attacker=_ref491[0],defender=_ref491[1];
+anim:function(scene,_ref492){var attacker=_ref492[0],defender=_ref492[1];
 scene.backgroundEffect('linear-gradient(#043B13 55%, #3FBF99',3600,0.7);
 scene.backgroundEffect('#ffffff',700,0.7,3300);
 scene.showEffect('fist',{
@@ -39979,7 +40110,7 @@ time:150},
 }},
 
 searingsunrazesmash:{
-anim:function(scene,_ref492){var attacker=_ref492[0],defender=_ref492[1];
+anim:function(scene,_ref493){var attacker=_ref493[0],defender=_ref493[1];
 var xstep=(defender.x-attacker.x)/5;
 var ystep=(defender.x-200-attacker.x)/5;
 var zstep=(defender.z-attacker.z)/5;

@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/masters-team-break.mp3', 41520, 108427, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/phos-volcano.mp3', 51777, 142119, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/masters-team-break.mp3', 41520, 108427, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/phos-volcano.mp3', 51777, 142119, this.bgm);
 				break;
 			}
 	
@@ -3204,7 +3204,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-snowscape.png',
+	'bg-fairygym.png',
 ];
 
 const BattleOtherAnims: AnimTable = {

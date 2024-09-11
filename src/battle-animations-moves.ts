@@ -37327,6 +37327,137 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
+	moltenmagmawhip: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)', 600, 0.7, 1200);
+			scene.showEffect('fireball', {
+				x: defender.x,
+				y: defender.y - 60,
+				z: defender.z,
+				scale: 1,
+				xscale: 3,
+				opacity: 1,
+				time: 1450,
+			}, {
+				scale: 2,
+				xscale: 12,
+				opacity: 0,
+				time: 1850,
+			}, 'linear', 'fade');
+			scene.showEffect('fireball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				opacity: 0.7,
+				scale: 1,
+				time: 1450,
+			}, {
+				scale: 6,
+				opacity: 0,
+				time: 2000,
+			}, 'linear');
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y + 350,
+				z: defender.z,
+				opacity: 1,
+				scale: 3,
+				yscale: 10,
+				time: 1450,
+			}, {
+				xscale: 0,
+				opacity: 0.5,
+				time: 1800,
+			}, 'accel', 'fade');
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				opacity: 1,
+				scale: 3,
+				time: 1450,
+			}, {
+				scale: 9,
+				opacity: 0.7,
+				time: 2000,
+			}, 'linear', 'explode');
+			scene.showEffect('rightslash', {
+				x: defender.x + 5,
+				y: defender.y + 20,
+				z: defender.z,
+				scale: 1,
+				opacity: 1,
+				time: 1450,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 1800,
+			}, 'linear', 'fade');
+			scene.showEffect('rightslash', {
+				x: defender.x - 5,
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 1,
+				opacity: 1,
+				time: 1450,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 1800,
+			}, 'linear', 'fade');
+
+			attacker.anim({
+				x: defender.x,
+				y: defender.y + 50,
+				z: defender.behind(-150),
+				time: 400,
+			}, 'ballistic');
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(-125),
+				time: 200,
+			}, 'ballistic2Back');
+			attacker.anim({
+				x: defender.x,
+				y: defender.y - 7,
+				z: defender.behind(-125),
+				yscale: 0.7,
+				time: 50,
+			}, 'ballistic2Back');
+			attacker.anim({
+				x: defender.x,
+				y: defender.y + 200,
+				z: defender.behind(-30),
+				time: 600,
+			}, 'ballistic');
+			attacker.anim({
+				x: defender.leftof(-10),
+				y: defender.y + 5,
+				z: defender.behind(10),
+				time: 200,
+			});
+			attacker.anim({
+				time: 500,
+			}, 'ballistic2Back');
+			defender.delay(1450);
+			defender.anim({
+				y: defender.y - 10,
+				z: defender.behind(5),
+				yscale: 0.3,
+				time: 50,
+			}, 'swing');
+			defender.anim({
+				y: defender.y - 20,
+				z: defender.behind(20),
+				yscale: 0.3,
+				time: 300,
+			}, 'swing');
+			defender.anim({
+				time: 400,
+			}, 'swing');
+		},
+	},
 	stokedsparksurfer: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#0000DD', 1100, 0.2, 500);
