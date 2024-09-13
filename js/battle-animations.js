@@ -1543,10 +1543,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/phos-volcano.mp3',51777,142119,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/team-aqua.mp3',17293,106451,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/phos-volcano.mp3',51777,142119,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/team-aqua.mp3',17293,106451,this.bgm);
 break;}
 
 

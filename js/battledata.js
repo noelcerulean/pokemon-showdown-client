@@ -1537,6 +1537,9 @@ seward:1344+159,
 billbie:1344+160,
 drild:1344+161,
 turtottle:1344+162,
+drashimi:1344+163,
+tsushimi:1344+164,
+tobishimi:1344+165,
 
 
 ano:304,
