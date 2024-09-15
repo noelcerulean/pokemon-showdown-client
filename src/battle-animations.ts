@@ -1543,10 +1543,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/team-aqua.mp3', 17293, 106451, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/conquest-psychic-battle.mp3', 24009, 114013, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/team-aqua.mp3', 17293, 106451, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/conquest-psychic-battle.mp3', 24009, 114013, this.bgm);
 				break;
 			}
 	
@@ -2961,6 +2961,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	flareball: {
 		url: 'flareball.png',
+		w: 100, h: 100,
+	},
+	meloball: {
+		url: 'meloball.png',
 		w: 100, h: 100,
 	},
 	pokeball: {
