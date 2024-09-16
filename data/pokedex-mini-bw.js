@@ -1056,6 +1056,7 @@ exports.BattlePokemonSpritesBW = {
 	emolga:{num:587},
 	emolgapatches:{num:587},
 	emolgadelta:{num:587},
+	emolgadeltaastalos:{num:587},
 	karrablast:{num:588},
 	escavalier:{num:589},
 	foongus:{num:590},

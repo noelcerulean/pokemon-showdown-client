@@ -158,7 +158,7 @@ const BattleBaseSpeciesChart = [
 	"arthrogon", "shelgon", "ampharos", "salazzle", "electrodefnf", "baki", "boldorefnf", "gigalithfnf",
 	"drowzee", "marill", "electrode", "saurbot", "kiwuit", "gravking", "spinda", "reuniclus", "dwebblefnf",
 	"salamence", "trevenant", "dustox", "primarina", "darmanitan", "typhlosionvesuvius", "chatot", "cashino",
-	"wobbuffet", "gorochu",
+	"wobbuffet", "gorochu", "emolgadelta",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
@@ -451,6 +451,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	royalynxholly: 1344 + 80,
 	royalynxjolly: 1344 + 80,
 	emolgadelta: 1344 + 81,
+	emolgadeltaastalos: 1344 + 81,
 	pinecodelta: 1344 + 82,
 	sableyefnf: 1344 + 83,
 	sableyefnfrattlehead: 1344 + 83,
