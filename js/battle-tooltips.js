@@ -1505,6 +1505,8 @@ moveType='Fire';
 moveType='Water';
 }else if(move.id==='primalburst'&&item.id==='tealorb'){
 moveType='Water';
+}else if(move.id==='primalburst'&&item.id==='craftsmanorb'){
+moveType='Normal';
 }
 
 
@@ -1695,9 +1697,15 @@ value.modify(1.5,'Bone Baton boost');
 if(move.id.startsWith('hiddenpower')&&pokemon.getSpeciesForme()==='Allnown'){
 value.modify(1.5,'Allnown boost');
 }
-if(['crushgrip','wringout'].includes(move.id)&&target){
+if(move.id==='wringout'&&target){
 value.set(
 Math.floor(Math.floor((120*(100*Math.floor(target.hp*4096/target.maxhp))+2048-1)/4096)/100)||1,
+'approximate');
+
+}
+if(move.id==='crushgrip'&&target){
+value.set(
+Math.floor(Math.floor((180*(100*Math.floor(target.hp*4096/target.maxhp))+2048-1)/4096)/100)||1,
 'approximate');
 
 }

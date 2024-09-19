@@ -551,6 +551,7 @@ turtottle:1344+162,
 drashimi:1344+163,
 tsushimi:1344+164,
 tobishimi:1344+165,
+regigigasprimal:1344+166,
 
 
 ano:304,
