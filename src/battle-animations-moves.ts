@@ -40892,7 +40892,6 @@ BattleMoveAnims['fleurcannon'] = {anim: BattleMoveAnims['diamondstorm'].anim};
 BattleMoveAnims['shadowmeld'] = {anim: BattleMoveAnims['shadowfusion'].anim};
 BattleMoveAnims['shadowwhip'] = {anim: BattleMoveAnims['shadowpunish'].anim};
 BattleMoveAnims['shadowvengeance'] = {anim: BattleMoveAnims['shadowhatred'].anim};
-BattleMoveAnims['shadowwall'] = {anim: BattleMoveAnims['shadowbarrier'].anim};
 BattleMoveAnims['shadowbath'] = {anim: BattleMoveAnims['shadowglaze'].anim};
 BattleMoveAnims['shadowsprites'] = {anim: BattleMoveAnims['shadowmoon'].anim};
 BattleMoveAnims['shadowflame'] = {anim: BattleMoveAnims['shadowsun'].anim};

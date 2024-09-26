@@ -1025,6 +1025,7 @@ exports.BattlePokemonSpritesBW = {
 	archen:{num:566},
 	archeops:{num:567},
 	archebot:{num:-536},
+	archebotskirmisher:{num:-536},
 	trubbish:{num:568},
 	garbodor:{num:569},
 	garbodorgmax:{num:569},

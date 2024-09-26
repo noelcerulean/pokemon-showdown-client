@@ -158,7 +158,7 @@ const BattleBaseSpeciesChart = [
 	"arthrogon", "shelgon", "ampharos", "salazzle", "electrodefnf", "baki", "boldorefnf", "gigalithfnf",
 	"drowzee", "marill", "electrode", "saurbot", "kiwuit", "gravking", "spinda", "reuniclus", "dwebblefnf",
 	"salamence", "trevenant", "dustox", "primarina", "darmanitan", "typhlosionvesuvius", "chatot", "cashino",
-	"wobbuffet", "gorochu", "emolgadelta",
+	"wobbuffet", "gorochu", "emolgadelta", "archebot",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono",
 ] as ID[];
 
@@ -496,6 +496,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	teddiursaarmoredhoneyed: 1344 + 113,
 	teddiursaarmoredsailor: 1344 + 113,
 	archebot: 1344 + 114,
+	archebotskirmisher: 1344 + 114,
 	kirliaarmored: 1344 + 115,
 	kirliaarmoredweaver: 1344 + 116,
 	phasmatch: 1344 + 117,
