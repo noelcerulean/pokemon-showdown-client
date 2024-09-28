@@ -916,6 +916,7 @@ class BattleScene {
 				sandstorm: 'Sandstorm',
 				hail: 'Hail',
 				miasma: 'Miasma',
+				shadowsky: 'Shadow Sky',
 				deltastream: 'Strong Winds',
 			};
 			weatherhtml = `${weatherNameTable[this.battle.weather] || this.battle.weather}`;
@@ -942,7 +943,7 @@ class BattleScene {
 		return buf;
 	}
 	upkeepWeather() {
-		const isIntense = ['desolateland', 'primordialsea', 'deltastream'].includes(this.curWeather);
+		const isIntense = ['desolateland', 'primordialsea', 'deltastream', 'shadowsky'].includes(this.curWeather);
 		this.$weather.animate({
 			opacity: 1.0,
 		}, 300).animate({
@@ -1902,6 +1903,7 @@ class PokemonSprite extends Sprite {
 		embargo: ['Embargo', 'bad'],
 		ingrain: ['Ingrain', 'good'],
 		aquaring: ['Aqua Ring', 'good'],
+		shadowfountain: ['Shadow Fountain', 'good'],
 		stockpile1: ['Stockpile', 'good'],
 		stockpile2: ['Stockpile&times;2', 'good'],
 		stockpile3: ['Stockpile&times;3', 'good'],
@@ -3108,6 +3110,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'caltrop.png', // by Pokemon Showdown user SailorCosmos
 		w: 80, h: 80,
 	},
+	shadowcaltrop: {
+		url: 'shadowcaltrop.png', // by Pokemon Showdown user SailorCosmos
+		w: 80, h: 80,
+	},
 	greenmetal1: {
 		url: 'greenmetal1.png', // by Pokemon Showdown user Kalalokki
 		w: 45, h: 45,
@@ -3188,8 +3194,16 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'topbite.png',
 		w: 108, h: 64,
 	},
+	shadowtopbite: {
+		url: 'shadowtopbite.png',
+		w: 108, h: 64,
+	},
 	bottombite: {
 		url: 'bottombite.png',
+		w: 108, h: 64,
+	},
+	shadowbottombite: {
+		url: 'shadowbottombite.png',
 		w: 108, h: 64,
 	},
 	web: {
@@ -3222,6 +3236,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	leftchop: {
 		url: 'leftchop.png', // by Pokemon Showdown user SailorCosmos
+		w: 100, h: 130,
+	},
+	shadowleftchop: {
+		url: 'shadowleftchop.png', // by Pokemon Showdown user SailorCosmos
 		w: 100, h: 130,
 	},
 	rightchop: {
@@ -3825,6 +3843,41 @@ const BattleOtherAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
+	shadowbite: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#110131', 800, 0.7);
+			scene.showEffect('shadowtopbite', {
+				x: defender.x,
+				y: defender.y + 50,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0,
+				time: 370,
+			}, {
+				x: defender.x,
+				y: defender.y + 10,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 1,
+				time: 500,
+			}, 'linear', 'fade');
+			scene.showEffect('shadowbottombite', {
+				x: defender.x,
+				y: defender.y - 50,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 0,
+				time: 370,
+			}, {
+				x: defender.x,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 0.5,
+				opacity: 1,
+				time: 500,
+			}, 'linear', 'fade');
+		},
+	},
 	kick: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('foot', {
@@ -4303,6 +4356,81 @@ const BattleOtherAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
+	shadowchargestatus: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
+			scene.showEffect('shadowshadowball', {
+				x: attacker.x - 60,
+				y: attacker.y + 40,
+				z: attacker.z,
+				scale: 0.7,
+				opacity: 0.7,
+				time: 0,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				scale: 0.2,
+				opacity: 0.2,
+				time: 300,
+			}, 'linear', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.x + 60,
+				y: attacker.y - 5,
+				z: attacker.z,
+				scale: 0.7,
+				opacity: 0.7,
+				time: 100,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				scale: 0.2,
+				opacity: 0.2,
+				time: 300,
+			}, 'linear', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.x - 30,
+				y: attacker.y + 60,
+				z: attacker.z,
+				scale: 0.7,
+				opacity: 0.7,
+				time: 100,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				scale: 0.2,
+				opacity: 0.2,
+				time: 400,
+			}, 'linear', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.x + 20,
+				y: attacker.y - 50,
+				z: attacker.z,
+				scale: 0.7,
+				opacity: 0.7,
+				time: 100,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				scale: 0.2,
+				opacity: 0.2,
+				time: 400,
+			}, 'linear', 'fade');
+			scene.showEffect('shadowshadowball', {
+				x: attacker.x - 70,
+				y: attacker.y - 50,
+				z: attacker.z,
+				scale: 0.7,
+				opacity: 0.7,
+				time: 200,
+			}, {
+				x: attacker.x,
+				y: attacker.y,
+				scale: 0.2,
+				opacity: 0.2,
+				time: 500,
+			}, 'linear', 'fade');
+		},
+	},
 	heal: {
 		anim(scene, [attacker]) {
 			scene.showEffect('iceball', {
@@ -4512,6 +4640,14 @@ const BattleOtherAnims: AnimTable = {
 	},
 	dance: {
 		anim(scene, [attacker]) {
+			attacker.anim({x: attacker.x - 10});
+			attacker.anim({x: attacker.x + 10});
+			attacker.anim({x: attacker.x});
+		},
+	},
+	shadowdance: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#110131', 700, 0.7);
 			attacker.anim({x: attacker.x - 10});
 			attacker.anim({x: attacker.x + 10});
 			attacker.anim({x: attacker.x});

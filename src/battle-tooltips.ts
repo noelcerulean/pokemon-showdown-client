@@ -576,6 +576,9 @@ class BattleTooltips {
 					case 'miasma':
 						zMove = this.battle.dex.moves.get(BattleTooltips.zMoveTable['Poison']);
 						break;
+					case 'shadowsky':
+						zMove = this.battle.dex.moves.get(BattleTooltips.zMoveTable['Shadow']);
+						break;
 					case 'hail':
 						zMove = this.battle.dex.moves.get(BattleTooltips.zMoveTable['Ice']);
 						break;
@@ -1458,6 +1461,9 @@ class BattleTooltips {
 			case 'miasma':
 				moveType = 'Poison';
 				break;
+			case 'shadowsky':
+				moveType = 'Shadow';
+				break;
 			case 'hail':
 				moveType = 'Ice';
 				break;
@@ -1709,6 +1715,12 @@ class BattleTooltips {
 				'approximate'
 			);
 		}
+		if (move.id === 'shadowsqueeze' && target) {
+			value.set(
+				Math.floor(Math.floor((100 * (100 * Math.floor(target.hp * 4096 / target.maxhp)) + 2048 - 1) / 4096) / 100) || 1,
+				'approximate'
+			);
+		}
 		if (move.id === 'brine' && target && target.hp * 2 <= target.maxhp) {
 			value.modify(2, 'Brine + target below half HP');
 		}
@@ -1837,7 +1849,36 @@ class BattleTooltips {
 
 			value.setRange(min, max);
 		}
+		if (move.id === 'shadowdart' && target) {
+			let [minSpe, maxSpe] = this.getSpeedRange(target);
+			let minRatio = (modifiedStats.spe / maxSpe);
+			let maxRatio = (modifiedStats.spe / minSpe);
+			let min;
+			let max;
+
+			if (minRatio >= 4) min = 150;
+			else if (minRatio >= 3) min = 120;
+			else if (minRatio >= 2) min = 80;
+			else if (minRatio >= 1) min = 60;
+			else min = 40;
+
+			if (maxRatio >= 4) max = 150;
+			else if (maxRatio >= 3) max = 120;
+			else if (maxRatio >= 2) max = 80;
+			else if (maxRatio >= 1) max = 60;
+			else max = 40;
+
+			value.setRange(min, max);
+		}
 		if (move.id === 'gyroball' && target) {
+			let [minSpe, maxSpe] = this.getSpeedRange(target);
+			let min = (Math.floor(25 * minSpe / modifiedStats.spe) || 1);
+			if (min > 150) min = 150;
+			let max = (Math.floor(25 * maxSpe / modifiedStats.spe) || 1);
+			if (max > 150) max = 150;
+			value.setRange(min, max);
+		}
+		if (move.id === 'shadowcentrifuge' && target) {
 			let [minSpe, maxSpe] = this.getSpeedRange(target);
 			let min = (Math.floor(25 * minSpe / modifiedStats.spe) || 1);
 			if (min > 150) min = 150;
@@ -1856,8 +1897,8 @@ class BattleTooltips {
 			}
 		}
 		// Moves which have base power changed according to weight
-		if (['lowkick', 'grassknot', 'heavyslam', 'heatcrash'].includes(move.id)) {
-			let isGKLK = ['lowkick', 'grassknot'].includes(move.id);
+		if (['lowkick', 'grassknot', 'heavyslam', 'heatcrash', 'shadowanvil', 'shadowtrip'].includes(move.id)) {
+			let isGKLK = ['lowkick', 'grassknot', 'shadowtrip'].includes(move.id);
 			if (target) {
 				let targetWeight = target.getWeightKg();
 				let pokemonWeight = pokemon.getWeightKg(serverPokemon);
@@ -2388,10 +2429,10 @@ class BattleStatGuesser {
 					}
 					moveCount['Support']++;
 				}
-			} else if (['counter', 'endeavor', 'metalburst', 'mirrorcoat', 'rapidspin'].includes(move.id)) {
+			} else if (['counter', 'endeavor', 'metalburst', 'mirrorcoat', 'shadowcomeuppance', 'rapidspin'].includes(move.id)) {
 				moveCount['Support']++;
 			} else if ([
-				'nightshade', 'seismictoss', 'psywave', 'superfang', 'naturesmadness', 'foulplay', 'endeavor', 'finalgambit', 'bodypress',
+				'nightshade', 'seismictoss', 'psywave', 'superfang', 'naturesmadness', 'foulplay', 'endeavor', 'finalgambit', 'bodypress', 'shadowduplicity', 'shadowmirage', 'shadowpress', 'shadowhalf',
 			].includes(move.id)) {
 				moveCount['Offense']++;
 			} else if (move.id === 'fellstinger') {
@@ -2673,7 +2714,7 @@ class BattleStatGuesser {
 			evs = {hp: 200, atk: 200, def: 200, spa: 200, spd: 200, spe: 200};
 			if (!moveCount['PhysicalAttack']) evs.atk = 0;
 			if (!moveCount['SpecialAttack']) evs.spa = 0;
-			if (hasMove['gyroball'] || hasMove['trickroom']) evs.spe = 0;
+			if (hasMove['gyroball'] || hasMove['trickroom'] || hasMove['shadowcentrifuge']) evs.spe = 0;
 		} else if (!this.supportsEVs) {
 			// Let's Go, AVs disabled
 			// no change
@@ -2682,7 +2723,7 @@ class BattleStatGuesser {
 			evs = {hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: 252};
 			if (!moveCount['PhysicalAttack']) evs.atk = 0;
 			if (!moveCount['SpecialAttack'] && this.dex.gen > 1) evs.spa = 0;
-			if (hasMove['gyroball'] || hasMove['trickroom']) evs.spe = 0;
+			if (hasMove['gyroball'] || hasMove['trickroom'] || hasMove['shadowcentrifuge']) evs.spe = 0;
 			if (this.dex.gen === 1) evs.spd = 0;
 			if (this.dex.gen < 3) return evs;
 		} else {
@@ -2811,7 +2852,7 @@ class BattleStatGuesser {
 
 		}
 
-		if (hasMove['gyroball'] || hasMove['trickroom']) {
+		if (hasMove['gyroball'] || hasMove['trickroom'] || hasMove['shadowcentrifuge']) {
 			minusStat = 'spe';
 		} else if (!moveCount['PhysicalAttack']) {
 			minusStat = 'atk';

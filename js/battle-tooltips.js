@@ -576,6 +576,9 @@ break;
 case'miasma':
 zMove=this.battle.dex.moves.get(BattleTooltips.zMoveTable['Poison']);
 break;
+case'shadowsky':
+zMove=this.battle.dex.moves.get(BattleTooltips.zMoveTable['Shadow']);
+break;
 case'hail':
 zMove=this.battle.dex.moves.get(BattleTooltips.zMoveTable['Ice']);
 break;}
@@ -1458,6 +1461,9 @@ break;
 case'miasma':
 moveType='Poison';
 break;
+case'shadowsky':
+moveType='Shadow';
+break;
 case'hail':
 moveType='Ice';
 break;}
@@ -1709,6 +1715,12 @@ Math.floor(Math.floor((180*(100*Math.floor(target.hp*4096/target.maxhp))+2048-1)
 'approximate');
 
 }
+if(move.id==='shadowsqueeze'&&target){
+value.set(
+Math.floor(Math.floor((100*(100*Math.floor(target.hp*4096/target.maxhp))+2048-1)/4096)/100)||1,
+'approximate');
+
+}
 if(move.id==='brine'&&target&&target.hp*2<=target.maxhp){
 value.modify(2,'Brine + target below half HP');
 }
@@ -1837,13 +1849,42 @@ max=40;
 
 value.setRange(min,max);
 }
-if(move.id==='gyroball'&&target){
+if(move.id==='shadowdart'&&target){
 var _this$getSpeedRange3=this.getSpeedRange(target),_minSpe=_this$getSpeedRange3[0],_maxSpe=_this$getSpeedRange3[1];
-var _min=Math.floor(25*_minSpe/modifiedStats.spe)||1;
-if(_min>150)_min=150;
-var _max=Math.floor(25*_maxSpe/modifiedStats.spe)||1;
-if(_max>150)_max=150;
+var _minRatio=modifiedStats.spe/_maxSpe;
+var _maxRatio=modifiedStats.spe/_minSpe;
+var _min;
+var _max;
+
+if(_minRatio>=4)_min=150;else
+if(_minRatio>=3)_min=120;else
+if(_minRatio>=2)_min=80;else
+if(_minRatio>=1)_min=60;else
+_min=40;
+
+if(_maxRatio>=4)_max=150;else
+if(_maxRatio>=3)_max=120;else
+if(_maxRatio>=2)_max=80;else
+if(_maxRatio>=1)_max=60;else
+_max=40;
+
 value.setRange(_min,_max);
+}
+if(move.id==='gyroball'&&target){
+var _this$getSpeedRange4=this.getSpeedRange(target),_minSpe2=_this$getSpeedRange4[0],_maxSpe2=_this$getSpeedRange4[1];
+var _min2=Math.floor(25*_minSpe2/modifiedStats.spe)||1;
+if(_min2>150)_min2=150;
+var _max2=Math.floor(25*_maxSpe2/modifiedStats.spe)||1;
+if(_max2>150)_max2=150;
+value.setRange(_min2,_max2);
+}
+if(move.id==='shadowcentrifuge'&&target){
+var _this$getSpeedRange5=this.getSpeedRange(target),_minSpe3=_this$getSpeedRange5[0],_maxSpe3=_this$getSpeedRange5[1];
+var _min3=Math.floor(25*_minSpe3/modifiedStats.spe)||1;
+if(_min3>150)_min3=150;
+var _max3=Math.floor(25*_maxSpe3/modifiedStats.spe)||1;
+if(_max3>150)_max3=150;
+value.setRange(_min3,_max3);
 }
 
 if(serverPokemon.item){
@@ -1856,8 +1897,8 @@ value.itemModify(item.naturalGift.basePower);
 }
 }
 
-if(['lowkick','grassknot','heavyslam','heatcrash'].includes(move.id)){
-var isGKLK=['lowkick','grassknot'].includes(move.id);
+if(['lowkick','grassknot','heavyslam','heatcrash','shadowanvil','shadowtrip'].includes(move.id)){
+var isGKLK=['lowkick','grassknot','shadowtrip'].includes(move.id);
 if(target){
 var targetWeight=target.getWeightKg();
 var pokemonWeight=pokemon.getWeightKg(serverPokemon);
@@ -2388,10 +2429,10 @@ moveCount['Stall']++;
 }
 moveCount['Support']++;
 }
-}else if(['counter','endeavor','metalburst','mirrorcoat','rapidspin'].includes(move.id)){
+}else if(['counter','endeavor','metalburst','mirrorcoat','shadowcomeuppance','rapidspin'].includes(move.id)){
 moveCount['Support']++;
 }else if([
-'nightshade','seismictoss','psywave','superfang','naturesmadness','foulplay','endeavor','finalgambit','bodypress'].
+'nightshade','seismictoss','psywave','superfang','naturesmadness','foulplay','endeavor','finalgambit','bodypress','shadowduplicity','shadowmirage','shadowpress','shadowhalf'].
 includes(move.id)){
 moveCount['Offense']++;
 }else if(move.id==='fellstinger'){
@@ -2673,7 +2714,7 @@ if(this.supportsAVs){
 evs={hp:200,atk:200,def:200,spa:200,spd:200,spe:200};
 if(!moveCount['PhysicalAttack'])evs.atk=0;
 if(!moveCount['SpecialAttack'])evs.spa=0;
-if(hasMove['gyroball']||hasMove['trickroom'])evs.spe=0;
+if(hasMove['gyroball']||hasMove['trickroom']||hasMove['shadowcentrifuge'])evs.spe=0;
 }else if(!this.supportsEVs){
 
 
@@ -2682,7 +2723,7 @@ if(hasMove['gyroball']||hasMove['trickroom'])evs.spe=0;
 evs={hp:252,atk:252,def:252,spa:252,spd:252,spe:252};
 if(!moveCount['PhysicalAttack'])evs.atk=0;
 if(!moveCount['SpecialAttack']&&this.dex.gen>1)evs.spa=0;
-if(hasMove['gyroball']||hasMove['trickroom'])evs.spe=0;
+if(hasMove['gyroball']||hasMove['trickroom']||hasMove['shadowcentrifuge'])evs.spe=0;
 if(this.dex.gen===1)evs.spd=0;
 if(this.dex.gen<3)return evs;
 }else{
@@ -2811,7 +2852,7 @@ if(ev)evs['spe']=ev;
 
 }
 
-if(hasMove['gyroball']||hasMove['trickroom']){
+if(hasMove['gyroball']||hasMove['trickroom']||hasMove['shadowcentrifuge']){
 minusStat='spe';
 }else if(!moveCount['PhysicalAttack']){
 minusStat='atk';

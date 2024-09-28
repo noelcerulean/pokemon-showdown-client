@@ -147,7 +147,7 @@ The opponent is forced to Struggle, and because Struggle can never run out of PP
 
 ### If the battle ends with both Pokemon fainting, who wins?
 
-Whoever's Pokémon fainted last wins. For Self-Destruct, Explosion, Final Gambit, and Destiny Bond, the user faints before dealing damage, so the users of those moves lose. For recoil damage from moves like Brave Bird, the user takes damage after damaging the opponent, so the users of those moves win.
+Whoever's Pokémon fainted last wins. For Self-Destruct, Explosion, Shadow Detonation, Final Gambit, and Destiny Bond, the user faints before dealing damage, so the users of those moves lose. For recoil damage from moves like Brave Bird, the user takes damage after damaging the opponent, so the users of those moves win.
 
 ### Why was my team rejected?
 

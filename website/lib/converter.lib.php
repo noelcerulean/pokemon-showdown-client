@@ -684,7 +684,7 @@ function pokeConvertInner($text) {
 			$out[] = 'move '.$moveuser.' '.resolveMove($matches[2]).' ??';
 			markLastAttack($out);
 			
-			if ($matches[2] === 'Explosion' || $matches[2] === 'Selfdestruct' || $matches[2] === 'Lunar Dance' || $matches[2] === 'Healing Wish' || $matches[2] === 'Memento' || $matches[2] === 'Final Gambit') {
+			if ($matches[2] === 'Explosion' || $matches[2] === 'Selfdestruct' || $matches[2] === 'Shadow Detonation' || $matches[2] === 'Lunar Dance' || $matches[2] === 'Healing Wish' || $matches[2] === 'Memento' || $matches[2] === 'Final Gambit') {
 				markLastDamage($out);
 			}
 		} else if (preg_match('/^([^<>]+) sent out ([^<>]+)!( \([^<>]+\))?$/', $line, $matches)) {

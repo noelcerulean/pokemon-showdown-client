@@ -3051,7 +3051,7 @@
 				}
 			}
 			var resetSpeed = false;
-			if (moveName === 'Gyro Ball') {
+			if (moveName === 'Gyro Ball' || moveName === 'Shadow Centrifuge' ) {
 				resetSpeed = true;
 			}
 			this.chooseMove('', resetSpeed);
@@ -3101,7 +3101,7 @@
 				this.curSet.happiness = 255;
 			} else if (moveName === 'Frustration') {
 				this.curSet.happiness = 0;
-			} else if (moveName === 'Gyro Ball') {
+			} else if (moveName === 'Gyro Ball' || moveName === 'Shadow Centrifuge' ) {
 				minSpe = true;
 			}
 
@@ -3116,7 +3116,7 @@
 				if (!moves[i]) continue;
 				if (moves[i].substr(0, 13) === 'Hidden Power ') hasHiddenPower = true;
 				var move = this.curTeam.dex.moves.get(moves[i]);
-				if (move.id === 'transform') {
+				if (move.id === 'transform' || move.id === 'shadowtransform') {
 					hasHiddenPower = true; // A Pokemon with Transform can copy another Pokemon that knows Hidden Power
 
 					var hasMoveBesidesTransform = false;
@@ -3133,7 +3133,7 @@
 				} else if (['metronome', 'assist', 'copycat', 'mefirst', 'photongeyser', 'shellsidearm'].includes(move.id)) {
 					minAtk = false;
 				}
-				if (minSpe === false && moveName === 'Gyro Ball') {
+				if (minSpe === false && ['gyroball', 'shadowcentrifuge'].includes(move.name)) {
 					minSpe = undefined;
 				}
 			}

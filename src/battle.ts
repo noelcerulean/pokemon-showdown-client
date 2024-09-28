@@ -1795,7 +1795,7 @@ class Battle {
 
 			if (effect.id) {
 				switch (effect.id) {
-				case 'spectralthief': case 'catburglary':
+				case 'spectralthief': case 'catburglary': case 'shadowrobbery':
 					// todo: update StealBoosts so it animates 1st on Spectral Thief
 					this.scene.runOtherAnim('spectralthiefboost' as ID, [ofpoke!, poke]);
 					break;
@@ -2170,6 +2170,7 @@ class Battle {
 					this.scene.resultAnim(poke, item.name, 'neutral');
 					break;
 				case 'switcheroo':
+				case 'shadowswap':
 				case 'trick':
 					poke.itemEffect = 'tricked';
 					// falls through
@@ -2468,6 +2469,9 @@ class Battle {
 				break;
 			case 'aquaring':
 				this.scene.resultAnim(poke, 'Aqua Ring', 'good');
+				break;
+			case 'shadowfountain':
+				this.scene.resultAnim(poke, 'Shadow Fountain', 'good');
 				break;
 			case 'stockpile1':
 				this.scene.resultAnim(poke, 'Stockpile', 'good');

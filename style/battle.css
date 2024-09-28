@@ -442,6 +442,11 @@ License: GPLv2
 	background: #DBB8FF url(../fx/weather-miasma.png) no-repeat scroll left top;
 	color: #6700BB;
 }
+.shadowweather,
+.shadowskyweather {
+	background: #997DFF url(../fx/weather-shadowsky.png) no-repeat scroll left top;
+	color: #2802B0;
+}
 .hailweather {
 	background: #AADDEE url(../fx/weather-hail.png) no-repeat scroll left top;
 	color: #114455;

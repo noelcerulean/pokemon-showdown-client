@@ -1795,7 +1795,7 @@ this.scene.resultAnim(_poke6,'Boosts lost','bad');
 
 if(_effect4.id){
 switch(_effect4.id){
-case'spectralthief':case'catburglary':
+case'spectralthief':case'catburglary':case'shadowrobbery':
 
 this.scene.runOtherAnim('spectralthiefboost',[_ofpoke3,_poke6]);
 break;}
@@ -2170,6 +2170,7 @@ _poke23.itemEffect='bestowed';
 this.scene.resultAnim(_poke23,item.name,'neutral');
 break;
 case'switcheroo':
+case'shadowswap':
 case'trick':
 _poke23.itemEffect='tricked';
 
@@ -2468,6 +2469,9 @@ this.scene.resultAnim(_poke31,'Ingrained','good');
 break;
 case'aquaring':
 this.scene.resultAnim(_poke31,'Aqua Ring','good');
+break;
+case'shadowfountain':
+this.scene.resultAnim(_poke31,'Shadow Fountain','good');
 break;
 case'stockpile1':
 this.scene.resultAnim(_poke31,'Stockpile','good');
