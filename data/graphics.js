@@ -2409,7 +2409,7 @@ if(!this.scene.animating)return;
 var speciesid=toID(pokemon.getSpeciesForme());
 var doCry=false;
 var scene=this.scene;
-if(speciesid==='cameruptshadow'||speciesid==='meganiumshadow'||speciesid==='chikoritashadow'||speciesid==='golurkshadow'||speciesid==='dewottshadow'||speciesid==='aegislashshadow'||speciesid==='kurstrawshadow'||speciesid==='fraxureshadow'||speciesid==='golisopodshadow'||speciesid==='zweilousshadow'||speciesid==='decidueyeshadow'||speciesid==='sceptileshadow'||speciesid==='honchkrowshadow'||speciesid==='gyaradosshadow'||speciesid==='gyaradosmegashadow'||speciesid==='eeveeshadow'||speciesid==='flareonshadow'||speciesid==='jolteonshadow'||speciesid==='leafeonshadow'||speciesid==='glaceonshadow'||speciesid==='sylveonshadow'||speciesid==='raikoushadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
+if(speciesid==='dittoshadow'||speciesid==='roboheeyemshadow'||speciesid==='castformshadow'||speciesid==='lugiashadow'||speciesid==='articunoshadow'||speciesid==='zapdosshadow'||speciesid==='moltresshadow'||speciesid==='longeonshadow'||speciesid==='aronshadow'||speciesid==='furfroushadow'||speciesid==='garchompshadow'||speciesid==='gourgeistshadow'||speciesid==='heatmorshadow'||speciesid==='lileepshadow'||speciesid==='mareanieshadow'||speciesid==='marillshadow'||speciesid==='meowsticshadow'||speciesid==='mukshadow'||speciesid==='noivernshadow'||speciesid==='shroomishshadow'||speciesid==='spinarakshadow'||speciesid==='ribombeeshadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
 BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }
 
