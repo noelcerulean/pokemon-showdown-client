@@ -290,6 +290,7 @@ exports.BattlePokemonSpritesBW = {
 	rutherium:{num:-552},
 	huojara:{num:-553},
 	ignajara:{num:-554},
+	ignajaraarmored:{num:-554},
 	aerodactyl:{num:142},
 	aerodactylmega:{num:142},
 	snorlax:{num:143},

@@ -553,6 +553,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	tsushimi: 1344 + 164,
 	tobishimi: 1344 + 165,
 	regigigasprimal: 1344 + 166,
+	ignajaraarmored: 1344 + 167,
 
 	//hypnomons
 	ano: 304,
