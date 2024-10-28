@@ -1663,6 +1663,27 @@ break;
 case-120:
 this.bgm=BattleSound.loadBgm('audio/masters-lear.mp3',50211,122210,this.bgm);
 break;
+case-121:
+this.bgm=BattleSound.loadBgm('audio/cipher-admin-xd.mp3',7889,59606,this.bgm);
+break;
+case-122:
+this.bgm=BattleSound.loadBgm('audio/colosseum-normal-battle.mp3',2894,52162,this.bgm);
+break;
+case-123:
+this.bgm=BattleSound.loadBgm('audio/final-battle-xd.mp3',28400,124030,this.bgm);
+break;
+case-124:
+this.bgm=BattleSound.loadBgm('audio/battle-sim-xd.mp3',21576,72790,this.bgm);
+break;
+case-125:
+this.bgm=BattleSound.loadBgm('audio/shadow-lugia.mp3',10200,76630,this.bgm);
+break;
+case-126:
+this.bgm=BattleSound.loadBgm('audio/cipher-admin.mp3',48150,120700,this.bgm);
+break;
+case-127:
+this.bgm=BattleSound.loadBgm('audio/final-battle-cipher.mp3',8311,72255,this.bgm);
+break;
 case 1:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
@@ -2409,7 +2430,7 @@ if(!this.scene.animating)return;
 var speciesid=toID(pokemon.getSpeciesForme());
 var doCry=false;
 var scene=this.scene;
-if(speciesid==='dittoshadow'||speciesid==='roboheeyemshadow'||speciesid==='castformshadow'||speciesid==='lugiashadow'||speciesid==='articunoshadow'||speciesid==='zapdosshadow'||speciesid==='moltresshadow'||speciesid==='longeonshadow'||speciesid==='aronshadow'||speciesid==='furfroushadow'||speciesid==='garchompshadow'||speciesid==='gourgeistshadow'||speciesid==='heatmorshadow'||speciesid==='lileepshadow'||speciesid==='mareanieshadow'||speciesid==='marillshadow'||speciesid==='meowsticshadow'||speciesid==='mukshadow'||speciesid==='noivernshadow'||speciesid==='shroomishshadow'||speciesid==='spinarakshadow'||speciesid==='ribombeeshadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
+if(speciesid==='dittoshadow'||speciesid==='roboheeyemshadow'||speciesid==='castformshadow'||speciesid==='lugiashadow'||speciesid==='articunoshadow'||speciesid==='zapdosshadow'||speciesid==='moltresshadow'||speciesid==='longeonshadow'||speciesid==='snoruntshadow'||speciesid==='aronshadow'||speciesid==='furfroushadow'||speciesid==='garchompshadow'||speciesid==='gourgeistshadow'||speciesid==='heatmorshadow'||speciesid==='lileepshadow'||speciesid==='mareanieshadow'||speciesid==='marillshadow'||speciesid==='meowsticshadow'||speciesid==='mukshadow'||speciesid==='noivernshadow'||speciesid==='shroomishshadow'||speciesid==='spinarakshadow'||speciesid==='ribombeeshadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
 BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }
 

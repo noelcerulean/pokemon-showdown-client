@@ -1148,7 +1148,7 @@ var BattleBaseSpeciesChart=[
 "arthrogon","shelgon","ampharos","salazzle","electrodefnf","baki","boldorefnf","gigalithfnf",
 "drowzee","marill","electrode","saurbot","kiwuit","gravking","spinda","reuniclus","dwebblefnf",
 "salamence","trevenant","dustox","primarina","darmanitan","typhlosionvesuvius","chatot","cashino",
-"wobbuffet","gorochu","emolgadelta","archebot",
+"wobbuffet","gorochu","emolgadelta","archebot","zangoose","seviper","sledgesparce",
 "charino","fearno","wiggno","venono","ano","krokono"];
 
 
@@ -1371,6 +1371,7 @@ parasectfnfsakura:900+207,
 parasectfnfcream:900+207,
 stucksparce:900+208,
 sledgesparce:900+209,
+sledgesparcegoldmine:900+209,
 snugsparce:900+210,
 soarsparce:900+211,
 soarsparcealfred:900+211,
