@@ -972,7 +972,7 @@ class BattleScene {
 				break;
 			}
 		}
-		if (weather === 'desolateland' || weather === 'primordialsea' || weather === 'deltastream') {
+		if (weather === 'desolateland' || weather === 'primordialsea' || weather === 'shadowsky' || weather === 'deltastream') {
 			isIntense = true;
 		}
 
@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/cipher-peon-xd.mp3', 39539, 79026, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/cipher-admin-xd.mp3', 7889, 59606, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/cipher-peon-xd.mp3', 39539, 79026, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/cipher-admin-xd.mp3', 7889, 59606, this.bgm);
 				break;
 			}
 	
@@ -3234,7 +3234,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-shadowdarkcity.jpg',
+	'bg-shadowredcarpet.png',
 ];
 
 const BattleOtherAnims: AnimTable = {

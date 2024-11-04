@@ -1974,6 +1974,7 @@
 				case 'Bulbasaur':
 				case 'Burmy':
 				case 'Castform':
+				case 'Castform-Shadow':
 				case 'Cherrim':
 				case 'Deerling':
 				case 'Delcatty':
