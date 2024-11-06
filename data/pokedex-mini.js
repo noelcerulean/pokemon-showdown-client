@@ -14,6 +14,7 @@ exports.BattlePokemonSprites = {
 	gourgeistshadow:{num:711},
 	heatmorshadow:{num:631},
 	lileepshadow:{num:345},
+	mareanieshadow:{num:747},
 	marillshadow:{num:183},
 	meowsticshadow:{num:678},
 	mukshadow:{num:89},

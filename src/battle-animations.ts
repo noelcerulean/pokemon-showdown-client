@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/cipher-admin-xd.mp3', 7889, 59606, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/colosseum-normal-battle.mp3', 2894, 52162, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/cipher-admin-xd.mp3', 7889, 59606, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/colosseum-normal-battle.mp3', 2894, 52162, this.bgm);
 				break;
 			}
 	
@@ -3234,7 +3234,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-shadowredcarpet.png',
+	'bg-shadowdarkcity.jpg',
 ];
 
 const BattleOtherAnims: AnimTable = {
