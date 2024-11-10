@@ -1536,7 +1536,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 25);
+		this.setBgm(1 + this.numericId % 1);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
