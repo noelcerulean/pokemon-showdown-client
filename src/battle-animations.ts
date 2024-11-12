@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/cipher-admin-xd.mp3', 7889, 59606, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/cipher-admin.mp3', 48150, 120700, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/cipher-admin-xd.mp3', 7889, 59606, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/cipher-admin.mp3', 48150, 120700, this.bgm);
 				break;
 			}
 	
