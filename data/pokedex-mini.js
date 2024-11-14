@@ -8,6 +8,7 @@ exports.BattlePokemonSprites = {
 	substitute:{exists:false, front:{w:34, h:39}, back:{w:37, h:38}},
 	longeonshadow:{num:-521},
 	snoruntshadow:{num:361},
+	articunoshadow:{num:144},
 	moltresshadow:{num:146},
 	zapdosshadow:{num:145},
 	dittoshadow:{num:132},
