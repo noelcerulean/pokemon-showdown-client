@@ -1543,11 +1543,11 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case 1:
-this.bgm=BattleSound.loadBgm('audio/cipher-admin.mp3',48150,120700,this.bgm);
+case 12:
+this.bgm=BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3',20286,98954,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/cipher-admin.mp3',48150,120700,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3',20286,98954,this.bgm);
 break;}
 
 

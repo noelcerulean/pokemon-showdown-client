@@ -504,6 +504,7 @@ exports.BattlePokemonSpritesBW = {
 	delibird:{num:225},
 	mantine:{num:226},
 	skarmory:{num:227},
+	skarmorymega:{num:227},
 	houndour:{num:228},
 	houndoom:{num:229},
 	houndoommega:{num:229},
