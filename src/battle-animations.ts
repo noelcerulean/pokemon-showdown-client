@@ -1543,11 +1543,11 @@ class BattleScene {
 		this.bgmNum = bgmNum;
 
 		switch (bgmNum) {
-			case 12:
-				this.bgm = BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3', 20286, 98954, this.bgm);
+			case 1:
+				this.bgm = BattleSound.loadBgm('audio/final-battle-xd.mp3', 28400, 124030, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3', 20286, 98954, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/final-battle-xd.mp3', 28400, 124030, this.bgm);
 				break;
 			}
 	
@@ -3234,7 +3234,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-shadow-steel.png',
+	'bg-cipher-final.jpg',
 ];
 
 const BattleOtherAnims: AnimTable = {

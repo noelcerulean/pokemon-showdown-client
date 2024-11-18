@@ -466,6 +466,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	bombsealfiesta: 1344 + 85,
 	allnown: 1344 + 86,
 	roboheeyem: 1344 + 87,
+	roboheeyemshadow: 1344 + 87,
 	arthrogon: 1344 + 88,
 	arthrogonbeach: 1344 + 88,
 	castformsandy: 1344 + 89,
