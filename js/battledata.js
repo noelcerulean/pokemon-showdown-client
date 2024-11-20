@@ -1556,6 +1556,7 @@ ignajaraarmored:1344+167,
 castformshady:1344+168,
 castformshadowshady:1344+168,
 skarmorymega:1344+169,
+lugito:1344+170,
 
 
 ano:304,

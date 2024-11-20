@@ -566,6 +566,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	castformshady: 1344 + 168,
 	castformshadowshady: 1344 + 168,
 	skarmorymega: 1344 + 169,
+	lugito: 1344 + 170,
 
 	//hypnomons
 	ano: 304,

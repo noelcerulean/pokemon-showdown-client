@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/final-battle-xd.mp3', 28400, 124030, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/shadow-lugia.mp3', 10200, 76630, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/final-battle-xd.mp3', 28400, 124030, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/shadow-lugia.mp3', 10200, 76630, this.bgm);
 				break;
 			}
 	
