@@ -1149,7 +1149,8 @@ var BattleBaseSpeciesChart=[
 "drowzee","marill","electrode","saurbot","kiwuit","gravking","spinda","reuniclus","dwebblefnf",
 "salamence","trevenant","dustox","primarina","darmanitan","typhlosionvesuvius","chatot","cashino",
 "wobbuffet","gorochu","emolgadelta","archebot","zangoose","seviper","sledgesparce",
-"charino","fearno","wiggno","venono","ano","krokono"];
+"charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
+"incineroar","seaking"];
 
 
 var BattlePokemonIconIndexes={
@@ -1273,6 +1274,7 @@ furfroupharaoh:900+113,
 furfroustar:900+114,
 meowsticf:900+115,
 meowsticroyal:900+115,
+meowsticroyalpride:900+115,
 aegislashblade:900+116,
 xerneasneutral:900+117,
 hoopaunbound:900+118,
