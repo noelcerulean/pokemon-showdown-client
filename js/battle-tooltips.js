@@ -1529,6 +1529,7 @@ if(value.abilityModify(0,'Pixilate'))moveType='Fairy';
 if(value.abilityModify(0,'Refrigerate'))moveType='Ice';
 if(value.abilityModify(0,'Toxicate'))moveType='Poison';
 if(value.abilityModify(0,'Draconize'))moveType='Dragon';
+if(value.abilityModify(0,'Malevolate'))moveType='Dark';
 }
 if(value.abilityModify(0,'Normalize'))moveType='Normal';
 }

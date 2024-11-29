@@ -22,6 +22,7 @@ exports.BattlePokemonSprites = {
 	garchompxeon:{num:445},
 	gourgeistdemitri:{num:711},
 	heatmorhuangshan:{num:631},
+	heatmorhuangshanbracelet:{num:631},
 	lileepgoober:{num:345},
 	mareaniebarbara:{num:747},
 	marilldredge:{num:183},

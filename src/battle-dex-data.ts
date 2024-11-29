@@ -160,7 +160,7 @@ const BattleBaseSpeciesChart = [
 	"salamence", "trevenant", "dustox", "primarina", "darmanitan", "typhlosionvesuvius", "chatot", "cashino",
 	"wobbuffet", "gorochu", "emolgadelta", "archebot", "zangoose", "seviper", "sledgesparce",
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono", "noivern", "meowsticroyal", "furfrouprincess",
-	"incineroar", "seaking",
+	"incineroar", "seaking", "heatmorhuangshan",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
