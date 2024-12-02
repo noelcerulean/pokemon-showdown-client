@@ -569,6 +569,8 @@ castformshady:1344+168,
 castformshadowshady:1344+168,
 skarmorymega:1344+169,
 lugito:1344+170,
+synopede:1344+171,
+lunapede:1344+172,
 
 
 ano:304,

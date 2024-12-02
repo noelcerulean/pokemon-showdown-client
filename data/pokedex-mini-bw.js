@@ -1166,6 +1166,8 @@ exports.BattlePokemonSpritesBW = {
 	durant:{num:632},
 	phasmatch:{num:-537},
 	phasphorus:{num:-538},
+	synopede:{num:-568},
+	lunapede:{num:-569},
 	deino:{num:633},
 	zweilous:{num:634},
 	zweilousterror:{num:634},
