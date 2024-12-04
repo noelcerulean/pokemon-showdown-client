@@ -571,6 +571,8 @@ skarmorymega:1344+169,
 lugito:1344+170,
 synopede:1344+171,
 lunapede:1344+172,
+cameruptdeltamega:1344+173,
+fowlfrost:1344+174,
 
 
 ano:304,
