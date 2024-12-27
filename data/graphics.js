@@ -1687,6 +1687,15 @@ break;
 case-128:
 this.bgm=BattleSound.loadBgm('audio/kahuna-battle-2.mp3',82243,143791,this.bgm);
 break;
+case-129:
+this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
+break;
+case-130:
+this.bgm=BattleSound.loadBgm('audio/dragons-nest.mp3',5599,131184,this.bgm);
+break;
+case-131:
+this.bgm=BattleSound.loadBgm('audio/oras-zinnia.mp3',57774,191856,this.bgm);
+break;
 case 1:
 this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
 break;
