@@ -310,6 +310,8 @@ exports.BattlePokemonSpritesBW = {
 	moltresgalar:{num:146},
 	dratini:{num:147},
 	dragonair:{num:148},
+	dragonairarmored:{num:148},
+	dragonairarmoredpride:{num:148},
 	dragonite:{num:149},
 	mewtwo:{num:150},
 	mewtwomegax:{num:150},

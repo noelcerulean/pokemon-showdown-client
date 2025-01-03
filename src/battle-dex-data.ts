@@ -573,6 +573,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	lunapede: 1344 + 172,
 	cameruptdeltamega: 1344 + 173,
 	fowlfrost: 1344 + 174,
+	dragonairarmored: 1344 + 175,
 
 	//hypnomons
 	ano: 304,
