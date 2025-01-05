@@ -1543,11 +1543,10 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case-129:
-this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
-break;
+case 1:
+this.bgm=BattleSound.loadBgm('audio/dragons-nest.mp3',5599,131184,this.bgm);
 default:
-this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dragons-nest.mp3',5599,131184,this.bgm);
 break;}
 
 
