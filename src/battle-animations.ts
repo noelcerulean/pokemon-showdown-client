@@ -1544,9 +1544,9 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/dragons-nest.mp3', 5599, 131184, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/oras-zinnia.mp3', 57774, 191856, this.bgm);
 			default:
-				this.bgm = BattleSound.loadBgm('audio/dragons-nest.mp3', 5599, 131184, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/oras-zinnia.mp3', 57774, 191856, this.bgm);
 				break;
 			}
 	

@@ -574,6 +574,10 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	cameruptdeltamega: 1344 + 173,
 	fowlfrost: 1344 + 174,
 	dragonairarmored: 1344 + 175,
+	jaggebill: 1344 + 176,
+	orneridge: 1344 + 177,
+	gargoliant: 1344 + 178,
+	despotide: 1344 + 179,
 
 	//hypnomons
 	ano: 304,
