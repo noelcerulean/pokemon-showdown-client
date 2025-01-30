@@ -833,6 +833,10 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	justyke: 1344 + 30,
 	solotl: 1344 + 31,
 	miasmite: 1344 + 32,
+
+	// gen 9
+	nymble: 1308 + 32,
+	lokix: 1308 + 33,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {

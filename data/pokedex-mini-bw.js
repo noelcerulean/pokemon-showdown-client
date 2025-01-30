@@ -1656,6 +1656,8 @@ exports.BattlePokemonSpritesBW = {
 	calyrex:{num:898},
 	calyrexice:{num:898},
 	calyrexshadow:{num:898},
+	nymble:{num:919},
+	lokix:{num:920},
 	missingno:{num:0},
 	syclar:{num:-1},
 	syclant:{num:-2},
