@@ -460,7 +460,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	royalynxjolly: 1344 + 80,
 	emolgadelta: 1344 + 81,
 	emolgadeltaastalos: 1344 + 81,
-	emolgadeltglitches: 1344 + 81,
+	emolgadeltaglitches: 1344 + 81,
 	pinecodelta: 1344 + 82,
 	sableyefnf: 1344 + 83,
 	sableyefnfrattlehead: 1344 + 83,
@@ -580,6 +580,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	orneridgewoodpecker: 1344 + 177,
 	gargoliant: 1344 + 178,
 	despotide: 1344 + 179,
+	flymolcky: 1344 + 180,
 
 	//hypnomons
 	ano: 304,

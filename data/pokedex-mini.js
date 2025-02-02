@@ -31,6 +31,7 @@ exports.BattlePokemonSprites = {
 	blastoisegmax:{num:9},
 	venustoise:{num:-507},
 	crocky:{num:-541},
+	flymolcky:{num:-575},
 	caterpie:{num:10},
 	metapod:{num:11},
 	butterfree:{num:12},
