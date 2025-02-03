@@ -581,6 +581,7 @@ orneridgewoodpecker:1344+177,
 gargoliant:1344+178,
 despotide:1344+179,
 flymolcky:1344+180,
+gothigearna:1344+181,
 
 
 ano:304,

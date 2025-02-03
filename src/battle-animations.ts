@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/sv-champion-kieran.mp3', 53784, 150595, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/sv-ai.mp3', 24325, 186314, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/sv-champion-kieran.mp3', 53784, 150595, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/sv-ai.mp3', 24325, 186314, this.bgm);
 				break;
 			}
 	

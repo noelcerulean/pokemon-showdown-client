@@ -1078,6 +1078,7 @@ exports.BattlePokemonSprites = {
 	gothita:{num:574},
 	gothorita:{num:575},
 	gothitelle:{num:576},
+	gothigearna:{num:-576},
 	solosis:{num:577},
 	duosion:{num:578},
 	reuniclus:{num:579},
