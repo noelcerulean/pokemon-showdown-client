@@ -582,6 +582,7 @@ gargoliant:1344+178,
 despotide:1344+179,
 flymolcky:1344+180,
 gothigearna:1344+181,
+gogoatmega:1344+182,
 
 
 ano:304,

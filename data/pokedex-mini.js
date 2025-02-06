@@ -1267,6 +1267,7 @@ exports.BattlePokemonSprites = {
 	florgesyellow:{num:671},
 	skiddo:{num:672},
 	gogoat:{num:673},
+	gogoatmega:{num:673},
 	pancham:{num:674},
 	pangoro:{num:675},
 	furfrou:{num:676},
