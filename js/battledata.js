@@ -1150,7 +1150,7 @@ var BattleBaseSpeciesChart=[
 "salamence","trevenant","dustox","primarina","darmanitan","typhlosionvesuvius","chatot","cashino",
 "wobbuffet","gorochu","emolgadelta","archebot","zangoose","seviper","sledgesparce",
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
-"incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge"];
+"incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito"];
 
 
 var BattlePokemonIconIndexes={
@@ -1560,6 +1560,7 @@ castformshady:1344+168,
 castformshadowshady:1344+168,
 skarmorymega:1344+169,
 lugito:1344+170,
+lugitoluigi:1344+170,
 synopede:1344+171,
 lunapede:1344+172,
 cameruptdeltamega:1344+173,

@@ -530,6 +530,7 @@ exports.BattlePokemonSpritesBW = {
 	tyranitar:{num:248},
 	tyranitarmega:{num:248},
 	lugito:{num:-567},
+	lugitoluigi:{num:-567},
 	lugia:{num:249},
 	lugiaseafoam:{num:249},
 	hooh:{num:250},
