@@ -496,6 +496,8 @@ exports.BattlePokemonSprites = {
 	remoraid:{num:223},
 	octillery:{num:224},
 	octillerytank:{num:224},
+	remoraidfnf:{num:223},
+	portamora:{num:-577},
 	delibird:{num:225},
 	mantine:{num:226},
 	skarmory:{num:227},

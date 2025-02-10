@@ -1976,12 +1976,16 @@
 				case 'Castform':
 				case 'Castform-Shadow':
 				case 'Cherrim':
+				case 'Chesnaught-Delta':
+				case 'Cranidos-Delta':
+				case 'Decidueye-Apollo':
 				case 'Deerling':
 				case 'Delcatty':
 				case 'Flabebe':
 				case 'Floette':
 				case 'Florges':
 				case 'Furfrou':
+				case 'Furfrou-Princess':
 				case 'Garchomp':
 				case 'Gastrodon':
 				case 'Genesect':
@@ -1990,6 +1994,7 @@
 				case 'Hypno':
 				case 'Keldeo':
 				case 'Mamoswine':
+				case 'Meowstic-Royal':
 				case 'Mimikyu':
 				case 'Minior':
 				case 'Octillery':
@@ -1997,6 +2002,8 @@
 				case 'Pikachu':
 				case 'Polteageist':
 				case 'Raichu':
+				case 'Raichu-Alola':
+				case 'Raichu-Malachite':
 				case 'Sableye':
 				case 'Samurott':
 				case 'Sawsbuck':
@@ -2006,6 +2013,7 @@
 				case 'Solrock':
 				case 'Trapinch':
 				case 'Typhlosion':
+				case 'Typhlosion-Vesuvius':
 				case 'Vespiquen':
 				case 'Vivillon':
 					break;

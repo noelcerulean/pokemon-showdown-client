@@ -584,6 +584,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	despotide: 1380 + 153,
 	flymolcky: 1380 + 154,
 	gothigearna: 1380 + 155,
+	remoraidfnf: 1380 + 156,
+	portamora: 1380 + 157,
 
 	//hypnomons
 	ano: 304,

@@ -584,6 +584,8 @@ gargoliant:1380+152,
 despotide:1380+153,
 flymolcky:1380+154,
 gothigearna:1380+155,
+remoraidfnf:1380+156,
+portamora:1380+157,
 
 
 ano:304,
