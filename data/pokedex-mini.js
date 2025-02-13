@@ -1287,6 +1287,8 @@ exports.BattlePokemonSprites = {
 	furfrouprincessparty:{num:676},
 	furfrouprincesspomp:{num:676},
 	furfrouprincesspunk:{num:676},
+	furfrouprincesspersei:{num:676},
+	furfrouprincessphobos:{num:676},
 	espurr:{num:677},
 	meowstic:{num:678},
 	meowsticf:{num:678},

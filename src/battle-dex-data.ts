@@ -437,6 +437,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	furfrouprincessparty: 1380 + 48,
 	furfrouprincesspomp: 1380 + 48,
 	furfrouprincesspunk: 1380 + 48,
+	furfrouprincessphobos: 1380 + 48,
+	furfrouprincesspersei: 1380 + 48,
 	garchompxeon: 1380 + 49,
 	gourgeistdemitri: 1380 + 50,
 	heatmorhuangshan: 1380 + 51,
