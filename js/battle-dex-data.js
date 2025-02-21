@@ -160,7 +160,8 @@ var BattleBaseSpeciesChart=[
 "salamence","trevenant","dustox","primarina","darmanitan","typhlosionvesuvius","chatot","cashino",
 "wobbuffet","gorochu","emolgadelta","archebot","zangoose","seviper","sledgesparce",
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
-"incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito"];
+"incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
+"despotide","lycanrocmidnight","espurr","chandelure","cofagrigus"];
 
 
 var BattlePokemonIconIndexes={
@@ -312,6 +313,7 @@ oricoriopompom:900+140,
 oricoriopau:900+141,
 oricoriosensu:900+142,
 lycanrocmidnight:900+143,
+lycanrocmidnighthugwolf:900+143,
 wishiwashischool:900+144,
 miniormeteor:900+145,
 miniororange:900+146,
@@ -670,6 +672,7 @@ dragonairarmored:1476+151,
 dragonairarmoredpride:1476+151,
 gargoliant:1476+152,
 despotide:1476+153,
+despotidedespopride:1476+153,
 flymolcky:1476+154,
 gothigearna:1476+155,
 remoraidfnf:1476+156,
