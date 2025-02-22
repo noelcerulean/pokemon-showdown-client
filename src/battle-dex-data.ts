@@ -448,7 +448,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	lileepgoober: 1380 + 52,
 	marilldredge: 1380 + 53,
 	meowsticroyal: 1380 + 54,
-	meowsticroyalpride: 900 + 115,
+	meowsticroyalpride: 1380 + 54,
 	mukthesludge: 1380 + 55,
 	noiverneyrie: 1380 + 56,
 	ribombeeshura: 1380 + 57,
