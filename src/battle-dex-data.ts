@@ -430,7 +430,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	sylveonfarfalle: 1380 + 40,
 	eeveedurum: 1380 + 41,
 	gyaradosalarix: 1380 + 42,
-	gyaradosalarixm: 1380 + 43,
+	gyaradosalarixmega: 1380 + 43,
 	golurktitan: 1380 + 44,
 	longeonspaghetti: 1380 + 45,
 	snoruntsherbet: 1380 + 46,
@@ -677,6 +677,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	gothigearna: 1476 + 155,
 	remoraidfnf: 1476 + 156,
 	portamora: 1476 + 157,
+	opossie: 1476 + 158,
 
 	//hypnomons
 	ano: 304,
