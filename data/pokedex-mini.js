@@ -50,6 +50,7 @@ exports.BattlePokemonSprites = {
 	raticatealola:{num:20},
 	raticatealolatotem:{num:20},
 	opossie:{num:-578},
+	possamado:{num:-579},
 	spearow:{num:21},
 	fearow:{num:22},
 	ekans:{num:23},

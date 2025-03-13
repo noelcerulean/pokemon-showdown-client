@@ -1544,10 +1544,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/sm-wild-pokemon.mp3',17027,69771,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-aceacademy.mp3',1258,160450,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/sm-wild-pokemon.mp3',17027,69771,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-aceacademy.mp3',1258,160450,this.bgm);
 break;}
 
 

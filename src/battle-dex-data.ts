@@ -678,6 +678,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	remoraidfnf: 1476 + 156,
 	portamora: 1476 + 157,
 	opossie: 1476 + 158,
+	possamado: 1476 + 159,
 
 	//hypnomons
 	ano: 304,
@@ -791,7 +792,6 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	kangaskhanmega: 1116 + 9,
 	pinsirmega: 1116 + 10,
 	gyaradosmega: 1116 + 11,
-	gyaradosmegaalarix: 1116 + 11,
 	aerodactylmega: 1116 + 12,
 	mewtwomegax: 1116 + 13,
 	mewtwomegay: 1116 + 14,
