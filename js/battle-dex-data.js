@@ -161,7 +161,7 @@ var BattleBaseSpeciesChart=[
 "wobbuffet","gorochu","emolgadelta","archebot","zangoose","seviper","sledgesparce",
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
-"despotide","lycanrocmidnight","espurr","chandelure","cofagrigus"];
+"despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape"];
 
 
 var BattlePokemonIconIndexes={

@@ -137,6 +137,7 @@ exports.BattlePokemonSpritesBW = {
 	golduck:{num:55},
 	mankey:{num:56},
 	primeape:{num:57},
+	primeapelovepotion:{num:57},
 	growlithe:{num:58},
 	growlithefnf:{num:58},
 	arcanine:{num:59},
