@@ -679,6 +679,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	portamora: 1476 + 157,
 	opossie: 1476 + 158,
 	possamado: 1476 + 159,
+	primeapearmored: 1476 + 160,
 
 	//hypnomons
 	ano: 304,
