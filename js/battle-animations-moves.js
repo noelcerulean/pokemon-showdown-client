@@ -43598,6 +43598,7 @@ BattleMoveAnims['kappo']={anim:BattleMoveAnims['acupressure'].anim};
 
 BattleMoveAnims['floralhealing']={anim:BattleMoveAnims['healpulse'].anim};
 BattleMoveAnims['purify']={anim:BattleMoveAnims['weatherball'].anim};
+BattleMoveAnims['verdantblessing']={anim:BattleMoveAnims['seedflare'].anim};
 
 BattleMoveAnims['pollenpuff']={anim:BattleMoveAnims['revelationdance'].anim};
 
