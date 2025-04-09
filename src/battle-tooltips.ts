@@ -1780,6 +1780,11 @@ class BattleTooltips {
 				value.modify(2, 'Smelling Salts + Paralysis');
 			}
 		}
+		if (move.id === 'zingzap' && target) {
+			if (['par'].includes(target.status)) {
+				value.modify(1.5, 'Zing Zap + Paralysis');
+			}
+		}
 		if (['storedpower', 'powertrip', 'snugglebug'].includes(move.id) && target) {
 			let boostCount = 0;
 			for (const boost of Object.values(pokemon.boosts)) {
@@ -2017,6 +2022,10 @@ class BattleTooltips {
 				} else if (allyAbility === 'Battery') {
 					if (ally !== pokemon && move.category === 'Special') {
 						value.modify(1.3, 'Battery');
+					}
+				} else if (allyAbility === 'Team Spirit') {
+					if (ally !== pokemon && move.category === 'Physical') {
+						value.modify(1.3, 'Team Spirit');
 					}
 				} else if (allyAbility === 'Power Spot') {
 					if (ally !== pokemon) {

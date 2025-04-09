@@ -1780,6 +1780,11 @@ if(target.status==='par'){
 value.modify(2,'Smelling Salts + Paralysis');
 }
 }
+if(move.id==='zingzap'&&target){
+if(['par'].includes(target.status)){
+value.modify(1.5,'Zing Zap + Paralysis');
+}
+}
 if(['storedpower','powertrip','snugglebug'].includes(move.id)&&target){
 var _boostCount2=0;for(var _i24=0,_Object$values3=
 Object.values(pokemon.boosts);_i24<_Object$values3.length;_i24++){var _boost2=_Object$values3[_i24];
@@ -2017,6 +2022,10 @@ auraBroken=true;
 }else if(allyAbility==='Battery'){
 if(ally!==pokemon&&move.category==='Special'){
 value.modify(1.3,'Battery');
+}
+}else if(allyAbility==='Team Spirit'){
+if(ally!==pokemon&&move.category==='Physical'){
+value.modify(1.3,'Team Spirit');
 }
 }else if(allyAbility==='Power Spot'){
 if(ally!==pokemon){
