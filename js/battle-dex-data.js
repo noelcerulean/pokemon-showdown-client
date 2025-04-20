@@ -161,7 +161,7 @@ var BattleBaseSpeciesChart=[
 "wobbuffet","gorochu","emolgadelta","archebot","zangoose","seviper","sledgesparce",
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
-"despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape"];
+"despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple"];
 
 
 var BattlePokemonIconIndexes={
@@ -449,6 +449,7 @@ lileepgoober:1380+52,
 marilldredge:1380+53,
 meowsticroyal:1380+54,
 meowsticroyalpride:1380+54,
+meowsticroyalrelic:1380+54,
 mukthesludge:1380+55,
 noiverneyrie:1380+56,
 ribombeeshura:1380+57,
