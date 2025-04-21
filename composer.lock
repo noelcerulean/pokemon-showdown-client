@@ -535,7 +535,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3|^7"
+                "php": "^5.3|>=7"
             },
             "require-dev": {
                 "paragonie/random_compat": "^1.4|^2",
@@ -965,7 +965,7 @@
             },
             "require": {
                 "ext-curl": "*",
-                "php": "^5.3|^7.0"
+                "php": "^5.3|>=7.0"
             },
             "conflict": {
                 "raven/raven": "*"
