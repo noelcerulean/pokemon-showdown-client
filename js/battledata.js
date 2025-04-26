@@ -1142,7 +1142,7 @@ var BattleBaseSpeciesChart=[
 "fraxurefrenzy","medicham","turbann","swirlix","misdreavus","ninetales","clefable",
 "poliwrath","hydreigon","infernape","drapion","parasect","xurkitree","lumineon","roseradearmored",
 "sablechamp","bombseal","diggersby","golisopodmusashi","blissey","espeon","umbreon","granbull",
-"glaceon","leafeon","vaporeon","jolteon","flareon","longeon","sylveon","eevee","ariados","hoopa",
+"glaceon","leafeon","vaporeon","flareon","jolteon","longeon","sylveon","eevee","ariados","hoopa",
 "haunter","ursaring","probopass","charjabug","teddiursaarmored","cubone","kecleon","kabutops",
 "claydol","azumarill","seismitoad","chesnaughtdelta","cranidosdelta","raichualola","amoonguss",
 "arthrogon","shelgon","ampharos","salazzle","electrodefnf","baki","boldorefnf","gigalithfnf",
@@ -1671,6 +1671,8 @@ portamora:1476+157,
 opossie:1476+158,
 possamado:1476+159,
 primeapearmored:1476+160,
+vanillitefnf:1476+161,
+vanillishfnf:1476+162,
 
 
 ano:304,

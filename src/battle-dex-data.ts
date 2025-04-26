@@ -681,6 +681,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	opossie: 1476 + 158,
 	possamado: 1476 + 159,
 	primeapearmored: 1476 + 160,
+	vanillitefnf: 1476 + 161,
+	vanillishfnf: 1476 + 162,
 
 	//hypnomons
 	ano: 304,
