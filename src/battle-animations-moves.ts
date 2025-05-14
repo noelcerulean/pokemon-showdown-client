@@ -43673,6 +43673,7 @@ BattleMoveAnims['shadowwyrm'] = {anim: BattleMoveAnims['shadowglaze'].anim};
 
 BattleMoveAnims['bloomdoom'] = {anim: BattleMoveAnims['petaldance'].anim};
 BattleMoveAnims['hydrovortex'] = {anim: BattleMoveAnims['originpulse'].anim};
+BattleMoveAnims['torrentialcannonade'] = {anim: BattleMoveAnims['originpulse'].anim};
 BattleMoveAnims['breakneckblitz'] = {anim: BattleMoveAnims['gigaimpact'].anim};
 BattleMoveAnims['savagespinout'] = {anim: BattleMoveAnims['electroweb'].anim};
 BattleMoveAnims['maliciousmoonsault'] = {anim: BattleMoveAnims['pulverizingpancake'].anim};
