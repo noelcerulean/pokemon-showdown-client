@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/pbr-sunnypark.mp3', 3787, 93456, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/dungeon1-conquest.mp3', 3764, 78786, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/pbr-sunnypark.mp3', 3787, 93456, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/dungeon1-conquest.mp3', 3764, 78786, this.bgm);
 				break;
 			}
 	
@@ -3238,7 +3238,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-flowers.png',
+	'bg-viola.jpg',
 ];
 
 const BattleOtherAnims: AnimTable = {

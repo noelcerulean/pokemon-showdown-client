@@ -1544,10 +1544,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/pbr-sunnypark.mp3',3787,93456,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dungeon1-conquest.mp3',3764,78786,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/pbr-sunnypark.mp3',3787,93456,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dungeon1-conquest.mp3',3764,78786,this.bgm);
 break;}
 
 
@@ -3238,7 +3238,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-flowers.png'];
+'bg-viola.jpg'];
 
 
 var BattleOtherAnims={
@@ -50470,6 +50470,7 @@ BattleMoveAnims['decorate']={anim:BattleMoveAnims['spore'].anim};
 BattleMoveAnims['drumbeating']={anim:BattleMoveAnims['magicalleaf'].anim};
 BattleMoveAnims['snaptrap']={anim:BattleMoveAnims['magicalleaf'].anim};
 BattleMoveAnims['pyroball']={anim:BattleMoveAnims['flameburst'].anim};
+BattleMoveAnims['kindleburst']={anim:BattleMoveAnims['flameburst'].anim};
 BattleMoveAnims['behemothblade']={anim:BattleMoveAnims['smartstrike'].anim};
 BattleMoveAnims['behemothbash']={anim:BattleMoveAnims['smartstrike'].anim};
 BattleMoveAnims['aurawheel']={anim:BattleMoveAnims['discharge'].anim};

@@ -43745,6 +43745,7 @@ BattleMoveAnims['decorate'] = {anim: BattleMoveAnims['spore'].anim};
 BattleMoveAnims['drumbeating'] = {anim: BattleMoveAnims['magicalleaf'].anim};
 BattleMoveAnims['snaptrap'] = {anim: BattleMoveAnims['magicalleaf'].anim};
 BattleMoveAnims['pyroball'] = {anim: BattleMoveAnims['flameburst'].anim};
+BattleMoveAnims['kindleburst'] = {anim: BattleMoveAnims['flameburst'].anim};
 BattleMoveAnims['behemothblade'] = {anim: BattleMoveAnims['smartstrike'].anim};
 BattleMoveAnims['behemothbash'] = {anim: BattleMoveAnims['smartstrike'].anim};
 BattleMoveAnims['aurawheel'] = {anim: BattleMoveAnims['discharge'].anim};
