@@ -683,6 +683,8 @@ possamado:1476+159,
 primeapearmored:1476+160,
 vanillitefnf:1476+161,
 vanillishfnf:1476+162,
+peatot:1476+163,
+raptopea:1476+164,
 
 
 ano:304,

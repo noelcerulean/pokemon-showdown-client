@@ -425,6 +425,8 @@ exports.BattlePokemonSprites = {
 	marelstorm:{num:-531},
 	mindow:{num:-527},
 	slugnami:{num:-532},
+	peatot:{num:-580},
+	raptopea:{num:-581},
 	unown:{num:201},
 	unownb:{num:201},
 	unownc:{num:201},
