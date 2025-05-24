@@ -1544,10 +1544,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/ferrum-stadium.mp3',12561,112299,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/ferrum-stadium.mp3',12561,112299,this.bgm);
 break;}
 
 
@@ -3238,7 +3238,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-champion.jpg'];
+'bg-flowers.png'];
 
 
 var BattleOtherAnims={

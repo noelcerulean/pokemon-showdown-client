@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/newyear-masters.mp3', 34321, 87458, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/ferrum-stadium.mp3', 12561, 112299, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/newyear-masters.mp3', 34321, 87458, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/ferrum-stadium.mp3', 12561, 112299, this.bgm);
 				break;
 			}
 	
@@ -3238,7 +3238,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-champion.jpg',
+	'bg-flowers.png',
 ];
 
 const BattleOtherAnims: AnimTable = {

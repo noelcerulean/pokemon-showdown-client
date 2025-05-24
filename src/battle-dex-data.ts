@@ -685,6 +685,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	vanillishfnf: 1476 + 162,
 	peatot: 1476 + 163,
 	raptopea: 1476 + 164,
+	arachgrape: 1476 + 165,
+	tarazzpula: 1476 + 166,
 
 	//hypnomons
 	ano: 304,
