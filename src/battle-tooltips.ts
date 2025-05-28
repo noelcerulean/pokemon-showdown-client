@@ -1148,9 +1148,6 @@ class BattleTooltips {
 					if (ability === 'solarpower') {
 						stats.spa = Math.floor(stats.spa * 1.5);
 					}
-					if (ability === 'solarboost') {
-						stats.atk = Math.floor(stats.atk * 1.5);
-					}
 					let allyActive = clientPokemon?.side.active;
 					if (allyActive) {
 						for (const ally of allyActive) {
@@ -1760,6 +1757,9 @@ class BattleTooltips {
 		}
 		if (move.id === 'shadowsorcery' && target?.status) {
 			value.modify(2, 'Shadow Sorcery + status');
+		}
+		if (move.id === 'sparklingaria' && target?.status) {
+			value.modify(1.5, 'Sparkling Aria + status');
 		}
 		if (move.id === 'punishment' && target) {
 			let boostCount = 0;

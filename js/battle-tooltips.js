@@ -1148,9 +1148,6 @@ if(weather==='sunnyday'||weather==='desolateland'){
 if(ability==='solarpower'){
 stats.spa=Math.floor(stats.spa*1.5);
 }
-if(ability==='solarboost'){
-stats.atk=Math.floor(stats.atk*1.5);
-}
 var allyActive=clientPokemon==null?void 0:clientPokemon.side.active;
 if(allyActive){for(var _i14=0;_i14<
 allyActive.length;_i14++){var ally=allyActive[_i14];
@@ -1760,6 +1757,9 @@ value.modify(2,'Hex + status');
 }
 if(move.id==='shadowsorcery'&&target!=null&&target.status){
 value.modify(2,'Shadow Sorcery + status');
+}
+if(move.id==='sparklingaria'&&target!=null&&target.status){
+value.modify(1.5,'Sparkling Aria + status');
 }
 if(move.id==='punishment'&&target){
 var boostCount=0;for(var _i22=0,_Object$values=

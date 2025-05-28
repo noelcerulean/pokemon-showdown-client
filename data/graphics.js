@@ -50581,7 +50581,7 @@ prepareAnim:BattleMoveAnims['shadowforce'].prepareAnim};
 BattleMoveAnims['shadowstrike']={anim:BattleMoveAnims['shadowforce'].anim};
 
 BattleMoveAnims['smackdown']={anim:BattleMoveAnims['rockblast'].anim};
-BattleMoveAnims['regroup2']={anim:BattleMoveAnims['regroup'].anim};
+BattleMoveAnims['assemble']={anim:BattleMoveAnims['regroup'].anim};
 
 BattleMoveAnims['fairywind']={anim:BattleMoveAnims['dazzlinggleam'].anim};
 BattleMoveAnims['dreameater']={anim:BattleMoveAnims['drainingkiss'].anim};
