@@ -1677,6 +1677,7 @@ peatot:1476+163,
 raptopea:1476+164,
 arachgrape:1476+165,
 tarazzpula:1476+166,
+warpharos:1476+167,
 
 
 ano:304,
