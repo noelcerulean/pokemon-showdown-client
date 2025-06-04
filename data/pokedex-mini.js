@@ -378,6 +378,7 @@ exports.BattlePokemonSprites = {
 	ampharos:{num:181},
 	ampharosbeach:{num:181},
 	ampharosmega:{num:181},
+	warpharos:{num:-584},
 	bellossom:{num:182},
 	marill:{num:183},
 	marillbeach:{num:183},
