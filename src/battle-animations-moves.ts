@@ -800,6 +800,9 @@ const BattleMoveAnims: AnimTable = {
 	hypnofamilyreunion: {
 		anim: BattleOtherAnims.dance.anim,
 	},
+	evanescediffusion: {
+		anim: BattleOtherAnims.dance.anim,
+	},
 	gravity: {
 		anim() {
 			// do not give Gravity an animation,

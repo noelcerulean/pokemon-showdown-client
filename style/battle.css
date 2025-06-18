@@ -471,6 +471,10 @@ License: GPLv2
 	background: #CCAAEE url(../fx/weather-psychicterrain.png) no-repeat scroll left top;
 	color: #441155;
 }
+.evanescediffusionweather {
+	background: #112C5C url(../fx/weather-evanescediffusion.png) no-repeat scroll left top;
+	color: #661155;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;

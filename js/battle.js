@@ -2402,7 +2402,7 @@ this.activateAbility(_poke31,_effect14);
 this.activateAbility(_ofpoke10||_poke31,_fromeffect3);
 switch(_effect14.id){
 case'typechange':
-if(_ofpoke10&&_fromeffect3.id===('reflecttype'||'concealment')){
+if(_ofpoke10&&_fromeffect3.id==='reflecttype'||_ofpoke10&&_fromeffect3.id==='concealment'){
 _poke31.copyTypesFrom(_ofpoke10);
 }else{
 var types=Dex.sanitizeName(args[3]||'???');
@@ -2900,10 +2900,10 @@ var _poke37=this.getPokemon(kwArgs.of);
 var _fromeffect5=Dex.getEffect(kwArgs.from);
 this.activateAbility(_poke37,_fromeffect5);
 var maxTimeLeft=0;
-if(_effect22.id.endsWith('terrain')){
+if(_effect22.id.endsWith('terrain')||_effect22.id.endsWith('diffusion')){
 for(var i=this.pseudoWeather.length-1;i>=0;i--){
 var pwID=toID(this.pseudoWeather[i][0]);
-if(pwID.endsWith('terrain')){
+if(pwID.endsWith('terrain')||pwID.endsWith('diffusion')){
 this.pseudoWeather.splice(i,1);
 continue;
 }
