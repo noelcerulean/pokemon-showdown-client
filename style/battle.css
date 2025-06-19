@@ -472,12 +472,16 @@ License: GPLv2
 	color: #441155;
 }
 .evanescediffusionweather {
-	background: #112C5C url(../fx/weather-evanescediffusion.png) no-repeat scroll left top;
-	color: #661155;
+	background: #93cde4 url(../fx/weather-evanescediffusion.png) no-repeat scroll left top;
+	color: #112C5C;
 }
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
+}
+.nothingweather {
+	background: #ffffff url(../fx/weather-nothing.png) no-repeat scroll left top;
+	color: #000000;
 }
 
 .battle .result {

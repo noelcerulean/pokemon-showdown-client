@@ -88,9 +88,7 @@ BattleScene=function(){
 
 
 
-
-
-function BattleScene(battle,$frame,$logFrame){this.battle=void 0;this.animating=true;this.acceleration=1;this.gen=7;this.mod='';this.activeCount=1;this.numericId=0;this.$frame=void 0;this.$battle=null;this.$options=null;this.log=void 0;this.$terrain=null;this.$diffusion=null;this.$weather=null;this.$bgEffect=null;this.$bg=null;this.$sprite=null;this.$sprites=[null,null];this.$spritesFront=[null,null];this.$stat=null;this.$fx=null;this.$leftbar=null;this.$rightbar=null;this.$turn=null;this.$messagebar=null;this.$delay=null;this.$hiddenMessage=null;this.$tooltips=null;this.tooltips=void 0;this.sideConditions=[{},{}];this.preloadDone=0;this.preloadNeeded=0;this.bgm=null;this.backdropImage='';this.bgmNum=0;this.preloadCache={};this.messagebarOpen=false;this.customControls=false;this.interruptionCount=1;this.curWeather='';this.curTerrain='';this.curDiffusion='';this.timeOffset=0;this.pokemonTimeOffset=0;this.minDelay=0;this.activeAnimations=$();
+function BattleScene(battle,$frame,$logFrame){this.battle=void 0;this.animating=true;this.acceleration=1;this.gen=7;this.mod='';this.activeCount=1;this.numericId=0;this.$frame=void 0;this.$battle=null;this.$options=null;this.log=void 0;this.$terrain=null;this.$weather=null;this.$bgEffect=null;this.$bg=null;this.$sprite=null;this.$sprites=[null,null];this.$spritesFront=[null,null];this.$stat=null;this.$fx=null;this.$leftbar=null;this.$rightbar=null;this.$turn=null;this.$messagebar=null;this.$delay=null;this.$hiddenMessage=null;this.$tooltips=null;this.tooltips=void 0;this.sideConditions=[{},{}];this.preloadDone=0;this.preloadNeeded=0;this.bgm=null;this.backdropImage='';this.bgmNum=0;this.preloadCache={};this.messagebarOpen=false;this.customControls=false;this.interruptionCount=1;this.curWeather='';this.curTerrain='';this.timeOffset=0;this.pokemonTimeOffset=0;this.minDelay=0;this.activeAnimations=$();
 this.battle=battle;
 
 $frame.addClass('battle');
@@ -146,7 +144,6 @@ this.$frame.append(this.$battle);
 
 this.$bg=$('<div class="backdrop" style="background-image:url('+Dex.resourcePrefix+this.backdropImage+');display:block;opacity:0.8"></div>');
 this.$terrain=$('<div class="weather"></div>');
-this.$diffusion=$('<div class="weather"></div>');
 this.$weather=$('<div class="weather"></div>');
 this.$bgEffect=$('<div></div>');
 this.$sprite=$('<div></div>');
@@ -171,7 +168,6 @@ this.$tooltips=$('<div class="tooltips"></div>');
 
 this.$battle.append(this.$bg);
 this.$battle.append(this.$terrain);
-this.$battle.append(this.$diffusion);
 this.$battle.append(this.$weather);
 this.$battle.append(this.$bgEffect);
 this.$battle.append(this.$sprite);
@@ -193,7 +189,6 @@ this.messagebarOpen=false;
 this.timeOffset=0;
 this.pokemonTimeOffset=0;
 this.curTerrain='';
-this.curDiffusion='';
 this.curWeather='';
 
 this.log.battleParser.perspective=this.battle.mySide.sideid;
@@ -977,35 +972,21 @@ if(!terrain)terrain='pseudo';
 break;}
 
 }
-var diffusion='';for(var _i12=0,_this$battle$pseudoWe3=
-this.battle.pseudoWeather;_i12<_this$battle$pseudoWe3.length;_i12++){var _pseudoWeatherData=_this$battle$pseudoWe3[_i12];
-var _pwid=toID(_pseudoWeatherData[0]);
-switch(_pwid){
-case'evanescediffusion':
-diffusion=_pwid;
-break;
-default:
-if(!diffusion)diffusion='pseudo';
-break;}
-
-}
 if(weather==='desolateland'||weather==='primordialsea'||weather==='shadowsky'||weather==='deltastream'){
 isIntense=true;
 }
 
-var weatherhtml=this.weatherLeft();for(var _i13=0,_this$battle$sides4=
-this.battle.sides;_i13<_this$battle$sides4.length;_i13++){var side=_this$battle$sides4[_i13];
+var weatherhtml=this.weatherLeft();for(var _i12=0,_this$battle$sides4=
+this.battle.sides;_i12<_this$battle$sides4.length;_i12++){var side=_this$battle$sides4[_i12];
 weatherhtml+=this.sideConditionsLeft(side);
 }
 if(weatherhtml)weatherhtml="<br />"+weatherhtml;
 
 if(instant){
 this.$weather.html('<em>'+weatherhtml+'</em>');
-if(this.curWeather===weather&&this.curTerrain===terrain&&this.curDiffusion===diffusion)return;
+if(this.curWeather===weather&&this.curTerrain===terrain)return;
 this.$terrain.attr('class',terrain?'weather '+terrain+'weather':'weather');
 this.curTerrain=terrain;
-this.$diffusion.attr('class',diffusion?'weather '+diffusion+'weather':'weather');
-this.curDiffusion=diffusion;
 this.$weather.attr('class',weather?'weather '+weather+'weather':'weather');
 this.$weather.css('opacity',isIntense||!weather?0.9:0.5);
 this.curWeather=weather;
@@ -1034,17 +1015,6 @@ _this3.$terrain.attr('class',terrain?'weather '+terrain+'weather':'weather');
 _this3.$terrain.animate({top:0,opacity:1},400);
 });
 this.curTerrain=terrain;
-}
-
-if(diffusion!==this.curDiffusion){
-this.$diffusion.animate({
-top:360,
-opacity:0},
-this.curDiffusion?400:1,function(){
-_this3.$diffusion.attr('class',diffusion?'weather '+diffusion+'weather':'weather');
-_this3.$diffusion.animate({top:0,opacity:0.5},400);
-});
-this.curDiffusion=diffusion;
 }
 };_proto.
 resetTurn=function resetTurn(){
@@ -1370,8 +1340,8 @@ break;}
 };_proto.
 removeSideCondition=function removeSideCondition(siden,id){
 if(!this.animating)return;
-if(this.sideConditions[siden][id]){for(var _i14=0,_this$sideConditions$=
-this.sideConditions[siden][id];_i14<_this$sideConditions$.length;_i14++){var sprite=_this$sideConditions$[_i14];sprite.destroy();}
+if(this.sideConditions[siden][id]){for(var _i13=0,_this$sideConditions$=
+this.sideConditions[siden][id];_i13<_this$sideConditions$.length;_i13++){var sprite=_this$sideConditions$[_i13];sprite.destroy();}
 delete this.sideConditions[siden][id];
 }
 };_proto.
@@ -2226,9 +2196,9 @@ x:this.leftof(-50),
 y:this.y,
 z:this.z,
 opacity:0.5},
-this.subsp),300);for(var _i15=0,_this$scene$battle$si=
-this.scene.battle.sides;_i15<_this$scene$battle$si.length;_i15++){var side=_this$scene$battle$si[_i15];for(var _i16=0,_side$active2=
-side.active;_i16<_side$active2.length;_i16++){var active=_side$active2[_i16];
+this.subsp),300);for(var _i14=0,_this$scene$battle$si=
+this.scene.battle.sides;_i14<_this$scene$battle$si.length;_i14++){var side=_this$scene$battle$si[_i14];for(var _i15=0,_side$active2=
+side.active;_i15<_side$active2.length;_i15++){var active=_side$active2[_i15];
 if(active&&active.sprite!==this){
 active.sprite.delay(300);
 }
@@ -2853,8 +2823,8 @@ time:instant?0:300});
 removeEffect=function removeEffect(id,instant){
 if(id==='formechange')this.removeTransform();
 if(id==='substitute')this.animSubFade(instant);
-if(this.effects[id]){for(var _i17=0,_this$effects$id=
-this.effects[id];_i17<_this$effects$id.length;_i17++){var sprite=_this$effects$id[_i17];sprite.destroy();}
+if(this.effects[id]){for(var _i16=0,_this$effects$id=
+this.effects[id];_i16<_this$effects$id.length;_i16++){var sprite=_this$effects$id[_i16];sprite.destroy();}
 delete this.effects[id];
 }
 };_proto3.
@@ -2972,8 +2942,8 @@ status+='<span class="par">PAR</span> ';
 status+='<span class="frz">FRZ</span> ';
 }
 if(pokemon.volatiles.typechange&&pokemon.volatiles.typechange[1]){
-var types=pokemon.volatiles.typechange[1].split('/');for(var _i18=0;_i18<
-types.length;_i18++){var type=types[_i18];
+var types=pokemon.volatiles.typechange[1].split('/');for(var _i17=0;_i17<
+types.length;_i17++){var type=types[_i17];
 status+='<img src="'+Dex.resourcePrefix+'sprites/types/'+encodeURIComponent(type)+'.png" alt="'+type+'" class="pixelated" /> ';
 }
 }
@@ -2990,12 +2960,12 @@ status+='<span class="'+pokemon.getBoostType(stat)+'">'+pokemon.getBoost(stat)+'
 for(var i in pokemon.volatiles){
 status+=PokemonSprite.getEffectTag(i);
 }
-for(var _i19 in pokemon.turnstatuses){
-if(_i19==='roost'&&!pokemon.getTypeList().includes('Flying'))continue;
-status+=PokemonSprite.getEffectTag(_i19);
+for(var _i18 in pokemon.turnstatuses){
+if(_i18==='roost'&&!pokemon.getTypeList().includes('Flying'))continue;
+status+=PokemonSprite.getEffectTag(_i18);
 }
-for(var _i20 in pokemon.movestatuses){
-status+=PokemonSprite.getEffectTag(_i20);
+for(var _i19 in pokemon.movestatuses){
+status+=PokemonSprite.getEffectTag(_i19);
 }
 var statusbar=this.$statbar.find('.status');
 statusbar.html(status);

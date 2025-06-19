@@ -47,7 +47,6 @@ class BattleScene {
 	$options: JQuery = null!;
 	log: BattleLog;
 	$terrain: JQuery = null!;
-	$diffusion: JQuery = null!;
 	$weather: JQuery = null!;
 	$bgEffect: JQuery = null!;
 	$bg: JQuery = null!;
@@ -79,7 +78,6 @@ class BattleScene {
 	interruptionCount = 1;
 	curWeather = '';
 	curTerrain = '';
-	curDiffusion = '';
 
 	// Animation state
 	////////////////////////////////////
@@ -146,7 +144,6 @@ class BattleScene {
 
 		this.$bg = $('<div class="backdrop" style="background-image:url(' + Dex.resourcePrefix + this.backdropImage + ');display:block;opacity:0.8"></div>');
 		this.$terrain = $('<div class="weather"></div>');
-		this.$diffusion = $('<div class="weather"></div>');
 		this.$weather = $('<div class="weather"></div>');
 		this.$bgEffect = $('<div></div>');
 		this.$sprite = $('<div></div>');
@@ -171,7 +168,6 @@ class BattleScene {
 
 		this.$battle.append(this.$bg);
 		this.$battle.append(this.$terrain);
-		this.$battle.append(this.$diffusion);
 		this.$battle.append(this.$weather);
 		this.$battle.append(this.$bgEffect);
 		this.$battle.append(this.$sprite);
@@ -193,7 +189,6 @@ class BattleScene {
 		this.timeOffset = 0;
 		this.pokemonTimeOffset = 0;
 		this.curTerrain = '';
-		this.curDiffusion = '';
 		this.curWeather = '';
 
 		this.log.battleParser!.perspective = this.battle.mySide.sideid;
@@ -977,18 +972,6 @@ class BattleScene {
 				break;
 			}
 		}
-		let diffusion = '' as ID;
-		for (const pseudoWeatherData of this.battle.pseudoWeather) {
-			let pwid = toID(pseudoWeatherData[0]);
-			switch (pwid) {
-			case 'evanescediffusion':
-				diffusion = pwid;
-				break;
-			default:
-				if (!diffusion) diffusion = 'pseudo' as ID;
-				break;
-			}
-		}
 		if (weather === 'desolateland' || weather === 'primordialsea' || weather === 'shadowsky' || weather === 'deltastream') {
 			isIntense = true;
 		}
@@ -1001,11 +984,9 @@ class BattleScene {
 
 		if (instant) {
 			this.$weather.html('<em>' + weatherhtml + '</em>');
-			if (this.curWeather === weather && this.curTerrain === terrain && this.curDiffusion === diffusion) return;
+			if (this.curWeather === weather && this.curTerrain === terrain) return;
 			this.$terrain.attr('class', terrain ? 'weather ' + terrain + 'weather' : 'weather');
 			this.curTerrain = terrain;
-			this.$diffusion.attr('class', diffusion ? 'weather ' + diffusion + 'weather' : 'weather');
-			this.curDiffusion = diffusion;
 			this.$weather.attr('class', weather ? 'weather ' + weather + 'weather' : 'weather');
 			this.$weather.css('opacity', isIntense || !weather ? 0.9 : 0.5);
 			this.curWeather = weather;
@@ -1034,17 +1015,6 @@ class BattleScene {
 				this.$terrain.animate({top: 0, opacity: 1}, 400);
 			});
 			this.curTerrain = terrain;
-		}
-
-		if (diffusion !== this.curDiffusion) {
-			this.$diffusion.animate({
-				top: 360,
-				opacity: 0,
-			}, this.curDiffusion ? 400 : 1, () => {
-				this.$diffusion.attr('class', diffusion ? 'weather ' + diffusion + 'weather' : 'weather');
-				this.$diffusion.animate({top: 0, opacity: 0.5}, 400);
-			});
-			this.curDiffusion = diffusion;
 		}
 	}
 	resetTurn() {

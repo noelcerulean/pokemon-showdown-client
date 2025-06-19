@@ -2402,7 +2402,7 @@ class Battle {
 			this.activateAbility(ofpoke || poke, fromeffect);
 			switch (effect.id) {
 			case 'typechange':
-				if ((ofpoke && fromeffect.id === ('reflecttype')) || (ofpoke && fromeffect.id === ('concealment'))) {
+				if (ofpoke && fromeffect.id === ('reflecttype' || 'concealment')) {
 					poke.copyTypesFrom(ofpoke);
 				} else {
 					const types = Dex.sanitizeName(args[3] || '???');
@@ -2900,10 +2900,10 @@ class Battle {
 			let fromeffect = Dex.getEffect(kwArgs.from);
 			this.activateAbility(poke, fromeffect);
 			let maxTimeLeft = 0;
-			if (effect.id.endsWith('terrain') || effect.id.endsWith('diffusion')) {
+			if (effect.id.endsWith('terrain')) {
 				for (let i = this.pseudoWeather.length - 1; i >= 0; i--) {
 					let pwID = toID(this.pseudoWeather[i][0]);
-					if (pwID.endsWith('terrain') || pwID.endsWith('diffusion')) {
+					if (pwID.endsWith('terrain')) {
 						this.pseudoWeather.splice(i, 1);
 						continue;
 					}
