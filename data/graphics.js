@@ -1543,261 +1543,11 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case-9:
-this.bgm=BattleSound.loadBgm('audio/team-aqua.mp3',17293,106451,this.bgm);
+case-141:
+this.bgm=BattleSound.loadBgm('audio/sm-teamskull.mp3',54104,125377,this.bgm);
 break;
-case-2:
-this.bgm=BattleSound.loadBgm('audio/xd-miror-b.mp3',9000,57815,this.bgm);
-break;
-case-3:
-this.bgm=BattleSound.loadBgm('audio/colosseum-miror-b.mp3',896,47462,this.bgm);
-break;
-case-4:
-this.bgm=BattleSound.loadBgm('audio/colosseum-first-battle.mp3',10538,57255,this.bgm);
-break;
-case-5:
-this.bgm=BattleSound.loadBgm('audio/kahuna-battle.mp3',37195,135644,this.bgm);
-break;
-case-6:
-this.bgm=BattleSound.loadBgm('audio/contest-beauty.mp3',3000,90965,this.bgm);
-break;
-case-7:
-this.bgm=BattleSound.loadBgm('audio/pbr-joe.mp3',9765,93800,this.bgm);
-break;
-case-8:
-this.bgm=BattleSound.loadBgm('audio/battle-royale.mp3',14950,74000,this.bgm);
-break;
-case-89:
-this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
-break;
-case-90:
-this.bgm=BattleSound.loadBgm('audio/pokecenter.mp3',21127,97330,this.bgm);
-break;
-case-91:
-this.bgm=BattleSound.loadBgm('audio/ferrum-stadium.mp3',12561,112299,this.bgm);
-break;
-case-92:
-this.bgm=BattleSound.loadBgm('audio/training-gym.mp3',34957,149397,this.bgm);
-break;
-case-93:
-this.bgm=BattleSound.loadBgm('audio/aqua-leader.mp3',56039,112139,this.bgm);
-break;
-case-94:
-this.bgm=BattleSound.loadBgm('audio/sv-penny.mp3',48902,197473,this.bgm);
-break;
-case-95:
-this.bgm=BattleSound.loadBgm('audio/neos-city-night.mp3',46920,166926,this.bgm);
-break;
-case-96:
-this.bgm=BattleSound.loadBgm('audio/neos-city.mp3',14492,119725,this.bgm);
-break;
-case-97:
-this.bgm=BattleSound.loadBgm('audio/neon-colosseum.mp3',16500,70945,this.bgm);
-break;
-case-98:
-this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
-break;
-case-99:
-this.bgm=BattleSound.loadBgm('audio/tellur-autumn.mp3',13953,124465,this.bgm);
-break;
-case-100:
-this.bgm=BattleSound.loadBgm('audio/legends-giratina.mp3',63081,258135,this.bgm);
-break;
-case-101:
-this.bgm=BattleSound.loadBgm('audio/hgss-johto-gym-leader.mp3',30449,90174,this.bgm);
-break;
-case-102:
-this.bgm=BattleSound.loadBgm('audio/dungeon1-conquest.mp3',3764,78786,this.bgm);
-break;
-case-103:
-this.bgm=BattleSound.loadBgm('audio/newyear-masters.mp3',34321,87458,this.bgm);
-break;
-case-104:
-this.bgm=BattleSound.loadBgm('audio/hgss-hooh.mp3',40622,108343,this.bgm);
-break;
-case-105:
-this.bgm=BattleSound.loadBgm('audio/bw2-plasma.mp3',14294,101587,this.bgm);
-break;
-case-106:
-this.bgm=BattleSound.loadBgm('audio/pbr-sunnypark.mp3',3787,93456,this.bgm);
-break;
-case-107:
-this.bgm=BattleSound.loadBgm('audio/sv-aceacademy.mp3',1258,160450,this.bgm);
-break;
-case-108:
-this.bgm=BattleSound.loadBgm('audio/masters-hoenngymleader.mp3',12467,87536,this.bgm);
-break;
-case-109:
-this.bgm=BattleSound.loadBgm('audio/conquest-ghost-battle.mp3',15292,130248,this.bgm);
-break;
-case-110:
-this.bgm=BattleSound.loadBgm('audio/conquest-dark-battle.mp3',51483,166841,this.bgm);
-break;
-case-111:
-this.bgm=BattleSound.loadBgm('audio/masters-team-break.mp3',41520,108427,this.bgm);
-break;
-case-112:
-this.bgm=BattleSound.loadBgm('audio/pbr-gateway.mp3',14115,81375,this.bgm);
-break;
-case-113:
-this.bgm=BattleSound.loadBgm('audio/pbr-stargazer.mp3',27357,83427,this.bgm);
-break;
-case-114:
-this.bgm=BattleSound.loadBgm('audio/thalia-beach.mp3',16209,109854,this.bgm);
-break;
-case-115:
-this.bgm=BattleSound.loadBgm('audio/conquest-psychic-battle.mp3',24009,114013,this.bgm);
-break;
-case-116:
-this.bgm=BattleSound.loadBgm('audio/conquest-bug-battle.mp3',73481,174468,this.bgm);
-break;
-case-117:
-this.bgm=BattleSound.loadBgm('audio/pbr-kruger.mp3',29330,58135,this.bgm);
-break;
-case-118:
-this.bgm=BattleSound.loadBgm('audio/regi-ruins.mp3',12903,130675,this.bgm);
-break;
-case-119:
-this.bgm=BattleSound.loadBgm('audio/phos-volcano.mp3',51777,142119,this.bgm);
-break;
-case-120:
-this.bgm=BattleSound.loadBgm('audio/masters-lear.mp3',50211,122210,this.bgm);
-break;
-case-121:
-this.bgm=BattleSound.loadBgm('audio/cipher-admin-xd.mp3',7889,59606,this.bgm);
-break;
-case-122:
-this.bgm=BattleSound.loadBgm('audio/colosseum-normal-battle.mp3',2894,52162,this.bgm);
-break;
-case-123:
-this.bgm=BattleSound.loadBgm('audio/final-battle-xd.mp3',28400,124030,this.bgm);
-break;
-case-124:
-this.bgm=BattleSound.loadBgm('audio/battle-sim-xd.mp3',21576,72790,this.bgm);
-break;
-case-125:
-this.bgm=BattleSound.loadBgm('audio/shadow-lugia.mp3',10200,76630,this.bgm);
-break;
-case-126:
-this.bgm=BattleSound.loadBgm('audio/cipher-admin.mp3',48150,120700,this.bgm);
-break;
-case-127:
-this.bgm=BattleSound.loadBgm('audio/final-battle-cipher.mp3',8311,72255,this.bgm);
-break;
-case-128:
-this.bgm=BattleSound.loadBgm('audio/kahuna-battle-2.mp3',82243,143791,this.bgm);
-break;
-case-129:
-this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
-break;
-case-130:
-this.bgm=BattleSound.loadBgm('audio/dragons-nest.mp3',5599,131184,this.bgm);
-break;
-case-131:
-this.bgm=BattleSound.loadBgm('audio/oras-zinnia.mp3',57774,191856,this.bgm);
-break;
-case-132:
-this.bgm=BattleSound.loadBgm('audio/sv-champion-kieran.mp3',53784,150595,this.bgm);
-break;
-case-133:
-this.bgm=BattleSound.loadBgm('audio/sm-wild-pokemon.mp3',17027,69771,this.bgm);
-break;
-case-134:
-this.bgm=BattleSound.loadBgm('audio/sv-ai.mp3',24325,186314,this.bgm);
-break;
-case-135:
-this.bgm=BattleSound.loadBgm('audio/rumbleu-kyuremblack.mp3',4585,68587,this.bgm);
-break;
-case-136:
-this.bgm=BattleSound.loadBgm('audio/dark-colo.mp3',6816,107573,this.bgm);
-break;
-case-137:
-this.bgm=BattleSound.loadBgm('audio/usum-giovanni.mp3',16795,109918,this.bgm);
-break;
-case-138:
-this.bgm=BattleSound.loadBgm('audio/swsh-rose.mp3',49622,129804,this.bgm);
-break;
-case-139:
-this.bgm=BattleSound.loadBgm('audio/dark-colo-final.mp3',7212,115212,this.bgm);
-break;
-case-140:
-this.bgm=BattleSound.loadBgm('audio/masters-rose.mp3',36392,95174,this.bgm);
-break;
-case 1:
-this.bgm=BattleSound.loadBgm('audio/bw-subway-trainer.mp3',15503,110984,this.bgm);
-break;
-case 2:
-this.bgm=BattleSound.loadBgm('audio/sm-rival.mp3',11389,62158,this.bgm);
-break;
-case 3:
-this.bgm=BattleSound.loadBgm('audio/cipher-peon.mp3',7800,80000,this.bgm);
-break;
-case 4:
-this.bgm=BattleSound.loadBgm('audio/sm-trainer.mp3',8323,89230,this.bgm);
-break;
-case 5:
-this.bgm=BattleSound.loadBgm('audio/swsh-hop.mp3',12450,100850,this.bgm);
-break;
-case 6:
-this.bgm=BattleSound.loadBgm('audio/colosseum-normal-battle.mp3',2894,52162,this.bgm);
-break;
-case 7:
-this.bgm=BattleSound.loadBgm('audio/cipher-peon-xd.mp3',39539,79026,this.bgm);
-break;
-case 8:
-this.bgm=BattleSound.loadBgm('audio/swsh-oleana.mp3',14950,82700,this.bgm);
-break;
-case 9:
-this.bgm=BattleSound.loadBgm('audio/xy-rival.mp3',7802,58634,this.bgm);
-break;
-case 10:
-this.bgm=BattleSound.loadBgm('audio/plat-frontier-brain.mp3',15155,103562,this.bgm);
-break;
-case 11:
-this.bgm=BattleSound.loadBgm('audio/hgss-kanto-trainer.mp3',13003,94656,this.bgm);
-break;
-case 12:
-this.bgm=BattleSound.loadBgm('audio/semifinal-battle-cipher.mp3',20286,98954,this.bgm);
-break;
-case 13:
-this.bgm=BattleSound.loadBgm('audio/steel-battle.mp3',29258,121915,this.bgm);
-break;
-case 14:
-this.bgm=BattleSound.loadBgm('audio/conquest-dragon-battle.mp3',26817,109162,this.bgm);
-break;
-case 15:
-this.bgm=BattleSound.loadBgm('audio/bw-trainer.mp3',14629,110109,this.bgm);
-break;
-case 16:
-this.bgm=BattleSound.loadBgm('audio/colosseum-miror-b.mp3',896,47462,this.bgm);
-break;
-case 17:
-this.bgm=BattleSound.loadBgm('audio/xy-trainer.mp3',7802,82469,this.bgm);
-break;
-case 18:
-this.bgm=BattleSound.loadBgm('audio/hgss-johto-trainer.mp3',23731,125086,this.bgm);
-break;
-case 19:
-this.bgm=BattleSound.loadBgm('audio/oras-rival.mp3',14303,69149,this.bgm);
-break;
-case 20:
-this.bgm=BattleSound.loadBgm('audio/oras-trainer.mp3',13579,91548,this.bgm);
-break;
-case 21:
-this.bgm=BattleSound.loadBgm('audio/dpp-rival.mp3',13888,66352,this.bgm);
-break;
-case 22:
-this.bgm=BattleSound.loadBgm('audio/eos-dialga.mp3',20000,120600,this.bgm);
-break;
-case 23:
-this.bgm=BattleSound.loadBgm('audio/bw-rival.mp3',19180,57373,this.bgm);
-break;
-case 24:
-this.bgm=BattleSound.loadBgm('audio/dpp-trainer.mp3',13440,96959,this.bgm);
-case 25:
-this.bgm=BattleSound.loadBgm('audio/bw2-kanto-gym-leader.mp3',14626,58986,this.bgm);
 default:
-this.bgm=BattleSound.loadBgm('audio/bw2-rival.mp3',7152,68708,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sm-teamskull.mp3',54104,125377,this.bgm);
 break;}
 
 
@@ -2472,6 +2222,8 @@ var doCry=false;
 var scene=this.scene;
 if(speciesid==='dittoshadow'||speciesid==='roboheeyemcurio'||speciesid==='roboheeyemshadow'||speciesid==='castformshadow'||speciesid==='lugiashadow'||speciesid==='articunoshadow'||speciesid==='zapdosshadow'||speciesid==='moltresshadow'||speciesid==='longeonshadow'||speciesid==='snoruntshadow'||speciesid==='aronshadow'||speciesid==='furfroushadow'||speciesid==='garchompshadow'||speciesid==='gourgeistshadow'||speciesid==='heatmorshadow'||speciesid==='lileepshadow'||speciesid==='mareanieshadow'||speciesid==='marillshadow'||speciesid==='meowsticshadow'||speciesid==='mukshadow'||speciesid==='noivernshadow'||speciesid==='shroomishshadow'||speciesid==='spinarakshadow'||speciesid==='ribombeeshadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
 BattleOtherAnims.shadowpokemon.anim(scene,[this]);
+}else if(speciesid==='omniverum'){
+BattleOtherAnims.originaldragon.anim(scene,[this]);
 }
 
 this.resetStatbar(pokemon,true);
@@ -3063,6 +2815,10 @@ shadowwisp3:{
 url:'shadowwisp3.png',
 w:100,h:100},
 
+originball:{
+url:'originball.png',
+w:100,h:100},
+
 colorball1:{
 url:'colorball1.png',
 w:100,h:100},
@@ -3488,33 +3244,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-ancient.png',
-'bg-aquacordetown.jpg',
-'bg-autumn.png',
-'bg-beach.jpg',
-'bg-cave.png',
-'bg-city.jpg',
-'bg-dampcave.jpg',
-'bg-darkbeach.jpg',
-'bg-darkcity.jpg',
-'bg-darkmeadow.jpg',
-'bg-deepsea.jpg',
-'bg-desert.jpg',
-'bg-earthycave.jpg',
-'bg-elite4drake.jpg',
-'bg-flowers.png',
-'bg-forest.jpg',
-'bg-greens.png',
-'bg-greenssunset.png',
-'bg-icecave.jpg',
-'bg-leaderwallace.jpg',
-'bg-library.jpg',
-'bg-meadow.jpg',
-'bg-orasdesert.jpg',
-'bg-orassea.jpg',
-'bg-skypillar.jpg',
-'bg-snowscape.png',
-'bg-workout.png'];
+'bg-collision.png'];
 
 
 var BattleOtherAnims={
@@ -5895,8 +5625,73 @@ time:1000},
 'accel','fade');
 }},
 
-primalalpha:{
+originaldragon:{
 anim:function(scene,_ref50){var attacker=_ref50[0];
+scene.backgroundEffect('linear-gradient(rgb(27, 104, 21) 30%, #32e022)',1000,0.7,650);
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.z,
+scale:2,
+opacity:0.2,
+time:300},
+{
+scale:1,
+opacity:0.5,
+time:700},
+'linear','explode');
+scene.showEffect('wisp',{
+x:attacker.x+40,
+y:attacker.y-40,
+z:attacker.z,
+scale:0.2,
+opacity:0.8,
+time:300},
+{
+y:attacker.y+130,
+opacity:0,
+time:700},
+'accel','fade');
+scene.showEffect('iceball',{
+x:attacker.x-40,
+y:attacker.y-40,
+z:attacker.z,
+scale:0.2,
+opacity:0.8,
+time:400},
+{
+y:attacker.y+130,
+opacity:0,
+time:800},
+'accel','fade');
+scene.showEffect('iceball',{
+x:attacker.x+20,
+y:attacker.y-40,
+z:attacker.z,
+scale:0.2,
+opacity:0.8,
+time:500},
+{
+y:attacker.y+130,
+opacity:0,
+time:900},
+'accel','fade');
+scene.showEffect('wisp',{
+x:attacker.x-20,
+y:attacker.y-40,
+z:attacker.z,
+scale:0.2,
+opacity:0.8,
+time:600},
+{
+y:attacker.y+130,
+opacity:0,
+time:1000},
+'accel','fade');
+}},
+
+primalalpha:{
+anim:function(scene,_ref51){var attacker=_ref51[0];
 scene.backgroundEffect('#0000DD',500,0.4);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -5949,7 +5744,7 @@ time:600},
 }},
 
 primalcerise:{
-anim:function(scene,_ref51){var attacker=_ref51[0];
+anim:function(scene,_ref52){var attacker=_ref52[0];
 scene.backgroundEffect('#0000DD',500,0.4);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -6002,7 +5797,7 @@ time:600},
 }},
 
 primalcraftsman:{
-anim:function(scene,_ref52){var attacker=_ref52[0];
+anim:function(scene,_ref53){var attacker=_ref53[0];
 scene.backgroundEffect('#E8C900',500,0.4);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -6055,7 +5850,7 @@ time:600},
 }},
 
 primalteal:{
-anim:function(scene,_ref53){var attacker=_ref53[0];
+anim:function(scene,_ref54){var attacker=_ref54[0];
 scene.backgroundEffect('#008080',500,0.4);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -6108,7 +5903,7 @@ time:600},
 }},
 
 primalomega:{
-anim:function(scene,_ref54){var attacker=_ref54[0];
+anim:function(scene,_ref55){var attacker=_ref55[0];
 scene.backgroundEffect('linear-gradient(#390000 30%, #B84038)',500,0.4);
 scene.showEffect('flareball',{
 x:attacker.x,
@@ -6161,7 +5956,7 @@ time:600},
 }},
 
 megaevo:{
-anim:function(scene,_ref55){var attacker=_ref55[0];
+anim:function(scene,_ref56){var attacker=_ref56[0];
 scene.backgroundEffect('#835BA5',500,0.6);
 scene.showEffect('iceball',{
 x:attacker.x,
@@ -6214,7 +6009,7 @@ time:600},
 }},
 
 zpower:{
-anim:function(scene,_ref56){var attacker=_ref56[0];
+anim:function(scene,_ref57){var attacker=_ref57[0];
 scene.backgroundEffect('linear-gradient(#000000 20%, #0000DD)',1800,0.4);
 scene.showEffect('electroball',{
 x:attacker.x-60,
@@ -6337,7 +6132,7 @@ time:1600},
 }},
 
 powerconstruct:{
-anim:function(scene,_ref57){var attacker=_ref57[0];
+anim:function(scene,_ref58){var attacker=_ref58[0];
 var xf=[1,-1,1,-1];
 var yf=[1,-1,-1,1];
 var xf2=[1,0,-1,0];
@@ -6464,7 +6259,7 @@ time:500},
 }},
 
 ultraburst:{
-anim:function(scene,_ref58){var attacker=_ref58[0];
+anim:function(scene,_ref59){var attacker=_ref59[0];
 scene.backgroundEffect('#000000',600,0.5);
 scene.backgroundEffect('#ffffff',500,1,550);
 scene.showEffect('wisp',{
@@ -6655,7 +6450,7 @@ time:1000},
 
 var BattleStatusAnims={
 brn:{
-anim:function(scene,_ref59){var attacker=_ref59[0];
+anim:function(scene,_ref60){var attacker=_ref60[0];
 scene.showEffect('fireball',{
 x:attacker.x-20,
 y:attacker.y-15,
@@ -6673,7 +6468,7 @@ time:300},
 }},
 
 psn:{
-anim:function(scene,_ref60){var attacker=_ref60[0];
+anim:function(scene,_ref61){var attacker=_ref61[0];
 scene.showEffect('poisonwisp',{
 x:attacker.x+30,
 y:attacker.y-40,
@@ -6716,7 +6511,7 @@ time:500},
 }},
 
 slp:{
-anim:function(scene,_ref61){var attacker=_ref61[0];
+anim:function(scene,_ref62){var attacker=_ref62[0];
 scene.showEffect('wisp',{
 x:attacker.x,
 y:attacker.y+20,
@@ -6749,7 +6544,7 @@ time:600},
 }},
 
 par:{
-anim:function(scene,_ref62){var attacker=_ref62[0];
+anim:function(scene,_ref63){var attacker=_ref63[0];
 scene.showEffect('electroball',{
 x:attacker.x,
 y:attacker.y,
@@ -6789,7 +6584,7 @@ time:100},
 }},
 
 frz:{
-anim:function(scene,_ref63){var attacker=_ref63[0];
+anim:function(scene,_ref64){var attacker=_ref64[0];
 scene.showEffect('icicle',{
 x:attacker.x-30,
 y:attacker.y,
@@ -6840,7 +6635,7 @@ time:600},
 }},
 
 flinch:{
-anim:function(scene,_ref64){var attacker=_ref64[0];
+anim:function(scene,_ref65){var attacker=_ref65[0];
 scene.showEffect('shadowball',{
 x:attacker.x,
 y:attacker.y,
@@ -6855,7 +6650,7 @@ time:300},
 }},
 
 attracted:{
-anim:function(scene,_ref65){var attacker=_ref65[0];
+anim:function(scene,_ref66){var attacker=_ref66[0];
 scene.showEffect('heart',{
 x:attacker.x+20,
 y:attacker.y+20,
@@ -6895,7 +6690,7 @@ time:500},
 }},
 
 cursed:{
-anim:function(scene,_ref66){var attacker=_ref66[0];
+anim:function(scene,_ref67){var attacker=_ref67[0];
 scene.backgroundEffect('#000000',700,0.2);
 attacker.delay(300);
 attacker.anim({x:attacker.x-5,time:50});
@@ -6918,7 +6713,7 @@ time:600},
 }},
 
 confused:{
-anim:function(scene,_ref67){var attacker=_ref67[0];
+anim:function(scene,_ref68){var attacker=_ref68[0];
 scene.showEffect('electroball',{
 x:attacker.x+50,
 y:attacker.y+30,
@@ -6974,7 +6769,7 @@ time:800},
 }},
 
 confusedselfhit:{
-anim:function(scene,_ref68){var attacker=_ref68[0];
+anim:function(scene,_ref69){var attacker=_ref69[0];
 scene.showEffect('wisp',{
 x:attacker.x,
 y:attacker.y,
