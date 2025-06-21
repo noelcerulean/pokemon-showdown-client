@@ -1543,11 +1543,11 @@ class BattleScene {
 		this.bgmNum = bgmNum;
 
 		switch (bgmNum) {
-			case -141:
-				this.bgm = BattleSound.loadBgm('audio/sm-teamskull.mp3', 54104, 125377, this.bgm);
+			case 1:
+				this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/sm-teamskull.mp3', 54104, 125377, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/cipher-peon.mp3', 7800, 80000, this.bgm);
 				break;
 			}
 	
@@ -2787,6 +2787,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'wisp.png',
 		w: 100, h: 100,
 	},
+	originwisp: {
+		url: 'originwisp.png',
+		w: 100, h: 100,
+	},
 	poisonwisp: {
 		url: 'poisonwisp.png',
 		w: 100, h: 100,
@@ -2849,6 +2853,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	},
 	colorball8: {
 		url: 'colorball8.png',
+		w: 100, h: 100,
+	},
+	colorball9: {
+		url: 'colorball9.png',
 		w: 100, h: 100,
 	},
 	fireball: {
