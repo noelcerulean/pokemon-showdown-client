@@ -1544,10 +1544,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/cipher-peon.mp3',7800,80000,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-rocket.mp3',57596,108403,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/cipher-peon.mp3',7800,80000,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-rocket.mp3',57596,108403,this.bgm);
 break;}
 
 
