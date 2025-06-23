@@ -688,6 +688,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	arachgrape: 1476 + 165,
 	tarazzpula: 1476 + 166,
 	warpharos: 1476 + 167,
+	scraftymega: 1476 + 168,
 
 	//hypnomons
 	ano: 304,

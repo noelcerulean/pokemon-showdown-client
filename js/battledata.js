@@ -1678,6 +1678,7 @@ raptopea:1476+164,
 arachgrape:1476+165,
 tarazzpula:1476+166,
 warpharos:1476+167,
+scraftymega:1476+168,
 
 
 ano:304,

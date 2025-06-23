@@ -1074,6 +1074,7 @@ exports.BattlePokemonSprites = {
 	crustlefnf:{num:558},
 	scraggy:{num:559},
 	scrafty:{num:560},
+	scraftymega:{num:560},
 	sigilyph:{num:561},
 	yamask:{num:562},
 	yamaskgalar:{num:562},

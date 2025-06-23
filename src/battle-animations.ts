@@ -1544,10 +1544,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/hgss-rocket.mp3', 57596, 108403, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/rumbleu-kyuremblack.mp3', 4585, 68587, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/hgss-rocket.mp3', 57596, 108403, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/rumbleu-kyuremblack.mp3', 4585, 68587, this.bgm);
 				break;
 			}
 	
