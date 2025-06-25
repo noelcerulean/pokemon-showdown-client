@@ -1544,10 +1544,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/rumbleu-kyuremblack.mp3',4585,68587,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dark-colo.mp3',6816,107573,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/rumbleu-kyuremblack.mp3',4585,68587,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dark-colo.mp3',6816,107573,this.bgm);
 break;}
 
 

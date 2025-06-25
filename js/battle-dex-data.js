@@ -689,6 +689,7 @@ arachgrape:1476+165,
 tarazzpula:1476+166,
 warpharos:1476+167,
 scraftymega:1476+168,
+porygonzmega:1476+169,
 
 
 ano:304,
