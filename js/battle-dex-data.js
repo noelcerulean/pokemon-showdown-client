@@ -161,7 +161,8 @@ var BattleBaseSpeciesChart=[
 "wobbuffet","gorochu","emolgadelta","archebot","zangoose","seviper","sledgesparce",
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
-"despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple"];
+"despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple",
+"enchantice"];
 
 
 var BattlePokemonIconIndexes={
@@ -690,6 +691,8 @@ tarazzpula:1476+166,
 warpharos:1476+167,
 scraftymega:1476+168,
 porygonzmega:1476+169,
+enchantice:1476+170,
+enchanticegothic:1476+171,
 
 
 ano:304,

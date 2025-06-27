@@ -267,6 +267,8 @@ exports.BattlePokemonSprites = {
 	mrmimegalar:{num:122},
 	scyther:{num:123},
 	jynx:{num:124},
+	enchantice:{num:-585},
+	enchanticegothic:{num:-585},
 	electabuzz:{num:125},
 	magmar:{num:126},
 	pinsir:{num:127},
