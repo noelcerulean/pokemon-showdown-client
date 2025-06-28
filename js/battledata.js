@@ -1682,7 +1682,7 @@ warpharos:1476+167,
 scraftymega:1476+168,
 porygonzmega:1476+169,
 enchantice:1476+170,
-enchanticegothic:1476+171,
+enchanticegothic:1476+170,
 
 
 ano:304,

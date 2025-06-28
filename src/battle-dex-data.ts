@@ -692,7 +692,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	scraftymega: 1476 + 168,
 	porygonzmega: 1476 + 169,
 	enchantice: 1476 + 170,
-	enchanticegothic: 1476 + 171,
+	enchanticegothic: 1476 + 170,
 
 	//hypnomons
 	ano: 304,
