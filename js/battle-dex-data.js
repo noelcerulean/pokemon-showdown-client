@@ -693,6 +693,12 @@ scraftymega:1476+168,
 porygonzmega:1476+169,
 enchantice:1476+170,
 enchanticegothic:1476+170,
+enchanticepeach:1476+170,
+luvdiscfnf:1476+171,
+shorelorn:1476+172,
+pickpossum:1476+173,
+pickpossumpopo:1476+173,
+omniverum:1476+174,
 
 
 ano:304,

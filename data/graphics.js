@@ -88,7 +88,9 @@ BattleScene=function(){
 
 
 
-function BattleScene(battle,$frame,$logFrame){this.battle=void 0;this.animating=true;this.acceleration=1;this.gen=7;this.mod='';this.activeCount=1;this.numericId=0;this.$frame=void 0;this.$battle=null;this.$options=null;this.log=void 0;this.$terrain=null;this.$weather=null;this.$bgEffect=null;this.$bg=null;this.$sprite=null;this.$sprites=[null,null];this.$spritesFront=[null,null];this.$stat=null;this.$fx=null;this.$leftbar=null;this.$rightbar=null;this.$turn=null;this.$messagebar=null;this.$delay=null;this.$hiddenMessage=null;this.$tooltips=null;this.tooltips=void 0;this.sideConditions=[{},{}];this.preloadDone=0;this.preloadNeeded=0;this.bgm=null;this.backdropImage='';this.bgmNum=0;this.preloadCache={};this.messagebarOpen=false;this.customControls=false;this.interruptionCount=1;this.curWeather='';this.curTerrain='';this.timeOffset=0;this.pokemonTimeOffset=0;this.minDelay=0;this.activeAnimations=$();
+
+
+function BattleScene(battle,$frame,$logFrame){this.battle=void 0;this.animating=true;this.acceleration=1;this.gen=7;this.mod='';this.activeCount=1;this.numericId=0;this.$frame=void 0;this.$battle=null;this.$options=null;this.log=void 0;this.$terrain=null;this.$diffusion=null;this.$weather=null;this.$bgEffect=null;this.$bg=null;this.$sprite=null;this.$sprites=[null,null];this.$spritesFront=[null,null];this.$stat=null;this.$fx=null;this.$leftbar=null;this.$rightbar=null;this.$turn=null;this.$messagebar=null;this.$delay=null;this.$hiddenMessage=null;this.$tooltips=null;this.tooltips=void 0;this.sideConditions=[{},{}];this.preloadDone=0;this.preloadNeeded=0;this.bgm=null;this.backdropImage='';this.bgmNum=0;this.preloadCache={};this.messagebarOpen=false;this.customControls=false;this.interruptionCount=1;this.curWeather='';this.curTerrain='';this.curDiffusion='';this.timeOffset=0;this.pokemonTimeOffset=0;this.minDelay=0;this.activeAnimations=$();
 this.battle=battle;
 
 $frame.addClass('battle');
@@ -143,6 +145,7 @@ this.$battle=$('<div class="innerbattle"></div>');
 this.$frame.append(this.$battle);
 
 this.$bg=$('<div class="backdrop" style="background-image:url('+Dex.resourcePrefix+this.backdropImage+');display:block;opacity:0.8"></div>');
+this.$diffusion=$('<div class="weather"></div>');
 this.$terrain=$('<div class="weather"></div>');
 this.$weather=$('<div class="weather"></div>');
 this.$bgEffect=$('<div></div>');
@@ -168,6 +171,7 @@ this.$tooltips=$('<div class="tooltips"></div>');
 
 this.$battle.append(this.$bg);
 this.$battle.append(this.$terrain);
+this.$battle.append(this.$diffusion);
 this.$battle.append(this.$weather);
 this.$battle.append(this.$bgEffect);
 this.$battle.append(this.$sprite);
@@ -189,6 +193,7 @@ this.messagebarOpen=false;
 this.timeOffset=0;
 this.pokemonTimeOffset=0;
 this.curTerrain='';
+this.curDiffusion='';
 this.curWeather='';
 
 this.log.battleParser.perspective=this.battle.mySide.sideid;
@@ -972,21 +977,35 @@ if(!terrain)terrain='pseudo';
 break;}
 
 }
+var diffusion='';for(var _i12=0,_this$battle$pseudoWe3=
+this.battle.pseudoWeather;_i12<_this$battle$pseudoWe3.length;_i12++){var _pseudoWeatherData=_this$battle$pseudoWe3[_i12];
+var _pwid=toID(_pseudoWeatherData[0]);
+switch(_pwid){
+case'evanescediffusion':
+diffusion=_pwid;
+break;
+default:
+if(!diffusion)diffusion='pseudo';
+break;}
+
+}
 if(weather==='desolateland'||weather==='primordialsea'||weather==='shadowsky'||weather==='deltastream'){
 isIntense=true;
 }
 
-var weatherhtml=this.weatherLeft();for(var _i12=0,_this$battle$sides4=
-this.battle.sides;_i12<_this$battle$sides4.length;_i12++){var side=_this$battle$sides4[_i12];
+var weatherhtml=this.weatherLeft();for(var _i13=0,_this$battle$sides4=
+this.battle.sides;_i13<_this$battle$sides4.length;_i13++){var side=_this$battle$sides4[_i13];
 weatherhtml+=this.sideConditionsLeft(side);
 }
 if(weatherhtml)weatherhtml="<br />"+weatherhtml;
 
 if(instant){
 this.$weather.html('<em>'+weatherhtml+'</em>');
-if(this.curWeather===weather&&this.curTerrain===terrain)return;
+if(this.curWeather===weather&&this.curTerrain===terrain&&this.curDiffusion===diffusion)return;
 this.$terrain.attr('class',terrain?'weather '+terrain+'weather':'weather');
 this.curTerrain=terrain;
+this.$diffusion.attr('class',diffusion?'weather '+diffusion+'weather':'weather');
+this.curDiffusion=diffusion;
 this.$weather.attr('class',weather?'weather '+weather+'weather':'weather');
 this.$weather.css('opacity',isIntense||!weather?0.9:0.5);
 this.curWeather=weather;
@@ -1006,15 +1025,35 @@ this.curWeather=weather;
 this.$weather.html('<em>'+weatherhtml+'</em>');
 }
 
-if(terrain!==this.curTerrain){
+var diffusionOpacity=0.5;
+var terrainOpacity=0.5;
+if(terrain==='pseudo'){
+diffusionOpacity=1;
+terrainOpacity=0;
+}else
+if(diffusion==='pseudo'){
+diffusionOpacity=0;
+terrainOpacity=1;
+}
+if(terrain!==this.curTerrain||diffusion!==this.curDiffusion){
+
 this.$terrain.animate({
 top:360,
 opacity:0},
 this.curTerrain?400:1,function(){
 _this3.$terrain.attr('class',terrain?'weather '+terrain+'weather':'weather');
-_this3.$terrain.animate({top:0,opacity:1},400);
+_this3.$terrain.animate({top:0,opacity:terrainOpacity},400);
 });
 this.curTerrain=terrain;
+
+this.$diffusion.animate({
+top:360,
+opacity:0},
+this.curDiffusion?400:1,function(){
+_this3.$diffusion.attr('class',diffusion?'weather '+diffusion+'weather':'weather');
+_this3.$diffusion.animate({top:0,opacity:diffusionOpacity},400);
+});
+this.curDiffusion=diffusion;
 }
 };_proto.
 resetTurn=function resetTurn(){
@@ -1340,8 +1379,8 @@ break;}
 };_proto.
 removeSideCondition=function removeSideCondition(siden,id){
 if(!this.animating)return;
-if(this.sideConditions[siden][id]){for(var _i13=0,_this$sideConditions$=
-this.sideConditions[siden][id];_i13<_this$sideConditions$.length;_i13++){var sprite=_this$sideConditions$[_i13];sprite.destroy();}
+if(this.sideConditions[siden][id]){for(var _i14=0,_this$sideConditions$=
+this.sideConditions[siden][id];_i14<_this$sideConditions$.length;_i14++){var sprite=_this$sideConditions$[_i14];sprite.destroy();}
 delete this.sideConditions[siden][id];
 }
 };_proto.
@@ -1544,10 +1583,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/usum-giovanni.mp3',16795,109918,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/swsh-rose.mp3',49622,129804,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/usum-giovanni.mp3',16795,109918,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/swsh-rose.mp3',49622,129804,this.bgm);
 break;}
 
 
@@ -1946,9 +1985,9 @@ x:this.leftof(-50),
 y:this.y,
 z:this.z,
 opacity:0.5},
-this.subsp),300);for(var _i14=0,_this$scene$battle$si=
-this.scene.battle.sides;_i14<_this$scene$battle$si.length;_i14++){var side=_this$scene$battle$si[_i14];for(var _i15=0,_side$active2=
-side.active;_i15<_side$active2.length;_i15++){var active=_side$active2[_i15];
+this.subsp),300);for(var _i15=0,_this$scene$battle$si=
+this.scene.battle.sides;_i15<_this$scene$battle$si.length;_i15++){var side=_this$scene$battle$si[_i15];for(var _i16=0,_side$active2=
+side.active;_i16<_side$active2.length;_i16++){var active=_side$active2[_i16];
 if(active&&active.sprite!==this){
 active.sprite.delay(300);
 }
@@ -2575,8 +2614,8 @@ time:instant?0:300});
 removeEffect=function removeEffect(id,instant){
 if(id==='formechange')this.removeTransform();
 if(id==='substitute')this.animSubFade(instant);
-if(this.effects[id]){for(var _i16=0,_this$effects$id=
-this.effects[id];_i16<_this$effects$id.length;_i16++){var sprite=_this$effects$id[_i16];sprite.destroy();}
+if(this.effects[id]){for(var _i17=0,_this$effects$id=
+this.effects[id];_i17<_this$effects$id.length;_i17++){var sprite=_this$effects$id[_i17];sprite.destroy();}
 delete this.effects[id];
 }
 };_proto3.
@@ -2694,8 +2733,8 @@ status+='<span class="par">PAR</span> ';
 status+='<span class="frz">FRZ</span> ';
 }
 if(pokemon.volatiles.typechange&&pokemon.volatiles.typechange[1]){
-var types=pokemon.volatiles.typechange[1].split('/');for(var _i17=0;_i17<
-types.length;_i17++){var type=types[_i17];
+var types=pokemon.volatiles.typechange[1].split('/');for(var _i18=0;_i18<
+types.length;_i18++){var type=types[_i18];
 status+='<img src="'+Dex.resourcePrefix+'sprites/types/'+encodeURIComponent(type)+'.png" alt="'+type+'" class="pixelated" /> ';
 }
 }
@@ -2712,12 +2751,12 @@ status+='<span class="'+pokemon.getBoostType(stat)+'">'+pokemon.getBoost(stat)+'
 for(var i in pokemon.volatiles){
 status+=PokemonSprite.getEffectTag(i);
 }
-for(var _i18 in pokemon.turnstatuses){
-if(_i18==='roost'&&!pokemon.getTypeList().includes('Flying'))continue;
-status+=PokemonSprite.getEffectTag(_i18);
-}
-for(var _i19 in pokemon.movestatuses){
+for(var _i19 in pokemon.turnstatuses){
+if(_i19==='roost'&&!pokemon.getTypeList().includes('Flying'))continue;
 status+=PokemonSprite.getEffectTag(_i19);
+}
+for(var _i20 in pokemon.movestatuses){
+status+=PokemonSprite.getEffectTag(_i20);
 }
 var statusbar=this.$statbar.find('.status');
 statusbar.html(status);
@@ -37302,8 +37341,685 @@ time:300},
 }
 }},
 
-photongeyser:{
+burstofideals:{
 anim:function(scene,_ref410){var attacker=_ref410[0],defender=_ref410[1];
+scene.backgroundEffect('rgb(29, 87, 6)',1000,0.5);
+scene.backgroundEffect(' #FFFFFF',600,0.8,2100);
+scene.showEffect('shadowball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:1,
+time:0},
+{
+scale:0.6,
+time:400},
+'decel','fade');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:1,
+time:200},
+{
+scale:0.8,
+time:600},
+'decel','fade');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:1,
+time:400},
+{
+scale:1,
+time:800},
+'decel','explode');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:0.5,
+time:0},
+{
+scale:0.8,
+time:800},
+'linear','fade');
+scene.showEffect('electroball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0.3,
+opacity:1,
+time:800},
+{
+scale:1.2,
+time:1300},
+'linear','fade');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0.3,
+opacity:0.3,
+time:800},
+{
+scale:1.2,
+time:1300},
+'linear','fade');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:1.2,
+opacity:0.8,
+time:1300},
+{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+time:1500},
+'linear','explode');
+scene.showEffect('iceball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:1.2,
+opacity:0.3,
+time:1300},
+{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+time:1500},
+'linear','explode');
+scene.showEffect('wisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0.2,
+opacity:1,
+time:0},
+{
+scale:0.5,
+time:1200},
+'decel','fade');
+scene.showEffect('wisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:2,
+opacity:1,
+time:900},
+{
+time:1200},
+'decel','fade');
+scene.showEffect('wisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:2,
+opacity:1,
+time:1300},
+{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+scale:2.5,
+time:1500},
+'linear','explode');
+
+scene.showEffect('originball',{
+x:defender.x,
+y:defender.y-60,
+z:defender.z,
+scale:0,
+xscale:0,
+opacity:0.5,
+time:1500},
+{
+scale:2,
+xscale:12,
+opacity:0,
+time:2500},
+'accel');
+scene.showEffect('originwisp',{
+x:defender.x,
+y:defender.y+350,
+z:defender.z,
+opacity:1,
+scale:8,
+xscale:0,
+yscale:13,
+time:1500},
+{
+xscale:4,
+time:2500},
+'accel','explode');
+scene.showEffect('originwisp',{
+x:defender.x,
+y:defender.y-30,
+z:defender.z,
+opacity:1,
+scale:2,
+time:1500},
+{
+scale:6,
+time:2500},
+'decel','explode');
+defender.delay(1500);
+defender.anim({
+z:defender.behind(10),
+opacity:0,
+time:200},
+'swing');
+defender.delay(700);
+defender.anim({
+time:300},
+'swing');
+}},
+
+taogenesis:{
+anim:function(scene,_ref411){var attacker=_ref411[0],defenders=_ref411.slice(1);
+attacker.anim({x:attacker.x-10,time:300});
+attacker.anim({x:attacker.x+10,time:400});
+attacker.anim({x:attacker.x,time:300});
+attacker.delay(50);
+attacker.anim({
+y:attacker.y-10,
+yscale:0.9,
+time:50});
+
+attacker.anim({
+y:attacker.y+250,
+yscale:1,
+time:300},
+'decel');
+attacker.delay(1700);
+attacker.anim({
+opacity:0,
+time:1});
+
+attacker.anim({
+opacity:1,
+time:200});for(var _i28=0;_i28<
+
+defenders.length;_i28++){var _defender15=defenders[_i28];
+_defender15.delay(1825);
+_defender15.anim({
+z:_defender15.behind(5),
+time:75},
+'swing');
+_defender15.anim({
+time:75},
+'swing');
+_defender15.anim({
+z:_defender15.behind(5),
+time:75},
+'swing');
+_defender15.anim({
+time:75},
+'swing');
+_defender15.anim({
+z:_defender15.behind(5),
+time:75},
+'swing');
+_defender15.anim({
+time:75},
+'swing');
+_defender15.anim({
+z:_defender15.behind(5),
+time:75},
+'swing');
+_defender15.anim({
+time:75},
+'swing');
+_defender15.anim({
+z:_defender15.behind(15),
+time:75,
+opacity:0},
+'swing');
+_defender15.delay(400);
+_defender15.anim({
+time:200},
+'swing');
+}
+var defender=defenders[1]||defenders[0];
+scene.backgroundEffect('rgb(28, 73, 11)',300,0.9);
+scene.backgroundEffect("url('https://"+Config.routes.client+"/sprites/gen6bgs/bg-champion.png')",2000,0.7,300);
+scene.backgroundEffect('linear-gradient(rgb(121, 235, 93) 20%,rgb(34, 85, 11)',2000,0.6,300);
+scene.backgroundEffect('rgb(203, 255, 155)',1000,0.9,2200);
+scene.showEffect('shine',{
+x:attacker.x-10,
+y:attacker.y-10,
+z:attacker.z,
+scale:0.3,
+opacity:0.6},
+{
+opacity:0,
+time:300},
+'decel');
+scene.showEffect('shine',{
+x:attacker.x+20,
+y:attacker.y-15,
+z:attacker.z,
+scale:0.3,
+opacity:0.6,
+time:100},
+{
+opacity:0,
+time:400},
+'decel');
+scene.showEffect('shine',{
+x:attacker.x-5,
+y:attacker.y+15,
+z:attacker.z,
+scale:0.3,
+opacity:0.6,
+time:200},
+{
+opacity:0,
+time:500},
+'decel');
+scene.showEffect('shine',{
+x:attacker.x+5,
+y:attacker.y-10,
+z:attacker.z,
+scale:0.3,
+opacity:0.6,
+time:300},
+{
+opacity:0,
+time:600},
+'accel');
+
+scene.showEffect('shine',{
+x:attacker.x+20,
+y:attacker.y-30,
+z:attacker.z,
+scale:0.2,
+opacity:1,
+time:0},
+{
+y:attacker.y+40,
+opacity:0,
+time:400},
+'accel');
+scene.showEffect('shine',{
+x:attacker.x-20,
+y:attacker.y+40,
+z:attacker.z,
+scale:0.2,
+opacity:1,
+time:200},
+{
+y:attacker.y+40,
+opacity:0,
+time:600},
+'accel');
+scene.showEffect('shine',{
+x:attacker.x,
+y:attacker.y+30,
+z:attacker.z,
+scale:0.2,
+opacity:1,
+time:400},
+{
+y:attacker.y+40,
+opacity:0,
+time:800},
+'accel');
+
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:1700},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2100},
+'linear');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:1800},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2200},
+'linear');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:1900},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2300},
+'linear');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:2000},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2400},
+'linear');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:2100},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2500},
+'linear');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:2200},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2600},
+'linear');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:2300},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2700},
+'linear');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:2400},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2800},
+'linear');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y+200,
+z:attacker.z,
+scale:0,
+opacity:1,
+time:2500},
+{
+y:defender.y-200,
+z:defender.behind(150),
+scale:10,
+opacity:0,
+time:2900},
+'linear');
+
+scene.showEffect('wisp',{
+x:defender.x+40,
+y:defender.y,
+z:defender.z,
+scale:0,
+opacity:0.6,
+time:2300},
+{
+scale:6,
+opacity:0},
+'decel');
+scene.showEffect('wisp',{
+x:defender.x-40,
+y:defender.y-20,
+z:defender.z,
+scale:0,
+opacity:0.6,
+time:2550},
+{
+scale:6,
+opacity:0},
+'decel');
+scene.showEffect('wisp',{
+x:defender.x+10,
+y:defender.y+20,
+z:defender.z,
+scale:0,
+opacity:0.6,
+time:2700},
+{
+scale:6,
+opacity:0},
+'decel');
+}},
+
+truthrupture:{
+anim:function(scene,_ref412){var attacker=_ref412[0],defender=_ref412[1];
+scene.backgroundEffect('rgb(29, 87, 6)',1000,0.5);
+scene.backgroundEffect(' #FFFFFF',600,0.8,2100);
+scene.showEffect('shadowball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:1,
+time:0},
+{
+scale:0.6,
+time:400},
+'decel','fade');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:1,
+time:200},
+{
+scale:0.8,
+time:600},
+'decel','fade');
+scene.showEffect('energyball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:1,
+time:400},
+{
+scale:1,
+time:800},
+'decel','explode');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0,
+opacity:0.5,
+time:0},
+{
+scale:0.8,
+time:800},
+'linear','fade');
+scene.showEffect('electroball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0.3,
+opacity:1,
+time:800},
+{
+scale:1.2,
+time:1300},
+'linear','fade');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0.3,
+opacity:0.3,
+time:800},
+{
+scale:1.2,
+time:1300},
+'linear','fade');
+scene.showEffect('originball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:1.2,
+opacity:0.8,
+time:1300},
+{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+time:1500},
+'linear','explode');
+scene.showEffect('iceball',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:1.2,
+opacity:0.3,
+time:1300},
+{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+time:1500},
+'linear','explode');
+scene.showEffect('wisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:0.2,
+opacity:1,
+time:0},
+{
+scale:0.5,
+time:1200},
+'decel','fade');
+scene.showEffect('wisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:2,
+opacity:1,
+time:900},
+{
+time:1200},
+'decel','fade');
+scene.showEffect('wisp',{
+x:attacker.x,
+y:attacker.y,
+z:attacker.behind(-20),
+scale:2,
+opacity:1,
+time:1300},
+{
+x:defender.x,
+y:defender.y,
+z:defender.z,
+scale:2.5,
+time:1500},
+'linear','explode');
+
+scene.showEffect('originball',{
+x:defender.x,
+y:defender.y-60,
+z:defender.z,
+scale:0,
+xscale:0,
+opacity:0.5,
+time:1500},
+{
+scale:2,
+xscale:12,
+opacity:0,
+time:2500},
+'accel');
+scene.showEffect('originwisp',{
+x:defender.x,
+y:defender.y+350,
+z:defender.z,
+opacity:1,
+scale:8,
+xscale:0,
+yscale:13,
+time:1500},
+{
+xscale:4,
+time:2500},
+'accel','explode');
+scene.showEffect('originwisp',{
+x:defender.x,
+y:defender.y-30,
+z:defender.z,
+opacity:1,
+scale:2,
+time:1500},
+{
+scale:6,
+time:2500},
+'decel','explode');
+defender.delay(1500);
+defender.anim({
+z:defender.behind(10),
+opacity:0,
+time:200},
+'swing');
+defender.delay(700);
+defender.anim({
+time:300},
+'swing');
+}},
+
+photongeyser:{
+anim:function(scene,_ref413){var attacker=_ref413[0],defender=_ref413[1];
 scene.backgroundEffect('#000000',1000,0.5);
 scene.backgroundEffect('#FFFFFF',600,0.8,2100);
 scene.showEffect('shadowball',{
@@ -37485,38 +38201,38 @@ time:300},
 }},
 
 coreenforcer:{
-anim:function(scene,_ref411){var attacker=_ref411[0],defenders=_ref411.slice(1);
+anim:function(scene,_ref414){var attacker=_ref414[0],defenders=_ref414.slice(1);
 scene.backgroundEffect('#082179',1600,0.5,300);
-scene.backgroundEffect('linear-gradient(#46AF71 20%, #1170F0)',1600,0.4,300);for(var _i28=0;_i28<
+scene.backgroundEffect('linear-gradient(#46AF71 20%, #1170F0)',1600,0.4,300);for(var _i29=0;_i29<
 
-defenders.length;_i28++){var _defender15=defenders[_i28];
-_defender15.delay(2075);
-_defender15.anim({
-x:_defender15.x-30,
+defenders.length;_i29++){var _defender16=defenders[_i29];
+_defender16.delay(2075);
+_defender16.anim({
+x:_defender16.x-30,
 time:75});
 
-_defender15.anim({
-x:_defender15.x+30,
+_defender16.anim({
+x:_defender16.x+30,
 time:100});
 
-_defender15.anim({
-x:_defender15.x-30,
+_defender16.anim({
+x:_defender16.x-30,
 time:100});
 
-_defender15.anim({
-x:_defender15.x+30,
+_defender16.anim({
+x:_defender16.x+30,
 time:100});
 
-_defender15.anim({
-x:_defender15.x-30,
+_defender16.anim({
+x:_defender16.x-30,
 time:100});
 
-_defender15.anim({
-x:_defender15.x+30,
+_defender16.anim({
+x:_defender16.x+30,
 time:100});
 
-_defender15.anim({
-x:_defender15.x,
+_defender16.anim({
+x:_defender16.x,
 time:100});
 
 }
@@ -37564,37 +38280,37 @@ xstep=(defender.x-defender.leftof(25))/5;
 ystep=(defender.y-250-attacker.y)/5;
 zstep=(defender.behind(-100)-attacker.z)/5;
 
-for(var _i29=0;_i29<6;_i29++){
+for(var _i30=0;_i30<6;_i30++){
 scene.showEffect('wisp',{
-x:attacker.leftof(-50)+xstep*(_i29+1),
-y:attacker.y+275+ystep*(_i29+1),
-z:attacker.behind(-150)+zstep*(_i29+1),
+x:attacker.leftof(-50)+xstep*(_i30+1),
+y:attacker.y+275+ystep*(_i30+1),
+z:attacker.behind(-150)+zstep*(_i30+1),
 scale:1.3,
 opacity:1,
-time:5*_i29+900},
+time:5*_i30+900},
 {
-x:defender.leftof(-50)+xstep*(_i29+1),
-z:attacker.z+zstep*(_i29+1),
+x:defender.leftof(-50)+xstep*(_i30+1),
+z:attacker.z+zstep*(_i30+1),
 opacity:0,
-time:100*_i29+1000},
+time:100*_i30+1000},
 'linear');
 }
 xstep=(defender.x-defender.leftof(-15))/5;
 ystep=(defender.y-275-attacker.y-25)/5;
 zstep=(defender.z-attacker.z)/5;
 
-for(var _i30=0;_i30<6;_i30++){
+for(var _i31=0;_i31<6;_i31++){
 scene.showEffect('wisp',{
-x:attacker.leftof(50)+xstep*(_i30+1),
-y:attacker.y+275+ystep*(_i30+1),
-z:attacker.z+zstep*(_i30+1),
+x:attacker.leftof(50)+xstep*(_i31+1),
+y:attacker.y+275+ystep*(_i31+1),
+z:attacker.z+zstep*(_i31+1),
 scale:1.3,
 opacity:1,
-time:5*_i30+1100},
+time:5*_i31+1100},
 {
-x:defender.leftof(50)+xstep*(_i30+1),
+x:defender.leftof(50)+xstep*(_i31+1),
 opacity:0,
-time:100*_i30+1200},
+time:100*_i31+1200},
 'linear');
 }
 
@@ -37788,7 +38504,7 @@ opacity:0},
 
 
 shadowambush:{
-anim:function(scene,_ref412){var attacker=_ref412[0],defender=_ref412[1];
+anim:function(scene,_ref415){var attacker=_ref415[0],defender=_ref415[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowshadowball2',{
 x:attacker.x,
@@ -37902,7 +38618,7 @@ time:300},
 }},
 
 shadowanvil:{
-anim:function(scene,_ref413){var attacker=_ref413[0],defender=_ref413[1];
+anim:function(scene,_ref416){var attacker=_ref416[0],defender=_ref416[1];
 scene.backgroundEffect('#110131',800,0.7);
 scene.showEffect('shadowshadowball',{
 x:defender.x,
@@ -37969,7 +38685,7 @@ time:300},
 }},
 
 shadowbandit:{
-anim:function(scene,_ref414){var attacker=_ref414[0],defender=_ref414[1];
+anim:function(scene,_ref417){var attacker=_ref417[0],defender=_ref417[1];
 scene.backgroundEffect('#110131',700,0.7);
 BattleOtherAnims.sneakattack.anim(scene,[attacker,defender]);
 }},
@@ -37978,7 +38694,7 @@ shadowwall:{
 anim:BattleOtherAnims.shadowselfstatus.anim},
 
 shadowbeam:{
-anim:function(scene,_ref415){var attacker=_ref415[0],defender=_ref415[1];
+anim:function(scene,_ref418){var attacker=_ref418[0],defender=_ref418[1];
 var xstep=(defender.x-attacker.x)/5;
 var ystep=(defender.x-200-attacker.x)/5;
 var zstep=(defender.z-attacker.z)/5;
@@ -38123,7 +38839,7 @@ time:775},
 prepareAnim:BattleOtherAnims.shadowchargestatus.anim},
 
 shadowblast:{
-anim:function(scene,_ref416){var attacker=_ref416[0],defender=_ref416[1];
+anim:function(scene,_ref419){var attacker=_ref419[0],defender=_ref419[1];
 var xstep=(defender.x-attacker.x)/5;
 var ystep=(defender.x-200-attacker.x)/5;
 var zstep=(defender.z-attacker.z)/5;
@@ -38342,7 +39058,7 @@ time:300},
 }},
 
 shadowbluff:{
-anim:function(scene,_ref417){var attacker=_ref417[0],defender=_ref417[1];
+anim:function(scene,_ref420){var attacker=_ref420[0],defender=_ref420[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowrightchop',{
 x:defender.x+15,
@@ -38426,7 +39142,7 @@ time:300},
 }},
 
 shadowbreak:{
-anim:function(scene,_ref418){var attacker=_ref418[0],defender=_ref418[1];
+anim:function(scene,_ref421){var attacker=_ref421[0],defender=_ref421[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowimpact',{
 x:defender.x,
@@ -38499,7 +39215,7 @@ shadowchant:{
 anim:BattleOtherAnims.shadowlightstatus.anim},
 
 shadowcharge:{
-anim:function(scene,_ref419){var attacker=_ref419[0],defender=_ref419[1];
+anim:function(scene,_ref422){var attacker=_ref422[0],defender=_ref422[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x,
@@ -38603,13 +39319,13 @@ time:300},
 }},
 
 shadowchew:{
-anim:function(scene,_ref420){var attacker=_ref420[0],defender=_ref420[1];
+anim:function(scene,_ref423){var attacker=_ref423[0],defender=_ref423[1];
 BattleOtherAnims.shadowbite.anim(scene,[attacker,defender]);
 BattleOtherAnims.contactattack.anim(scene,[attacker,defender]);
 }},
 
 shadowchop:{
-anim:function(scene,_ref421){var attacker=_ref421[0],defender=_ref421[1];
+anim:function(scene,_ref424){var attacker=_ref424[0],defender=_ref424[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowrightchop',{
 x:defender.leftof(30),
@@ -38627,7 +39343,7 @@ BattleOtherAnims.contactattack.anim(scene,[attacker,defender]);
 }},
 
 shadowcinder:{
-anim:function(scene,_ref422){var attacker=_ref422[0],defender=_ref422[1];
+anim:function(scene,_ref425){var attacker=_ref425[0],defender=_ref425[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('bluefireball',{
 x:attacker.x,
@@ -38677,7 +39393,7 @@ time:900},
 }},
 
 shadowrequital:{
-anim:function(scene,_ref423){var attacker=_ref423[0],defender=_ref423[1];
+anim:function(scene,_ref426){var attacker=_ref426[0],defender=_ref426[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp2',{
 x:attacker.x,
@@ -38737,7 +39453,7 @@ time:350},
 }},
 
 shadowdance:{
-anim:function(scene,_ref424){var attacker=_ref424[0];
+anim:function(scene,_ref427){var attacker=_ref427[0];
 BattleOtherAnims.shake.anim(scene,[attacker]);
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp',{
@@ -38785,7 +39501,7 @@ time:600},
 }},
 
 shadowdesolation:{
-anim:function(scene,_ref425){var attacker=_ref425[0],defender=_ref425[1];
+anim:function(scene,_ref428){var attacker=_ref428[0],defender=_ref428[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect(attacker.sp,{
 x:attacker.x,
@@ -38805,7 +39521,7 @@ time:600},
 }},
 
 shadowdestruction:{
-anim:function(scene,_ref426){var attacker=_ref426[0],defender=_ref426[1];
+anim:function(scene,_ref429){var attacker=_ref429[0],defender=_ref429[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowimpact2',{
 x:defender.x,
@@ -38875,7 +39591,7 @@ time:300},
 }},
 
 shadowdetonation:{
-anim:function(scene,_ref427){var attacker=_ref427[0];
+anim:function(scene,_ref430){var attacker=_ref430[0];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowfireball3',{
 x:attacker.x+40,
@@ -38917,7 +39633,7 @@ opacity:0},
 }},
 
 shadowdevastation:{
-anim:function(scene,_ref428){var attacker=_ref428[0],defender=_ref428[1];
+anim:function(scene,_ref431){var attacker=_ref431[0],defender=_ref431[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x,
@@ -39066,7 +39782,7 @@ time:150},
 }},
 
 shadowdevour:{
-anim:function(scene,_ref429){var attacker=_ref429[0],defender=_ref429[1];
+anim:function(scene,_ref432){var attacker=_ref432[0],defender=_ref432[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowshadowball2',{
 x:defender.x,
@@ -39113,7 +39829,7 @@ opacity:0},
 }},
 
 shadowduplicity:{
-anim:function(scene,_ref430){var attacker=_ref430[0],defender=_ref430[1];
+anim:function(scene,_ref433){var attacker=_ref433[0],defender=_ref433[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x+40,
@@ -39150,7 +39866,7 @@ opacity:0},
 }},
 
 shadowvampirism:{
-anim:function(scene,_ref431){var attacker=_ref431[0],defender=_ref431[1];
+anim:function(scene,_ref434){var attacker=_ref434[0],defender=_ref434[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x,
@@ -39237,7 +39953,7 @@ time:300},
 }},
 
 shadowdissolve:{
-anim:function(scene,_ref432){var attacker=_ref432[0],defender=_ref432[1];
+anim:function(scene,_ref435){var attacker=_ref435[0],defender=_ref435[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x+40,
@@ -39277,7 +39993,7 @@ shadowdown:{
 anim:BattleOtherAnims.shadowsound.anim},
 
 shadowend:{
-anim:function(scene,_ref433){var attacker=_ref433[0],defender=_ref433[1];
+anim:function(scene,_ref436){var attacker=_ref436[0],defender=_ref436[1];
 scene.backgroundEffect('#110131',700,0.7);
 BattleOtherAnims.contactattack.anim(scene,[attacker,defender]);
 scene.showEffect('shadowshadowball',{
@@ -39316,7 +40032,7 @@ opacity:0},
 }},
 
 shadowfission:{
-anim:function(scene,_ref434){var attacker=_ref434[0],defender=_ref434[1];
+anim:function(scene,_ref437){var attacker=_ref437[0],defender=_ref437[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp2',{
 x:attacker.x,
@@ -39369,7 +40085,7 @@ time:500},
 }},
 
 shadowfirestorm:{
-anim:function(scene,_ref435){var attacker=_ref435[0],defender=_ref435[1];
+anim:function(scene,_ref438){var attacker=_ref438[0],defender=_ref438[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/weather-sunnyday.jpg')",900,0.3);
 
@@ -39438,7 +40154,7 @@ time:200*i+200},
 }},
 
 shadowfog:{
-anim:function(scene,_ref436){var attacker=_ref436[0],defender=_ref436[1];
+anim:function(scene,_ref439){var attacker=_ref439[0],defender=_ref439[1];
 var xf=[1,-1,1,-1];
 var yf=[1,-1,-1,1];
 var xf2=[1,0,-1,0];
@@ -39506,7 +40222,7 @@ time:800},
 }},
 
 shadowfountain:{
-anim:function(scene,_ref437){var attacker=_ref437[0];
+anim:function(scene,_ref440){var attacker=_ref440[0];
 scene.backgroundEffect('#110131',500,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x,
@@ -39523,7 +40239,7 @@ time:400},
 }},
 
 shadowfrenzy:{
-anim:function(scene,_ref438){var attacker=_ref438[0],defender=_ref438[1];
+anim:function(scene,_ref441){var attacker=_ref441[0],defender=_ref441[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('angry',{
 x:attacker.x-10,
@@ -39626,7 +40342,7 @@ time:300},
 }},
 
 shadowfrost:{
-anim:function(scene,_ref439){var attacker=_ref439[0],defender=_ref439[1];
+anim:function(scene,_ref442){var attacker=_ref442[0],defender=_ref442[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshine',{
 x:attacker.x,
@@ -39676,7 +40392,7 @@ time:900},
 }},
 
 shadowfumes:{
-anim:function(scene,_ref440){var attacker=_ref440[0],defender=_ref440[1];
+anim:function(scene,_ref443){var attacker=_ref443[0],defender=_ref443[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowwisp',{
 x:attacker.x,
@@ -39769,7 +40485,7 @@ time:1000},
 }},
 
 shadowfusion:{
-anim:function(scene,_ref441){var attacker=_ref441[0],defender=_ref441[1];
+anim:function(scene,_ref444){var attacker=_ref444[0],defender=_ref444[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp',{
 x:attacker.x,
@@ -39834,7 +40550,7 @@ time:800},
 }},
 
 shadowgale:{
-anim:function(scene,_ref442){var attacker=_ref442[0],defender=_ref442[1];
+anim:function(scene,_ref445){var attacker=_ref445[0],defender=_ref445[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/weather-shadowsky.png')",900,0.3);
 
@@ -39960,7 +40676,7 @@ shadowgluttony:{
 anim:BattleOtherAnims.shadowselfstatus.anim},
 
 shadowhalf:{
-anim:function(scene,_ref443){var attacker=_ref443[0],defender=_ref443[1];
+anim:function(scene,_ref446){var attacker=_ref446[0],defender=_ref446[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x,
@@ -40003,7 +40719,7 @@ time:800},
 }},
 
 shadowhatred:{
-anim:function(scene,_ref444){var attacker=_ref444[0],defender=_ref444[1];
+anim:function(scene,_ref447){var attacker=_ref447[0],defender=_ref447[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('angry',{
 x:attacker.x-10,
@@ -40090,7 +40806,7 @@ time:1150},
 }},
 
 shadowhaunting:{
-anim:function(scene,_ref445){var attacker=_ref445[0],defender=_ref445[1];
+anim:function(scene,_ref448){var attacker=_ref448[0],defender=_ref448[1];
 scene.backgroundEffect('#110131',250,0.3);
 scene.backgroundEffect('#000000',250,0.2,400);
 scene.showEffect(attacker.sp,{
@@ -40111,7 +40827,7 @@ time:600},
 }},
 
 shadowhold:{
-anim:function(scene,_ref446){var attacker=_ref446[0],defender=_ref446[1];
+anim:function(scene,_ref449){var attacker=_ref449[0],defender=_ref449[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowshadowball',{
 x:defender.x,
@@ -40206,7 +40922,7 @@ time:200},
 }},
 
 shadowhubris:{
-anim:function(scene,_ref447){var attacker=_ref447[0];
+anim:function(scene,_ref450){var attacker=_ref450[0];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x,
@@ -40250,7 +40966,7 @@ time:800},
 }},
 
 shadowhurl:{
-anim:function(scene,_ref448){var attacker=_ref448[0],defender=_ref448[1];
+anim:function(scene,_ref451){var attacker=_ref451[0],defender=_ref451[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x,
@@ -40325,7 +41041,7 @@ shadowintensify:{
 anim:BattleOtherAnims.shadowlightstatus.anim},
 
 shadowinversion:{
-anim:function(scene,_ref449){var attacker=_ref449[0],defender=_ref449[1];
+anim:function(scene,_ref452){var attacker=_ref452[0],defender=_ref452[1];
 var xf=[1,-1,1,-1];
 var yf=[1,-1,-1,1];
 var xf2=[1,0,-1,0];
@@ -40409,7 +41125,7 @@ time:600},
 }},
 
 shadowlaser:{
-anim:function(scene,_ref450){var attacker=_ref450[0],defender=_ref450[1];
+anim:function(scene,_ref453){var attacker=_ref453[0],defender=_ref453[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x,
@@ -40559,7 +41275,7 @@ time:150},
 prepareAnim:BattleOtherAnims.shadowchargestatus.anim},
 
 shadowmist:{
-anim:function(scene,_ref451){var attacker=_ref451[0],defender=_ref451[1];
+anim:function(scene,_ref454){var attacker=_ref454[0],defender=_ref454[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowwisp',{
 x:attacker.x,
@@ -40652,7 +41368,7 @@ time:1000},
 }},
 
 shadowmonsoon:{
-anim:function(scene,_ref452){var attacker=_ref452[0],defender=_ref452[1];
+anim:function(scene,_ref455){var attacker=_ref455[0],defender=_ref455[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/weather-raindance.jpg')",900,0.3);
 
@@ -40721,7 +41437,7 @@ time:200*i+200},
 }},
 
 shadowmoon:{
-anim:function(scene,_ref453){var attacker=_ref453[0];
+anim:function(scene,_ref456){var attacker=_ref456[0];
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-moon.png')",800,0.8);
 scene.showEffect('shadowshine',{
 x:attacker.x+40,
@@ -40793,7 +41509,7 @@ time:700},
 }},
 
 shadowglaze:{
-anim:function(scene,_ref454){var attacker=_ref454[0];
+anim:function(scene,_ref457){var attacker=_ref457[0];
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-moon.png')",800,0.8);
 scene.showEffect('shine',{
 x:attacker.x+40,
@@ -40865,7 +41581,7 @@ time:700},
 }},
 
 shadowpanic:{
-anim:function(scene,_ref455){var attacker=_ref455[0],defender=_ref455[1];
+anim:function(scene,_ref458){var attacker=_ref458[0],defender=_ref458[1];
 scene.backgroundEffect('#110131',1300,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x+20,
@@ -41026,7 +41742,7 @@ time:300},
 }},
 
 shadowpivot:{
-anim:function(scene,_ref456){var attacker=_ref456[0],defender=_ref456[1];
+anim:function(scene,_ref459){var attacker=_ref459[0],defender=_ref459[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x,
@@ -41070,7 +41786,7 @@ BattleOtherAnims.spinattack.anim(scene,[attacker,defender]);
 }},
 
 shadowpress:{
-anim:function(scene,_ref457){var attacker=_ref457[0],defender=_ref457[1];
+anim:function(scene,_ref460){var attacker=_ref460[0],defender=_ref460[1];
 scene.backgroundEffect('#110131',800,0.7);
 scene.showEffect('shadowshadowball',{
 x:defender.x,
@@ -41137,7 +41853,7 @@ time:300},
 }},
 
 shadowpunish:{
-anim:function(scene,_ref458){var attacker=_ref458[0],defender=_ref458[1];
+anim:function(scene,_ref461){var attacker=_ref461[0],defender=_ref461[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowshadowball',{
 x:defender.x,
@@ -41229,7 +41945,7 @@ BattleOtherAnims.contactattack.anim(scene,[attacker,defender]);
 }},
 
 shadowrage:{
-anim:function(scene,_ref459){var attacker=_ref459[0],defender=_ref459[1];
+anim:function(scene,_ref462){var attacker=_ref462[0],defender=_ref462[1];
 scene.backgroundEffect('#110131',1100,0.7);
 scene.showEffect('angry',{
 x:attacker.x-10,
@@ -41366,8 +42082,8 @@ time:1300},
 }},
 
 shadowrave:{
-anim:function(scene,_ref460){var attacker=_ref460[0],defenders=_ref460.slice(1);for(var _i31=0;_i31<
-defenders.length;_i31++){var defender=defenders[_i31];
+anim:function(scene,_ref463){var attacker=_ref463[0],defenders=_ref463.slice(1);for(var _i32=0;_i32<
+defenders.length;_i32++){var defender=defenders[_i32];
 defender.delay(125);
 defender.anim({
 z:defender.behind(5),
@@ -41442,7 +42158,7 @@ time:800},
 }},
 
 shadowrecruit:{
-anim:function(scene,_ref461){var attacker=_ref461[0],defender=_ref461[1];
+anim:function(scene,_ref464){var attacker=_ref464[0],defender=_ref464[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball',{
 x:defender.x,
@@ -41457,7 +42173,7 @@ opacity:0},
 }},
 
 shadowreset:{
-anim:function(scene,_ref462){var attacker=_ref462[0],defender=_ref462[1];
+anim:function(scene,_ref465){var attacker=_ref465[0],defender=_ref465[1];
 var xf=[1,-1,1,-1];
 var yf=[1,-1,-1,1];
 var xf2=[1,0,-1,0];
@@ -41541,7 +42257,7 @@ time:600},
 }},
 
 shadowrobbery:{
-anim:function(scene,_ref463){var attacker=_ref463[0],defender=_ref463[1];
+anim:function(scene,_ref466){var attacker=_ref466[0],defender=_ref466[1];
 scene.backgroundEffect('#110131',1700,0.7);
 scene.showEffect('shadowshadowball',{
 x:attacker.x,
@@ -41856,7 +42572,7 @@ time:100});
 }},
 
 shadowroulette:{
-anim:function(scene,_ref464){var attacker=_ref464[0];
+anim:function(scene,_ref467){var attacker=_ref467[0];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowpointer',{
 x:attacker.x+30,
@@ -41894,7 +42610,7 @@ time:400},
 }},
 
 shadowrush:{
-anim:function(scene,_ref465){var attacker=_ref465[0],defender=_ref465[1];
+anim:function(scene,_ref468){var attacker=_ref468[0],defender=_ref468[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x,
@@ -41949,7 +42665,7 @@ time:300},
 }},
 
 shadowseed:{
-anim:function(scene,_ref466){var attacker=_ref466[0],defender=_ref466[1];
+anim:function(scene,_ref469){var attacker=_ref469[0],defender=_ref469[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball2',{
 x:attacker.x,
@@ -41995,7 +42711,7 @@ opacity:0.6},
 }},
 
 shadowscheme:{
-anim:function(scene,_ref467){var attacker=_ref467[0];
+anim:function(scene,_ref470){var attacker=_ref470[0];
 scene.backgroundEffect('#110131',700,0.7);
 
 scene.showEffect('shadowwisp2',{
@@ -42067,7 +42783,7 @@ time:750},
 }},
 
 shadowshackle:{
-anim:function(scene,_ref468){var attacker=_ref468[0],defender=_ref468[1];
+anim:function(scene,_ref471){var attacker=_ref471[0],defender=_ref471[1];
 scene.backgroundEffect('#110131',1000,0.7);
 scene.showEffect('shadowshadowball2',{
 x:attacker.x,
@@ -42135,7 +42851,7 @@ time:300},
 }},
 
 shadowshatter:{
-anim:function(scene,_ref469){var attacker=_ref469[0],defender=_ref469[1];
+anim:function(scene,_ref472){var attacker=_ref472[0],defender=_ref472[1];
 scene.backgroundEffect('#110131',1000,0.7);
 scene.showEffect('shadowrightchop',{
 x:defender.leftof(30),
@@ -42156,7 +42872,7 @@ shadowshed:{
 anim:BattleOtherAnims.shadowsound.anim},
 
 shadowshuffle:{
-anim:function(scene,_ref470){var attacker=_ref470[0],defender=_ref470[1];
+anim:function(scene,_ref473){var attacker=_ref473[0],defender=_ref473[1];
 scene.backgroundEffect('#110131',700,0.7);
 for(var i=0;i<3;i++){
 scene.showEffect('shadowwisp',{
@@ -42235,7 +42951,7 @@ shadowslander:{
 anim:BattleOtherAnims.shadowsound.anim},
 
 shadowslasher:{
-anim:function(scene,_ref471){var attacker=_ref471[0],defender=_ref471[1];
+anim:function(scene,_ref474){var attacker=_ref474[0],defender=_ref474[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowleftslash',{
 x:defender.x-10,
@@ -42356,7 +43072,7 @@ time:300},
 }},
 
 shadowsnipe:{
-anim:function(scene,_ref472){var attacker=_ref472[0],defender=_ref472[1];
+anim:function(scene,_ref475){var attacker=_ref475[0],defender=_ref475[1];
 scene.backgroundEffect('#110131',700,0.3);
 scene.showEffect('shadowshadowball2',{
 x:attacker.x,
@@ -42388,7 +43104,7 @@ time:330},
 }},
 
 shadowsorcery:{
-anim:function(scene,_ref473){var attacker=_ref473[0],defender=_ref473[1];
+anim:function(scene,_ref476){var attacker=_ref476[0],defender=_ref476[1];
 scene.backgroundEffect('#110131',900,0.3);
 scene.showEffect('shadowwisp',{
 x:defender.x+40,
@@ -42462,7 +43178,7 @@ time:800},
 }},
 
 shadowspell:{
-anim:function(scene,_ref474){var attacker=_ref474[0],defender=_ref474[1];
+anim:function(scene,_ref477){var attacker=_ref477[0],defender=_ref477[1];
 scene.backgroundEffect('#110131',900,0.3);
 scene.showEffect('shadowshadowball2',{
 x:attacker.x,
@@ -42605,7 +43321,7 @@ time:150},
 }},
 
 shadowspikes:{
-anim:function(scene,_ref475){var attacker=_ref475[0],defender=_ref475[1];
+anim:function(scene,_ref478){var attacker=_ref478[0],defender=_ref478[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowcaltrop',{
 x:attacker.x,
@@ -42651,13 +43367,13 @@ opacity:1},
 }},
 
 shadowsprint:{
-anim:function(scene,_ref476){var attacker=_ref476[0],defender=_ref476[1];
+anim:function(scene,_ref479){var attacker=_ref479[0],defender=_ref479[1];
 scene.backgroundEffect('#110131',700,0.7);
 BattleOtherAnims.fastattack.anim(scene,[attacker,defender]);
 }},
 
 shadowsqueeze:{
-anim:function(scene,_ref477){var attacker=_ref477[0],defender=_ref477[1];
+anim:function(scene,_ref480){var attacker=_ref480[0],defender=_ref480[1];
 scene.backgroundEffect('#110131',1200,0.7);
 scene.showEffect('shadowshadowball',{
 x:defender.x,
@@ -42752,7 +43468,7 @@ time:200},
 }},
 
 shadowstare:{
-anim:function(scene,_ref478){var attacker=_ref478[0],defender=_ref478[1];
+anim:function(scene,_ref481){var attacker=_ref481[0],defender=_ref481[1];
 scene.backgroundEffect('#110131',250,0.7);
 scene.backgroundEffect('#000000',250,0.2,400);
 scene.showEffect('shadowstare',{
@@ -42769,7 +43485,7 @@ time:700},
 }},
 
 shadowstorm:{
-anim:function(scene,_ref479){var attacker=_ref479[0],defender=_ref479[1];
+anim:function(scene,_ref482){var attacker=_ref482[0],defender=_ref482[1];
 scene.backgroundEffect('#110131',900,0.7);
 
 for(var i=0;i<4;i++){
@@ -42837,7 +43553,7 @@ time:200*i+200},
 }},
 
 shadowstratoslam:{
-anim:function(scene,_ref480){var attacker=_ref480[0],defender=_ref480[1];
+anim:function(scene,_ref483){var attacker=_ref483[0],defender=_ref483[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x,
@@ -42881,7 +43597,7 @@ BattleOtherAnims.spinattack.anim(scene,[attacker,defender]);
 }},
 
 shadowsun:{
-anim:function(scene,_ref481){var attacker=_ref481[0],defender=_ref481[1];
+anim:function(scene,_ref484){var attacker=_ref484[0],defender=_ref484[1];
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-sun.png')",700,0.8);
 scene.showEffect('shadowwisp2',{
 x:attacker.x+40,
@@ -42934,7 +43650,7 @@ time:900},
 }},
 
 shadowswap:{
-anim:function(scene,_ref482){var attacker=_ref482[0],defender=_ref482[1];
+anim:function(scene,_ref485){var attacker=_ref485[0],defender=_ref485[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('pokeball',{
 x:attacker.x,
@@ -43005,7 +43721,7 @@ time:900},
 }},
 
 shadowglow:{
-anim:function(scene,_ref483){var attacker=_ref483[0],defender=_ref483[1];
+anim:function(scene,_ref486){var attacker=_ref486[0],defender=_ref486[1];
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/shadow-sun.png')",700,0.8);
 scene.showEffect('wisp',{
 x:attacker.x+40,
@@ -43058,7 +43774,7 @@ time:900},
 }},
 
 shadowthreat:{
-anim:function(scene,_ref484){var attacker=_ref484[0],defender=_ref484[1];
+anim:function(scene,_ref487){var attacker=_ref487[0],defender=_ref487[1];
 BattleOtherAnims.shake.anim(scene,[attacker]);
 scene.backgroundEffect('#110131',700,0.7);
 
@@ -43101,7 +43817,7 @@ time:500},
 }},
 
 shadowtrance:{
-anim:function(scene,_ref485){var attacker=_ref485[0],defender=_ref485[1];
+anim:function(scene,_ref488){var attacker=_ref488[0],defender=_ref488[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball2',{
 x:defender.x,
@@ -43147,7 +43863,7 @@ scene.backgroundEffect('#110131',700,0.7);
 }},
 
 shadowtrip:{
-anim:function(scene,_ref486){var attacker=_ref486[0],defender=_ref486[1];
+anim:function(scene,_ref489){var attacker=_ref489[0],defender=_ref489[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball',{
 x:defender.x+30,
@@ -43174,7 +43890,7 @@ opacity:0},
 }},
 
 shadowvelocity:{
-anim:function(scene,_ref487){var attacker=_ref487[0];
+anim:function(scene,_ref490){var attacker=_ref490[0];
 scene.backgroundEffect('#110131',1100,0.7);
 attacker.anim({x:attacker.x-10,time:200});
 attacker.anim({x:attacker.x+10,time:300});
@@ -43209,7 +43925,7 @@ time:1200},
 }},
 
 shadowvenom:{
-anim:function(scene,_ref488){var attacker=_ref488[0],defender=_ref488[1];
+anim:function(scene,_ref491){var attacker=_ref491[0],defender=_ref491[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp',{
 x:attacker.x,
@@ -43228,7 +43944,7 @@ time:400},
 }},
 
 shadowvolley:{
-anim:function(scene,_ref489){var attacker=_ref489[0],defender=_ref489[1];
+anim:function(scene,_ref492){var attacker=_ref492[0],defender=_ref492[1];
 scene.backgroundEffect('#110131',950,0.7);
 scene.showEffect('shadowwisp',{
 x:defender.x-100,
@@ -43354,28 +44070,28 @@ time:300},
 }},
 
 shadowwave:{
-anim:function(scene,_ref490){var attacker=_ref490[0],defenders=_ref490.slice(1);for(var _i32=0;_i32<
-defenders.length;_i32++){var _defender16=defenders[_i32];
-_defender16.delay(125);
-_defender16.anim({
-z:_defender16.behind(5),
+anim:function(scene,_ref493){var attacker=_ref493[0],defenders=_ref493.slice(1);for(var _i33=0;_i33<
+defenders.length;_i33++){var _defender17=defenders[_i33];
+_defender17.delay(125);
+_defender17.anim({
+z:_defender17.behind(5),
 time:75},
 'swing');
-_defender16.anim({
+_defender17.anim({
 time:75},
 'swing');
-_defender16.anim({
-z:_defender16.behind(5),
+_defender17.anim({
+z:_defender17.behind(5),
 time:75},
 'swing');
-_defender16.anim({
+_defender17.anim({
 time:75},
 'swing');
-_defender16.anim({
-z:_defender16.behind(5),
+_defender17.anim({
+z:_defender17.behind(5),
 time:75},
 'swing');
-_defender16.anim({
+_defender17.anim({
 time:75},
 'swing');
 }
@@ -43424,7 +44140,7 @@ opacity:0.6},
 }},
 
 shadowwheel:{
-anim:function(scene,_ref491){var attacker=_ref491[0],defender=_ref491[1];
+anim:function(scene,_ref494){var attacker=_ref494[0],defender=_ref494[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowwisp2',{
 x:defender.x,
@@ -43468,7 +44184,7 @@ BattleOtherAnims.spinattack.anim(scene,[attacker,defender]);
 }},
 
 shadowwhiteout:{
-anim:function(scene,_ref492){var attacker=_ref492[0],defender=_ref492[1];
+anim:function(scene,_ref495){var attacker=_ref495[0],defender=_ref495[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/weather-hail.jpg')",900,0.3);
 
@@ -43537,7 +44253,7 @@ time:200*i+200},
 }},
 
 shadowwreckage:{
-anim:function(scene,_ref493){var attacker=_ref493[0],defenders=_ref493.slice(1);
+anim:function(scene,_ref496){var attacker=_ref496[0],defenders=_ref496.slice(1);
 scene.backgroundEffect('#110131',600,0.7);
 scene.$bg.delay(275);
 scene.$bg.animate({
@@ -43628,10 +44344,10 @@ time:100});
 
 attacker.anim({
 y:attacker.y,
-time:100});for(var _i33=0;_i33<
+time:100});for(var _i34=0;_i34<
 
 
-defenders.length;_i33++){var defender=defenders[_i33];
+defenders.length;_i34++){var defender=defenders[_i34];
 defender.delay(275);
 defender.anim({
 y:defender.y-10,
@@ -43682,7 +44398,7 @@ scene.wait(325);
 }},
 
 shadowbolt:{
-anim:function(scene,_ref494){var attacker=_ref494[0],defender=_ref494[1];
+anim:function(scene,_ref497){var attacker=_ref497[0],defender=_ref497[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowlightning',{
 x:defender.x,
@@ -43728,7 +44444,7 @@ time:600},
 }},
 
 shadowfire:{
-anim:function(scene,_ref495){var attacker=_ref495[0],defender=_ref495[1];
+anim:function(scene,_ref498){var attacker=_ref498[0],defender=_ref498[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowfireball',{
 x:attacker.x,
@@ -43788,7 +44504,7 @@ time:700},
 }},
 
 shadowchill:{
-anim:function(scene,_ref496){var attacker=_ref496[0],defender=_ref496[1];
+anim:function(scene,_ref499){var attacker=_ref499[0],defender=_ref499[1];
 scene.backgroundEffect('#110131',700,0.7);
 var xstep=(defender.x-attacker.x)/5;
 var ystep=(defender.y-attacker.y)/5;
@@ -43877,7 +44593,7 @@ time:700},
 }},
 
 shadowcombust:{
-anim:function(scene,_ref497){var attacker=_ref497[0],defender=_ref497[1];
+anim:function(scene,_ref500){var attacker=_ref500[0],defender=_ref500[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowfireball',{
 x:attacker.x,
@@ -43981,7 +44697,7 @@ time:300},
 }},
 
 shadowcascade:{
-anim:function(scene,_ref498){var attacker=_ref498[0],defender=_ref498[1];
+anim:function(scene,_ref501){var attacker=_ref501[0],defender=_ref501[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowwisp2',{
 x:attacker.x+20,
@@ -44084,7 +44800,7 @@ scene.backgroundEffect('#110131',300,0.9,200);
 }},
 
 shadowtitan:{
-anim:function(scene,_ref499){var attacker=_ref499[0],defender=_ref499[1];
+anim:function(scene,_ref502){var attacker=_ref502[0],defender=_ref502[1];
 scene.backgroundEffect('linear-gradient(#390000 50%, #312a75)',700,0.7);
 scene.showEffect('shadowfireball3',{
 x:defender.x,
@@ -44130,7 +44846,7 @@ time:300},
 }},
 
 shadowrainbow:{
-anim:function(scene,_ref500){var attacker=_ref500[0],defender=_ref500[1];
+anim:function(scene,_ref503){var attacker=_ref503[0],defender=_ref503[1];
 scene.backgroundEffect('#110131',1000,0.3);
 var xstep=(defender.x+200-defender.x)/5;
 var ystep=(defender.x-200-defender.x)/5;
@@ -44150,101 +44866,101 @@ time:50*i+1000},
 'linear');
 }
 xstep=(defender.x+150-defender.x)/5;
-for(var _i34=0;_i34<5;_i34++){
-scene.showEffect('colorball2',{
-x:defender.x-150+xstep*(_i34+1),
-y:defender.y+200+ystep*(_i34+1),
-z:defender.z+zstep*(_i34+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i34+100},
-{
-opacity:0,
-time:50*_i34+1000},
-'linear');
-}
-xstep=(defender.x+100-defender.x)/5;
 for(var _i35=0;_i35<5;_i35++){
-scene.showEffect('colorball3',{
-x:defender.x-100+xstep*(_i35+1),
+scene.showEffect('colorball2',{
+x:defender.x-150+xstep*(_i35+1),
 y:defender.y+200+ystep*(_i35+1),
 z:defender.z+zstep*(_i35+1),
-scale:1.2,
-opacity:1,
-time:40*_i35+200},
+scale:0.6,
+opacity:0.7,
+time:40*_i35+100},
 {
 opacity:0,
 time:50*_i35+1000},
 'linear');
 }
-xstep=(defender.x+50-defender.x)/5;
+xstep=(defender.x+100-defender.x)/5;
 for(var _i36=0;_i36<5;_i36++){
-scene.showEffect('colorball4',{
-x:defender.x-50+xstep*(_i36+1),
+scene.showEffect('colorball3',{
+x:defender.x-100+xstep*(_i36+1),
 y:defender.y+200+ystep*(_i36+1),
 z:defender.z+zstep*(_i36+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i36+300},
+scale:1.2,
+opacity:1,
+time:40*_i36+200},
 {
 opacity:0,
 time:50*_i36+1000},
 'linear');
 }
-xstep=(defender.x-50-defender.x)/5;
+xstep=(defender.x+50-defender.x)/5;
 for(var _i37=0;_i37<5;_i37++){
-scene.showEffect('colorball5',{
-x:defender.x+50+xstep*(_i37+1),
+scene.showEffect('colorball4',{
+x:defender.x-50+xstep*(_i37+1),
 y:defender.y+200+ystep*(_i37+1),
 z:defender.z+zstep*(_i37+1),
-scale:1.2,
-opacity:1,
-time:40*_i37+400},
+scale:0.6,
+opacity:0.7,
+time:40*_i37+300},
 {
 opacity:0,
 time:50*_i37+1000},
 'linear');
 }
-xstep=(defender.x-100-defender.x)/5;
+xstep=(defender.x-50-defender.x)/5;
 for(var _i38=0;_i38<5;_i38++){
-scene.showEffect('colorball6',{
-x:defender.x+100+xstep*(_i38+1),
+scene.showEffect('colorball5',{
+x:defender.x+50+xstep*(_i38+1),
 y:defender.y+200+ystep*(_i38+1),
 z:defender.z+zstep*(_i38+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i38+500},
+scale:1.2,
+opacity:1,
+time:40*_i38+400},
 {
 opacity:0,
 time:50*_i38+1000},
 'linear');
 }
-xstep=(defender.x-150-defender.x)/5;
+xstep=(defender.x-100-defender.x)/5;
 for(var _i39=0;_i39<5;_i39++){
-scene.showEffect('colorball7',{
-x:defender.x+150+xstep*(_i39+1),
+scene.showEffect('colorball6',{
+x:defender.x+100+xstep*(_i39+1),
 y:defender.y+200+ystep*(_i39+1),
 z:defender.z+zstep*(_i39+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i39+600},
+time:40*_i39+500},
 {
 opacity:0,
 time:50*_i39+1000},
 'linear');
 }
-xstep=(defender.x-200-defender.x)/5;
+xstep=(defender.x-150-defender.x)/5;
 for(var _i40=0;_i40<5;_i40++){
-scene.showEffect('shadowshadowball',{
-x:defender.x+200+xstep*(_i40+1),
+scene.showEffect('colorball7',{
+x:defender.x+150+xstep*(_i40+1),
 y:defender.y+200+ystep*(_i40+1),
 z:defender.z+zstep*(_i40+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i40+700},
+time:40*_i40+600},
 {
 opacity:0,
 time:50*_i40+1000},
+'linear');
+}
+xstep=(defender.x-200-defender.x)/5;
+for(var _i41=0;_i41<5;_i41++){
+scene.showEffect('shadowshadowball',{
+x:defender.x+200+xstep*(_i41+1),
+y:defender.y+200+ystep*(_i41+1),
+z:defender.z+zstep*(_i41+1),
+scale:0.6,
+opacity:0.7,
+time:40*_i41+700},
+{
+opacity:0,
+time:50*_i41+1000},
 'linear');
 }
 scene.showEffect('shadowrainbow',{
@@ -44273,7 +44989,7 @@ time:1000},
 }},
 
 shadowevoboost:{
-anim:function(scene,_ref501){var attacker=_ref501[0],defender=_ref501[1];
+anim:function(scene,_ref504){var attacker=_ref504[0],defender=_ref504[1];
 scene.backgroundEffect('#110131',1000,0.3);
 var xstep=(attacker.x+200-attacker.x)/5;
 var ystep=(attacker.x-200-attacker.x)/5;
@@ -44293,101 +45009,101 @@ time:50*i+1000},
 'linear');
 }
 xstep=(attacker.x+150-attacker.x)/5;
-for(var _i41=0;_i41<5;_i41++){
-scene.showEffect('colorball2',{
-x:attacker.x-150+xstep*(_i41+1),
-y:attacker.y+200+ystep*(_i41+1),
-z:attacker.z+zstep*(_i41+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i41+100},
-{
-opacity:0,
-time:50*_i41+1000},
-'linear');
-}
-xstep=(attacker.x+100-attacker.x)/5;
 for(var _i42=0;_i42<5;_i42++){
-scene.showEffect('colorball3',{
-x:attacker.x-100+xstep*(_i42+1),
+scene.showEffect('colorball2',{
+x:attacker.x-150+xstep*(_i42+1),
 y:attacker.y+200+ystep*(_i42+1),
 z:attacker.z+zstep*(_i42+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i42+200},
+time:40*_i42+100},
 {
 opacity:0,
 time:50*_i42+1000},
 'linear');
 }
-xstep=(attacker.x+50-attacker.x)/5;
+xstep=(attacker.x+100-attacker.x)/5;
 for(var _i43=0;_i43<5;_i43++){
-scene.showEffect('colorball4',{
-x:attacker.x-50+xstep*(_i43+1),
+scene.showEffect('colorball3',{
+x:attacker.x-100+xstep*(_i43+1),
 y:attacker.y+200+ystep*(_i43+1),
 z:attacker.z+zstep*(_i43+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i43+300},
+time:40*_i43+200},
 {
 opacity:0,
 time:50*_i43+1000},
 'linear');
 }
-xstep=(attacker.x-50-attacker.x)/5;
+xstep=(attacker.x+50-attacker.x)/5;
 for(var _i44=0;_i44<5;_i44++){
-scene.showEffect('colorball5',{
-x:attacker.x+50+xstep*(_i44+1),
+scene.showEffect('colorball4',{
+x:attacker.x-50+xstep*(_i44+1),
 y:attacker.y+200+ystep*(_i44+1),
 z:attacker.z+zstep*(_i44+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i44+400},
+time:40*_i44+300},
 {
 opacity:0,
 time:50*_i44+1000},
 'linear');
 }
-xstep=(attacker.x-100-attacker.x)/5;
+xstep=(attacker.x-50-attacker.x)/5;
 for(var _i45=0;_i45<5;_i45++){
-scene.showEffect('colorball6',{
-x:attacker.x+100+xstep*(_i45+1),
+scene.showEffect('colorball5',{
+x:attacker.x+50+xstep*(_i45+1),
 y:attacker.y+200+ystep*(_i45+1),
 z:attacker.z+zstep*(_i45+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i45+500},
+time:40*_i45+400},
 {
 opacity:0,
 time:50*_i45+1000},
 'linear');
 }
-xstep=(attacker.x-150-attacker.x)/5;
+xstep=(attacker.x-100-attacker.x)/5;
 for(var _i46=0;_i46<5;_i46++){
-scene.showEffect('colorball7',{
-x:attacker.x+150+xstep*(_i46+1),
+scene.showEffect('colorball6',{
+x:attacker.x+100+xstep*(_i46+1),
 y:attacker.y+200+ystep*(_i46+1),
 z:attacker.z+zstep*(_i46+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i46+600},
+time:40*_i46+500},
 {
 opacity:0,
 time:50*_i46+1000},
 'linear');
 }
-xstep=(attacker.x-200-attacker.x)/5;
+xstep=(attacker.x-150-attacker.x)/5;
 for(var _i47=0;_i47<5;_i47++){
-scene.showEffect('shadowshadowball',{
-x:attacker.x+200+xstep*(_i47+1),
+scene.showEffect('colorball7',{
+x:attacker.x+150+xstep*(_i47+1),
 y:attacker.y+200+ystep*(_i47+1),
 z:attacker.z+zstep*(_i47+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i47+700},
+time:40*_i47+600},
 {
 opacity:0,
 time:50*_i47+1000},
+'linear');
+}
+xstep=(attacker.x-200-attacker.x)/5;
+for(var _i48=0;_i48<5;_i48++){
+scene.showEffect('shadowshadowball',{
+x:attacker.x+200+xstep*(_i48+1),
+y:attacker.y+200+ystep*(_i48+1),
+z:attacker.z+zstep*(_i48+1),
+scale:0.6,
+opacity:0.7,
+time:40*_i48+700},
+{
+opacity:0,
+time:50*_i48+1000},
 'linear');
 }
 scene.showEffect('shadowrainbow',{
@@ -44416,7 +45132,7 @@ time:1000},
 }},
 
 shadowjolt:{
-anim:function(scene,_ref502){var attacker=_ref502[0],defender=_ref502[1];
+anim:function(scene,_ref505){var attacker=_ref505[0],defender=_ref505[1];
 scene.backgroundEffect('#110131',700,0.7);
 scene.showEffect('shadowshadowball2',{
 x:defender.x,
@@ -44504,7 +45220,7 @@ time:300},
 }},
 
 shadowphoenix:{
-anim:function(scene,_ref503){var attacker=_ref503[0],defender=_ref503[1];
+anim:function(scene,_ref506){var attacker=_ref506[0],defender=_ref506[1];
 scene.backgroundEffect('#110131',900,0.7);
 scene.showEffect('shadowfireball3',{
 x:attacker.x,
@@ -44648,7 +45364,7 @@ time:925},
 
 
 gigavolthavoc:{
-anim:function(scene,_ref504){var attacker=_ref504[0],defender=_ref504[1];
+anim:function(scene,_ref507){var attacker=_ref507[0],defender=_ref507[1];
 scene.backgroundEffect('#000000',800,0.7);
 scene.backgroundEffect('#ffffff',200,0.7,700);
 scene.backgroundEffect('#000000',800,0.7,900);
@@ -44814,7 +45530,7 @@ time:400},
 }},
 
 infernooverdrive:{
-anim:function(scene,_ref505){var attacker=_ref505[0],defender=_ref505[1];
+anim:function(scene,_ref508){var attacker=_ref508[0],defender=_ref508[1];
 scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)',800,0.7);
 scene.backgroundEffect('#ffffff',200,0.7,700);
 scene.backgroundEffect('#000000',800,0.7,900);
@@ -45013,7 +45729,7 @@ time:400},
 }},
 
 alloutpummeling:{
-anim:function(scene,_ref506){var attacker=_ref506[0],defender=_ref506[1];
+anim:function(scene,_ref509){var attacker=_ref509[0],defender=_ref509[1];
 scene.backgroundEffect('linear-gradient(#390000 30%, #B84038)',2000,0.8);
 scene.showEffect('flareball',{
 x:attacker.x,
@@ -45291,7 +46007,7 @@ time:150},
 }},
 
 supersonicskystrike:{
-anim:function(scene,_ref507){var attacker=_ref507[0],defender=_ref507[1];
+anim:function(scene,_ref510){var attacker=_ref510[0],defender=_ref510[1];
 scene.backgroundEffect('linear-gradient(#46BFFF 20%, #241714)',1300,0.5);
 scene.showEffect(attacker.sp,{
 x:attacker.x,
@@ -45437,7 +46153,7 @@ time:300},
 }},
 
 aciddownpour:{
-anim:function(scene,_ref508){var attacker=_ref508[0],defender=_ref508[1];
+anim:function(scene,_ref511){var attacker=_ref511[0],defender=_ref511[1];
 defender.delay(125);
 defender.anim({
 z:defender.behind(5),
@@ -45802,7 +46518,7 @@ time:1800},
 }},
 
 blackholeeclipse:{
-anim:function(scene,_ref509){var attacker=_ref509[0],defender=_ref509[1];
+anim:function(scene,_ref512){var attacker=_ref512[0],defender=_ref512[1];
 scene.backgroundEffect('linear-gradient(#440044 30%, #000000',2500,0.6);
 scene.showEffect('wisp',{
 x:attacker.x,
@@ -45973,7 +46689,7 @@ time:400});
 }},
 
 continentalcrush:{
-anim:function(scene,_ref510){var attacker=_ref510[0],defender=_ref510[1];
+anim:function(scene,_ref513){var attacker=_ref513[0],defender=_ref513[1];
 scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)',2200,0.6);
 scene.showEffect(attacker.sp,{
 x:attacker.x,
@@ -46132,7 +46848,7 @@ time:400},
 }},
 
 neverendingnightmare:{
-anim:function(scene,_ref511){var attacker=_ref511[0],defender=_ref511[1];
+anim:function(scene,_ref514){var attacker=_ref514[0],defender=_ref514[1];
 scene.backgroundEffect('linear-gradient(#440044 30%, #000000',1500,0.6);
 var xstep=(defender.x+200-defender.x)/5;
 var ystep=(defender.x-200-defender.x)/5;
@@ -46152,101 +46868,101 @@ time:50*i+1000},
 'linear');
 }
 xstep=(defender.x+150-defender.x)/5;
-for(var _i48=0;_i48<5;_i48++){
-scene.showEffect('poisonwisp',{
-x:defender.x-150+xstep*(_i48+1),
-y:defender.y+200+ystep*(_i48+1),
-z:defender.z+zstep*(_i48+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i48+100},
-{
-opacity:0,
-time:50*_i48+1000},
-'linear');
-}
-xstep=(defender.x+100-defender.x)/5;
 for(var _i49=0;_i49<5;_i49++){
 scene.showEffect('poisonwisp',{
-x:defender.x-100+xstep*(_i49+1),
+x:defender.x-150+xstep*(_i49+1),
 y:defender.y+200+ystep*(_i49+1),
 z:defender.z+zstep*(_i49+1),
-scale:1.2,
-opacity:1,
-time:40*_i49+200},
+scale:0.6,
+opacity:0.7,
+time:40*_i49+100},
 {
 opacity:0,
 time:50*_i49+1000},
 'linear');
 }
-xstep=(defender.x+50-defender.x)/5;
+xstep=(defender.x+100-defender.x)/5;
 for(var _i50=0;_i50<5;_i50++){
 scene.showEffect('poisonwisp',{
-x:defender.x-50+xstep*(_i50+1),
+x:defender.x-100+xstep*(_i50+1),
 y:defender.y+200+ystep*(_i50+1),
 z:defender.z+zstep*(_i50+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i50+300},
+scale:1.2,
+opacity:1,
+time:40*_i50+200},
 {
 opacity:0,
 time:50*_i50+1000},
 'linear');
 }
-xstep=(defender.x-50-defender.x)/5;
+xstep=(defender.x+50-defender.x)/5;
 for(var _i51=0;_i51<5;_i51++){
 scene.showEffect('poisonwisp',{
-x:defender.x+50+xstep*(_i51+1),
+x:defender.x-50+xstep*(_i51+1),
 y:defender.y+200+ystep*(_i51+1),
 z:defender.z+zstep*(_i51+1),
-scale:1.2,
-opacity:1,
-time:40*_i51+400},
+scale:0.6,
+opacity:0.7,
+time:40*_i51+300},
 {
 opacity:0,
 time:50*_i51+1000},
 'linear');
 }
-xstep=(defender.x-100-defender.x)/5;
+xstep=(defender.x-50-defender.x)/5;
 for(var _i52=0;_i52<5;_i52++){
 scene.showEffect('poisonwisp',{
-x:defender.x+100+xstep*(_i52+1),
+x:defender.x+50+xstep*(_i52+1),
 y:defender.y+200+ystep*(_i52+1),
 z:defender.z+zstep*(_i52+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i52+500},
+scale:1.2,
+opacity:1,
+time:40*_i52+400},
 {
 opacity:0,
 time:50*_i52+1000},
 'linear');
 }
-xstep=(defender.x-150-defender.x)/5;
+xstep=(defender.x-100-defender.x)/5;
 for(var _i53=0;_i53<5;_i53++){
 scene.showEffect('poisonwisp',{
-x:defender.x+150+xstep*(_i53+1),
+x:defender.x+100+xstep*(_i53+1),
 y:defender.y+200+ystep*(_i53+1),
 z:defender.z+zstep*(_i53+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i53+600},
+time:40*_i53+500},
 {
 opacity:0,
 time:50*_i53+1000},
 'linear');
 }
-xstep=(defender.x-200-defender.x)/5;
+xstep=(defender.x-150-defender.x)/5;
 for(var _i54=0;_i54<5;_i54++){
 scene.showEffect('poisonwisp',{
-x:defender.x+200+xstep*(_i54+1),
+x:defender.x+150+xstep*(_i54+1),
 y:defender.y+200+ystep*(_i54+1),
 z:defender.z+zstep*(_i54+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i54+700},
+time:40*_i54+600},
 {
 opacity:0,
 time:50*_i54+1000},
+'linear');
+}
+xstep=(defender.x-200-defender.x)/5;
+for(var _i55=0;_i55<5;_i55++){
+scene.showEffect('poisonwisp',{
+x:defender.x+200+xstep*(_i55+1),
+y:defender.y+200+ystep*(_i55+1),
+z:defender.z+zstep*(_i55+1),
+scale:0.6,
+opacity:0.7,
+time:40*_i55+700},
+{
+opacity:0,
+time:50*_i55+1000},
 'linear');
 }
 scene.showEffect('shadowball',{
@@ -46290,7 +47006,7 @@ time:1500},
 }},
 
 corkscrewcrash:{
-anim:function(scene,_ref512){var attacker=_ref512[0],defender=_ref512[1];
+anim:function(scene,_ref515){var attacker=_ref515[0],defender=_ref515[1];
 scene.backgroundEffect('#000000',1200,0.3);
 scene.showEffect('impact',{
 x:defender.x,
@@ -46527,7 +47243,7 @@ time:350},
 }},
 
 twinkletackle:{
-anim:function(scene,_ref513){var attacker=_ref513[0],defender=_ref513[1];
+anim:function(scene,_ref516){var attacker=_ref516[0],defender=_ref516[1];
 scene.backgroundEffect('#FF99FF',1700,0.5);
 scene.showEffect('shine',{
 x:attacker.x-10,
@@ -46696,7 +47412,7 @@ time:400});
 }},
 
 pulverizingpancake:{
-anim:function(scene,_ref514){var attacker=_ref514[0],defender=_ref514[1];
+anim:function(scene,_ref517){var attacker=_ref517[0],defender=_ref517[1];
 scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)',600,0.7,1200);
 scene.showEffect('iceball',{
 x:defender.x,
@@ -46803,7 +47519,7 @@ time:400},
 }},
 
 mercilessmarinade:{
-anim:function(scene,_ref515){var attacker=_ref515[0],defender=_ref515[1];
+anim:function(scene,_ref518){var attacker=_ref518[0],defender=_ref518[1];
 scene.backgroundEffect('linear-gradient(#2D0042 40%, #9A2FB8)',600,0.7,1200);
 scene.showEffect('electroball',{
 x:defender.x,
@@ -46910,7 +47626,7 @@ time:400},
 }},
 
 moltenmagmawhip:{
-anim:function(scene,_ref516){var attacker=_ref516[0],defender=_ref516[1];
+anim:function(scene,_ref519){var attacker=_ref519[0],defender=_ref519[1];
 scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)',600,0.7,1200);
 scene.showEffect('fireball',{
 x:defender.x,
@@ -47041,7 +47757,7 @@ time:400},
 }},
 
 stokedsparksurfer:{
-anim:function(scene,_ref517){var attacker=_ref517[0],defender=_ref517[1];
+anim:function(scene,_ref520){var attacker=_ref520[0],defender=_ref520[1];
 scene.backgroundEffect('#0000DD',1100,0.2,500);
 scene.showEffect('electroball',{
 x:attacker.x,
@@ -47224,7 +47940,7 @@ time:300},
 }},
 
 catastropika:{
-anim:function(scene,_ref518){var attacker=_ref518[0],defender=_ref518[1];
+anim:function(scene,_ref521){var attacker=_ref521[0],defender=_ref521[1];
 scene.backgroundEffect('#0000DD',800,0.2,500);
 scene.showEffect(attacker.sp,{
 x:attacker.x,
@@ -47396,7 +48112,7 @@ time:400},
 }},
 
 sinisterarrowraid:{
-anim:function(scene,_ref519){var attacker=_ref519[0],defender=_ref519[1];
+anim:function(scene,_ref522){var attacker=_ref522[0],defender=_ref522[1];
 defender.delay(1050);
 defender.anim({
 z:defender.behind(20),
@@ -47664,7 +48380,7 @@ time:2125},
 }},
 
 oceanicoperetta:{
-anim:function(scene,_ref520){var attacker=_ref520[0],defender=_ref520[1];
+anim:function(scene,_ref523){var attacker=_ref523[0],defender=_ref523[1];
 scene.backgroundEffect('linear-gradient(#000000 20%, #0000DD)',2700,0.4);
 scene.backgroundEffect("url('https://"+Config.routes.client+"/fx/weather-raindance.jpg')",700,0.2,2000);
 scene.showEffect('iceball',{
@@ -47718,7 +48434,7 @@ time:2000},
 }},
 
 extremeevoboost:{
-anim:function(scene,_ref521){var attacker=_ref521[0],defender=_ref521[1];
+anim:function(scene,_ref524){var attacker=_ref524[0],defender=_ref524[1];
 scene.backgroundEffect('#000000',1000,0.3);
 var xstep=(attacker.x+200-attacker.x)/5;
 var ystep=(attacker.x-200-attacker.x)/5;
@@ -47738,101 +48454,101 @@ time:50*i+1000},
 'linear');
 }
 xstep=(attacker.x+150-attacker.x)/5;
-for(var _i55=0;_i55<5;_i55++){
-scene.showEffect('electroball',{
-x:attacker.x-150+xstep*(_i55+1),
-y:attacker.y+200+ystep*(_i55+1),
-z:attacker.z+zstep*(_i55+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i55+100},
-{
-opacity:0,
-time:50*_i55+1000},
-'linear');
-}
-xstep=(attacker.x+100-attacker.x)/5;
 for(var _i56=0;_i56<5;_i56++){
-scene.showEffect('waterwisp',{
-x:attacker.x-100+xstep*(_i56+1),
+scene.showEffect('electroball',{
+x:attacker.x-150+xstep*(_i56+1),
 y:attacker.y+200+ystep*(_i56+1),
 z:attacker.z+zstep*(_i56+1),
-scale:1.2,
-opacity:1,
-time:40*_i56+200},
+scale:0.6,
+opacity:0.7,
+time:40*_i56+100},
 {
 opacity:0,
 time:50*_i56+1000},
 'linear');
 }
-xstep=(attacker.x+50-attacker.x)/5;
+xstep=(attacker.x+100-attacker.x)/5;
 for(var _i57=0;_i57<5;_i57++){
-scene.showEffect('shadowball',{
-x:attacker.x-50+xstep*(_i57+1),
+scene.showEffect('waterwisp',{
+x:attacker.x-100+xstep*(_i57+1),
 y:attacker.y+200+ystep*(_i57+1),
 z:attacker.z+zstep*(_i57+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i57+300},
+scale:1.2,
+opacity:1,
+time:40*_i57+200},
 {
 opacity:0,
 time:50*_i57+1000},
 'linear');
 }
-xstep=(attacker.x-50-attacker.x)/5;
+xstep=(attacker.x+50-attacker.x)/5;
 for(var _i58=0;_i58<5;_i58++){
-scene.showEffect('poisonwisp',{
-x:attacker.x+50+xstep*(_i58+1),
+scene.showEffect('shadowball',{
+x:attacker.x-50+xstep*(_i58+1),
 y:attacker.y+200+ystep*(_i58+1),
 z:attacker.z+zstep*(_i58+1),
-scale:1.2,
-opacity:1,
-time:40*_i58+400},
+scale:0.6,
+opacity:0.7,
+time:40*_i58+300},
 {
 opacity:0,
 time:50*_i58+1000},
 'linear');
 }
-xstep=(attacker.x-100-attacker.x)/5;
+xstep=(attacker.x-50-attacker.x)/5;
 for(var _i59=0;_i59<5;_i59++){
-scene.showEffect('iceball',{
-x:attacker.x+100+xstep*(_i59+1),
+scene.showEffect('poisonwisp',{
+x:attacker.x+50+xstep*(_i59+1),
 y:attacker.y+200+ystep*(_i59+1),
 z:attacker.z+zstep*(_i59+1),
-scale:0.6,
-opacity:0.7,
-time:40*_i59+500},
+scale:1.2,
+opacity:1,
+time:40*_i59+400},
 {
 opacity:0,
 time:50*_i59+1000},
 'linear');
 }
-xstep=(attacker.x-150-attacker.x)/5;
+xstep=(attacker.x-100-attacker.x)/5;
 for(var _i60=0;_i60<5;_i60++){
-scene.showEffect('energyball',{
-x:attacker.x+150+xstep*(_i60+1),
+scene.showEffect('iceball',{
+x:attacker.x+100+xstep*(_i60+1),
 y:attacker.y+200+ystep*(_i60+1),
 z:attacker.z+zstep*(_i60+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i60+600},
+time:40*_i60+500},
 {
 opacity:0,
 time:50*_i60+1000},
 'linear');
 }
-xstep=(attacker.x-200-attacker.x)/5;
+xstep=(attacker.x-150-attacker.x)/5;
 for(var _i61=0;_i61<5;_i61++){
-scene.showEffect('mistball',{
-x:attacker.x+200+xstep*(_i61+1),
+scene.showEffect('energyball',{
+x:attacker.x+150+xstep*(_i61+1),
 y:attacker.y+200+ystep*(_i61+1),
 z:attacker.z+zstep*(_i61+1),
 scale:0.6,
 opacity:0.7,
-time:40*_i61+700},
+time:40*_i61+600},
 {
 opacity:0,
 time:50*_i61+1000},
+'linear');
+}
+xstep=(attacker.x-200-attacker.x)/5;
+for(var _i62=0;_i62<5;_i62++){
+scene.showEffect('mistball',{
+x:attacker.x+200+xstep*(_i62+1),
+y:attacker.y+200+ystep*(_i62+1),
+z:attacker.z+zstep*(_i62+1),
+scale:0.6,
+opacity:0.7,
+time:40*_i62+700},
+{
+opacity:0,
+time:50*_i62+1000},
 'linear');
 }
 scene.showEffect('rainbow',{
@@ -47861,7 +48577,7 @@ time:1000},
 }},
 
 guardianofalola:{
-anim:function(scene,_ref522){var attacker=_ref522[0],defender=_ref522[1];
+anim:function(scene,_ref525){var attacker=_ref525[0],defender=_ref525[1];
 scene.backgroundEffect('linear-gradient(#421800 40%, #B8652F)',1700,0.6,300);
 scene.showEffect('fist1',{
 x:attacker.leftof(200),
@@ -47988,7 +48704,7 @@ time:300},
 }},
 
 splinteredstormshards:{
-anim:function(scene,_ref523){var attacker=_ref523[0],defender=_ref523[1];
+anim:function(scene,_ref526){var attacker=_ref526[0],defender=_ref526[1];
 scene.backgroundEffect("url('https://"+Config.routes.client+"/sprites/gen6bgs/bg-earthycave.jpg')",2700,0.8,300);
 scene.backgroundEffect('linear-gradient(#FFC720 15%, #421800)',2700,0.7);
 scene.backgroundEffect('#ffffff',400,0.6,2500);
@@ -48361,7 +49077,7 @@ time:200},
 }},
 
 letssnuggleforever:{
-anim:function(scene,_ref524){var attacker=_ref524[0],defender=_ref524[1];
+anim:function(scene,_ref527){var attacker=_ref527[0],defender=_ref527[1];
 attacker.anim({
 x:attacker.x,
 y:attacker.y+250,
@@ -48646,7 +49362,7 @@ time:2575},
 }},
 
 clangoroussoulblaze:{
-anim:function(scene,_ref525){var attacker=_ref525[0],defenders=_ref525.slice(1);
+anim:function(scene,_ref528){var attacker=_ref528[0],defenders=_ref528.slice(1);
 attacker.anim({x:attacker.x-10,time:300});
 attacker.anim({x:attacker.x+10,time:400});
 attacker.anim({x:attacker.x,time:300});
@@ -48668,45 +49384,45 @@ time:1});
 
 attacker.anim({
 opacity:1,
-time:200});for(var _i62=0;_i62<
+time:200});for(var _i63=0;_i63<
 
-defenders.length;_i62++){var _defender17=defenders[_i62];
-_defender17.delay(1825);
-_defender17.anim({
-z:_defender17.behind(5),
+defenders.length;_i63++){var _defender18=defenders[_i63];
+_defender18.delay(1825);
+_defender18.anim({
+z:_defender18.behind(5),
 time:75},
 'swing');
-_defender17.anim({
+_defender18.anim({
 time:75},
 'swing');
-_defender17.anim({
-z:_defender17.behind(5),
+_defender18.anim({
+z:_defender18.behind(5),
 time:75},
 'swing');
-_defender17.anim({
+_defender18.anim({
 time:75},
 'swing');
-_defender17.anim({
-z:_defender17.behind(5),
+_defender18.anim({
+z:_defender18.behind(5),
 time:75},
 'swing');
-_defender17.anim({
+_defender18.anim({
 time:75},
 'swing');
-_defender17.anim({
-z:_defender17.behind(5),
+_defender18.anim({
+z:_defender18.behind(5),
 time:75},
 'swing');
-_defender17.anim({
+_defender18.anim({
 time:75},
 'swing');
-_defender17.anim({
-z:_defender17.behind(15),
+_defender18.anim({
+z:_defender18.behind(15),
 time:75,
 opacity:0},
 'swing');
-_defender17.delay(400);
-_defender17.anim({
+_defender18.delay(400);
+_defender18.anim({
 time:200},
 'swing');
 }
@@ -48959,7 +49675,7 @@ opacity:0},
 }},
 
 unifiedupsurge:{
-anim:function(scene,_ref526){var attacker=_ref526[0],defenders=_ref526.slice(1);
+anim:function(scene,_ref529){var attacker=_ref529[0],defenders=_ref529.slice(1);
 attacker.anim({x:attacker.x-10,time:300});
 attacker.anim({x:attacker.x+10,time:400});
 attacker.anim({x:attacker.x,time:300});
@@ -48981,45 +49697,45 @@ time:1});
 
 attacker.anim({
 opacity:1,
-time:200});for(var _i63=0;_i63<
+time:200});for(var _i64=0;_i64<
 
-defenders.length;_i63++){var _defender18=defenders[_i63];
-_defender18.delay(1825);
-_defender18.anim({
-z:_defender18.behind(5),
+defenders.length;_i64++){var _defender19=defenders[_i64];
+_defender19.delay(1825);
+_defender19.anim({
+z:_defender19.behind(5),
 time:75},
 'swing');
-_defender18.anim({
+_defender19.anim({
 time:75},
 'swing');
-_defender18.anim({
-z:_defender18.behind(5),
+_defender19.anim({
+z:_defender19.behind(5),
 time:75},
 'swing');
-_defender18.anim({
+_defender19.anim({
 time:75},
 'swing');
-_defender18.anim({
-z:_defender18.behind(5),
+_defender19.anim({
+z:_defender19.behind(5),
 time:75},
 'swing');
-_defender18.anim({
+_defender19.anim({
 time:75},
 'swing');
-_defender18.anim({
-z:_defender18.behind(5),
+_defender19.anim({
+z:_defender19.behind(5),
 time:75},
 'swing');
-_defender18.anim({
+_defender19.anim({
 time:75},
 'swing');
-_defender18.anim({
-z:_defender18.behind(15),
+_defender19.anim({
+z:_defender19.behind(15),
 time:75,
 opacity:0},
 'swing');
-_defender18.delay(400);
-_defender18.anim({
+_defender19.delay(400);
+_defender19.anim({
 time:200},
 'swing');
 }
@@ -49272,7 +49988,7 @@ opacity:0},
 }},
 
 antiquearabesque:{
-anim:function(scene,_ref527){var attacker=_ref527[0],defenders=_ref527.slice(1);
+anim:function(scene,_ref530){var attacker=_ref530[0],defenders=_ref530.slice(1);
 attacker.anim({x:attacker.x-10,time:300});
 attacker.anim({x:attacker.x+10,time:400});
 attacker.anim({x:attacker.x,time:300});
@@ -49294,45 +50010,45 @@ time:1});
 
 attacker.anim({
 opacity:1,
-time:200});for(var _i64=0;_i64<
+time:200});for(var _i65=0;_i65<
 
-defenders.length;_i64++){var _defender19=defenders[_i64];
-_defender19.delay(1825);
-_defender19.anim({
-z:_defender19.behind(5),
+defenders.length;_i65++){var _defender20=defenders[_i65];
+_defender20.delay(1825);
+_defender20.anim({
+z:_defender20.behind(5),
 time:75},
 'swing');
-_defender19.anim({
+_defender20.anim({
 time:75},
 'swing');
-_defender19.anim({
-z:_defender19.behind(5),
+_defender20.anim({
+z:_defender20.behind(5),
 time:75},
 'swing');
-_defender19.anim({
+_defender20.anim({
 time:75},
 'swing');
-_defender19.anim({
-z:_defender19.behind(5),
+_defender20.anim({
+z:_defender20.behind(5),
 time:75},
 'swing');
-_defender19.anim({
+_defender20.anim({
 time:75},
 'swing');
-_defender19.anim({
-z:_defender19.behind(5),
+_defender20.anim({
+z:_defender20.behind(5),
 time:75},
 'swing');
-_defender19.anim({
+_defender20.anim({
 time:75},
 'swing');
-_defender19.anim({
-z:_defender19.behind(15),
+_defender20.anim({
+z:_defender20.behind(15),
 time:75,
 opacity:0},
 'swing');
-_defender19.delay(400);
-_defender19.anim({
+_defender20.delay(400);
+_defender20.anim({
 time:200},
 'swing');
 }
@@ -49585,7 +50301,7 @@ opacity:0},
 }},
 
 soulstealing7starstrike:{
-anim:function(scene,_ref528){var attacker=_ref528[0],defender=_ref528[1];
+anim:function(scene,_ref531){var attacker=_ref531[0],defender=_ref531[1];
 scene.backgroundEffect('linear-gradient(#043B13 55%, #3FBF99',3600,0.7);
 scene.backgroundEffect('#ffffff',700,0.7,3300);
 scene.showEffect('fist',{
@@ -50005,7 +50721,7 @@ time:150},
 }},
 
 searingsunrazesmash:{
-anim:function(scene,_ref529){var attacker=_ref529[0],defender=_ref529[1];
+anim:function(scene,_ref532){var attacker=_ref532[0],defender=_ref532[1];
 var xstep=(defender.x-attacker.x)/5;
 var ystep=(defender.x-200-attacker.x)/5;
 var zstep=(defender.z-attacker.z)/5;
@@ -50313,6 +51029,7 @@ BattleMoveAnims['crushgrip']={anim:BattleMoveAnims['quash'].anim};
 
 BattleMoveAnims['sweepup']={anim:BattleMoveAnims['tailslap'].anim};
 BattleMoveAnims['catburglary']={anim:BattleMoveAnims['spectralthief'].anim};
+BattleMoveAnims['rapidraidswipe']={anim:BattleMoveAnims['spectralthief'].anim};
 
 BattleMoveAnims['beatup']={anim:BattleMoveAnims['slam'].anim};
 BattleMoveAnims['counter']={anim:BattleMoveAnims['slam'].anim};

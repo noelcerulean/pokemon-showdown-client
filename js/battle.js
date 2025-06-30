@@ -2402,7 +2402,7 @@ this.activateAbility(_poke31,_effect14);
 this.activateAbility(_ofpoke10||_poke31,_fromeffect3);
 switch(_effect14.id){
 case'typechange':
-if(_ofpoke10&&_fromeffect3.id===('reflecttype'||'concealment')){
+if(_ofpoke10&&_fromeffect3.id==='reflecttype'||_ofpoke10&&_fromeffect3.id==='concealment'){
 _poke31.copyTypesFrom(_ofpoke10);
 }else{
 var types=Dex.sanitizeName(args[3]||'???');
@@ -2909,14 +2909,24 @@ continue;
 }
 }
 if(this.gen>6)maxTimeLeft=8;
+}else
+if(_effect22.id.endsWith('diffusion')){
+for(var _i29=this.pseudoWeather.length-1;_i29>=0;_i29--){
+var _pwID=toID(this.pseudoWeather[_i29][0]);
+if(_pwID.endsWith('diffusion')){
+this.pseudoWeather.splice(_i29,1);
+continue;
+}
+}
+if(this.gen>6)maxTimeLeft=8;
 }
 this.addPseudoWeather(_effect22.name,5,maxTimeLeft);
 
 switch(_effect22.id){
 case'gravity':
-if(this.seeking!==null)break;for(var _i29=0,_this$sides7=
-this.sides;_i29<_this$sides7.length;_i29++){var _side3=_this$sides7[_i29];for(var _i30=0,_side3$active=
-_side3.active;_i30<_side3$active.length;_i30++){var _active=_side3$active[_i30];
+if(this.seeking!==null)break;for(var _i30=0,_this$sides7=
+this.sides;_i30<_this$sides7.length;_i30++){var _side3=_this$sides7[_i30];for(var _i31=0,_side3$active=
+_side3.active;_i31<_side3$active.length;_i31++){var _active=_side3$active[_i31];
 if(_active)this.scene.runOtherAnim('gravity',[_active]);
 }
 }
@@ -3123,8 +3133,8 @@ return this.sides[siden].addPokemon('','',details);
 };_proto3.
 findCorrespondingPokemon=function findCorrespondingPokemon(serverPokemon){
 var _this$parsePokemonId3=this.parsePokemonId(serverPokemon.ident),siden=_this$parsePokemonId3.siden;
-var searchid=serverPokemon.ident+"|"+serverPokemon.details;for(var _i31=0,_this$sides$siden$pok=
-this.sides[siden].pokemon;_i31<_this$sides$siden$pok.length;_i31++){var _pokemon4=_this$sides$siden$pok[_i31];
+var searchid=serverPokemon.ident+"|"+serverPokemon.details;for(var _i32=0,_this$sides$siden$pok=
+this.sides[siden].pokemon;_i32<_this$sides$siden$pok.length;_i32++){var _pokemon4=_this$sides$siden$pok[_i32];
 if(_pokemon4.searchid===searchid){
 return _pokemon4;
 }
@@ -3143,9 +3153,9 @@ var isInactive=slot<0;
 var side=this.sides[siden];
 
 
-if(!isInactive&&side.active[slot])return side.active[slot];for(var _i32=0,_side$pokemon=
+if(!isInactive&&side.active[slot])return side.active[slot];for(var _i33=0,_side$pokemon=
 
-side.pokemon;_i32<_side$pokemon.length;_i32++){var _pokemon5=_side$pokemon[_i32];
+side.pokemon;_i33<_side$pokemon.length;_i33++){var _pokemon5=_side$pokemon[_i33];
 if(isInactive&&side.active.includes(_pokemon5))continue;
 if(_pokemon5.ident===pokemonid){
 if(slot>=0)_pokemon5.slot=slot;
@@ -3256,8 +3266,8 @@ case'rotation':
 this.nearSide.active=[null,null,null];
 this.farSide.active=[null,null,null];
 break;
-default:for(var _i33=0,_this$sides8=
-this.sides;_i33<_this$sides8.length;_i33++){var side=_this$sides8[_i33];side.active=[null];}
+default:for(var _i34=0,_this$sides8=
+this.sides;_i34<_this$sides8.length;_i34++){var side=_this$sides8[_i34];side.active=[null];}
 break;}
 
 if(!this.pokemonControlled)this.pokemonControlled=this.nearSide.active.length;
@@ -3547,8 +3557,8 @@ this.runMajor(args,kwArgs,preempt);
 }catch(err){var _this$subscription6;
 this.log(['majorerror','Error parsing: '+str+' ('+err+')']);
 if(err.stack){
-var stack=(''+err.stack).split('\n');for(var _i34=0;_i34<
-stack.length;_i34++){var line=stack[_i34];
+var stack=(''+err.stack).split('\n');for(var _i35=0;_i35<
+stack.length;_i35++){var line=stack[_i35];
 if(/\brun\b/.test(line)){
 break;
 }
