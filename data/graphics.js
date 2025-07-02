@@ -1583,10 +1583,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/swsh-rose.mp3',49622,129804,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/swsh-rose.mp3',49622,129804,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
 break;}
 
 
