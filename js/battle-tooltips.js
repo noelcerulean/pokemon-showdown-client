@@ -652,6 +652,8 @@ calls='Thunderbolt';
 calls='Energy Ball';
 }else if(this.battle.hasPseudoWeather('Misty Terrain')){
 calls='Moonblast';
+}else if(this.battle.hasPseudoWeather('Berserk Terrain')){
+calls='Dragon Pulse';
 }else if(this.battle.hasPseudoWeather('Psychic Terrain')){
 calls='Psychic';
 }else{
@@ -1473,6 +1475,8 @@ moveType='Electric';
 moveType='Grass';
 }else if(this.battle.hasPseudoWeather('Misty Terrain')){
 moveType='Fairy';
+}else if(this.battle.hasPseudoWeather('Berserk Terrain')){
+moveType='Dragon';
 }else if(this.battle.hasPseudoWeather('Psychic Terrain')){
 moveType='Psychic';
 }
@@ -1824,6 +1828,7 @@ if(
 this.battle.hasPseudoWeather('Electric Terrain')||
 this.battle.hasPseudoWeather('Grassy Terrain')||
 this.battle.hasPseudoWeather('Misty Terrain')||
+this.battle.hasPseudoWeather('Berserk Terrain')||
 this.battle.hasPseudoWeather('Psychic Terrain'))
 {
 value.modify(2,'Terrain Pulse boost');
@@ -2063,6 +2068,10 @@ value.modify(this.battle.gen>7?1.3:1.5,'Terrain boost');
 if(target?target.isGrounded():true){
 value.modify(0.5,'Misty Terrain + grounded target');
 }
+}else if(this.battle.hasPseudoWeather('Berserk Terrain')&&moveType==='Fairy'){
+if(target?target.isGrounded():true){
+value.modify(0.5,'Berserk Terrain + grounded target');
+}
 }else if(
 this.battle.hasPseudoWeather('Grassy Terrain')&&['earthquake','bulldoze','magnitude'].includes(move.id))
 {
@@ -2088,6 +2097,7 @@ move.id==='steelroller'&&
 !this.battle.hasPseudoWeather('Electric Terrain')&&
 !this.battle.hasPseudoWeather('Grassy Terrain')&&
 !this.battle.hasPseudoWeather('Misty Terrain')&&
+!this.battle.hasPseudoWeather('Berserk Terrain')&&
 !this.battle.hasPseudoWeather('Psychic Terrain'))
 {
 value.set(0,'no Terrain');

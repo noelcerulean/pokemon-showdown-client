@@ -969,6 +969,7 @@ switch(pwid){
 case'electricterrain':
 case'grassyterrain':
 case'mistyterrain':
+case'berserkterrain':
 case'psychicterrain':
 terrain=pwid;
 break;
@@ -1583,10 +1584,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dark-colo-final.mp3',7212,115212,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dark-colo-final.mp3',7212,115212,this.bgm);
 break;}
 
 
@@ -3291,7 +3292,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-collision.png'];
+'bg-collisiongym.png'];
 
 
 var BattleOtherAnims={
