@@ -162,7 +162,7 @@ var BattleBaseSpeciesChart=[
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
 "despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple",
-"enchantice"];
+"enchantice","madamme"];
 
 
 var BattlePokemonIconIndexes={
@@ -700,8 +700,14 @@ pickpossum:1476+173,
 pickpossumpopo:1476+173,
 omniverum:1476+174,
 madamme:1476+175,
+madammegothic:1476+175,
+madammepreppy:1476+175,
 terrofunfaizer:1476+176,
 honchkrowmega:1476+177,
+spiritombmega:1476+178,
+sorceroma:1476+179,
+mewtwoarmored:1476+180,
+celebiwithered:1476+181,
 
 
 ano:304,

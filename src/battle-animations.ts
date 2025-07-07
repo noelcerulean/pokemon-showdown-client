@@ -1584,10 +1584,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/dark-colo-final.mp3', 7212, 115212, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-rose.mp3', 36392, 95174, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/dark-colo-final.mp3', 7212, 115212, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-rose.mp3', 36392, 95174, this.bgm);
 				break;
 			}
 	
@@ -3292,7 +3292,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-collisiongym.png',
+	'bg-collision.png',
 ];
 
 const BattleOtherAnims: AnimTable = {

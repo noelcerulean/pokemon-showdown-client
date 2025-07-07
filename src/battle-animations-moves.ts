@@ -31102,6 +31102,188 @@ const BattleMoveAnims: AnimTable = {
 			}, 'decel');
 		},
 	},
+	mindwipe: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('rgb(165, 23, 153)', 1000, 0.5);
+			scene.backgroundEffect(' #FFFFFF', 600, 0.8, 2100);
+			scene.showEffect('shadowball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0,
+				opacity: 1,
+				time: 0,
+			}, {
+				scale: 0.6,
+				time: 400,
+			}, 'decel', 'fade');
+			scene.showEffect('colorball8', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0,
+				opacity: 1,
+				time: 200,
+			}, {
+				scale: 0.8,
+				time: 600,
+			}, 'decel', 'fade');
+			scene.showEffect('colorball8', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0,
+				opacity: 1,
+				time: 400,
+			}, {
+				scale: 1,
+				time: 800,
+			}, 'decel', 'explode');
+			scene.showEffect('mistball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0,
+				opacity: 0.5,
+				time: 0,
+			}, {
+				scale: 0.8,
+				time: 800,
+			}, 'linear', 'fade');
+			scene.showEffect('mistball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0.3,
+				opacity: 1,
+				time: 800,
+			}, {
+				scale: 1.2,
+				time: 1300,
+			}, 'linear', 'fade');
+			scene.showEffect('mistball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0.3,
+				opacity: 0.3,
+				time: 800,
+			}, {
+				scale: 1.2,
+				time: 1300,
+			}, 'linear', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 1.2,
+				opacity: 0.8,
+				time: 1300,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				time: 1500,
+			}, 'linear', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 1.2,
+				opacity: 0.3,
+				time: 1300,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				time: 1500,
+			}, 'linear', 'explode');
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 0.2,
+				opacity: 1,
+				time: 0,
+			}, {
+				scale: 0.5,
+				time: 1200,
+			}, 'decel', 'fade');
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 2,
+				opacity: 1,
+				time: 900,
+			}, {
+				time: 1200,
+			}, 'decel', 'fade');
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.behind(-20),
+				scale: 2,
+				opacity: 1,
+				time: 1300,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 2.5,
+				time: 1500,
+			}, 'linear', 'explode');
+
+			scene.showEffect('colorball8', {
+				x: defender.x,
+				y: defender.y - 60,
+				z: defender.z,
+				scale: 0,
+				xscale: 0,
+				opacity: 0.5,
+				time: 1500,
+			}, {
+				scale: 2,
+				xscale: 12,
+				opacity: 0,
+				time: 2500,
+			}, 'accel');
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y + 350,
+				z: defender.z,
+				opacity: 1,
+				scale: 8,
+				xscale: 0,
+				yscale: 13,
+				time: 1500,
+			}, {
+				xscale: 4,
+				time: 2500,
+			}, 'accel', 'explode');
+			scene.showEffect('wisp', {
+				x: defender.x,
+				y: defender.y - 30,
+				z: defender.z,
+				opacity: 1,
+				scale: 2,
+				time: 1500,
+			}, {
+				scale: 6,
+				time: 2500,
+			}, 'decel', 'explode');
+			defender.delay(1500);
+			defender.anim({
+				z: defender.behind(10),
+				opacity: 0,
+				time: 200,
+			}, 'swing');
+			defender.delay(700);
+			defender.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
 	truthrupture: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('rgb(29, 87, 6)', 1000, 0.5);
@@ -41685,6 +41867,60 @@ const BattleMoveAnims: AnimTable = {
 				time: 2000,
 			}, 'accel', 'explode');
 			scene.showEffect('waterwisp', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 3.25,
+				opacity: 0.7,
+				time: 600,
+			}, {
+				x: defender.x,
+				y: defender.y + 10,
+				z: defender.z,
+				time: 2000,
+			}, 'accel', 'explode');
+		},
+	},
+	melancholiaexpanse: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#000000 20%,rgb(43, 43, 43))', 2700, 0.4);
+			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-miasma.jpg')`, 700, 0.2, 2000);
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 2.5,
+				opacity: 0,
+			}, {
+				scale: 3,
+				opacity: 1,
+				time: 599,
+			}, 'linear', 'fade');
+			scene.showEffect('blackwisp', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 3,
+				opacity: 0,
+			}, {
+				scale: 3.25,
+				opacity: 0.7,
+				time: 599,
+			}, 'linear', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 3,
+				opacity: 1,
+				time: 600,
+			}, {
+				x: defender.x,
+				y: defender.y + 10,
+				z: defender.z,
+				time: 2000,
+			}, 'accel', 'explode');
+			scene.showEffect('blackwisp', {
 				x: attacker.x,
 				y: attacker.y + 120,
 				z: attacker.z,
