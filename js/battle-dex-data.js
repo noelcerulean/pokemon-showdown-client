@@ -162,7 +162,7 @@ var BattleBaseSpeciesChart=[
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
 "despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple",
-"enchantice","madamme"];
+"enchantice","madamme","musleeb","sindle","fofoam"];
 
 
 var BattlePokemonIconIndexes={
@@ -708,6 +708,9 @@ spiritombmega:1476+178,
 sorceroma:1476+179,
 mewtwoarmored:1476+180,
 celebiwithered:1476+181,
+musleeb:1476+182,
+sindle:1476+183,
+fofoam:1476+184,
 
 
 ano:304,
