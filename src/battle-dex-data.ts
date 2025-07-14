@@ -162,7 +162,7 @@ const BattleBaseSpeciesChart = [
 	"charino", "fearno", "wiggno", "venono", "ano", "krokono", "noivern", "meowsticroyal", "furfrouprincess",
 	"incineroar", "seaking", "heatmorhuangshan", "noctowl", "starmie", "orneridge", "lugito",
 	"despotide", "lycanrocmidnight", "espurr", "chandelure", "cofagrigus", "primeape", "wurmple",
-	"enchantice", "madamme", "musleeb", "sindle", "fofoam",
+	"enchantice", "madamme", "musleeb", "sindle", "fofoam", "scrafty",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -709,8 +709,15 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	mewtwoarmored: 1476 + 180,
 	celebiwithered: 1476 + 181,
 	musleeb: 1476 + 182,
+	musleebvera: 1476 + 182,
+	musleebveraonesie: 1476 + 182,
 	sindle: 1476 + 183,
+	sindlelighthouse: 1476 + 183,
+	sindlegroveil: 1476 + 183,
+	sindlerex: 1476 + 183,
 	fofoam: 1476 + 184,
+	fofoampaz: 1476 + 184,
+	fofoamcarmalot: 1476 + 184,
 
 	//hypnomons
 	ano: 304,
