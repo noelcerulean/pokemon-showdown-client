@@ -1201,21 +1201,28 @@ class BattleTooltips {
 			stats.spa = Math.floor(stats.spa * 1.5);
 		}
 		if (ability === 'grasspelt' && this.battle.hasPseudoWeather('Grassy Terrain')) {
-			stats.def = Math.floor(stats.def * 2);
+			stats.def = Math.floor(stats.def * 1.5);
+			stats.atk = Math.floor(stats.atk * 1.5);
 		}
 		if (ability === 'shadowbirch' && this.battle.hasPseudoWeather('Grassy Terrain')) {
 			stats.spe = Math.floor(stats.spe * 2);
 			stats.atk = Math.floor(stats.atk * 1.5);
 		}
 		if (ability === 'mistycover' && this.battle.hasPseudoWeather('Misty Terrain')) {
-			stats.spd = Math.floor(stats.spd * 2);
+			stats.spd = Math.floor(stats.spd * 1.5);
+			stats.def = Math.floor(stats.def * 1.5);
 		}
 		if (ability === 'shadowribbons' && this.battle.hasPseudoWeather('Misty Terrain')) {
 			stats.spe = Math.floor(stats.spe * 2);
 			stats.spa = Math.floor(stats.spa * 1.5);
 		}
 		if (ability === 'surgingmindforce' && this.battle.hasPseudoWeather('Psychic Terrain')) {
-			stats.spa = Math.floor(stats.spa * 2);
+			stats.spa = Math.floor(stats.spa * 1.5);
+			stats.spd = Math.floor(stats.spd * 1.5);
+		}
+		if (ability === 'surgingrage' && this.battle.hasPseudoWeather('Berserk Terrain')) {
+			stats.spa = Math.floor(stats.atk * 1.5);
+			stats.spd = Math.floor(stats.def * 1.5);
 		}
 		if (ability === 'surgesurfer' && this.battle.hasPseudoWeather('Electric Terrain')) {
 			speedModifiers.push(2);
