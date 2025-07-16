@@ -711,6 +711,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	musleeb: 1476 + 182,
 	musleebvera: 1476 + 182,
 	musleeblotus: 1476 + 182,
+	musleebdribble: 1476 + 182,
 	musleebveraonesie: 1476 + 182,
 	sindle: 1476 + 183,
 	sindlelighthouse: 1476 + 183,
@@ -722,6 +723,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	fofoam: 1476 + 184,
 	fofoampaz: 1476 + 184,
 	fofoamcarmalot: 1476 + 184,
+	fofoamgort: 1476 + 184,
 
 	//hypnomons
 	ano: 304,
