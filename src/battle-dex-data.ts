@@ -713,6 +713,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	musleeblotus: 1476 + 182,
 	musleebdribble: 1476 + 182,
 	musleebhexa: 1476 + 182,
+	musleebkim: 1476 + 182,
 	musleebveraonesie: 1476 + 182,
 	sindle: 1476 + 183,
 	sindlelighthouse: 1476 + 183,
@@ -721,11 +722,14 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	sindlesuneater: 1476 + 183,
 	sindledeeva: 1476 + 183,
 	sindleapophis: 1476 + 183,
+	sindleliege: 1476 + 183,
+	sindlepeacemaker: 1476 + 183,
 	fofoam: 1476 + 184,
 	fofoampaz: 1476 + 184,
 	fofoamcarmalot: 1476 + 184,
 	fofoamgort: 1476 + 184,
 	fofoamriptide: 1476 + 184,
+	fofoamastra: 1476 + 184,
 
 	//hypnomons
 	ano: 304,
