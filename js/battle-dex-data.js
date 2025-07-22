@@ -162,7 +162,7 @@ var BattleBaseSpeciesChart=[
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
 "despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple",
-"enchantice","madamme","musleeb","sindle","fofoam","scrafty"];
+"enchantice","madamme","musleeb","sindle","fofoam","scrafty","stantler"];
 
 
 var BattlePokemonIconIndexes={
@@ -415,6 +415,7 @@ decidueyeapollotoga:1380+27,
 decidueyeapollopride:1380+27,
 dewottlutryla:1380+28,
 dewottlutryladress:1380+28,
+dewottlutrylawedding:1380+28,
 fraxurefrenzy:1380+29,
 fraxurefrenzydeity:1380+29,
 golisopodmusashi:1380+30,
@@ -714,6 +715,7 @@ musleeblotus:1476+182,
 musleebdribble:1476+182,
 musleebhexa:1476+182,
 musleebkim:1476+182,
+musleebdolly:1476+182,
 musleebveraonesie:1476+182,
 sindle:1476+183,
 sindlelighthouse:1476+183,
