@@ -162,7 +162,7 @@ var BattleBaseSpeciesChart=[
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
 "despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple",
-"enchantice","madamme","musleeb","sindle","fofoam","scrafty","stantler"];
+"enchantice","madamme","musleeb","sindle","fofoam","scrafty","stantler","passimian"];
 
 
 var BattlePokemonIconIndexes={

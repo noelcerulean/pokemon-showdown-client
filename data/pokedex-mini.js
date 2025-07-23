@@ -1515,6 +1515,7 @@ exports.BattlePokemonSprites = {
 	comfey:{num:764},
 	oranguru:{num:765},
 	passimian:{num:766},
+	passimianwedding:{num:766},
 	wimpod:{num:767},
 	golisopod:{num:768},
 	golisopoduncooked:{num:768},
