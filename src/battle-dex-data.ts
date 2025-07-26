@@ -163,6 +163,7 @@ const BattleBaseSpeciesChart = [
 	"incineroar", "seaking", "heatmorhuangshan", "noctowl", "starmie", "orneridge", "lugito",
 	"despotide", "lycanrocmidnight", "espurr", "chandelure", "cofagrigus", "primeape", "wurmple",
 	"enchantice", "madamme", "musleeb", "sindle", "fofoam", "scrafty", "stantler", "passimian",
+	"bellossom", "ludisc", "deoxys",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -539,6 +540,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	robodachi: 1476 + 43,
 	roseradearmored: 1476 + 44,
 	roseradearmoredsummer: 1476 + 44,
+	roseradearmoredrenegade: 1476 + 44,
 	longeon: 1476 + 45,
 	longeonpixie: 1476 + 45,
 	growlithefnf: 1476 + 46,

@@ -1152,7 +1152,8 @@ var BattleBaseSpeciesChart=[
 "charino","fearno","wiggno","venono","ano","krokono","noivern","meowsticroyal","furfrouprincess",
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
 "despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple",
-"enchantice","madamme","musleeb","sindle","fofoam","scrafty","stantler","passimian"];
+"enchantice","madamme","musleeb","sindle","fofoam","scrafty","stantler","passimian",
+"bellossom","ludisc","deoxys"];
 
 
 var BattlePokemonIconIndexes={
@@ -1529,6 +1530,7 @@ samsarula:1476+42,
 robodachi:1476+43,
 roseradearmored:1476+44,
 roseradearmoredsummer:1476+44,
+roseradearmoredrenegade:1476+44,
 longeon:1476+45,
 longeonpixie:1476+45,
 growlithefnf:1476+46,
