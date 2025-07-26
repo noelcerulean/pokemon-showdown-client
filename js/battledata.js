@@ -1153,7 +1153,7 @@ var BattleBaseSpeciesChart=[
 "incineroar","seaking","heatmorhuangshan","noctowl","starmie","orneridge","lugito",
 "despotide","lycanrocmidnight","espurr","chandelure","cofagrigus","primeape","wurmple",
 "enchantice","madamme","musleeb","sindle","fofoam","scrafty","stantler","passimian",
-"bellossom","ludisc","deoxys"];
+"bellossom","ludisc","deoxys","sunflora"];
 
 
 var BattlePokemonIconIndexes={
@@ -1716,8 +1716,9 @@ sindlerex:1476+183,
 sindlesuneater:1476+183,
 sindledeeva:1476+183,
 sindleapophis:1476+183,
-sindleliege:1476+183,
 sindlepeacemaker:1476+183,
+sindlecoily:1476+183,
+sindleliege:1476+183,
 fofoam:1476+184,
 fofoampaz:1476+184,
 fofoamcarmalot:1476+184,
