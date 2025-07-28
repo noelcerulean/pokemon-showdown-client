@@ -14,6 +14,7 @@ exports.BattlePokemonSprites = {
 	musleebdolly:{num:-592},
 	musleebhana:{num:-592},
 	musleebkim:{num:-592},
+	musleebmeemo:{num:-592},
 	musleebveraonesie:{num:-592},
 	sindle:{num:-593},
 	sindlelighthouse:{num:-593},
