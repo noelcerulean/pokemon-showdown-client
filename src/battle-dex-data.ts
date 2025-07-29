@@ -727,6 +727,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	musleebhexa: 1476 + 182,
 	musleebdolly: 1476 + 182,
 	musleebhana: 1476 + 182,
+	musleebseeds: 1476 + 182,
 	musleebkim: 1476 + 182,
 	musleebmeemo: 1476 + 182,
 	musleebveraonesie: 1476 + 182,
