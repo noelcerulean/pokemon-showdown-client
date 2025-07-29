@@ -166,6 +166,7 @@ const BattleBaseSpeciesChart = [
 	"bellossom", "ludisc", "deoxys", "sunflora", "bunmochi", "terrofunfaizer", "tapufini", "mienfoo",
 	"magmortar", "oricoriopau", "gourgeist", "kartana", "sewaddle", "escavalier", "swampert", "numpuff",
 	"phasmatch", "torkoalfnf", "lickitung", "pachirisu", "scizor", "illumise", "lileep", "durant", "sceptile",
+	"dedenne",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {

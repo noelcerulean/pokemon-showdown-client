@@ -1431,6 +1431,7 @@ exports.BattlePokemonSprites = {
 	longeonspaghetti:{num:-521},
 	hawlucha:{num:701},
 	dedenne:{num:702},
+	dedennedent:{num:702},
 	carbink:{num:703},
 	carbinkfloatamo:{num:703},
 	goomy:{num:704},

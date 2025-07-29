@@ -165,7 +165,8 @@ var BattleBaseSpeciesChart=[
 "enchantice","madamme","musleeb","sindle","fofoam","scrafty","stantler","passimian",
 "bellossom","ludisc","deoxys","sunflora","bunmochi","terrofunfaizer","tapufini","mienfoo",
 "magmortar","oricoriopau","gourgeist","kartana","sewaddle","escavalier","swampert","numpuff",
-"phasmatch","torkoalfnf","lickitung","pachirisu","scizor","illumise","lileep","durant","sceptile"];
+"phasmatch","torkoalfnf","lickitung","pachirisu","scizor","illumise","lileep","durant","sceptile",
+"dedenne"];
 
 
 var BattlePokemonIconIndexes={
