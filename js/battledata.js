@@ -1156,7 +1156,7 @@ var BattleBaseSpeciesChart=[
 "bellossom","ludisc","deoxys","sunflora","bunmochi","terrofunfaizer","tapufini","mienfoo",
 "magmortar","oricoriopau","gourgeist","kartana","sewaddle","escavalier","swampert","numpuff",
 "phasmatch","torkoalfnf","lickitung","pachirisu","scizor","illumise","lileep","durant","sceptile",
-"dedenne"];
+"dedenne","hitmonwu","typenull","forretress"];
 
 
 var BattlePokemonIconIndexes={
@@ -1642,6 +1642,7 @@ torkoalfnforange:1476+123,
 steeneedeltaarmored:1476+124,
 sableyefnfmegax:1476+125,
 hitmonwu:1476+126,
+hitmonwuskull:1476+126,
 roggenrolafnf:1476+127,
 boldorefnf:1476+128,
 boldorefnfprism:1476+128,
@@ -1719,6 +1720,7 @@ musleebhexa:1476+182,
 musleebdolly:1476+182,
 musleebhana:1476+182,
 musleebseeds:1476+182,
+musleebbloom:1476+182,
 musleebkim:1476+182,
 musleebmeemo:1476+182,
 musleebveraonesie:1476+182,
@@ -1739,6 +1741,8 @@ fofoamcarmalot:1476+184,
 fofoamgort:1476+184,
 fofoamriptide:1476+184,
 fofoamastra:1476+184,
+fofoamboba:1476+184,
+fofoamsusie:1476+184,
 fofoamcarmalothero:1476+184,
 
 

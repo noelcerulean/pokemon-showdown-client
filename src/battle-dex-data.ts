@@ -166,7 +166,7 @@ const BattleBaseSpeciesChart = [
 	"bellossom", "ludisc", "deoxys", "sunflora", "bunmochi", "terrofunfaizer", "tapufini", "mienfoo",
 	"magmortar", "oricoriopau", "gourgeist", "kartana", "sewaddle", "escavalier", "swampert", "numpuff",
 	"phasmatch", "torkoalfnf", "lickitung", "pachirisu", "scizor", "illumise", "lileep", "durant", "sceptile",
-	"dedenne",
+	"dedenne", "hitmonwu", "typenull", "forretress",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -652,6 +652,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	steeneedeltaarmored: 1476 + 124,
 	sableyefnfmegax: 1476 + 125,
 	hitmonwu: 1476 + 126,
+	hitmonwuskull: 1476 + 126,
 	roggenrolafnf: 1476 + 127,
 	boldorefnf: 1476 + 128,
 	boldorefnfprism: 1476 + 128,
@@ -729,6 +730,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	musleebdolly: 1476 + 182,
 	musleebhana: 1476 + 182,
 	musleebseeds: 1476 + 182,
+	musleebbloom: 1476 + 182,
 	musleebkim: 1476 + 182,
 	musleebmeemo: 1476 + 182,
 	musleebveraonesie: 1476 + 182,
@@ -749,6 +751,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	fofoamgort: 1476 + 184,
 	fofoamriptide: 1476 + 184,
 	fofoamastra: 1476 + 184,
+	fofoamboba: 1476 + 184,
+	fofoamsusie: 1476 + 184,
 	fofoamcarmalothero: 1476 + 184,
 
 	//hypnomons
