@@ -1157,7 +1157,7 @@ var BattleBaseSpeciesChart=[
 "magmortar","oricoriopau","gourgeist","kartana","sewaddle","escavalier","swampert","numpuff",
 "phasmatch","torkoalfnf","lickitung","pachirisu","scizor","illumise","lileep","durant","sceptile",
 "dedenne","hitmonwu","typenull","forretress","klang","ferrothorn","rutherium","basculinbluestriped",
-"ditto","rotommow","simisear"];
+"ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak"];
 
 
 var BattlePokemonIconIndexes={
@@ -1215,7 +1215,6 @@ rotomfan:900+48,
 rotomfrost:900+49,
 rotomheat:900+50,
 rotommow:900+51,
-rotommowhero:900+51,
 rotomwash:900+52,
 giratinaorigin:900+53,
 shayminsky:900+54,
