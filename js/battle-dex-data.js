@@ -167,7 +167,8 @@ var BattleBaseSpeciesChart=[
 "magmortar","oricoriopau","gourgeist","kartana","sewaddle","escavalier","swampert","numpuff",
 "phasmatch","torkoalfnf","lickitung","pachirisu","scizor","illumise","lileep","durant","sceptile",
 "dedenne","hitmonwu","typenull","forretress","klang","ferrothorn","rutherium","basculinbluestriped",
-"ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak"];
+"ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
+"raptopea"];
 
 
 var BattlePokemonIconIndexes={
@@ -710,6 +711,7 @@ celebiwithered:1488+161,
 primeapearmored:1488+162,
 peatot:1488+163,
 raptopea:1488+164,
+raptopeakomainu:1488+164,
 arachgrape:1488+165,
 tarazzpula:1488+166,
 warpharos:1488+167,

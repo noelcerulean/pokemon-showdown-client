@@ -168,6 +168,7 @@ const BattleBaseSpeciesChart = [
 	"phasmatch", "torkoalfnf", "lickitung", "pachirisu", "scizor", "illumise", "lileep", "durant", "sceptile",
 	"dedenne", "hitmonwu", "typenull", "forretress", "klang", "ferrothorn", "rutherium", "basculinbluestriped",
 	"ditto", "simisear", "murkrow", "excadrill", "gigalith", "avalugg", "togekiss", "ludicolo", "manaphy", "toxicroak",
+	"raptopea",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -710,6 +711,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	primeapearmored: 1488 + 162,
 	peatot: 1488 + 163,
 	raptopea: 1488 + 164,
+	raptopeakomainu: 1488 + 164,
 	arachgrape: 1488 + 165,
 	tarazzpula: 1488 + 166,
 	warpharos: 1488 + 167,
