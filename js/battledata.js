@@ -1158,7 +1158,7 @@ var BattleBaseSpeciesChart=[
 "phasmatch","torkoalfnf","lickitung","pachirisu","scizor","illumise","lileep","durant","sceptile",
 "dedenne","hitmonwu","typenull","forretress","klang","ferrothorn","rutherium","basculinbluestriped",
 "ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
-"raptopea"];
+"raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt"];
 
 
 var BattlePokemonIconIndexes={
@@ -1520,6 +1520,7 @@ clefgar:1488+27,
 clefgartongue:1488+27,
 clefgarmint:1488+27,
 clefgarmelon:1488+27,
+clefgarsludgebomb:1488+27,
 cofagrigusmega:1488+28,
 rooskhan:1488+29,
 baki:1488+30,
@@ -1564,6 +1565,7 @@ emolgadeltaglitches:1488+57,
 pinecodelta:1488+58,
 sableyefnf:1488+59,
 sableyefnfrattlehead:1488+59,
+sableyefnfboneclub:1488+59,
 roseradearmored:1488+60,
 roseradearmoredsummer:1488+60,
 roseradearmoredrenegade:1488+60,
@@ -1755,6 +1757,7 @@ fofoamastra:1488+182,
 fofoamboba:1488+182,
 fofoamsusie:1488+182,
 fofoamcarmalothero:1488+182,
+fofoamastraarmthrust:1488+182,
 soareon:1488+183,
 
 
