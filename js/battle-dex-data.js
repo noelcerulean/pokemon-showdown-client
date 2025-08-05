@@ -168,7 +168,8 @@ var BattleBaseSpeciesChart=[
 "phasmatch","torkoalfnf","lickitung","pachirisu","scizor","illumise","lileep","durant","sceptile",
 "dedenne","hitmonwu","typenull","forretress","klang","ferrothorn","rutherium","basculinbluestriped",
 "ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
-"raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt"];
+"raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt","togetic","joltik",
+"pelipper","piloswine"];
 
 
 var BattlePokemonIconIndexes={
