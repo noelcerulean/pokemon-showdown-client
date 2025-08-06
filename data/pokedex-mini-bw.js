@@ -183,6 +183,7 @@ exports.BattlePokemonSpritesBW = {
 	growlithefnf:{num:58},
 	arcanine:{num:59},
 	arcaninefnf:{num:59},
+	arctric:{num:-596},
 	poliwag:{num:60},
 	poliwhirl:{num:61},
 	poliwrath:{num:62},

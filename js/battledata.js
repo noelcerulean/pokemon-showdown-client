@@ -1760,6 +1760,7 @@ fofoamsusie:1488+182,
 fofoamcarmalothero:1488+182,
 fofoamastraarmthrust:1488+182,
 soareon:1488+183,
+arctric:1488+184,
 
 
 ano:304,
