@@ -1159,7 +1159,7 @@ var BattleBaseSpeciesChart=[
 "dedenne","hitmonwu","typenull","forretress","klang","ferrothorn","rutherium","basculinbluestriped",
 "ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
 "raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt","togetic","joltik",
-"pelipper","piloswine"];
+"pelipper","piloswine","smeargle","froslass","bisharp","shedinja","araquanid"];
 
 
 var BattlePokemonIconIndexes={
@@ -1180,6 +1180,8 @@ unownf:900+14,
 unowng:900+15,
 unownh:900+16,
 unowni:900+17,
+unownihearts:900+17,
+unownihero:900+17,
 unownj:900+18,
 unownk:900+19,
 unownl:900+20,
@@ -1657,6 +1659,7 @@ steeneedeltaarmored:1488+124,
 sableyefnfmegax:1488+125,
 hitmonwu:1488+126,
 hitmonwuskull:1488+126,
+hitmonwukomainu:1488+126,
 roggenrolafnf:1488+127,
 boldorefnf:1488+128,
 boldorefnfprism:1488+128,
