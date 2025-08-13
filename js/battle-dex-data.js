@@ -169,7 +169,7 @@ var BattleBaseSpeciesChart=[
 "dedenne","hitmonwu","typenull","forretress","klang","ferrothorn","rutherium","basculinbluestriped",
 "ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
 "raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt","togetic","joltik",
-"pelipper","piloswine","smeargle","froslass","bisharp","shedinja","araquanid"];
+"pelipper","piloswine","smeargle","froslass","bisharp","shedinja","araquanid","aromatissefnf","fowlfrost"];
 
 
 var BattlePokemonIconIndexes={
@@ -505,6 +505,7 @@ sledgesparcegoldmine:1488+3,
 snugsparce:1488+4,
 soarsparce:1488+5,
 aromatissefnf:1488+6,
+aromatissefnfhero:1488+6,
 sunfloramega:1488+7,
 vespiquenarmored:1488+8,
 drild:1488+9,
@@ -701,6 +702,7 @@ synopede:1488+147,
 lunapede:1488+148,
 cameruptdeltamega:1488+149,
 fowlfrost:1488+150,
+fowlfrostjockey:1488+150,
 dragonairarmored:1488+151,
 dragonairarmoredpride:1488+151,
 gargoliant:1488+152,
