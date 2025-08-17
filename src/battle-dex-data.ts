@@ -765,6 +765,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	sindlepeacemaker: 1488 + 181,
 	sindlecoily: 1488 + 181,
 	sindleliege: 1488 + 181,
+	sindleliegepoisontouch: 1488 + 181,
 	sindleserph: 1488 + 181,
 	fofoam: 1488 + 182,
 	fofoampaz: 1488 + 182,
