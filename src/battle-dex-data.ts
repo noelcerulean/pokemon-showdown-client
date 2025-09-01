@@ -779,6 +779,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	fofoamastraarmthrust: 1488 + 182,
 	soareon: 1488 + 183,
 	arctric: 1488 + 184,
+	ledianmega: 1488 + 185,
+	ariadosmega: 1488 + 186,
 
 	//hypnomons
 	ano: 304,

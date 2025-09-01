@@ -1769,6 +1769,8 @@ fofoamcarmalothero:1488+182,
 fofoamastraarmthrust:1488+182,
 soareon:1488+183,
 arctric:1488+184,
+ledianmega:1488+185,
+ariadosmega:1488+186,
 
 
 ano:304,
