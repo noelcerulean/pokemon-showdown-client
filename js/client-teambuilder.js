@@ -1966,56 +1966,79 @@
 			} else if (species.forme) {
 				switch (species.baseSpecies) {
 				case 'Alcremie':
-				case 'Aurorus':
 				case 'Basculin':
-				case 'Bastiodon':
-				case 'Blacephalon':
-				case 'Breloom':
-				case 'Bulbasaur':
 				case 'Burmy':
 				case 'Castform':
 				case 'Castform-Shadow':
 				case 'Cherrim':
-				case 'Chesnaught-Delta':
-				case 'Cranidos-Delta':
-				case 'Decidueye-Apollo':
 				case 'Deerling':
-				case 'Delcatty':
 				case 'Flabebe':
 				case 'Floette':
 				case 'Florges':
-				case 'Furfrou':
-				case 'Furfrou-Princess':
-				case 'Garchomp':
 				case 'Gastrodon':
 				case 'Genesect':
-				case 'Gengar':
-				case 'Heatmor':
-				case 'Hypno':
 				case 'Keldeo':
-				case 'Mamoswine':
-				case 'Meowstic-Royal':
 				case 'Mimikyu':
 				case 'Minior':
-				case 'Octillery':
-				case 'Parasect-FnF':
 				case 'Pikachu':
 				case 'Polteageist':
-				case 'Raichu':
 				case 'Raichu-Alola':
-				case 'Raichu-Malachite':
-				case 'Sableye':
-				case 'Samurott':
 				case 'Sawsbuck':
 				case 'Shellos':
-				case 'Simisage':
 				case 'Sinistea':
-				case 'Solrock':
-				case 'Trapinch':
-				case 'Typhlosion':
-				case 'Typhlosion-Vesuvius':
-				case 'Vespiquen':
 				case 'Vivillon':
+
+				case 'Decidueye-Apollo':
+				case 'Furfrou-Princess':
+				case 'Meowstic-Royal':
+				case 'Raichu-Malachite':
+				case 'Typhlosion-Vesuvius':
+
+				case 'Arcanine-FnF':
+				case 'Aromatisse-FnF':
+				case 'Boldore-FnF':
+				case 'Chinchou-FnF':
+				case 'Crustle-FnF':
+				case 'Dwebble-FnF':
+				case 'Electrode-FnF':
+				case 'Gigalith-FnF':
+				case 'Growlithe-FnF':
+				case 'Lickilicky-FnF':
+				case 'Lickitung-FnF':
+				case 'Luvdisc-FnF':
+				case 'Parasect-FnF':
+				case 'Paras-FnF':
+				case 'Remoraid-FnF':
+				case 'Roggenrola-FnF':
+				case 'Sableye-FnF':
+				case 'Torkoal-FnF':
+				case 'Vanillish-FnF':
+				case 'Vanillite-FnF':
+				case 'Vanilluxe-FnF':
+				case 'Venonat-FnF':
+				case 'Vikavolt-FnF':
+				case 'Voltorb-FnF':
+
+				case 'Bastiodon-Delta':
+				case 'Bounsweet-Delta':
+				case 'Camerupt-Delta':
+				case 'Chesnaught-Delta':
+				case 'Chespin-Delta':
+				case 'Cranidos-Delta':
+				case 'Emolga-Delta':
+				case 'Forretress-Delta':
+				case 'Galvantula-Delta':
+				case 'Joltik-Delta':
+				case 'Numel-Delta':
+				case 'Palpitoad-Delta':
+				case 'Pineco-Delta':
+				case 'Quilladin-Delta':
+				case 'Rampardos-Delta':
+				case 'Seismitoad-Delta':
+				case 'Shieldon-Delta':
+				case 'Steenee-Delta':
+				case 'Tsareena-Delta':
+				case 'Tympole-Delta':
 					break;
 				default:
 					smogdexid += '-' + toID(species.forme);

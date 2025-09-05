@@ -170,7 +170,7 @@ const BattleBaseSpeciesChart = [
 	"ditto", "simisear", "murkrow", "excadrill", "gigalith", "avalugg", "togekiss", "ludicolo", "manaphy", "toxicroak",
 	"raptopea", "clawitzer", "hawlucha", "miltank", "rapidash", "steenee", "vikavolt", "togetic", "joltik",
 	"pelipper", "piloswine", "smeargle", "froslass", "bisharp", "shedinja", "araquanid", "aromatissefnf", "fowlfrost",
-	"grumpig", "steeneedelta", "gourgeistlarge",
+	"grumpig", "steeneedelta", "gourgeistlarge", "dragonairarmored",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -617,6 +617,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	sableyefnfmegay: 1488 + 83,
 	bounsweetdelta: 1488 + 84,
 	steeneedelta: 1488 + 85,
+	steeneedeltakomainu: 1488 + 85,
 	tsareenadelta: 1488 + 86,
 	goomyarmored: 1488 + 87,
 	gravking: 1488 + 88,
