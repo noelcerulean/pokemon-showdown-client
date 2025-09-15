@@ -170,7 +170,7 @@ var BattleBaseSpeciesChart=[
 "ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
 "raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt","togetic","joltik",
 "pelipper","piloswine","smeargle","froslass","bisharp","shedinja","araquanid","aromatissefnf","fowlfrost",
-"grumpig","steeneedelta","gourgeistlarge","dragonairarmored"];
+"grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom"];
 
 
 var BattlePokemonIconIndexes={
@@ -628,6 +628,7 @@ teddiursaarmoredhoneyed:1488+89,
 teddiursaarmoredsailor:1488+89,
 archebot:1488+90,
 archebotskirmisher:1488+90,
+archebotskull:1488+90,
 kirliaarmored:1488+91,
 kirliaarmoredweaver:1488+92,
 phasmatch:1488+93,
@@ -711,6 +712,7 @@ gargoliant:1488+152,
 despotide:1488+153,
 despotidedespopride:1488+153,
 flymolcky:1488+154,
+flymolckyrascal:1488+154,
 gothigearna:1488+155,
 remoraidfnf:1488+156,
 portamora:1488+157,
