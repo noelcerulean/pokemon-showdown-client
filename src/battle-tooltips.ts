@@ -2000,6 +2000,7 @@ class BattleTooltips {
 				value.abilityModify(this.battle.gen > 6 ? 1.2 : 1.3, "Pixilate");
 				value.abilityModify(this.battle.gen > 6 ? 1.2 : 1.3, "Refrigerate");
 				value.abilityModify(this.battle.gen > 6 ? 1.2 : 1.3, "Toxicate");
+				value.abilityModify(this.battle.gen > 6 ? 1.2 : 1.3, "Malevolate");
 			}
 			if (this.battle.gen > 6) {
 				value.abilityModify(1.3, "Normalize");
