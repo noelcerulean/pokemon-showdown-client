@@ -1052,6 +1052,15 @@ if(this.battle.gen>=4)stats.atk*=2;
 stats.spa*=2;
 }
 
+if(item==='fusedevite'){
+if(species==='Medipom'){
+stats.def=Math.floor(stats.def*1.5);
+stats.spd=Math.floor(stats.spd*1.5);
+stats.def=Math.floor(stats.atk*1.5);
+stats.spd=Math.floor(stats.spa*1.5);
+}
+}
+
 if(item==='thickclub'){
 if(species==='Marowak'||species==='Cubone'){
 stats.atk*=2;
@@ -1114,11 +1123,12 @@ break outer;
 if(item==='choiceband'&&!(clientPokemon!=null&&clientPokemon.volatiles['dynamax'])){
 stats.atk=Math.floor(stats.atk*1.5);
 }
-if(ability==='purepower'||ability==='hugepower'){
-stats.atk*=2;
+if(ability==='purepower'){
+stats.atk=Math.floor(stats.atk*1.5);
+stats.spd=Math.floor(stats.spa*1.5);
 }
-if(ability==='mysticpower'){
-stats.spa*=2;
+if(ability==='hugepower'){
+stats.atk*=2;
 }
 if(ability==='galaxian'&&this.battle.hasPseudoWeather('Gravity')){
 stats.spa=Math.floor(stats.spa*1.5);
