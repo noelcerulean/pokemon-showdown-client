@@ -170,7 +170,7 @@ var BattleBaseSpeciesChart=[
 "ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
 "raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt","togetic","joltik",
 "pelipper","piloswine","smeargle","froslass","bisharp","shedinja","araquanid","aromatissefnf","fowlfrost",
-"grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom"];
+"grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom","dragonite"];
 
 
 var BattlePokemonIconIndexes={
@@ -788,6 +788,11 @@ capito:1488+187,
 festijest:1488+188,
 kasako:1488+189,
 parakasa:1488+190,
+
+nightmaremist:1488+191,
+shyego:1488+192,
+inflatedego:1488+193,
+brokenego:1488+194,
 
 
 ano:304,
