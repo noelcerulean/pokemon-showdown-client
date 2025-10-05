@@ -1769,6 +1769,12 @@ class BattleScene {
 			case -142:
 				this.bgm = BattleSound.loadBgm('audio/magikarp-festival.mp3', 27295, 139857, this.bgm);
 				break;
+			case -143:
+				this.bgm = BattleSound.loadBgm('audio/pbr-magma.mp3', 22574, 64205, this.bgm);
+				break;
+			case -144:
+				this.bgm = BattleSound.loadBgm('audio/hgss-lugia.mp3', 18845, 69931, this.bgm);
+				break;
 			case 1:
 				this.bgm = BattleSound.loadBgm('audio/bw-subway-trainer.mp3', 15503, 110984, this.bgm);
 				break;
