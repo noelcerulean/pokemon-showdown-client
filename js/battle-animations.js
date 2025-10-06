@@ -1584,10 +1584,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/conquest-psychic-battle.mp3',24009,114013,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-magma.mp3',22574,64205,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/conquest-psychic-battle.mp3',24009,114013,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-magma.mp3',22574,64205,this.bgm);
 break;}
 
 
@@ -3292,7 +3292,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-greenssunset.png'];
+'bg-darkmeadow.jpg'];
 
 
 var BattleOtherAnims={

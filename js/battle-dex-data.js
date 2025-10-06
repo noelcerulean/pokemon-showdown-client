@@ -790,9 +790,9 @@ kasako:1488+189,
 parakasa:1488+190,
 
 nightmaremist:1488+191,
-shyego:1488+192,
-inflatedego:1488+193,
-brokenego:1488+194,
+matriarch:1488+192,
+patriarch:1488+193,
+headsofhousehold:1488+194,
 
 
 ano:304,
