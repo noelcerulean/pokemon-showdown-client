@@ -788,13 +788,10 @@ capito:1488+187,
 festijest:1488+188,
 kasako:1488+189,
 parakasa:1488+190,
-
-nightmaremist:1488+191,
-seacapsule:1488+192,
-awakeningseacapsule:1488+193,
-thegreatcaspian:1488+194,
-slumburus:1488+195,
-slumburustherian:1488+196,
+drifnofnf:1488+191,
+slumburus:1488+192,
+slumburustherian:1488+193,
+chronoklang:1488+194,
 
 
 ano:304,

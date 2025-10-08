@@ -1584,10 +1584,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/conquest-legendary-battle.mp3',55891,149046,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-aceacademy.mp3',1258,160450,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/conquest-legendary-battle.mp3',55891,149046,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-aceacademy.mp3',1258,160450,this.bgm);
 break;}
 
 
@@ -3292,7 +3292,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-collision.png'];
+'bg-flowers.png'];
 
 
 var BattleOtherAnims={
