@@ -792,6 +792,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	slumburus: 1488 + 192,
 	slumburustherian: 1488 + 193,
 	chronoklang: 1488 + 194,
+	lilaquin: 1488 + 195,
+	vaicora: 1488 + 196,
+	hytan: 1488 + 197,
 
 	//hypnomons
 	ano: 304,
