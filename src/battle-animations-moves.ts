@@ -21495,6 +21495,59 @@ const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
+	arcticstream: {
+		anim(scene, [attacker, defender]) {
+			BattleOtherAnims.hydroshot.anim(scene, [attacker, defender]);
+			scene.showEffect('shine', {
+				x: defender.x + 30,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 300,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 700,
+			}, 'linear', 'fade');
+			scene.showEffect('shine', {
+				x: defender.x - 30,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 400,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 800,
+			}, 'linear', 'fade');
+			scene.showEffect('icicle', {
+				x: defender.x + 15,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.3,
+				opacity: 1,
+				time: 500,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 900,
+			}, 'linear', 'fade');
+			scene.showEffect('icicle', {
+				x: defender.x - 15,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.3,
+				opacity: 1,
+				time: 600,
+			}, {
+				y: defender.y + 60,
+				opacity: 0.2,
+				time: 1000,
+			}, 'linear', 'fade');
+		},
+	},
 	steameruption: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#0000DD', 700, 0.2);
@@ -44444,6 +44497,7 @@ BattleMoveAnims['powder'] = {anim: BattleMoveAnims['spore'].anim};
 BattleMoveAnims['cottonspore'] = {anim: BattleMoveAnims['spore'].anim};
 BattleMoveAnims['vinewhip'] = {anim: BattleMoveAnims['powerwhip'].anim};
 BattleMoveAnims['biddybud'] = {anim: BattleMoveAnims['leafage'].anim};
+BattleMoveAnims['badseed'] = {anim: BattleMoveAnims['worryseed'].anim};
 
 BattleMoveAnims['bubble'] = {anim: BattleMoveAnims['bubblebeam'].anim};
 BattleMoveAnims['sparklingaria'] = {anim: BattleMoveAnims['bubblebeam'].anim};

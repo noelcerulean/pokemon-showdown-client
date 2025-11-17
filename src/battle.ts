@@ -433,6 +433,7 @@ class Pokemon implements PokemonDetails, PokemonHealth {
 			delete this.volatiles['airballoon'];
 			delete this.volatiles['attract'];
 			delete this.volatiles['autotomize'];
+			delete this.volatiles['badseed'];
 			delete this.volatiles['disable'];
 			delete this.volatiles['encore'];
 			delete this.volatiles['foresight'];
@@ -2445,6 +2446,9 @@ class Battle {
 				break;
 			case 'healblock':
 				this.scene.resultAnim(poke, 'Heal Block', 'bad');
+				break;
+			case 'badseed':
+				this.scene.resultAnim(poke, 'Bad Seed', 'bad');
 				break;
 			case 'yawn':
 				this.scene.resultAnim(poke, 'Drowsy', 'slp');

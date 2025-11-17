@@ -433,6 +433,7 @@ if(!copyAll){
 delete this.volatiles['airballoon'];
 delete this.volatiles['attract'];
 delete this.volatiles['autotomize'];
+delete this.volatiles['badseed'];
 delete this.volatiles['disable'];
 delete this.volatiles['encore'];
 delete this.volatiles['foresight'];
@@ -2445,6 +2446,9 @@ this.scene.updateStatbar(_poke31);
 break;
 case'healblock':
 this.scene.resultAnim(_poke31,'Heal Block','bad');
+break;
+case'badseed':
+this.scene.resultAnim(_poke31,'Bad Seed','bad');
 break;
 case'yawn':
 this.scene.resultAnim(_poke31,'Drowsy','slp');

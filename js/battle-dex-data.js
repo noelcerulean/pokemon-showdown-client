@@ -170,7 +170,8 @@ var BattleBaseSpeciesChart=[
 "ditto","simisear","murkrow","excadrill","gigalith","avalugg","togekiss","ludicolo","manaphy","toxicroak",
 "raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt","togetic","joltik",
 "pelipper","piloswine","smeargle","froslass","bisharp","shedinja","araquanid","aromatissefnf","fowlfrost",
-"grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom","dragonite"];
+"grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom","dragonite",
+"lilaquin","vaicora","hytan"];
 
 
 var BattlePokemonIconIndexes={
@@ -793,8 +794,32 @@ slumburus:1488+192,
 slumburustherian:1488+193,
 chronoklang:1488+194,
 lilaquin:1488+195,
+lilaquinvera:1488+195,
+lilaquindribble:1488+195,
+lilaquinhexa:1488+195,
+lilaquindolly:1488+195,
+lilaquinhana:1488+195,
+lilaquinseeds:1488+195,
+lilaquinbloom:1488+195,
+lilaquinmianju:1488+195,
+lilaquinkim:1488+195,
+lilaquinmeemo:1488+195,
 vaicora:1488+196,
+vaicoralighthouse:1488+196,
+vaicoragroveil:1488+196,
+vaicorarex:1488+196,
+vaicorasuneater:1488+196,
+vaicoradeeva:1488+196,
+vaicoraapophis:1488+196,
+vaicoraliege:1488+196,
+vaicoraserph:1488+196,
 hytan:1488+197,
+hytanpaz:1488+197,
+hytancarmalot:1488+197,
+hytangort:1488+197,
+hytanriptide:1488+197,
+hytanboba:1488+197,
+hytansusie:1488+197,
 
 
 ano:304,
