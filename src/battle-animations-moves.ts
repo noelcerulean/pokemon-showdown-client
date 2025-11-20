@@ -2155,6 +2155,35 @@ const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.spinattack.anim(scene, [attacker, defender]);
 		},
 	},
+	fairytwirl: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y - 25,
+				z: defender.z,
+				scale: 0.5,
+				time: 500,
+			}, {
+				x: defender.x + 50,
+				scale: 0.2,
+				opacity: 0.3,
+				time: 800,
+			}, 'linear', 'fade');
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y - 25,
+				z: defender.z,
+				scale: 0.5,
+				time: 500,
+			}, {
+				x: defender.x - 50,
+				scale: 0.2,
+				opacity: 0.3,
+				time: 800,
+			}, 'linear', 'fade');
+			BattleOtherAnims.spinattack.anim(scene, [attacker, defender]);
+		},
+	},
 	rapidspin: {
 		anim: BattleOtherAnims.spinattack.anim,
 	},
