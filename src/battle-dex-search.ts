@@ -1204,7 +1204,7 @@ class BattleMoveSearch extends BattleTypedSearch<'move'> {
 		if (itemid === 'glalitite') abilityid = 'refrigerate' as ID;
 
 		switch (id) {
-		case 'fakeout': case 'flamecharge': case 'nuzzle': case 'poweruppunch':
+		case 'fakeout': case 'flamecharge': case 'nuzzle': case 'poweruppunch': case 'sugarrush':
 			return abilityid !== 'sheerforce';
 		case 'solarbeam': case 'solarblade':
 			return ['desolateland', 'drought', 'chlorophyll'].includes(abilityid) || itemid === 'powerherb';

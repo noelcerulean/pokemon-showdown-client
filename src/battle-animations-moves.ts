@@ -11224,6 +11224,109 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
+	sugarrush: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('mistball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 0,
+			}, {
+				x: attacker.x - 25,
+				y: attacker.y - 25,
+				scale: 0.8,
+				opacity: 0,
+				time: 300,
+			}, 'ballistic');
+			scene.showEffect('mistball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 150,
+			}, {
+				x: attacker.x + 30,
+				y: attacker.y - 20,
+				scale: 0.8,
+				opacity: 0,
+				time: 450,
+			}, 'ballistic');
+			scene.showEffect('mistball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 250,
+			}, {
+				x: attacker.x + 5,
+				y: attacker.y - 40,
+				scale: 0.8,
+				opacity: 0,
+				time: 550,
+			}, 'ballistic');
+			scene.showEffect('mistball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 1,
+				time: 300,
+			}, {
+				x: attacker.x - 20,
+				y: attacker.y - 20,
+				scale: 0.8,
+				opacity: 0,
+				time: 600,
+			}, 'ballistic');
+
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 600,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 900,
+			}, 'linear');
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 700,
+			}, {
+				scale: 3,
+				opacity: 0,
+				time: 1000,
+			}, 'linear');
+			attacker.delay(300);
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(-5),
+				time: 300,
+			}, 'accel');
+			attacker.anim({
+				time: 500,
+			}, 'ballistic2Back');
+			defender.delay(580);
+			defender.anim({
+				z: defender.behind(20),
+				time: 100,
+			}, 'swing');
+			defender.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
 	plasmicspin: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('electroball', {

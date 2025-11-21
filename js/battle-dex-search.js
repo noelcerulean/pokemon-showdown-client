@@ -1204,7 +1204,7 @@ if(itemid==='aerodactylite')abilityid='toughclaws';
 if(itemid==='glalitite')abilityid='refrigerate';
 
 switch(id){
-case'fakeout':case'flamecharge':case'nuzzle':case'poweruppunch':
+case'fakeout':case'flamecharge':case'nuzzle':case'poweruppunch':case'sugarrush':
 return abilityid!=='sheerforce';
 case'solarbeam':case'solarblade':
 return['desolateland','drought','chlorophyll'].includes(abilityid)||itemid==='powerherb';
