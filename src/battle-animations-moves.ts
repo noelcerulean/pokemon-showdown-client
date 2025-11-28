@@ -27118,6 +27118,99 @@ const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
+	steelpowder: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('graywisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.6,
+				opacity: 0.6,
+			}, {
+				x: defender.x + 30,
+				y: defender.y + 30,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+				time: 200,
+			}, 'linear', 'explode');
+			scene.showEffect('graywisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 75,
+			}, {
+				x: defender.x + 20,
+				y: defender.y - 30,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+				time: 275,
+			}, 'linear', 'explode');
+			scene.showEffect('graywisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 150,
+			}, {
+				x: defender.x - 30,
+				y: defender.y,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+				time: 350,
+			}, 'linear', 'explode');
+			scene.showEffect('graywisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 225,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 10,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+				time: 425,
+			}, 'linear', 'explode');
+			scene.showEffect('graywisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 300,
+			}, {
+				x: defender.x + 10,
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+				time: 500,
+			}, 'linear', 'explode');
+			scene.showEffect('graywisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.6,
+				opacity: 0.6,
+				time: 375,
+			}, {
+				x: defender.x - 20,
+				y: defender.y,
+				z: defender.z,
+				scale: 1,
+				opacity: 0.3,
+				time: 575,
+			}, 'linear', 'explode');
+		},
+	},
 	leafstorm: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#9AB440', 700, 0.7);

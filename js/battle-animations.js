@@ -3090,6 +3090,10 @@ wisp:{
 url:'wisp.png',
 w:100,h:100},
 
+graywisp:{
+url:'graywisp.png',
+w:100,h:100},
+
 originwisp:{
 url:'originwisp.png',
 w:100,h:100},
