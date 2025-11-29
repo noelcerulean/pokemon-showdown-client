@@ -4125,6 +4125,103 @@ const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
+	gemglow: {
+		anim(scene, [attacker]) {
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 2,
+				opacity: 0.2,
+				time: 0,
+			}, {
+				scale: 1,
+				opacity: 0.5,
+				time: 400,
+			}, 'linear', 'explode');
+
+			scene.showEffect('shine', {
+				x: attacker.x - 10,
+				y: attacker.y - 10,
+				z: attacker.z,
+				scale: 0.3,
+				opacity: 0.6,
+			}, {
+				opacity: 0,
+				time: 300,
+			}, 'decel');
+			scene.showEffect('shine', {
+				x: attacker.x + 20,
+				y: attacker.y - 15,
+				z: attacker.z,
+				scale: 0.3,
+				opacity: 0.6,
+				time: 100,
+			}, {
+				opacity: 0,
+				time: 400,
+			}, 'decel');
+			scene.showEffect('shine', {
+				x: attacker.x - 5,
+				y: attacker.y + 15,
+				z: attacker.z,
+				scale: 0.3,
+				opacity: 0.6,
+				time: 200,
+			}, {
+				opacity: 0,
+				time: 500,
+			}, 'decel');
+			scene.showEffect('shine', {
+				x: attacker.x + 5,
+				y: attacker.y - 10,
+				z: attacker.z,
+				scale: 0.3,
+				opacity: 0.6,
+				time: 300,
+			}, {
+				opacity: 0,
+				time: 600,
+			}, 'accel');
+
+			scene.showEffect('shine', {
+				x: attacker.x + 20,
+				y: attacker.y - 30,
+				z: attacker.z,
+				scale: 0.2,
+				opacity: 1,
+				time: 0,
+			}, {
+				y: attacker.y + 40,
+				opacity: 0,
+				time: 400,
+			}, 'accel');
+			scene.showEffect('shine', {
+				x: attacker.x - 20,
+				y: attacker.y + 40,
+				z: attacker.z,
+				scale: 0.2,
+				opacity: 1,
+				time: 200,
+			}, {
+				y: attacker.y + 40,
+				opacity: 0,
+				time: 600,
+			}, 'accel');
+			scene.showEffect('shine', {
+				x: attacker.x,
+				y: attacker.y + 30,
+				z: attacker.z,
+				scale: 0.2,
+				opacity: 1,
+				time: 400,
+			}, {
+				y: attacker.y + 40,
+				opacity: 0,
+				time: 800,
+			}, 'accel');
+		},
+	},
 	trick: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('pokeball', {
@@ -5333,6 +5430,9 @@ const BattleMoveAnims: AnimTable = {
 		anim: BattleOtherAnims.clawattack.anim,
 	},
 	furycutter: {
+		anim: BattleOtherAnims.slashattack.anim,
+	},
+	dragonswipe: {
 		anim: BattleOtherAnims.slashattack.anim,
 	},
 	scratch: {
@@ -16973,6 +17073,65 @@ const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
+	mineralbeam: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.2,
+			}, {
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(20),
+				opacity: 0.6,
+				time: 200,
+			}, 'linear', 'explode');
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.2,
+				time: 50,
+			}, {
+				x: defender.x + 10,
+				y: defender.y - 5,
+				z: defender.behind(20),
+				opacity: 0.6,
+				time: 250,
+			}, 'linear', 'explode');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.2,
+				time: 100,
+			}, {
+				x: defender.x - 10,
+				y: defender.y + 5,
+				z: defender.behind(20),
+				opacity: 0.6,
+				time: 300,
+			}, 'linear', 'explode');
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.2,
+				time: 150,
+			}, {
+				x: defender.x,
+				y: defender.y - 5,
+				z: defender.behind(20),
+				opacity: 0.6,
+				time: 350,
+			}, 'linear', 'explode');
+		},
+	},
 	flamethrower: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('fireball', {
@@ -27118,7 +27277,7 @@ const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
-	steelpowder: {
+	powdersteel: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('graywisp', {
 				x: attacker.x,
