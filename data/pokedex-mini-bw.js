@@ -211,6 +211,7 @@ exports.BattlePokemonSpritesBW = {
 	primeape:{num:57},
 	primeapelovepotion:{num:57},
 	primeapearmored:{num:57},
+	primeapearmoredgodfrey:{num:57},
 	growlithe:{num:58},
 	growlithefnf:{num:58},
 	arcanine:{num:59},
