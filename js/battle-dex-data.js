@@ -171,7 +171,7 @@ var BattleBaseSpeciesChart=[
 "raptopea","clawitzer","hawlucha","miltank","rapidash","steenee","vikavolt","togetic","joltik",
 "pelipper","piloswine","smeargle","froslass","bisharp","shedinja","araquanid","aromatissefnf","fowlfrost",
 "grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom","dragonite",
-"lilaquin","vaicora","hytan","primeapearmored"];
+"lilaquin","vaicora","hytan","primeapearmored","politoed","roserade"];
 
 
 var BattlePokemonIconIndexes={
@@ -304,6 +304,7 @@ rattataalola:900+119,
 raticatealola:900+120,
 raichualola:900+121,
 raichualolasuntan:900+121,
+raichualolasurfin:900+121,
 sandshrewalola:900+122,
 sandslashalola:900+123,
 vulpixalola:900+124,
@@ -585,6 +586,7 @@ sableyefnfboneclub:1488+59,
 roseradearmored:1488+60,
 roseradearmoredsummer:1488+60,
 roseradearmoredrenegade:1488+60,
+roseradearmoredrequiem:1488+60,
 bombseal:1488+61,
 bombsealfiesta:1488+61,
 allnown:1488+62,
