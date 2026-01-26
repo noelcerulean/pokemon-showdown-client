@@ -22277,6 +22277,75 @@ const BattleMoveAnims: AnimTable = {
 			}, 'decel', 'explode');
 		},
 	},
+	diffusionwave: {
+		anim(scene, [attacker, ...defenders]) {
+			for (const defender of defenders) {
+				defender.delay(125);
+				defender.anim({
+					z: defender.behind(5),
+					time: 75,
+				}, 'swing');
+				defender.anim({
+					time: 75,
+				}, 'swing');
+				defender.anim({
+					z: defender.behind(5),
+					time: 75,
+				}, 'swing');
+				defender.anim({
+					time: 75,
+				}, 'swing');
+				defender.anim({
+					z: defender.behind(5),
+					time: 75,
+				}, 'swing');
+				defender.anim({
+					time: 75,
+				}, 'swing');
+			}
+			const defender = defenders[1] || defenders[0];
+
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y - 25,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+			}, {
+				x: defender.x,
+				y: defender.y + 10,
+				z: defender.behind(50),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+			scene.showEffect('wisp', {
+				x: attacker.x - 30,
+				y: attacker.y - 25,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+			}, {
+				x: defender.x - 60,
+				y: defender.y,
+				z: defender.behind(50),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+			scene.showEffect('wisp', {
+				x: attacker.x + 30,
+				y: attacker.y - 25,
+				z: attacker.z,
+				scale: 0.4,
+				opacity: 0.3,
+			}, {
+				x: defender.x + 60,
+				y: defender.y,
+				z: defender.behind(50),
+				scale: 1,
+				opacity: 0.6,
+			}, 'decel', 'explode');
+		},
+	},
 	hydropump: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#0000DD', 700, 0.2);
@@ -45281,6 +45350,7 @@ BattleMoveAnims['miracleeye'] = {anim: BattleMoveAnims['mindreader'].anim};
 BattleMoveAnims['futuresight'] = {anim: BattleMoveAnims['doomdesire'].anim};
 BattleMoveAnims['propheticasteroid'] = {anim: BattleMoveAnims['doomdesire'].anim};
 
+BattleMoveAnims['cagematch'] = {anim: BattleMoveAnims['block'].anim};
 BattleMoveAnims['glare'] = {anim: BattleMoveAnims['meanlook'].anim};
 BattleMoveAnims['grudge'] = {anim: BattleMoveAnims['meanlook'].anim};
 BattleMoveAnims['scaryface'] = {anim: BattleMoveAnims['meanlook'].anim};
@@ -45439,6 +45509,7 @@ BattleMoveAnims['snipeshot'] = {anim: BattleMoveAnims['waterpulse'].anim};
 BattleMoveAnims['jawlock'] = {anim: BattleMoveAnims['crunch'].anim};
 BattleMoveAnims['stuffcheeks'] = {anim: BattleMoveAnims['stockpile'].anim};
 BattleMoveAnims['noretreat'] = {anim: BattleMoveAnims['stockpile'].anim};
+BattleMoveAnims['naturalshift'] = {anim: BattleMoveAnims['stockpile'].anim};
 BattleMoveAnims['tarshot'] = {anim: BattleMoveAnims['mudbomb'].anim};
 BattleMoveAnims['magicpowder'] = {anim: BattleMoveAnims['spore'].anim};
 BattleMoveAnims['dragondarts'] = {anim: BattleMoveAnims['dragonbreath'].anim};

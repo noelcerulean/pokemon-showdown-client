@@ -584,6 +584,11 @@ class BattleTooltips {
 						break;
 					}
 				}
+				if (move.id === 'diffusionwave') {
+					if (this.battle.hasPseudoWeather('Evanesce Diffusion')) {
+						zMove = this.battle.dex.moves.get(BattleTooltips.zMoveTable['Ghost']);
+					}
+				}
 				move = new Move(zMove.id, zMove.name, {
 					...zMove,
 					category: move.category,
@@ -1499,6 +1504,12 @@ class BattleTooltips {
 			}
 		}
 
+		if (move.id === 'diffusionwave') {
+			if (this.battle.hasPseudoWeather('Evanesce Diffusion')) {
+				moveType = 'Ghost';
+			}
+		}
+
 		// Aura Wheel as Morpeko-Hangry changes the type to Dark
 		if (move.id === 'aurawheel' && pokemon.getSpeciesForme() === 'Morpeko-Hangry') {
 			moveType = 'Dark';
@@ -1535,7 +1546,7 @@ class BattleTooltips {
 
 		// Other abilities that change the move type.
 		const noTypeOverride = [
-			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',
+			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'diffusionwave',
 		];
 		const allowTypeOverride = !noTypeOverride.includes(move.id);
 
@@ -1851,6 +1862,13 @@ class BattleTooltips {
 				value.modify(2, 'Terrain Pulse boost');
 			}
 		}
+		if (move.id === 'diffusionwave') {
+			if (
+				this.battle.hasPseudoWeather('Evanesce Diffusion')
+			) {
+				value.modify(2, 'Diffusion Wave boost');
+			}
+		}
 		if (
 			move.id === 'watershuriken' && pokemon.getSpeciesForme() === 'Greninja-Ash' && pokemon.ability === 'Battle Bond'
 		) {
@@ -1998,7 +2016,7 @@ class BattleTooltips {
 			value.abilityModify(1.3, "Punk Rock");
 		}
 		const noTypeOverride = [
-			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',
+			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball', 'diffusionwave',
 		];
 		if (
 			move.category !== 'Status' && !noTypeOverride.includes(move.id) && !move.isZ && !move.isMax &&
