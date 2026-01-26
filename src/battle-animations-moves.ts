@@ -11325,6 +11325,79 @@ const BattleMoveAnims: AnimTable = {
 		},
 		prepareAnim: BattleOtherAnims.chargestatus.anim,
 	},
+	infernalgaze: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('#c43e00', 250, 0.3);
+			scene.backgroundEffect('#270a15', 250, 0.2, 400);
+			scene.showEffect('stare', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 1,
+				yscale: 0,
+				opacity: 1,
+			}, {
+				yscale: 1,
+				time: 700,
+			}, 'decel', 'fade');
+			scene.showEffect('fireball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 0,
+			}, {
+				x: defender.x - 25,
+				y: defender.y - 25,
+				scale: 2,
+				opacity: 0,
+				time: 300,
+			}, 'ballistic');
+			scene.showEffect('fireball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 150,
+			}, {
+				x: defender.x + 30,
+				y: defender.y - 20,
+				scale: 2,
+				opacity: 0,
+				time: 450,
+			}, 'ballistic');
+			scene.showEffect('fireball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 250,
+			}, {
+				x: defender.x + 5,
+				y: defender.y - 40,
+				scale: 2,
+				opacity: 0,
+				time: 550,
+			}, 'ballistic');
+			scene.showEffect('fireball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 300,
+			}, {
+				x: defender.x - 20,
+				y: defender.y - 20,
+				scale: 2,
+				opacity: 0,
+				time: 600,
+			}, 'ballistic');
+		},
+	},
 	flamecharge: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('fireball', {
