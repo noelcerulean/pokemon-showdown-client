@@ -823,6 +823,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	hytanriptide: 1488 + 197,
 	hytanboba: 1488 + 197,
 	hytansusie: 1488 + 197,
+	sirenaqua: 1488 + 198,
 
 	//hypnomons
 	ano: 304,

@@ -884,6 +884,7 @@ exports.BattlePokemonSprites = {
 	luvdisccope:{num:370},
 	luvdiscfnf:{num:370},
 	shorelorn:{num:-586},
+	sirenaqua:{num:-607},
 	bagon:{num:371},
 	shelgon:{num:372},
 	shelgonball:{num:372},

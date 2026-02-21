@@ -45534,6 +45534,7 @@ BattleMoveAnims['subzeroslammer']={anim:BattleMoveAnims['sheercold'].anim};
 BattleMoveAnims['shatteredpsyche']={anim:BattleMoveAnims['psychic'].anim};
 BattleMoveAnims['maximumpsybreaker']={anim:BattleMoveAnims['psychic'].anim};
 BattleMoveAnims['genesissupernova']={anim:BattleMoveAnims['psychoboost'].anim};
+BattleMoveAnims['fervidfeverdream']={anim:BattleMoveAnims['psystrike'].anim};
 BattleMoveAnims['10000000voltthunderbolt']={anim:BattleMoveAnims['triattack'].anim};
 BattleMoveAnims['menacingmoonrazemaelstrom']={anim:BattleMoveAnims['moongeistbeam'].anim};
 BattleMoveAnims['lightthatburnsthesky']={anim:BattleMoveAnims['fusionflare'].anim};
