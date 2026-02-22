@@ -1640,6 +1640,8 @@ interface MoveFlags {
 	heal?: 1 | 0;
 	/** Power is multiplied by 1.2 when used by a Pokemon with the Striker Ability. */
 	kick?: 1 | 0;
+	/** Sets an entry hazard. */
+	hazard?: 1 | 0;
 	/** Activates the Luminesce Ability. */
 	light?: 1 | 0;
 	/** Can be copied by Mirror Move. */

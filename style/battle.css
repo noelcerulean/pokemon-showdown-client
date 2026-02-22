@@ -561,6 +561,12 @@ License: GPLv2
 	display: none;
 	position: absolute;
 }
+.sidecondition-sporeshield {
+	background: #DD88DD;
+	border: 1px solid #AA66AA;
+	display: none;
+	position: absolute;
+}
 .sidecondition-mist {
 	background: #AACCFF;
 	border: 1px solid #5577CC;

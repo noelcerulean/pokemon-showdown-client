@@ -2497,6 +2497,9 @@ anim:function(){}},
 safeguard:{
 anim:function(){}},
 
+sporeshield:{
+anim:function(){}},
+
 lightscreen:{
 anim:function(){}},
 

@@ -1179,6 +1179,26 @@ opacity:0.3,
 time:instant?0:300});
 
 break;
+case'sporeshield':
+var sporeshield=new Sprite(BattleEffects.sporeshield,{
+display:'block',
+x:side.x,
+y:side.y,
+z:side.behind(-20),
+xscale:1,
+yscale:0,
+opacity:0.1},
+this);
+this.$spritesFront[spriteIndex].append(sporeshield.$el);
+this.sideConditions[siden][id]=[sporeshield];
+sporeshield.anim({
+opacity:0.7,
+time:instant?0:400}).
+anim({
+opacity:0.3,
+time:instant?0:300});
+
+break;
 case'lightscreen':
 var lightscreen=new Sprite(BattleEffects.lightscreen,{
 display:'block',
@@ -3246,6 +3266,10 @@ w:100,h:50},
 
 safeguard:{
 rawHTML:'<div class="sidecondition-safeguard" style="display:none;position:absolute" />',
+w:100,h:50},
+
+sporeshield:{
+rawHTML:'<div class="sidecondition-sporeshield" style="display:none;position:absolute" />',
 w:100,h:50},
 
 lightscreen:{

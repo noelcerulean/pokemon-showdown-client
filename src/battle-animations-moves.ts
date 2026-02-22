@@ -2497,6 +2497,9 @@ const BattleMoveAnims: AnimTable = {
 	safeguard: {
 		anim() {},
 	},
+	sporeshield: {
+		anim() {},
+	},
 	lightscreen: {
 		anim() {},
 	},
