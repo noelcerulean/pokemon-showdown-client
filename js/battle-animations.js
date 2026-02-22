@@ -1584,10 +1584,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/hgss-lugia.mp3',18845,69931,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dungeon4-conquest.mp3',7820,78085,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/hgss-lugia.mp3',18845,69931,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/dungeon4-conquest.mp3',7820,78085,this.bgm);
 break;}
 
 
@@ -3297,7 +3297,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-deepsea.jpg'];
+'bg-forest.jpg'];
 
 
 var BattleOtherAnims={
