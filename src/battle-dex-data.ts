@@ -588,6 +588,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	roseradearmoredrenegade: 1488 + 60,
 	roseradearmoredrequiem: 1488 + 60,
 	bombseal: 1488 + 61,
+	bombsealkaboom: 1488 + 61,
 	bombsealfiesta: 1488 + 61,
 	allnown: 1488 + 62,
 	roboheeyem: 1488 + 63,

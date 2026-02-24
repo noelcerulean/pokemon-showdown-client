@@ -523,6 +523,7 @@ exports.BattlePokemonSpritesBW = {
 	warwolf:{num:-512},
 	boomba:{num:-526},
 	bombseal:{num:-522},
+	bombsealkaboom:{num:-522},
 	bombsealfiesta:{num:-522},
 	seward:{num:-558},
 	anchorage:{num:-528},
