@@ -1603,7 +1603,7 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case-145:
+case 1:
 this.bgm=BattleSound.loadBgm('audio/dungeon4-conquest.mp3',7820,78085,this.bgm);
 break;
 default:
