@@ -825,6 +825,11 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	hytanboba: 1488 + 197,
 	hytansusie: 1488 + 197,
 	sirenaqua: 1488 + 198,
+	beeheavepsychic: 1488 + 199,
+	beeheavetrowel: 1488 + 200,
+	beeheavepliers: 1488 + 201,
+	beeheavedrill: 1488 + 202,
+	hivernor: 1488 + 203,
 
 	//hypnomons
 	ano: 304,

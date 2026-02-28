@@ -2500,6 +2500,9 @@ anim:function(){}},
 sporeshield:{
 anim:function(){}},
 
+hiveprotection:{
+anim:function(){}},
+
 lightscreen:{
 anim:function(){}},
 

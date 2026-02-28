@@ -1199,6 +1199,26 @@ opacity:0.3,
 time:instant?0:300});
 
 break;
+case'hiveprotection':
+var hiveprotection=new Sprite(BattleEffects.hiveprotection,{
+display:'block',
+x:side.x,
+y:side.y,
+z:side.behind(-20),
+xscale:1,
+yscale:0,
+opacity:0.1},
+this);
+this.$spritesFront[spriteIndex].append(hiveprotection.$el);
+this.sideConditions[siden][id]=[hiveprotection];
+hiveprotection.anim({
+opacity:0.7,
+time:instant?0:400}).
+anim({
+opacity:0.3,
+time:instant?0:300});
+
+break;
 case'lightscreen':
 var lightscreen=new Sprite(BattleEffects.lightscreen,{
 display:'block',
@@ -1604,10 +1624,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/dungeon4-conquest.mp3',7820,78085,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-area-zero.mp3',26449,137592,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/dungeon4-conquest.mp3',7820,78085,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/sv-area-zero.mp3',26449,137592,this.bgm);
 break;}
 
 
@@ -3270,6 +3290,10 @@ w:100,h:50},
 
 sporeshield:{
 rawHTML:'<div class="sidecondition-sporeshield" style="display:none;position:absolute" />',
+w:100,h:50},
+
+hiveprotection:{
+rawHTML:'<div class="sidecondition-hiveprotection" style="display:none;position:absolute" />',
 w:100,h:50},
 
 lightscreen:{

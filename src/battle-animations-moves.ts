@@ -2500,6 +2500,9 @@ const BattleMoveAnims: AnimTable = {
 	sporeshield: {
 		anim() {},
 	},
+	hiveprotection: {
+		anim() {},
+	},
 	lightscreen: {
 		anim() {},
 	},
