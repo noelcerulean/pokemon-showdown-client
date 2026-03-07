@@ -983,6 +983,7 @@ class BattleScene {
 			let pwid = toID(pseudoWeatherData[0]);
 			switch (pwid) {
 			case 'evanescediffusion':
+			case 'allurediffusion':
 				diffusion = pwid;
 				break;
 			default:
@@ -1199,8 +1200,8 @@ class BattleScene {
 				time: instant ? 0 : 300,
 			});
 			break;
-		case 'hiveprotection':
-			const hiveprotection = new Sprite(BattleEffects.hiveprotection, {
+		case 'mothersblessing':
+			const mothersblessing = new Sprite(BattleEffects.mothersblessing, {
 				display: 'block',
 				x: side.x,
 				y: side.y,
@@ -1209,9 +1210,29 @@ class BattleScene {
 				yscale: 0,
 				opacity: 0.1,
 			}, this);
-			this.$spritesFront[spriteIndex].append(hiveprotection.$el!);
-			this.sideConditions[siden][id] = [hiveprotection];
-			hiveprotection.anim({
+			this.$spritesFront[spriteIndex].append(mothersblessing.$el!);
+			this.sideConditions[siden][id] = [mothersblessing];
+			mothersblessing.anim({
+				opacity: 0.7,
+				time: instant ? 0 : 400,
+			}).anim({
+				opacity: 0.3,
+				time: instant ? 0 : 300,
+			});
+			break;
+		case 'fathersbloodlust':
+			const fathersbloodlust = new Sprite(BattleEffects.fathersbloodlust, {
+				display: 'block',
+				x: side.x,
+				y: side.y,
+				z: side.behind(-20),
+				xscale: 1,
+				yscale: 0,
+				opacity: 0.1,
+			}, this);
+			this.$spritesFront[spriteIndex].append(fathersbloodlust.$el!);
+			this.sideConditions[siden][id] = [fathersbloodlust];
+			fathersbloodlust.anim({
 				opacity: 0.7,
 				time: instant ? 0 : 400,
 			}).anim({
@@ -1624,10 +1645,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/sv-area-zero.mp3', 26449, 137592, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-tapus.mp3', 41674, 107882, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/sv-area-zero.mp3', 26449, 137592, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/masters-tapus.mp3', 41674, 107882, this.bgm);
 				break;
 			}
 	
@@ -3292,8 +3313,12 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		rawHTML: '<div class="sidecondition-sporeshield" style="display:none;position:absolute" />',
 		w: 100, h: 50,
 	},
-	hiveprotection: {
-		rawHTML: '<div class="sidecondition-hiveprotection" style="display:none;position:absolute" />',
+	mothersblessing: {
+		rawHTML: '<div class="sidecondition-mothersblessing" style="display:none;position:absolute" />',
+		w: 100, h: 50,
+	},
+	fathersbloodlust: {
+		rawHTML: '<div class="sidecondition-fathersbloodlust" style="display:none;position:absolute" />',
 		w: 100, h: 50,
 	},
 	lightscreen: {

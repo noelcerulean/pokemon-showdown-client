@@ -479,6 +479,10 @@ License: GPLv2
 	background: #93cde4 url(../fx/weather-evanescediffusion.png) no-repeat scroll left top;
 	color: #112C5C;
 }
+.allurediffusionweather {
+	background: #bb90e0 url(../fx/weather-allurediffusion.png) no-repeat scroll left top;
+	color: #490e5e;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
@@ -567,7 +571,13 @@ License: GPLv2
 	display: none;
 	position: absolute;
 }
-.sidecondition-hiveprotection {
+.sidecondition-mothersblessing {
+	background: #DD88DD;
+	border: 1px solid #AA66AA;
+	display: none;
+	position: absolute;
+}
+.sidecondition-fathersbloodlust {
 	background: #DD88DD;
 	border: 1px solid #AA66AA;
 	display: none;

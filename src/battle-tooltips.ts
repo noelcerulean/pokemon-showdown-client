@@ -587,6 +587,8 @@ class BattleTooltips {
 				if (move.id === 'diffusionwave') {
 					if (this.battle.hasPseudoWeather('Evanesce Diffusion')) {
 						zMove = this.battle.dex.moves.get(BattleTooltips.zMoveTable['Ghost']);
+					} else if (this.battle.hasPseudoWeather('Allure Diffusion')) {
+						zMove = this.battle.dex.moves.get(BattleTooltips.zMoveTable['Bug']);
 					}
 				}
 				move = new Move(zMove.id, zMove.name, {
@@ -1289,6 +1291,9 @@ class BattleTooltips {
 		if (ability === 'furcoat') {
 			stats.def *= 2;
 		}
+		if (ability === 'mysticchitin') {
+			stats.spd *= 2;
+		}
 		if (ability === 'stall') {
 			stats.def *= 1.3;
 			stats.spd *= 1.3;
@@ -1507,6 +1512,8 @@ class BattleTooltips {
 		if (move.id === 'diffusionwave') {
 			if (this.battle.hasPseudoWeather('Evanesce Diffusion')) {
 				moveType = 'Ghost';
+			} else if (this.battle.hasPseudoWeather('Allure Diffusion')) {
+				moveType = 'Bug';
 			}
 		}
 
@@ -1864,7 +1871,8 @@ class BattleTooltips {
 		}
 		if (move.id === 'diffusionwave') {
 			if (
-				this.battle.hasPseudoWeather('Evanesce Diffusion')
+				this.battle.hasPseudoWeather('Evanesce Diffusion') ||
+				this.battle.hasPseudoWeather('Allure Diffusion')
 			) {
 				value.modify(2, 'Diffusion Wave boost');
 			}

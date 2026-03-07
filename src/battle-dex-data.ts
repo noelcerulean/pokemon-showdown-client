@@ -172,6 +172,8 @@ const BattleBaseSpeciesChart = [
 	"pelipper", "piloswine", "smeargle", "froslass", "bisharp", "shedinja", "araquanid", "aromatissefnf", "fowlfrost",
 	"grumpig", "steeneedelta", "gourgeistlarge", "dragonairarmored", "wigglytuff", "skiploom", "dragonite",
 	"lilaquin", "vaicora", "hytan", "primeapearmored", "politoed", "roserade", "luvdisc", "volcarona",
+	"tyranitar", "excadrill", "archeops", "stunfisk", "magcargoarmored", "magnezone", "kommo", "huntail",
+	"castform", "heliolisk",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -555,6 +557,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	voltorbfnf: 1488 + 37,
 	electrodefnf: 1488 + 38,
 	electrodefnfbeach: 1488 + 38,
+	electrodefnfsherbert: 1488 + 38,
 	venonatfnf: 1488 + 39,
 	manomoth: 1488 + 40,
 	lickitungfnf: 1488 + 41,
@@ -573,6 +576,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	vanilluxefnf: 1488 + 53,
 	goodramega: 1488 + 54,
 	magcargoarmored: 1488 + 55,
+	magcargoarmoredhotrod: 1488 + 55,
 	royalynx: 1488 + 56,
 	royalynxholly: 1488 + 56,
 	royalynxjolly: 1488 + 56,
@@ -830,6 +834,11 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	beeheavepliers: 1488 + 201,
 	beeheavedrill: 1488 + 202,
 	hivernor: 1488 + 203,
+	lucifly: 1488 + 204,
+	sinisect: 1488 + 205,
+	beelzebug: 1488 + 206,
+	matrifly: 1488 + 207,
+
 
 	//hypnomons
 	ano: 304,
