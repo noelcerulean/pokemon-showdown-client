@@ -678,13 +678,7 @@ break;
 case'safeguard':
 this.sideConditions[condition]=[effect.name,1,5,0];
 break;
-case'sporeshield':
-this.sideConditions[condition]=[effect.name,1,99,0];
-break;
-case'mothersblessing':
-this.sideConditions[condition]=[effect.name,1,99,0];
-break;
-case'fathersbloodlust':
+case'sporecloud':
 this.sideConditions[condition]=[effect.name,1,99,0];
 break;
 case'lightscreen':
@@ -1355,7 +1349,7 @@ this.scene.updateWeather();
 };_proto3.
 swapSideConditions=function swapSideConditions(){
 var sideConditions=[
-'mist','lightscreen','reflect','spikes','safeguard','tailwind','toxicspikes','stealthrock','fathersbloodlust','sporeshield','mothersblessing','waterpledge','firepledge','grasspledge','stickyweb','auroraveil','gmaxsteelsurge','gmaxcannonade','gmaxvinelash','gmaxwildfire'];
+'mist','lightscreen','reflect','spikes','safeguard','tailwind','toxicspikes','stealthrock','sporecloud','waterpledge','firepledge','grasspledge','stickyweb','auroraveil','gmaxsteelsurge','gmaxcannonade','gmaxvinelash','gmaxwildfire'];
 
 if(this.gameType==='freeforall'){
 
@@ -2867,9 +2861,7 @@ case'auroraveil':
 case'reflect':
 case'lightscreen':
 case'safeguard':
-case'sporeshield':
-case'mothersblessing':
-case'fathersbloodlust':
+case'sporecloud':
 case'mist':
 case'gmaxwildfire':
 case'gmaxvolcalith':

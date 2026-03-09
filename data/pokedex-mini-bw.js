@@ -1380,6 +1380,7 @@ exports.BattlePokemonSpritesBW = {
 	heatmorhuangshanbracelet:{num:631},
 	durant:{num:632},
 	durantblue:{num:632},
+	durantmega:{num:632},
 	phasmatch:{num:-537},
 	phasmatchsinner:{num:-537},
 	phasphorus:{num:-538},

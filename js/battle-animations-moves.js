@@ -2500,13 +2500,7 @@ anim:function(){}},
 safeguard:{
 anim:function(){}},
 
-sporeshield:{
-anim:function(){}},
-
-mothersblessing:{
-anim:function(){}},
-
-fathersbloodlust:{
+sporecloud:{
 anim:function(){}},
 
 lightscreen:{
@@ -45906,6 +45900,7 @@ BattleMoveAnims['gmaxhydrosnipe']=BattleMoveAnims['hydrovortex'];
 BattleMoveAnims['dynamaxcannon']={anim:BattleMoveAnims['dragonpulse'].anim};
 BattleMoveAnims['snipeshot']={anim:BattleMoveAnims['waterpulse'].anim};
 BattleMoveAnims['jawlock']={anim:BattleMoveAnims['crunch'].anim};
+BattleMoveAnims['ironjaw']={anim:BattleMoveAnims['crunch'].anim};
 BattleMoveAnims['stuffcheeks']={anim:BattleMoveAnims['stockpile'].anim};
 BattleMoveAnims['noretreat']={anim:BattleMoveAnims['stockpile'].anim};
 BattleMoveAnims['naturalshift']={anim:BattleMoveAnims['stockpile'].anim};

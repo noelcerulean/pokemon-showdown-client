@@ -838,6 +838,7 @@ lucifly:1488+204,
 sinisect:1488+205,
 beelzebug:1488+206,
 matrifly:1488+207,
+durantmega:1488+208,
 
 
 

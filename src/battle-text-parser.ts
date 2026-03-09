@@ -118,7 +118,7 @@ class BattleTextParser {
 			if ([
 				'ingrain', 'quickguard', 'wideguard', 'craftyshield', 'matblock', 'protect', 'mist', 'safeguard',
 				'electricterrain', 'mistyterrain', 'psychicterrain', 'evanescediffusion', 'allurediffusion', 'telepathy', 'stickyhold', 'suctioncups', 'aromaveil',
-				'flowerveil', 'sweetveil', 'disguise', 'mimictree', 'safetygoggles', 'protectivepads', 'berserkterrain', 'sporeshield', 'fathersbloodlust', 'mothersblessing',
+				'flowerveil', 'sweetveil', 'disguise', 'mimictree', 'safetygoggles', 'protectivepads', 'berserkterrain', 'sporecloud',
 			].includes(id)) {
 				if (target) {
 					kwArgs.of = pokemon;
