@@ -678,9 +678,6 @@ class Side {
 		case 'safeguard':
 			this.sideConditions[condition] = [effect.name, 1, 5, 0];
 			break;
-		case 'sporecloud':
-			this.sideConditions[condition] = [effect.name, 1, 99, 0];
-			break;
 		case 'lightscreen':
 			this.sideConditions[condition] = [effect.name, 1, 5, this.battle.gen >= 4 ? 8 : 0];
 			break;
@@ -1349,7 +1346,7 @@ class Battle {
 	}
 	swapSideConditions() {
 		const sideConditions = [
-			'mist', 'lightscreen', 'reflect', 'spikes', 'safeguard', 'tailwind', 'toxicspikes', 'stealthrock', 'sporecloud', 'waterpledge', 'firepledge', 'grasspledge', 'stickyweb', 'auroraveil', 'gmaxsteelsurge', 'gmaxcannonade', 'gmaxvinelash', 'gmaxwildfire',
+			'mist', 'lightscreen', 'reflect', 'spikes', 'safeguard', 'tailwind', 'toxicspikes', 'stealthrock', 'waterpledge', 'firepledge', 'grasspledge', 'stickyweb', 'auroraveil', 'gmaxsteelsurge', 'gmaxcannonade', 'gmaxvinelash', 'gmaxwildfire',
 		];
 		if (this.gameType === 'freeforall') {
 			// TODO: Add FFA support
@@ -2861,7 +2858,6 @@ class Battle {
 			case 'reflect':
 			case 'lightscreen':
 			case 'safeguard':
-			case 'sporecloud':
 			case 'mist':
 			case 'gmaxwildfire':
 			case 'gmaxvolcalith':

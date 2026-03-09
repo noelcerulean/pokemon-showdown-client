@@ -839,6 +839,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	beelzebug: 1488 + 206,
 	matrifly: 1488 + 207,
 	durantmega: 1488 + 208,
+	wailmerdelta: 1488 + 209,
+	wailorddelta: 1488 + 210,
+	mycromancer: 1488 + 211,
 
 
 	//hypnomons
