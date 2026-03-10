@@ -1575,6 +1575,7 @@ exports.BattlePokemonSpritesBW = {
 	cashino:{num:-549},
 	cashinovintage:{num:-549},
 	phantump:{num:708},
+	phantumpwithered:{num:708},
 	trevenant:{num:709},
 	trevenantbeach:{num:709},
 	trevenantmega:{num:709},

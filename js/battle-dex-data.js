@@ -173,7 +173,7 @@ var BattleBaseSpeciesChart=[
 "grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom","dragonite",
 "lilaquin","vaicora","hytan","primeapearmored","politoed","roserade","luvdisc","volcarona",
 "tyranitar","excadrill","archeops","stunfisk","magcargoarmored","magnezone","kommo","huntail",
-"castform","heliolisk"];
+"castform","heliolisk","phantump"];
 
 
 var BattlePokemonIconIndexes={
