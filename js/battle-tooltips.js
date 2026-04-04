@@ -1762,7 +1762,7 @@ Math.floor(Math.floor((100*(100*Math.floor(target.hp*4096/target.maxhp))+2048-1)
 if(move.id==='brine'&&target&&target.hp*2<=target.maxhp){
 value.modify(2,'Brine + target below half HP');
 }
-if(move.id==='eruption'||move.id==='waterspout'||move.id==='icefall'||move.id==='dragonenergy'){
+if(move.id==='eruption'||move.id==='waterspout'||move.id==='icefall'||move.id==='proliferation'||move.id==='dragonenergy'){
 value.set(Math.floor(150*pokemon.hp/pokemon.maxhp)||1);
 }
 if(move.id==='facade'&&!['','slp'].includes(pokemon.status)){
