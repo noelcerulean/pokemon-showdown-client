@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/sv-aceacademy.mp3', 1258, 160450, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/pbr-sunnypark.mp3', 3787, 93456, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/sv-aceacademy.mp3', 1258, 160450, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/pbr-sunnypark.mp3', 3787, 93456, this.bgm);
 				break;
 			}
 	
