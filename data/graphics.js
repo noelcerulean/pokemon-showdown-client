@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/pbr-sunnypark.mp3',3787,93456,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-hoenngymleader.mp3',12467,87536,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/pbr-sunnypark.mp3',3787,93456,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-hoenngymleader.mp3',12467,87536,this.bgm);
 break;}
 
 
@@ -3298,7 +3298,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-valerie.png'];
+'bg-space.png'];
 
 
 var BattleOtherAnims={
