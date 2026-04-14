@@ -1577,7 +1577,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 1);
+		this.setBgm(1 + this.numericId % 25);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/masters-hoenngymleader.mp3', 12467, 87536, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/training-gym.mp3', 34957, 149397, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/masters-hoenngymleader.mp3', 12467, 87536, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/training-gym.mp3', 34957, 149397, this.bgm);
 				break;
 			}
 	
@@ -3298,7 +3298,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-space.png',
+	'bg-steel.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
