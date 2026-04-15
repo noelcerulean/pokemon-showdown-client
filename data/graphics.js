@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/steel-battle.mp3',29258,121915,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/steel-battle.mp3',29258,121915,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/hgss-gym-leader.mp3',20319,82910,this.bgm);
 break;}
 
 
