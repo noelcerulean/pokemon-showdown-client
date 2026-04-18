@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/hgss-gym-leader.mp3', 20319, 82910, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/dungeon1-conquest.mp3', 3764, 78786, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/hgss-gym-leader.mp3', 20319, 82910, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/dungeon1-conquest.mp3', 3764, 78786, this.bgm);
 				break;
 			}
 	
@@ -3298,7 +3298,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-steel.png',
+	'bg-autumn.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
