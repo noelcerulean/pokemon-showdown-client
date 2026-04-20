@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/newyear-masters.mp3', 34321, 87458, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/hgss-hooh.mp3', 40622, 108343, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/newyear-masters.mp3', 34321, 87458, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/hgss-hooh.mp3', 40622, 108343, this.bgm);
 				break;
 			}
 	
