@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/hgss-hooh.mp3',40622,108343,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/hgss-hooh.mp3',40622,108343,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-courtyard.mp3',32617,140847,this.bgm);
 break;}
 
 
@@ -3298,7 +3298,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-autumn.png'];
+'bg-bygone.png'];
 
 
 var BattleOtherAnims={
