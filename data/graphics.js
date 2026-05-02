@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/tellur-autumn.mp3',13953,124465,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/legends-giratina.mp3',63081,258135,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/tellur-autumn.mp3',13953,124465,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/legends-giratina.mp3',63081,258135,this.bgm);
 break;}
 
 
