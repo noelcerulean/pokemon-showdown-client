@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/legends-giratina.mp3',63081,258135,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/neos-city-night.mp3',46920,166926,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/legends-giratina.mp3',63081,258135,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/neos-city-night.mp3',46920,166926,this.bgm);
 break;}
 
 
@@ -3298,7 +3298,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-bygone.png'];
+'bg-darkbeach.jpg'];
 
 
 var BattleOtherAnims={
