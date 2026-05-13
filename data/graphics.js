@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/sv-penny.mp3',48902,197473,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/sv-penny.mp3',48902,197473,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
 break;}
 
 
@@ -3298,7 +3298,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-party.png'];
+'bg-grant.png'];
 
 
 var BattleOtherAnims={
