@@ -1657,6 +1657,7 @@ exports.BattlePokemonSprites = {
 	lycanrocmidnight:{num:745},
 	lycanrocmidnighthugwolf:{num:745},
 	lycanrocdusk:{num:745},
+	lycanmoo:{num:-615},
 	wishiwashi:{num:746},
 	wishiwashischool:{num:746},
 	mareanie:{num:747},

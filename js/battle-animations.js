@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-kieran-decisive.mp3',28206,85806,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/conquest-normal-battle.mp3',14029,105029,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/masters-kieran-decisive.mp3',28206,85806,this.bgm);
 break;}
 
 
@@ -3298,7 +3298,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-grant.png'];
+'bg-forest.jpg'];
 
 
 var BattleOtherAnims={

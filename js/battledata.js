@@ -1832,6 +1832,7 @@ durantmega:1488+208,
 wailmerdelta:1488+209,
 wailorddelta:1488+210,
 mycromancer:1488+211,
+lycanmoo:1488+212,
 
 
 
