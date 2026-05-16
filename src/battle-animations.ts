@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/masters-kieran-decisive.mp3', 28206, 85806, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/oras-zinnia.mp3', 57774, 191856, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/masters-kieran-decisive.mp3', 28206, 85806, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/oras-zinnia.mp3', 57774, 191856, this.bgm);
 				break;
 			}
 	
@@ -3298,7 +3298,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-forest.jpg',
+	'bg-grant.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
