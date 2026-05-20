@@ -1577,7 +1577,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 1);
+		this.setBgm(1 + this.numericId % 25);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/oras-zinnia.mp3', 57774, 191856, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/blue-dome.mp3', 58886, 204180, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/oras-zinnia.mp3', 57774, 191856, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/blue-dome.mp3', 58886, 204180, this.bgm);
 				break;
 			}
 	
@@ -3298,7 +3298,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-grant.png',
+	'bg-stadium.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
