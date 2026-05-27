@@ -9527,6 +9527,9 @@ const BattleMoveAnims: AnimTable = {
 	quickattack: {
 		anim: BattleOtherAnims.fastattack.anim,
 	},
+	slipstream: {
+		anim: BattleOtherAnims.fastattack.anim,
+	},
 	suckerpunch: {
 		anim(scene, [attacker, defender]) {
 			BattleOtherAnims.fastattack.anim(scene, [attacker, defender]);
@@ -9718,6 +9721,9 @@ const BattleMoveAnims: AnimTable = {
 		anim() {},
 	},
 	florapower: {
+		anim() {},
+	},
+	primalinstinct: {
 		anim() {},
 	},
 	stripestyle: {

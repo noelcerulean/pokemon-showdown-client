@@ -9527,6 +9527,9 @@ time:350},
 quickattack:{
 anim:BattleOtherAnims.fastattack.anim},
 
+slipstream:{
+anim:BattleOtherAnims.fastattack.anim},
+
 suckerpunch:{
 anim:function(scene,_ref157){var attacker=_ref157[0],defender=_ref157[1];
 BattleOtherAnims.fastattack.anim(scene,[attacker,defender]);
@@ -9718,6 +9721,9 @@ naturepower:{
 anim:function(){}},
 
 florapower:{
+anim:function(){}},
+
+primalinstinct:{
 anim:function(){}},
 
 stripestyle:{

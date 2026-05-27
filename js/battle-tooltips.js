@@ -1547,6 +1547,8 @@ moveType='Fire';
 moveType='Water';
 }else if(move.id==='primalburst'&&item.id==='tealorb'){
 moveType='Water';
+}else if(move.id==='primalburst'&&item.id==='emeraldorb'){
+moveType='Flying';
 }else if(move.id==='primalburst'&&item.id==='craftsmanorb'){
 moveType='Normal';
 }
