@@ -173,7 +173,7 @@ const BattleBaseSpeciesChart = [
 	"grumpig", "steeneedelta", "gourgeistlarge", "dragonairarmored", "wigglytuff", "skiploom", "dragonite",
 	"lilaquin", "vaicora", "hytan", "primeapearmored", "politoed", "roserade", "luvdisc", "volcarona",
 	"tyranitar", "excadrill", "archeops", "stunfisk", "magcargoarmored", "magnezone", "kommo", "huntail",
-	"castform", "heliolisk", "phantump",
+	"castform", "heliolisk", "phantump", "metagross", "vespiquenarmored",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -513,6 +513,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	aromatissefnfhero: 1488 + 6,
 	sunfloramega: 1488 + 7,
 	vespiquenarmored: 1488 + 8,
+	vespiquenarmoredrhinestone: 1488 + 8,
 	drild: 1488 + 9,
 	turtottle: 1488 + 10,
 	tropetite: 1488 + 11,
@@ -803,6 +804,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	chronoklang: 1488 + 194,
 	lilaquin: 1488 + 195,
 	lilaquinvera: 1488 + 195,
+	lilaquinveranecklace: 1488 + 195,
 	lilaquindribble: 1488 + 195,
 	lilaquinhexa: 1488 + 195,
 	lilaquindolly: 1488 + 195,
