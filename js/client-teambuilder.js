@@ -1966,7 +1966,6 @@
 			} else if (species.forme) {
 				switch (species.baseSpecies) {
 				case 'Alcremie':
-				case 'Basculin':
 				case 'Burmy':
 				case 'Castform':
 				case 'Castform-Shadow':

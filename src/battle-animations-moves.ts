@@ -9720,13 +9720,7 @@ const BattleMoveAnims: AnimTable = {
 	naturepower: {
 		anim() {},
 	},
-	florapower: {
-		anim() {},
-	},
 	primalinstinct: {
-		anim() {},
-	},
-	stripestyle: {
 		anim() {},
 	},
 	copycat: {
@@ -10636,7 +10630,7 @@ const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
-	bluebites: {
+	aquabites: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('waterwisp', {
 				x: defender.x,
@@ -11762,7 +11756,7 @@ const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
-	redrush: {
+	tidaltackle: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('linear-gradient(#003B82 30%, #4D98E3)', 600, 0.6);
 			scene.showEffect('waterwisp', {

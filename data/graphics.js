@@ -16962,13 +16962,7 @@ anim:function(){}},
 naturepower:{
 anim:function(){}},
 
-florapower:{
-anim:function(){}},
-
 primalinstinct:{
-anim:function(){}},
-
-stripestyle:{
 anim:function(){}},
 
 copycat:{
@@ -17878,7 +17872,7 @@ BattleOtherAnims.bite.anim(scene,[attacker,defender]);
 BattleOtherAnims.contactattack.anim(scene,[attacker,defender]);
 }},
 
-bluebites:{
+aquabites:{
 anim:function(scene,_ref178){var attacker=_ref178[0],defender=_ref178[1];
 scene.showEffect('waterwisp',{
 x:defender.x,
@@ -19004,7 +18998,7 @@ time:300},
 'swing');
 }},
 
-redrush:{
+tidaltackle:{
 anim:function(scene,_ref191){var attacker=_ref191[0],defender=_ref191[1];
 scene.backgroundEffect('linear-gradient(#003B82 30%, #4D98E3)',600,0.6);
 scene.showEffect('waterwisp',{
