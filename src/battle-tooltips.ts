@@ -1068,6 +1068,21 @@ class BattleTooltips {
 			}
 		}
 
+		if (item === 'glowingstone') {
+			if (species === 'Vaicora' || species === 'Lilaquin' || species === 'Hytan') {
+				stats.def = Math.floor(stats.def * 1.5);
+				stats.spd = Math.floor(stats.spd * 1.5);
+				stats.atk = Math.floor(stats.atk * 1.5);
+				stats.spa = Math.floor(stats.spa * 1.5);
+			} else if (species === 'Sindle' || species === 'Musleeb' || species === 'Fofoam') {
+				stats.def = Math.floor(stats.def * 1.5);
+				stats.spd = Math.floor(stats.spd * 1.5);
+				stats.atk = Math.floor(stats.atk * 1.5);
+				stats.spa = Math.floor(stats.spa * 1.5);
+				stats.spe = Math.floor(stats.spe * 2);
+			}
+		}
+
 		if (item === 'thickclub') {
 			if (species === 'Marowak' || species === 'Cubone') {
 				stats.atk *= 2;
