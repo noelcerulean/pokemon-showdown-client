@@ -1306,7 +1306,7 @@ return abilityid==='cunningblade'||!moves.includes('crunch')&&!(moves.includes('
 case'ominouswind':
 return species.baseSpecies==='Allnown';
 case'passionstorm':
-return abilityid==='enticement';
+return abilityid==='enticement'||species.baseSpecies==='Unown-Iny Miny';
 case'petaldance':
 return abilityid==='owntempo';
 case'phantomforce':

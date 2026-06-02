@@ -570,6 +570,7 @@ exports.BattlePokemonSpritesBW = {
 	unownz:{num:201},
 	unownexclamation:{num:201},
 	unownquestion:{num:201},
+	unowninyminy:{num:201},
 	allnown:{num:-523},
 	wobbuffet:{num:202},
 	wobbuffetchamp:{num:202},
