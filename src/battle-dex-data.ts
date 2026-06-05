@@ -850,6 +850,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	unfezantprimal: 1488 + 213,
 	unfezantfprimal: 1488 + 214,
 	barbaraclearmored: 1488 + 215,
+	madnexa: 1488 + 216,
 
 
 	//hypnomons

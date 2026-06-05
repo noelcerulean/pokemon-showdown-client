@@ -32,6 +32,7 @@ exports.BattlePokemonSprites = {
 	lilaquinkim:{num:-604},
 	lilaquinmeemo:{num:-604},
 	lilaquinveranecklace:{num:-604},
+	madnexa:{num:-616},
 	sindle:{num:-593},
 	sindlelighthouse:{num:-593},
 	sindlegroveil:{num:-593},
