@@ -46268,6 +46268,7 @@ BattleMoveAnims['crushgrip'] = {anim: BattleMoveAnims['quash'].anim};
 BattleMoveAnims['sweepup'] = {anim: BattleMoveAnims['tailslap'].anim};
 BattleMoveAnims['catburglary'] = {anim: BattleMoveAnims['spectralthief'].anim};
 BattleMoveAnims['rapidraidswipe'] = {anim: BattleMoveAnims['spectralthief'].anim};
+BattleMoveAnims['netherworldnexus'] = {anim: BattleMoveAnims['spectralthief'].anim};
 
 BattleMoveAnims['beatup'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['counter'] = {anim: BattleMoveAnims['slam'].anim};

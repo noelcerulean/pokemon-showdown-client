@@ -498,6 +498,7 @@ alomomolamedella:1476+2,
 feebasvanessa:1476+3,
 pickpossumpopo:1476+4,
 unowninyminy:1476+5,
+spiritombmortimer:1476+6,
 
 
 parasfnf:1488+0,
@@ -851,6 +852,7 @@ unfezantprimal:1488+213,
 unfezantfprimal:1488+214,
 barbaraclearmored:1488+215,
 madnexa:1488+216,
+wigglytuffmega:1488+219,
 
 
 

@@ -1577,7 +1577,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%25);
+this.setBgm(1+this.numericId%1);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/intro-leon.mp3',45055,112996,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/e4-wikstrom.mp3',41880,100539,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/intro-leon.mp3',45055,112996,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/e4-wikstrom.mp3',41880,100539,this.bgm);
 break;}
 
 
@@ -2262,7 +2262,7 @@ if(!this.scene.animating)return;
 var speciesid=toID(pokemon.getSpeciesForme());
 var doCry=false;
 var scene=this.scene;
-if(speciesid==='dittoshadow'||speciesid==='roboheeyemcurio'||speciesid==='roboheeyemshadow'||speciesid==='castformshadow'||speciesid==='lugiashadow'||speciesid==='articunoshadow'||speciesid==='zapdosshadow'||speciesid==='moltresshadow'||speciesid==='longeonshadow'||speciesid==='snoruntshadow'||speciesid==='aronshadow'||speciesid==='furfroushadow'||speciesid==='garchompshadow'||speciesid==='gourgeistshadow'||speciesid==='heatmorshadow'||speciesid==='lileepshadow'||speciesid==='mareanieshadow'||speciesid==='marillshadow'||speciesid==='meowsticshadow'||speciesid==='mukshadow'||speciesid==='noivernshadow'||speciesid==='shroomishshadow'||speciesid==='spinarakshadow'||speciesid==='ribombeeshadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
+if(speciesid==='dittoshadow'||speciesid==='roboheeyemshadow'||speciesid==='castformshadow'||speciesid==='lugiashadow'||speciesid==='articunoshadow'||speciesid==='zapdosshadow'||speciesid==='moltresshadow'||speciesid==='longeonshadow'||speciesid==='snoruntshadow'||speciesid==='aronshadow'||speciesid==='furfroushadow'||speciesid==='garchompshadow'||speciesid==='gourgeistshadow'||speciesid==='heatmorshadow'||speciesid==='lileepshadow'||speciesid==='mareanieshadow'||speciesid==='marillshadow'||speciesid==='meowsticshadow'||speciesid==='mukshadow'||speciesid==='noivernshadow'||speciesid==='shroomishshadow'||speciesid==='spinarakshadow'||speciesid==='ribombeeshadow'||speciesid==='hoohshadow'||speciesid==='jirachishadow'){
 BattleOtherAnims.shadowpokemon.anim(scene,[this]);
 }else if(speciesid==='omniverum'){
 BattleOtherAnims.originaldragon.anim(scene,[this]);
@@ -3310,7 +3310,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-lunar.png'];
+'bg-elite4siebold.jpg'];
 
 
 var BattleOtherAnims={
