@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/e4-wikstrom.mp3', 41880, 100539, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/e4-sidney.mp3', 36791, 97640, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/e4-wikstrom.mp3', 41880, 100539, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/e4-sidney.mp3', 36791, 97640, this.bgm);
 				break;
 			}
 	
@@ -3033,6 +3033,10 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		url: 'electroball.png',
 		w: 100, h: 100,
 	},
+	ironball: {
+		url: 'ironball.png',
+		w: 100, h: 100,
+	},
 	mistball: {
 		url: 'mistball.png',
 		w: 100, h: 100,
@@ -3310,7 +3314,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-elite4siebold.jpg',
+	'bg-elite4sidney.png',
 ];
 
 const BattleOtherAnims: AnimTable = {

@@ -238,7 +238,7 @@ giratinaorigin:900+53,
 shayminsky:900+54,
 unfezantf:900+55,
 basculinblue:900+56,
-basculinblue:900+56,
+basculinbluehero:900+56,
 darmanitanzen:900+57,
 darmanizen:900+57,
 deerlingautumn:900+58,
@@ -499,6 +499,7 @@ feebasvanessa:1476+3,
 pickpossumpopo:1476+4,
 unowninyminy:1476+5,
 spiritombmortimer:1476+6,
+throhbigred:1476+7,
 
 
 parasfnf:1488+0,
@@ -853,6 +854,8 @@ unfezantfprimal:1488+214,
 barbaraclearmored:1488+215,
 madnexa:1488+216,
 wigglytuffmega:1488+219,
+fusallate:1488+220,
+fusallatedelta:1488+221,
 
 
 
