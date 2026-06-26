@@ -1147,7 +1147,7 @@ class BattleTooltips {
 		}
 		if (ability === 'purepower') {
 			stats.atk = Math.floor(stats.atk * 1.5);
-			stats.spd = Math.floor(stats.spa * 1.5);
+			stats.spa = Math.floor(stats.spa * 1.5);
 		}
 		if (ability === 'hugepower') {
 			stats.atk *= 2;

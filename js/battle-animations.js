@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/e4-sidney.mp3',36791,97640,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/e4-caitlin.mp3',57189,119075,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/e4-sidney.mp3',36791,97640,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/e4-caitlin.mp3',57189,119075,this.bgm);
 break;}
 
 
@@ -3314,7 +3314,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-elite4sidney.png'];
+'bg-comets.png'];
 
 
 var BattleOtherAnims={

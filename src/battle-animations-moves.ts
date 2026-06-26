@@ -5472,6 +5472,41 @@ const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
 		},
 	},
+	heartbreaker: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 420,
+			}, {
+				x: defender.leftof(-20),
+				y: defender.y,
+				z: defender.behind(20),
+				scale: 3,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+			scene.showEffect('mistball', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 520,
+			}, {
+				x: defender.leftof(-20),
+				y: defender.y,
+				z: defender.behind(20),
+				scale: 3,
+				opacity: 0,
+				time: 800,
+			}, 'linear');
+			BattleOtherAnims.contactattack.anim(scene, [attacker, defender]);
+		},
+	},
 	crushclaw: {
 		anim: BattleOtherAnims.clawattack.anim,
 	},
@@ -9871,6 +9906,135 @@ const BattleMoveAnims: AnimTable = {
 			defender.anim({
 				time: 300,
 			}, 'swing');
+		},
+	},
+	seismicsandburial: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect('linear-gradient(#003B82 30%, #a3875d)', 900, 0.5);
+			scene.showEffect('mudwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 1,
+				time: 0,
+			}, {
+				x: attacker.x - 50,
+				y: attacker.y - 50,
+				scale: 2,
+				opacity: 0,
+				time: 300,
+			}, 'ballistic');
+			scene.showEffect('mudwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 1,
+				time: 150,
+			}, {
+				x: attacker.x + 60,
+				y: attacker.y - 50,
+				scale: 2,
+				opacity: 0,
+				time: 450,
+			}, 'ballistic');
+			scene.showEffect('mudwisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 1,
+				time: 300,
+			}, {
+				x: attacker.x + 10,
+				y: attacker.y - 60,
+				scale: 2,
+				opacity: 0,
+				time: 600,
+			}, 'ballistic');
+			scene.showEffect('mudwisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 400,
+			}, {
+				scale: 6,
+				opacity: 0,
+				time: 600,
+			}, 'linear');
+
+			scene.showEffect('mudwisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 600,
+			}, {
+				scale: 8,
+				opacity: 0,
+				time: 900,
+			}, 'linear');
+			scene.showEffect('mudwisp', {
+				x: defender.x,
+				y: defender.y,
+				z: defender.z,
+				scale: 0,
+				opacity: 1,
+				time: 800,
+			}, {
+				scale: 8,
+				opacity: 0,
+				time: 1100,
+			}, 'linear');
+
+			scene.showEffect('impact', {
+				x: defender.x,
+				y: defender.y + 2,
+				z: defender.behind(5),
+				scale: 0,
+				opacity: 0.2,
+				time: 800,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 900,
+			}, 'linear');
+			attacker.delay(200);
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(5),
+				time: 375,
+			}, 'accel');
+			attacker.anim({
+				x: defender.x,
+				y: defender.y,
+				z: defender.behind(20),
+				time: 250,
+			}, 'decel');
+			attacker.anim({
+				time: 700,
+			}, 'ballistic2Back');
+			defender.delay(600);
+			defender.anim({
+				x: defender.leftof(75),
+				y: defender.y + 50,
+				z: defender.behind(150),
+				opacity: 0,
+				time: 400,
+			}, 'swing');
+			defender.delay(500);
+			defender.anim({
+				opacity: 0,
+				time: 1,
+			});
+			defender.anim({
+				time: 400,
+			});
 		},
 	},
 	ruinousriptide: {

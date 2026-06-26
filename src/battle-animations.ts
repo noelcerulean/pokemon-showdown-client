@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/e4-sidney.mp3', 36791, 97640, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/e4-caitlin.mp3', 57189, 119075, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/e4-sidney.mp3', 36791, 97640, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/e4-caitlin.mp3', 57189, 119075, this.bgm);
 				break;
 			}
 	
@@ -3314,7 +3314,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-elite4sidney.png',
+	'bg-comets.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
