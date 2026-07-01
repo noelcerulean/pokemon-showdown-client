@@ -9910,7 +9910,7 @@ const BattleMoveAnims: AnimTable = {
 	},
 	seismicsandburial: {
 		anim(scene, [attacker, defender]) {
-			scene.backgroundEffect('linear-gradient(#003B82 30%, #a3875d)', 900, 0.5);
+			scene.backgroundEffect('linear-gradient(#592a01 30%, #a3875d)', 900, 0.5);
 			scene.showEffect('mudwisp', {
 				x: attacker.x,
 				y: attacker.y,
@@ -21386,6 +21386,151 @@ const BattleMoveAnims: AnimTable = {
 				opacity: 0.6,
 				time: 350,
 			}, 'linear', 'explode');
+		},
+	},
+	voidexpansion: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 600, 0.6);
+			scene.showEffect('shadowwisp3', {
+				x: attacker.leftof(-10),
+				y: attacker.y + 10,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.5,
+			}, {
+				scale: 15,
+				opacity: 0.8,
+				time: 500,
+			}, 'linear', 'fade');
+			scene.showEffect('impact', {
+				x: defender.x - 25,
+				y: defender.y,
+				z: defender.behind(5),
+				scale: 0.7,
+				opacity: 0.2,
+				time: 175,
+			}, {
+				scale: 1,
+				opacity: 0,
+				time: 375,
+			}, 'linear');
+			scene.showEffect('impact', {
+				x: defender.x + 25,
+				y: defender.y - 5,
+				z: defender.behind(5),
+				scale: 0.7,
+				opacity: 0.2,
+				time: 300,
+			}, {
+				scale: 1,
+				opacity: 0,
+				time: 500,
+			}, 'linear');
+			scene.showEffect('impact', {
+				x: defender.x - 25,
+				y: defender.y + 10,
+				z: defender.behind(5),
+				scale: 0.7,
+				opacity: 0.2,
+				time: 400,
+			}, {
+				scale: 1,
+				opacity: 0,
+				time: 600,
+			}, 'linear');
+			scene.showEffect('impact', {
+				x: defender.x + 2,
+				y: defender.y + 5,
+				z: defender.behind(5),
+				scale: 1,
+				opacity: 0.2,
+				time: 500,
+			}, {
+				scale: 1.25,
+				opacity: 0,
+				time: 700,
+			}, 'linear');
+
+			attacker.anim({
+				opacity: 0,
+				time: 75,
+			});
+			attacker.delay(500);
+			attacker.anim({
+				opacity: 1,
+				time: 100,
+			});
+			defender.delay(200);
+			defender.anim({
+				x: defender.x - 30,
+				time: 75,
+			});
+			defender.anim({
+				x: defender.x + 30,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x - 30,
+				time: 100,
+			});
+			defender.anim({
+				x: defender.x,
+				time: 100,
+			});
+		},
+	},
+	imperishablecosmicvacuum: {
+		anim(scene, [attacker, defender]) {
+			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 2700, 0.5);
+			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 700, 0.7, 2000);
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 2.5,
+				opacity: 0,
+			}, {
+				scale: 3,
+				opacity: 1,
+				time: 599,
+			}, 'linear', 'fade');
+			scene.showEffect('blackwisp', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 3,
+				opacity: 0,
+			}, {
+				scale: 3.25,
+				opacity: 0.7,
+				time: 599,
+			}, 'linear', 'fade');
+			scene.showEffect('iceball', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 3,
+				opacity: 1,
+				time: 600,
+			}, {
+				x: defender.x,
+				y: defender.y + 10,
+				z: defender.z,
+				time: 2000,
+			}, 'accel', 'explode');
+			scene.showEffect('blackwisp', {
+				x: attacker.x,
+				y: attacker.y + 120,
+				z: attacker.z,
+				scale: 3.25,
+				opacity: 0.7,
+				time: 600,
+			}, {
+				x: defender.x,
+				y: defender.y + 10,
+				z: defender.z,
+				time: 2000,
+			}, 'accel', 'explode');
 		},
 	},
 	lusterpurge: {
@@ -46587,6 +46732,7 @@ BattleMoveAnims['sweetkiss'] = {anim: BattleMoveAnims['lovelykiss'].anim};
 BattleMoveAnims['mirrorshot'] = {anim: BattleMoveAnims['flashcannon'].anim};
 BattleMoveAnims['mirrorcoat'] = {anim: BattleMoveAnims['flashcannon'].anim};
 BattleMoveAnims['metalburst'] = {anim: BattleMoveAnims['flashcannon'].anim};
+BattleMoveAnims['spacialsuplex'] = {anim: BattleMoveAnims['seismictoss'].anim};
 
 BattleMoveAnims['mudslap'] = {anim: BattleMoveAnims['mudshot'].anim};
 BattleMoveAnims['sandattack'] = {anim: BattleMoveAnims['mudshot'].anim};

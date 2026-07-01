@@ -502,6 +502,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	throhbigred: 1476 + 7,
 	celebiamaranth: 1476 + 8,
 	tsareenadeltarania: 1476 + 9,
+	starmiejoya: 1476 + 10,
+	starmiejoyamega: 1476 + 11,
+	pheromosadivinia: 1476 + 12,
 
 	//fnf custom mons
 	parasfnf: 1500 + 0,
@@ -855,10 +858,14 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	unfezantfprimal: 1500 + 214,
 	barbaraclearmored: 1500 + 215,
 	madnexa: 1500 + 216,
+	altazash: 1500 + 217,
 	wigglytuffmega: 1500 + 219,
 	fusallate: 1500 + 220,
 	fusallatedelta: 1500 + 221,
 	xatumega: 1500 + 222,
+	novarizon: 1500 + 223,
+	tardi: 1500 + 224,
+	tardinaut: 1500 + 225,
 
 
 	//hypnomons
