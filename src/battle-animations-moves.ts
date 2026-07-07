@@ -10178,9 +10178,9 @@ const BattleMoveAnims: AnimTable = {
 			});
 		},
 	},
-	apexairstrike: {
+	apexairstream: {
 		anim(scene, [attacker, defender]) {
-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-strongwind.png')`, 900, 0.5);
+			scene.backgroundEffect('linear-gradient(#46BFFF 20%, #241714)', 1300, 0.5);
 			scene.showEffect('iceball', {
 				x: attacker.x,
 				y: attacker.y,

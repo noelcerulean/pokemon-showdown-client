@@ -1584,11 +1584,11 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case 1:
-this.bgm=BattleSound.loadBgm('audio/e4-hala.mp3',38576,96183,this.bgm);
+case-1:
+this.bgm=BattleSound.loadBgm('audio/champ-kukui.mp3',57361,113932,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/e4-hala.mp3',38576,96183,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/champ-kukui.mp3',57361,113932,this.bgm);
 break;}
 
 
@@ -3314,7 +3314,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-space.png'];
+'bg-solar.png'];
 
 
 var BattleOtherAnims={

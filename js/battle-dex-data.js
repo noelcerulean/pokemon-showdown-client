@@ -505,6 +505,9 @@ tsareenadeltarania:1476+9,
 starmiejoya:1476+10,
 starmiejoyamega:1476+11,
 pheromosadivinia:1476+12,
+crobatichiro:1476+13,
+roseradearmoredtulsi:1476+14,
+soarsparcearmoredsparcy:1476+15,
 
 
 parasfnf:1500+0,
@@ -859,6 +862,7 @@ unfezantfprimal:1500+214,
 barbaraclearmored:1500+215,
 madnexa:1500+216,
 altazash:1500+217,
+scarciq:1500+218,
 wigglytuffmega:1500+219,
 fusallate:1500+220,
 fusallatedelta:1500+221,
@@ -866,6 +870,10 @@ xatumega:1500+222,
 novarizon:1500+223,
 tardi:1500+224,
 tardinaut:1500+225,
+larvoona:1500+226,
+crescupa:1500+227,
+lunagon:1500+228,
+soarsparcearmored:1500+229,
 
 
 
