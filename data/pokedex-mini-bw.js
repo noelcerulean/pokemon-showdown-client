@@ -71,6 +71,8 @@ exports.BattlePokemonSpritesBW = {
 	hytanriptide:{num:-606},
 	hytanboba:{num:-606},
 	hytansusie:{num:-606},
+	hytanpaz:{num:-606},
+	hytanpazresonant:{num:-606},
 	scarciq:{num:-618},
 	bulbasaur:{num:1},
 	bulbasaursylvanos:{num:1},

@@ -1584,11 +1584,11 @@ if(this.bgmNum===bgmNum)return;
 this.bgmNum=bgmNum;
 
 switch(bgmNum){
-case-1:
-this.bgm=BattleSound.loadBgm('audio/champ-kukui.mp3',57361,113932,this.bgm);
+case 1:
+this.bgm=BattleSound.loadBgm('audio/ash-masters.mp3',17500,83764,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/champ-kukui.mp3',57361,113932,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/ash-masters.mp3',17500,83764,this.bgm);
 break;}
 
 
@@ -3314,7 +3314,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-solar.png'];
+'bg-redcarpet.png'];
 
 
 var BattleOtherAnims={
@@ -7717,6 +7717,9 @@ miasma:{
 anim:BattleOtherAnims.dance.anim},
 
 hypnofamilyreunion:{
+anim:BattleOtherAnims.dance.anim},
+
+starterfamilyreunion:{
 anim:BattleOtherAnims.dance.anim},
 
 evanescediffusion:{

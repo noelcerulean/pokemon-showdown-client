@@ -508,6 +508,8 @@ pheromosadivinia:1476+12,
 crobatichiro:1476+13,
 roseradearmoredtulsi:1476+14,
 soarsparcearmoredsparcy:1476+15,
+hytanpaz:1476+16,
+hytanpazresonant:1476+17,
 
 
 parasfnf:1500+0,
@@ -836,7 +838,7 @@ vaicoraapophis:1500+196,
 vaicoraliege:1500+196,
 vaicoraserph:1500+196,
 hytan:1500+197,
-hytanpaz:1500+197,
+
 hytancarmalot:1500+197,
 hytangort:1500+197,
 hytanriptide:1500+197,

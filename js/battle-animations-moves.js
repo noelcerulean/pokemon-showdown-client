@@ -800,6 +800,9 @@ anim:BattleOtherAnims.dance.anim},
 hypnofamilyreunion:{
 anim:BattleOtherAnims.dance.anim},
 
+starterfamilyreunion:{
+anim:BattleOtherAnims.dance.anim},
+
 evanescediffusion:{
 anim:BattleOtherAnims.dance.anim},
 
