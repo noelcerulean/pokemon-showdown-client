@@ -454,7 +454,6 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	snoruntsherbet: 1380 + 46,
 	arongoldie: 1380 + 47,
 	furfrouprincess: 1380 + 48,
-	furfrouprincessparty: 1380 + 48,
 	furfrouprincesspomp: 1380 + 48,
 	furfrouprincesspunk: 1380 + 48,
 	furfrouprincessphobos: 1380 + 48,
@@ -490,6 +489,11 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 
 	//fnf shadowmons skins icons
 	raichumalachiterockstar: 1464 + 0,
+	furfrouprincessparty: 1464 + 1,
+	venusaurmagnolia: 1464 + 2,
+	dragonitenoodle: 1464 + 3,
+	magnezonebuzzy: 1464 + 4,
+	bombsealkaboom: 1464 + 5,
 
 	///fnf special mons
 	granbullnobunaga: 1476 + 0,
@@ -510,6 +514,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	soarsparcearmoredsparcy: 1476 + 15,
 	hytanpaz: 1476 + 16,
 	hytanpazresonant: 1476 + 17,
+	musleeblotus: 1476 + 18,
+	musleeblotusresonant: 1476 + 19,
 
 	//fnf custom mons
 	parasfnf: 1500 + 0,
@@ -606,7 +612,6 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	roseradearmoredrenegade: 1500 + 60,
 	roseradearmoredrequiem: 1500 + 60,
 	bombseal: 1500 + 61,
-	bombsealkaboom: 1500 + 61,
 	bombsealfiesta: 1500 + 61,
 	allnown: 1500 + 62,
 	roboheeyem: 1500 + 63,
@@ -770,7 +775,6 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	mewtwoarmored: 1500 + 179,
 	musleeb: 1500 + 180,
 	musleebvera: 1500 + 180,
-	musleeblotus: 1500 + 180,
 	musleebdribble: 1500 + 180,
 	musleebhexa: 1500 + 180,
 	musleebdolly: 1500 + 180,
