@@ -516,6 +516,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	hytanpazresonant: 1476 + 17,
 	musleeblotus: 1476 + 18,
 	musleeblotusresonant: 1476 + 19,
+	lilaquinvera: 1476 + 20,
+	lilaquinveraresonant: 1476 + 21,
 
 	//fnf custom mons
 	parasfnf: 1500 + 0,
@@ -821,7 +823,6 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	slumburustherian: 1500 + 193,
 	chronoklang: 1500 + 194,
 	lilaquin: 1500 + 195,
-	lilaquinvera: 1500 + 195,
 	lilaquinveranecklace: 1500 + 195,
 	lilaquindribble: 1500 + 195,
 	lilaquinhexa: 1500 + 195,
