@@ -890,7 +890,8 @@ larvoona:1512+226,
 crescupa:1512+227,
 lunagon:1512+228,
 soarsparcearmored:1512+229,
-
+amauradelta:1512+230,
+aurorusdelta:1512+231,
 
 
 ano:304,

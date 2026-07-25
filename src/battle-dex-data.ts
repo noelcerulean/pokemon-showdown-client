@@ -890,7 +890,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	crescupa: 1512 + 227,
 	lunagon: 1512 + 228,
 	soarsparcearmored: 1512 + 229,
-
+	amauradelta: 1512 + 230,
+	aurorusdelta: 1512 + 231,
 
 	//hypnomons
 	ano: 304,
