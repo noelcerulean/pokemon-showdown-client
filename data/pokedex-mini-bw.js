@@ -1639,7 +1639,7 @@ exports.BattlePokemonSpritesBW = {
 	phantumpwithered:{num:708},
 	trevenant:{num:709},
 	trevenantbeach:{num:709},
-	trevenantwithered:{num:709},
+	trevenanttheworld:{num:709},
 	trevenantmega:{num:709},
 	pumpkaboo:{num:710},
 	pumpkaboosmall:{num:710},
