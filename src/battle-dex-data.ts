@@ -174,6 +174,7 @@ const BattleBaseSpeciesChart = [
 	"lilaquin", "vaicora", "hytan", "primeapearmored", "politoed", "roserade", "luvdisc", "volcarona",
 	"tyranitar", "excadrill", "archeops", "stunfisk", "magcargoarmored", "magnezone", "kommo", "huntail",
 	"castform", "heliolisk", "phantump", "metagross", "vespiquenarmored", "bruxish", "swanna", "tsareena",
+	"camerupt", "doublade",
 ] as ID[];
 
 const BattlePokemonIconIndexes: {[id: string]: number} = {
@@ -534,6 +535,10 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	altazashdeevaresonant: 1476 + 35,
 	madnexadribble: 1476 + 36,
 	madnexadribbleresonant: 1476 + 37,
+	altazashsuneater: 1476 + 38,
+	altazashsuneaterresonant: 1476 + 39,
+	madnexamianju: 1476 + 40,
+	madnexamianjuresonant: 1476 + 41,
 
 	//fnf custom mons
 	parasfnf: 1524 + 0,

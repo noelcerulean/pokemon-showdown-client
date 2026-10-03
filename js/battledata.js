@@ -1163,7 +1163,8 @@ var BattleBaseSpeciesChart=[
 "grumpig","steeneedelta","gourgeistlarge","dragonairarmored","wigglytuff","skiploom","dragonite",
 "lilaquin","vaicora","hytan","primeapearmored","politoed","roserade","luvdisc","volcarona",
 "tyranitar","excadrill","archeops","stunfisk","magcargoarmored","magnezone","kommo","huntail",
-"castform","heliolisk","phantump","metagross","vespiquenarmored","bruxish","swanna","tsareena"];
+"castform","heliolisk","phantump","metagross","vespiquenarmored","bruxish","swanna","tsareena",
+"camerupt","doublade"];
 
 
 var BattlePokemonIconIndexes={
@@ -1524,6 +1525,10 @@ altazashdeeva:1476+34,
 altazashdeevaresonant:1476+35,
 madnexadribble:1476+36,
 madnexadribbleresonant:1476+37,
+altazashsuneater:1476+38,
+altazashsuneaterresonant:1476+39,
+madnexamianju:1476+40,
+madnexamianjuresonant:1476+41,
 
 
 parasfnf:1524+0,
