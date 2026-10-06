@@ -174,7 +174,7 @@ var BattleBaseSpeciesChart=[
 "lilaquin","vaicora","hytan","primeapearmored","politoed","roserade","luvdisc","volcarona",
 "tyranitar","excadrill","archeops","stunfisk","magcargoarmored","magnezone","kommo","huntail",
 "castform","heliolisk","phantump","metagross","vespiquenarmored","bruxish","swanna","tsareena",
-"camerupt","doublade"];
+"camerupt","doublade","tardinaut"];
 
 
 var BattlePokemonIconIndexes={
@@ -541,6 +541,8 @@ madnexamianju:1476+40,
 madnexamianjuresonant:1476+41,
 altazashaurora:1476+42,
 altazashauroraresonant:1476+43,
+madnexaseeds:1476+44,
+madnexaseedsresonant:1476+45,
 
 
 parasfnf:1524+0,
@@ -897,6 +899,7 @@ xatumega:1524+222,
 novarizon:1524+223,
 tardi:1524+224,
 tardinaut:1524+225,
+tardinautsus:1524+225,
 larvoona:1524+226,
 crescupa:1524+227,
 lunagon:1524+228,
