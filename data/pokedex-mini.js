@@ -92,6 +92,7 @@ exports.BattlePokemonSprites = {
 	hytanriptide:{num:-606},
 	hytanboba:{num:-606},
 	hytanpaz:{num:-606},
+	hytanpazhoodie:{num:-606},
 	hytanpazresonant:{num:-606},
 	hytansusie:{num:-606},
 	hytansusieresonant:{num:-606},

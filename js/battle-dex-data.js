@@ -174,7 +174,7 @@ var BattleBaseSpeciesChart=[
 "lilaquin","vaicora","hytan","primeapearmored","politoed","roserade","luvdisc","volcarona",
 "tyranitar","excadrill","archeops","stunfisk","magcargoarmored","magnezone","kommo","huntail",
 "castform","heliolisk","phantump","metagross","vespiquenarmored","bruxish","swanna","tsareena",
-"camerupt","doublade","tardinaut"];
+"camerupt","doublade","tardinaut","hytanpaz"];
 
 
 var BattlePokemonIconIndexes={
@@ -495,6 +495,7 @@ venusaurmagnolia:1464+2,
 dragonitenoodle:1464+3,
 magnezonebuzzy:1464+4,
 bombsealkaboom:1464+5,
+hytanpazhoodie:1464+6,
 
 
 granbullnobunaga:1476+0,
