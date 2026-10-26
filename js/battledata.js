@@ -1899,6 +1899,8 @@ lunagon:1536+228,
 soarsparcearmored:1536+229,
 amauradelta:1536+230,
 aurorusdelta:1536+231,
+golettfnf:1536+232,
+golurkfnf:1536+233,
 
 
 ano:304,
