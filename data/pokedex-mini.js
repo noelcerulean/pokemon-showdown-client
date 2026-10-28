@@ -1359,6 +1359,7 @@ exports.BattlePokemonSprites = {
 	vanillite:{num:582},
 	vanillitefnf:{num:582},
 	vanillish:{num:583},
+	vanillee:{num:-626},
 	vanillishfnf:{num:583},
 	vanilluxe:{num:584},
 	vanilluxefnf:{num:584},

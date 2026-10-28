@@ -911,6 +911,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	aurorusdelta: 1536 + 231,
 	golettfnf: 1536 + 232,
 	golurkfnf: 1536 + 233,
+	vanillee: 1536 + 234,
 
 	//hypnomons
 	ano: 304,

@@ -1060,7 +1060,7 @@ stats.spa*=2;
 }
 
 if(item==='fusedevite'){
-if(species==='Medipom'){
+if(species==='Medipom'||species==='Vanillee'){
 stats.def=Math.floor(stats.def*1.5);
 stats.spd=Math.floor(stats.spd*1.5);
 stats.atk=Math.floor(stats.atk*1.5);
