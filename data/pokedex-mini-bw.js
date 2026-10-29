@@ -315,6 +315,7 @@ exports.BattlePokemonSpritesBW = {
 	gengarhallows:{num:94},
 	gengareve:{num:94},
 	gengarclef:{num:94},
+	gengardeath:{num:94},
 	gengarmega:{num:94},
 	gengargmax:{num:94},
 	onix:{num:95},
