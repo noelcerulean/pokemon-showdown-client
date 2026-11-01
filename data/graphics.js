@@ -1577,7 +1577,7 @@ this.preloadImage(Dex.resourcePrefix+'sprites/ani/substitute.gif');
 this.preloadImage(Dex.resourcePrefix+'sprites/ani-back/substitute.gif');
 };_proto.
 rollBgm=function rollBgm(){
-this.setBgm(1+this.numericId%26);
+this.setBgm(1+this.numericId%1);
 };_proto.
 setBgm=function setBgm(bgmNum){
 if(this.bgmNum===bgmNum)return;
@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/usum-trainer.mp3',25505,100124,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-gateway.mp3',14115,81375,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/usum-trainer.mp3',25505,100124,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/pbr-gateway.mp3',14115,81375,this.bgm);
 break;}
 
 
@@ -3314,7 +3314,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-openocean.jpg'];
+'bg-space.png'];
 
 
 var BattleOtherAnims={
