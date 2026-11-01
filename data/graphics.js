@@ -1585,10 +1585,10 @@ this.bgmNum=bgmNum;
 
 switch(bgmNum){
 case 1:
-this.bgm=BattleSound.loadBgm('audio/pbr-gateway.mp3',14115,81375,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/blue-dome.mp3',58886,204180,this.bgm);
 break;
 default:
-this.bgm=BattleSound.loadBgm('audio/pbr-gateway.mp3',14115,81375,this.bgm);
+this.bgm=BattleSound.loadBgm('audio/blue-dome.mp3',58886,204180,this.bgm);
 break;}
 
 
@@ -3314,7 +3314,7 @@ var BattleBackdropsFive=[
 'bg-route.png'];
 
 var BattleBackdrops=[
-'bg-space.png'];
+'bg-beach.png'];
 
 
 var BattleOtherAnims={

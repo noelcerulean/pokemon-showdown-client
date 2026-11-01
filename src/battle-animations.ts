@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/pbr-gateway.mp3', 14115, 81375, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/blue-dome.mp3', 58886, 204180, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/pbr-gateway.mp3', 14115, 81375, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/blue-dome.mp3', 58886, 204180, this.bgm);
 				break;
 			}
 	
@@ -3314,7 +3314,7 @@ const BattleBackdropsFive = [
 	'bg-route.png',
 ];
 const BattleBackdrops = [
-	'bg-space.png',
+	'bg-beach.png',
 ];
 
 const BattleOtherAnims: AnimTable = {
