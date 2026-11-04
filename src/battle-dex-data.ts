@@ -917,6 +917,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	cacnedon: 1536 + 237,
 	pignipuff: 1536 + 238,
 	zangyros: 1536 + 239,
+	ruffard: 1536 + 240,
+	joltiostorm: 1536 + 241,
+	salountales: 1536 + 242,
 
 	//hypnomons
 	ano: 304,

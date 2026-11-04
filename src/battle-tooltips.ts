@@ -1060,7 +1060,7 @@ class BattleTooltips {
 		}
 
 		if (item === 'fusedevite') {
-			if (species === 'Medipom' || species === 'Vanillee' || species === 'Misdreanie' || species === 'Cacnedon' || species === 'Pignipuff') {
+			if (species === 'Medipom' || species === 'Vanillee' || species === 'Misdreanie' || species === 'Cacnedon' || species === 'Pignipuff' || species === 'Ruffard') {
 				stats.def = Math.floor(stats.def * 1.5);
 				stats.spd = Math.floor(stats.spd * 1.5);
 				stats.atk = Math.floor(stats.atk * 1.5);
