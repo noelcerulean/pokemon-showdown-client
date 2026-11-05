@@ -920,6 +920,13 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	ruffard: 1536 + 240,
 	joltiostorm: 1536 + 241,
 	salountales: 1536 + 242,
+	yanshao: 1536 + 243,
+	aipomdelta: 1536 + 244,
+	ambipomdelta: 1536 + 245,
+	krabbydelta: 1536 + 246,
+	kinglerdelta: 1536 + 247,
+	silclops: 1536 + 248,
+	zapmolcuno: 1536 + 249,
 
 	//hypnomons
 	ano: 304,

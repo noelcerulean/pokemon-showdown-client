@@ -1577,7 +1577,7 @@ class BattleScene {
 		this.preloadImage(Dex.resourcePrefix + 'sprites/ani-back/substitute.gif');
 	}
 	rollBgm() {
-		this.setBgm(1 + this.numericId % 26);
+		this.setBgm(1 + this.numericId % 1);
 	}
 	setBgm(bgmNum: number) {
 		if (this.bgmNum === bgmNum) return;
@@ -1585,10 +1585,10 @@ class BattleScene {
 
 		switch (bgmNum) {
 			case 1:
-				this.bgm = BattleSound.loadBgm('audio/masters-legendary.mp3', 32801, 104517, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/legends-giratina.mp3', 63081, 258135, this.bgm);
 				break;
 			default:
-				this.bgm = BattleSound.loadBgm('audio/masters-legendary.mp3', 32801, 104517, this.bgm);
+				this.bgm = BattleSound.loadBgm('audio/legends-giratina.mp3', 63081, 258135, this.bgm);
 				break;
 			}
 	
