@@ -803,6 +803,9 @@ const BattleMoveAnims: AnimTable = {
 	starterfamilyreunion: {
 		anim: BattleOtherAnims.dance.anim,
 	},
+	fusionfamilyreunion: {
+		anim: BattleOtherAnims.dance.anim,
+	},
 	evanescediffusion: {
 		anim: BattleOtherAnims.dance.anim,
 	},
