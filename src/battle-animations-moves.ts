@@ -3569,6 +3569,30 @@ const BattleMoveAnims: AnimTable = {
 			attacker.anim({x: attacker.x, time: 75});
 		},
 	},
+	shellup: {
+		anim(scene, [attacker]) {
+			scene.showEffect('shell', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 1,
+				opacity: 0.5,
+				time: 0,
+			}, {
+				scale: 0.8,
+				opacity: 0.8,
+				time: 400,
+			}, 'linear', 'fade');
+
+			attacker.anim({
+				scale: 0.4,
+				opacity: 0,
+				time: 400,
+			}, 'linear');
+			attacker.delay(75);
+			attacker.anim({x: attacker.x, time: 75});
+		},
+	},
 	roost: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('feather', {

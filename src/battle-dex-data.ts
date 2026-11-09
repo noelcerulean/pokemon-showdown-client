@@ -550,6 +550,10 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	fofoamastraresonant: 1476 + 49,
 	madnexahana: 1476 + 50,
 	madnexahanaresonant: 1476 + 51,
+	altazashapophis: 1476 + 52,
+	altazashapophisresonant: 1476 + 53,
+	scarciqboba: 1476 + 54,
+	scarciqbobaresonant: 1476 + 55,
 
 	//fnf custom mons
 	parasfnf: 1536 + 0,

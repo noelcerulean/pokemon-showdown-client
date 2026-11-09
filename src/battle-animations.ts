@@ -2046,6 +2046,7 @@ class PokemonSprite extends Sprite {
 		yawn: ['Drowsy', 'bad'],
 		badseed: ['Bad Seed', 'bad'],
 		flashfire: ['Flash Fire', 'good'],
+		shellup: ['Shell Up', 'good'],
 		luminesce: ['Luminesce', 'good'],
 		inflate: ['Inflate', 'good'],
 		imprison: ['Imprisoning foe', 'good'],
