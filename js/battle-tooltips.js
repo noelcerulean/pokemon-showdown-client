@@ -2066,7 +2066,7 @@ if(move.flags['kick']){
 value.abilityModify(1.2,'Striker');
 }
 if(move.flags['blade']){
-value.abilityModify(1.2,'Unsheathed');
+value.abilityModify(1.5,'Unsheathed');
 value.abilityModify(1.2,'Cunning Blade');
 }
 if(move.recoil||move.hasCrashDamage){

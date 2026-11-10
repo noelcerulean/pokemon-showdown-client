@@ -1214,7 +1214,7 @@ case'heatcrash':case'heavyslam':
 return species.weightkg>=(species.evos?75:130);
 
 case'aerialace':
-return['technician','toughclaws'].includes(abilityid)&&!moves.includes('bravebird');
+return['technician','toughclaws','unsheathed'].includes(abilityid)&&!moves.includes('bravebird');
 case'ancientpower':
 return['serenegrace','technician'].includes(abilityid)||!moves.includes('powergem');
 case'aurawheel':
@@ -1235,7 +1235,7 @@ return['skilllink','technician'].includes(abilityid);
 case'counter':
 return species.baseStats.hp>=65;
 case'crosspoison':
-return abilityid==='cunningblade';
+return['cunningblade','unsheathed'].includes(abilityid);
 case'darkvoid':
 return dex.gen<8;
 case'drainingkiss':
@@ -1302,7 +1302,7 @@ return species.baseSpecies==='Kiwuit';
 case'naturepower':
 return dex.gen===5||species.baseSpecies==='Allnown';
 case'nightslash':
-return abilityid==='cunningblade'||!moves.includes('crunch')&&!(moves.includes('knockoff')&&dex.gen>=6);
+return['cunningblade','unsheathed'].includes(abilityid)||!moves.includes('crunch')&&!(moves.includes('knockoff')&&dex.gen>=6);
 case'ominouswind':
 return species.baseSpecies==='Allnown';
 case'passionstorm':
@@ -1313,8 +1313,12 @@ case'phantomforce':
 return abilityid==='transience';
 case'poisonfang':
 return species.types.includes('Poison')&&!moves.includes('gunkshot')&&!moves.includes('poisonjab');
+case'psychocut':
+return['cunningblade','unsheathed'].includes(abilityid);
 case'quickguard':
 return species.baseSpecies==='Allnown';
+case'razorshell':
+return['cunningblade','unsheathed'].includes(abilityid);
 case'relicsong':
 return species.id==='meloetta';
 case'refresh':
@@ -1327,6 +1331,8 @@ case'secretpower':
 return species.baseSpecies==='Allnown';
 case'selfdestruct':
 return dex.gen<5&&!moves.includes('explosion');
+case'shellup':
+return abilityid==='shellarmor';
 case'smackdown':
 return species.types.includes('Ground');
 case'smartstrike':
@@ -1340,7 +1346,7 @@ return!moves.includes('earthquake')&&!moves.includes('drillrun')||this.formatTyp
 case'stunspore':
 return!moves.includes('thunderwave');
 case'swordstream':
-return['skilllink','technician'].includes(abilityid);
+return['skilllink','technician','unsheathed'].includes(abilityid);
 case'synchronoise':
 return abilityid==='melodyallegretto';
 case'technoblast':
