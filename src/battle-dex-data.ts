@@ -935,6 +935,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	kinglerdelta: 1536 + 247,
 	silclops: 1536 + 248,
 	zapmolcuno: 1536 + 249,
+	tangel: 1536 + 250,
+	tangelana: 1536 + 251,
 
 	//hypnomons
 	ano: 304,
