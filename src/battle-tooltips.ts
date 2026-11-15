@@ -1182,6 +1182,10 @@ class BattleTooltips {
 				if (ability === 'chlorophyll' && (weather === 'sunnyday' || weather === 'desolateland')) {
 					speedModifiers.push(2);
 				}
+				if (ability === 'flowermane' && (weather === 'sunnyday' || weather === 'desolateland')) {
+					stats.atk = Math.floor(stats.atk * 1.5);
+					stats.def = Math.floor(stats.def * 1.5);
+				}
 				if (ability === 'shadowembers' && (weather === 'sunnyday' || weather === 'desolateland')) {
 					speedModifiers.push(2);
 				}

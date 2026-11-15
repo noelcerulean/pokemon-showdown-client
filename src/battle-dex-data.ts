@@ -937,6 +937,9 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	zapmolcuno: 1536 + 249,
 	tangel: 1536 + 250,
 	tangelana: 1536 + 251,
+	cubleaf: 1536 + 252,
+	floraleo: 1536 + 253,
+	blossomane: 1536 + 254,
 
 	//hypnomons
 	ano: 304,

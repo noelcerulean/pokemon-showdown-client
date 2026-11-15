@@ -937,6 +937,9 @@ silclops:1536+248,
 zapmolcuno:1536+249,
 tangel:1536+250,
 tangelana:1536+251,
+cubleaf:1536+252,
+floraleo:1536+253,
+blossomane:1536+254,
 
 
 ano:304,
