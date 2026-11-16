@@ -739,6 +739,8 @@ exports.BattlePokemonSpritesBW = {
 	celebi:{num:251},
 	celebiamaranth:{num:251},
 	celebiwithered:{num:251},
+	cosmutt:{num:-643},
+	stardog:{num:-644},
 	treecko:{num:252},
 	grovyle:{num:253},
 	sceptile:{num:254},

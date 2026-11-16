@@ -1930,6 +1930,8 @@ tangelana:1536+251,
 cubleaf:1536+252,
 floraleo:1536+253,
 blossomane:1536+254,
+cosmutt:1536+255,
+stardog:1536+256,
 
 
 ano:304,
